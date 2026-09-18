@@ -1,0 +1,134 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "cmor-junior-volunteers",
+ "name": "Children's Museum of Richmond Junior Volunteers",
+ "org": "Children's Museum of Richmond",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://www.childrensmuseumofrichmond.org/about-us/get-involved/volunteer/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "cmor-junior-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing junior volunteer shifts",
+   "ann": "announced",
+   "summary": "Students from age 14 take two-hour shifts helping in the art studio, book bank, exhibits, field-trip prep and special events at the children's museum.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "arts_media_humanities",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Art Studio Assistant",
+    "Book Bank Assistant",
+    "Exhibit Buddy",
+    "Field Trip Prep",
+    "Special Events"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Children's Museum of Richmond Downtown",
+     "addr": "2626 West Broad St.",
+     "city": "Richmond",
+     "county": "Richmond City",
+     "state": "VA",
+     "zip": "23220",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Children's Museum of Richmond Chesterfield",
+     "addr": "6629 Lake Harbour Dr.",
+     "city": "Midlothian",
+     "county": "Chesterfield",
+     "state": "VA",
+     "zip": "23112",
+     "kind": "activity_site"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 14,
+    "basis": "application_date",
+    "raw": "Students as young as 14 are welcome to volunteer at the Museum."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "Minimum 2-hour shifts; available times vary by role, for example 9:15am - 5:00pm, Tuesday - Sunday"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.givepulse.com/group/866480-childrens-museum-of-richmond",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "cmor-s1",
+   "url": "https://www.childrensmuseumofrichmond.org/about-us/get-involved/volunteer/",
+   "title": "Volunteer at the Children's Museum!",
+   "publisher": "Children's Museum of Richmond",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "cmor-s1",
+   "oid": "cmor-junior-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing junior volunteer shifts",
+   "quote": "Students as young as 14 are welcome to volunteer at the Museum."
+  },
+  {
+   "sid": "cmor-s1",
+   "oid": "cmor-junior-vol-standing",
+   "fields": [
+    "/locations"
+   ],
+   "cycle": "Ongoing junior volunteer shifts",
+   "quote": "Downtown (2626 West Broad St., Richmond, VA 23220) and Chesterfield (6629 Lake Harbour Dr., Midlothian, VA 23112)"
+  }
+ ]
+}

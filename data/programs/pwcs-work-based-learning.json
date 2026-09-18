@@ -1,0 +1,130 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pwcs-work-based-learning",
+ "name": "PWCS High-Quality Work-Based Learning (Jobready WBL)",
+ "org": "Prince William County Public Schools, Career and Technical Education",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://www.pwcs.edu/learning_activities/academics/career_technical_education/work_based_learning/index",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "pwcs-wbl-verified",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing placements through the Jobready platform - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Prince William County students apply through the district's Jobready platform for a registered apprenticeship, clinical placement, internship, agricultural experience or school-based enterprise.",
+   "types": [
+    "internship",
+    "apprenticeship",
+    "trainee"
+   ],
+   "subjects": [
+    "business_law_government",
+    "health_medicine",
+    "engineering_trades",
+    "environment_outdoors",
+    "computing_technology"
+   ],
+   "subject_raw": [
+    "Registered Apprenticeship",
+    "Clinical",
+    "Internship",
+    "Immersion Supervised Agricultural Experiences",
+    "School-Based Enterprise"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Prince William County",
+     "county": "Prince William",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Prince William County Public Schools"
+    ],
+    "raw": "PWCS work-based learning route"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "https://pwcs.jobreadywbl.com/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Complete the interest form and submit a resume through the Jobready WBL platform",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "resume",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "submitting resume"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "The district page names five routes but publishes no age, grade or eligibility rule for any of them"
+    ],
+    [
+     "/costs/compensation_status",
+     "unknown",
+     "Whether each route is paid is not stated; the apprenticeship route is normally paid but the page does not say so"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pwcswbl-s1",
+   "url": "https://www.pwcs.edu/learning_activities/academics/career_technical_education/work_based_learning/index",
+   "title": "Work-Based Learning | Prince William County Public Schools",
+   "publisher": "Prince William County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pwcswbl-s1",
+   "oid": "pwcs-wbl-verified",
+   "fields": [
+    "/subject_terms_raw",
+    "/application/instructions_raw"
+   ],
+   "cycle": "Ongoing placements through the Jobready platform - verified 2026-09-08",
+   "quote": "Registered Apprenticeship ... Clinical ... Internship ... Immersion Supervised Agricultural Experiences ... School-Based Enterprise"
+  }
+ ]
+}

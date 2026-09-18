@@ -1,0 +1,143 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fairfax-rec-pac-cit",
+ "name": "Fairfax County Camp Counselors In Training (C.I.T.)",
+ "org": "Fairfax County Park Authority / Neighborhood and Community Services",
+ "org_type": "parks",
+ "host_state": "VA",
+ "program_url": "https://www.fairfaxcounty.gov/parks/park-news/2023/z-ir049",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "ffx-cit-2023-stale",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2023 (most recent cycle on this page)",
+   "ann": "announced",
+   "summary": "Teens aged 14 and up assist camp counsellors with programming for primary-school children, building teamwork, communication and leadership skills.",
+   "types": [
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service",
+    "environment_outdoors"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Fairfax County camps and Rec-PAC sites",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "application_date",
+    "raw": "open to teens ages 14 and older"
+   },
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "application",
+      "unit": "total",
+      "raw": "there is an application fee and initial online training that must be completed",
+      "mandatory": true
+     }
+    ]
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; participants receive a T-shirt only"
+   },
+   "sched": {
+    "schedule_raw": "Rec-PAC: in-person training June 17; work June 26 to Aug. 3, 8:15 a.m.-4 p.m. weekdays"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.fairfaxcounty.gov/parks/sites/parks/files/assets/documents/camps/cit-application-packet.pdf",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 6,
+      "day": 9,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Rec-PAC C.I.T.s: Friday, June 9"
+     }
+    ]
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "initial online training that must be completed"
+    }
+   ],
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "conflicting",
+     "The only Park Authority page carrying C.I.T. details is a news item from April 2023. The programme is the in-scope counterpart to the 18-and-over camp counsellor jobs, so it needs a current source before publication."
+    ],
+    [
+     "/costs/fees/0/amount",
+     "not_stated",
+     "An application fee is required but the amount is not published"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "ffxcit-s1",
+   "url": "https://www.fairfaxcounty.gov/parks/park-news/2023/z-ir049",
+   "title": "Counselors In Training | Fairfax County Park Authority",
+   "publisher": "Fairfax County Park Authority",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "ffxcit-s1",
+   "oid": "ffx-cit-2023-stale",
+   "fields": [
+    "/eligibility/age/min",
+    "/summary"
+   ],
+   "cycle": "Summer 2023 (most recent cycle on this page)",
+   "quote": "open to teens ages 14 and older ... assist counselors with programming, gain experience working as part of a team, develop new communication and leadership skills"
+  },
+  {
+   "sid": "ffxcit-s1",
+   "oid": "ffx-cit-2023-stale",
+   "fields": [
+    "/costs/fee_status"
+   ],
+   "cycle": "Summer 2023 (most recent cycle on this page)",
+   "quote": "there is an application fee and initial online training that must be completed"
+  }
+ ]
+}

@@ -1,0 +1,140 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fcps-va-wbl-internship",
+ "name": "FCPS High-Quality Work-Based Learning Internship",
+ "org": "Fairfax County Public Schools, Career and Technical Education",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://www.fcps.edu/wbl",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "fcps-wbl-internship-verified",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing school-year placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Students aged 16 and up in a related CTE course complete at least fifty hours of real job duties with an employer, under a training plan agreed by the student, the school and the employer.",
+   "types": [
+    "internship",
+    "trainee"
+   ],
+   "subjects": [
+    "business_law_government",
+    "engineering_trades",
+    "computing_technology",
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Fairfax County",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Suggested Grade Levels 11 & 12"
+   },
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Must be 16 years old"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Fairfax County Public Schools"
+    ],
+    "raw": "Enrolled in a related CTE course"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "conditional",
+    "raw": "Paid or unpaid"
+   },
+   "sched": {
+    "dur_min": 50,
+    "dur_unit": "hour",
+    "dur_raw": "Must meet hourly requirements for completion (50 hours minimum)"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "conditional",
+     "The route may be paid or unpaid depending on the placement, so it matches neither Pay filter value"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/application/application_url",
+     "not_stated",
+     "Students enter through their school's work-based learning instructor"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "fcpswbl-s1",
+   "url": "https://www.fcps.edu/wbl",
+   "title": "Work-Based Learning | Fairfax County Public Schools",
+   "publisher": "Fairfax County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "fcpswbl-s1",
+   "oid": "fcps-wbl-internship-verified",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/age/min",
+    "/schedule/duration/min"
+   ],
+   "cycle": "Ongoing school-year placements - verified 2026-09-08",
+   "quote": "Suggested Grade Levels 11 & 12 ... Must be 16 years old ... Must meet hourly requirements for completion (50 hours minimum)"
+  },
+  {
+   "sid": "fcpswbl-s1",
+   "oid": "fcps-wbl-internship-verified",
+   "fields": [
+    "/costs/compensation_status"
+   ],
+   "cycle": "Ongoing school-year placements - verified 2026-09-08",
+   "quote": "Paid or unpaid"
+  }
+ ]
+}

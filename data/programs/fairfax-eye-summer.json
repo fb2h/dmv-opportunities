@@ -1,0 +1,255 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fairfax-eye-summer",
+ "name": "Educating Youth through Employment (EYE) Summer Program",
+ "org": "Virginia Career Works Northern Region / Fairfax County Department of Family Services",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://www.fairfaxcounty.gov/familyservices/employment-and-training/programs-for-young-adults",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "fairfax-eye-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual six-week summer placement",
+   "ann": "unclear",
+   "summary": "A six-week paid summer work placement in a career field the young person chooses, reached through a referring organisation in Northern Virginia.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites in Northern Virginia",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "Between the ages of 16-24"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "Legally eligible to work in the United States"
+   },
+   "other": [
+    [
+     "required",
+     "Actively participating in services through the referring organization"
+    ],
+    [
+     "required",
+     "Must be able to work a minimum of 20 hours per week and attend training workshops"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "six-weeks of paid work experience in a career field that matches their interests"
+     }
+    ]
+   },
+   "sched": {
+    "dur_min": 6,
+    "dur_unit": "week",
+    "hpw_min": 20,
+    "hpw_raw": "minimum of 20 hours per week"
+   },
+   "app": {
+    "route": "referral",
+    "url": "https://vcwnorthern.com/eye-programs/",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named on the page"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated"
+    ],
+    [
+     "/application/route_type",
+     "referral",
+     "Entry is through a referring organisation rather than direct application, which limits who can reach it"
+    ]
+   ]
+  },
+  {
+   "oid": "fairfax-wioa-youth",
+   "cycle_kind": "continuous",
+   "cycle_label": "WIOA Youth Program - ongoing",
+   "ann": "announced",
+   "summary": "A year-round Northern Virginia programme with paid work experience, career coaching and training for young people who meet income and barrier criteria.",
+   "types": [
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Job readiness assistance",
+    "GED preparation",
+    "Career coaching",
+    "Paid work experience",
+    "Job placement assistance"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Virginia Career Works Northern Region",
+     "city": "Annandale",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 17,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "Ages 17-24 years old"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "Legally eligible to work in the United States"
+   },
+   "other": [
+    [
+     "required",
+     "Meet income requirements"
+    ],
+    [
+     "required",
+     "Registered for Selective Services (males, 18+)"
+    ],
+    [
+     "required",
+     "Must meet at least one: Below 9th grade level in reading or math, Left school before receiving high school diploma or GED, Do not have a stable housing situation, Justice involved, Have a disability, In or aging out of foster care, Pregnant or parenting, English language learner"
+    ]
+   ],
+   "logic": "complex",
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "Paid work experience"
+     }
+    ]
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://vcwnorthern.com/wioayouth/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/logic",
+     "complex",
+     "Eligibility is an AND of income and work authorisation plus an OR list of barrier criteria; it must not be flattened"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated"
+    ],
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The age floor of 17 excludes most high schoolers below twelfth grade"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "ffxeye-s1",
+   "url": "https://www.fairfaxcounty.gov/familyservices/employment-and-training/programs-for-young-adults",
+   "title": "Employment and Training Programs for Young Adults",
+   "publisher": "Fairfax County Department of Family Services",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "ffxeye-s1",
+   "oid": "fairfax-eye-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/other_conditions"
+   ],
+   "cycle": "Annual six-week summer placement",
+   "quote": "Between the ages of 16-24 ... Actively participating in services through the referring organization ... Must be able to work a minimum of 20 hours per week and attend training workshops"
+  },
+  {
+   "sid": "ffxeye-s1",
+   "oid": "fairfax-eye-standing",
+   "fields": [
+    "/costs/compensation_status",
+    "/schedule/duration/min"
+   ],
+   "cycle": "Annual six-week summer placement",
+   "quote": "six-weeks of paid work experience in a career field that matches their interests"
+  },
+  {
+   "sid": "ffxeye-s1",
+   "oid": "fairfax-wioa-youth",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "WIOA Youth Program - ongoing",
+   "quote": "Ages 17-24 years old"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "inova-fairfax-hs-volunteer",
+ "name": "Inova High School Student Volunteer Program - Inova Fairfax Medical Campus",
+ "org": "Inova Health System",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified 2026-09-08 against Inova's system-level high school volunteer page, which runs one registration for all five hospitals. This campus row is kept for its history but is held back from the public catalogue so that the programme shows as a single card under the system-level record.",
+ "offerings": [
+  {
+   "oid": "inova-fairfax-superseded-2026",
+   "cycle_kind": "session",
+   "cycle_label": "Fall 2026 session - campus row superseded by the system record",
+   "ann": "announced",
+   "summary": "Students aged sixteen and over take one weekly shift at Inova Fairfax Medical Campus under Inova's single system-wide high school volunteer registration.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Inova Fairfax Medical Campus",
+     "city": "Falls Church",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "program_start",
+    "raw": "High school students must be at least 16 years of age on or before the start of the session"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_raw": "Commit to 1 shift per week, 3-4 hours each"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "opens": {
+     "month": 7,
+     "day": 9,
+     "time": "08:00:00",
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Registration window for the 2026 fall session opens on July 9 at 8:00 a.m. and closes on July 12 at 11:45 p.m."
+    },
+    "deadlines": [
+     {
+      "kind": "registration",
+      "month": 7,
+      "day": 12,
+      "time": "23:45:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Registration window for the 2026 fall session opens on July 9 at 8:00 a.m. and closes on July 12 at 11:45 p.m."
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/publication",
+     "superseded",
+     "Inova runs one registration for all five hospitals, so this campus row is held back and the system-level record inova-hs-student-volunteers carries the single public card."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "inova-fairfax-s1",
+   "url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
+   "title": "High school student volunteers",
+   "publisher": "Inova Health System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "inova-fairfax-s1",
+   "oid": "inova-fairfax-superseded-2026",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Fall 2026 session - campus row superseded by the system record",
+   "quote": "High school students must be at least 16 years of age on or before the start of the session"
+  },
+  {
+   "sid": "inova-fairfax-s1",
+   "oid": "inova-fairfax-superseded-2026",
+   "fields": [
+    "/locations"
+   ],
+   "cycle": "Fall 2026 session - campus row superseded by the system record",
+   "quote": "Inova Fairfax Medical Campus, Inova Alexandria Hospital, Inova Fair Oaks Hospital, Inova Loudoun Hospital, Inova Mount Vernon Hospital"
+  },
+  {
+   "sid": "inova-fairfax-s1",
+   "oid": "inova-fairfax-superseded-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/0"
+   ],
+   "cycle": "Fall 2026 session - campus row superseded by the system record",
+   "quote": "Registration window for the 2026 fall session opens on July 9 at 8:00 a.m. and closes on July 12 at 11:45 p.m."
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "suburban-junior-volunteer",
+ "name": "Suburban Hospital Junior Volunteer Team",
+ "org": "Suburban Hospital (Johns Hopkins Medicine)",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.hopkinsmedicine.org/volunteer-services/suburban",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "suburban-jr-2027-spring-summer",
+   "cycle_kind": "session",
+   "cycle_label": "Spring and summer 2027 recruitment",
+   "ann": "announced",
+   "summary": "High schoolers aged 16 and up join the Junior Volunteer Team at Suburban Hospital in Bethesda, working the Art Cart, Comfort Cart or information desk.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "arts_media_humanities"
+   ],
+   "subject_raw": [
+    "Art Cart",
+    "Comfort Cart",
+    "Information Desk"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Suburban Hospital",
+     "addr": "8600 Old Georgetown Road",
+     "city": "Bethesda",
+     "county": "Montgomery",
+     "state": "MD",
+     "zip": "20814",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "High school students who are at least 16 years old"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_raw": "Commit to a minimum of one 4-hour weekly shift",
+    "dur_raw": "a minimum of 6 months of volunteering"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.signupgenius.com/go/10C0444A5AC28A4FEC43-64947690-volunteer",
+    "window": "multiple_rounds",
+    "status": "not_yet_open",
+    "selection": "host_selects",
+    "opens": {
+     "year": 2027,
+     "month": 2,
+     "precision": "month",
+     "certainty": "confirmed",
+     "raw": "Information about spring and summer volunteer opportunities will be available beginning in February 2027"
+    },
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "Applicants must first attend an in-person information session"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "suburban-s1",
+   "url": "https://www.hopkinsmedicine.org/volunteer-services/suburban",
+   "title": "Volunteer at Suburban Hospital",
+   "publisher": "Johns Hopkins Medicine",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "suburban-s1",
+   "oid": "suburban-jr-2027-spring-summer",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Spring and summer 2027 recruitment",
+   "quote": "High school students who are at least 16 years old"
+  },
+  {
+   "sid": "suburban-s1",
+   "oid": "suburban-jr-2027-spring-summer",
+   "fields": [
+    "/schedule/hours_per_week/raw",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Spring and summer 2027 recruitment",
+   "quote": "Commit to a minimum of one 4-hour weekly shift ... a minimum of 6 months of volunteering"
+  },
+  {
+   "sid": "suburban-s1",
+   "oid": "suburban-jr-2027-spring-summer",
+   "fields": [
+    "/application/opens"
+   ],
+   "cycle": "Spring and summer 2027 recruitment",
+   "quote": "All fall information sessions are currently full ... beginning in February 2027"
+  }
+ ]
+}

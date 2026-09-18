@@ -1,0 +1,117 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "medstar-st-marys-shadow-program",
+ "name": "MedStar St. Mary's Hospital Shadow Program",
+ "org": "MedStar St. Mary's Hospital",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.medstarhealth.org/locations/medstar-st-marys-hospital/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "medstar-stmarys-shadow-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing shadowing placements, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "High schoolers aged 16 and up considering health careers can observe clinicians for up to forty hours at MedStar St. Mary's.",
+   "types": [
+    "shadowing"
+   ],
+   "subjects": [
+    "health_medicine"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "MedStar St. Mary's Hospital",
+     "addr": "25500 Point Lookout Road",
+     "city": "Leonardtown",
+     "county": "St. Mary's",
+     "state": "MD",
+     "zip": "20650",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "high school and college students (16 years of age or older) considering careers in the health care field"
+   },
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "high school and college students (16 years of age or older)"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid"
+   },
+   "sched": {
+    "dur_raw": "up to 40 hours of observation opportunity"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Contact Volunteer and Student Services, 443-725-8837",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated",
+     "Placement is arranged by phone or email"
+    ],
+    [
+     "/application/reported_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mstm-s1",
+   "url": "https://www.medstarhealth.org/locations/medstar-st-marys-hospital/volunteer",
+   "title": "Volunteer Opportunities | MedStar St. Mary's Hospital",
+   "publisher": "MedStar Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mstm-s1",
+   "oid": "medstar-stmarys-shadow-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/schedule/duration/raw",
+    "/summary"
+   ],
+   "cycle": "Ongoing shadowing placements, verified 2026-09-08",
+   "quote": "high school and college students (16 years of age or older) considering careers in the health care field ... up to 40 hours of observation opportunity"
+  }
+ ]
+}

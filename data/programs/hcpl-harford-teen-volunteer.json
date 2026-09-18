@@ -1,0 +1,251 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "hcpl-harford-teen-volunteer",
+ "name": "Harford County Public Library Teen Volunteer Programs",
+ "org": "Harford County Public Library",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://hcplonline.org/volunteers.php",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "hcpl-summer-reading-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 summer reading volunteers",
+   "ann": "announced",
+   "summary": "Middle and high school teens help run summer reading: registration, events and more.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Harford County Public Library branches",
+     "county": "Harford",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Middle and high school teen volunteers"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://hcplonline.org/summervolapplication.php",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "opens": {
+     "month": 3,
+     "day": 16,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "will be available...beginning March 16th through April 13th"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-04-22",
+      "year": 2026,
+      "month": 4,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "available through April 22, 2026, for summer reading volunteer opportunities summer of 2026"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "hcpl-innovation-lab",
+   "cycle_kind": "continuous",
+   "cycle_label": "Innovation Lab and technology volunteers - ongoing",
+   "ann": "announced",
+   "summary": "Volunteers aged 16 and up help library customers with basic computer instruction and support the Innovation Lab.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "computing_technology",
+    "community_service",
+    "engineering_trades"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Harford County Public Library branches including Abingdon",
+     "city": "Abingdon",
+     "county": "Harford",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "16 and older"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://hcplonline.org/volapplication.php",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "hcpl-tag",
+   "cycle_kind": "continuous",
+   "cycle_label": "Teen Advisory Group - ongoing",
+   "ann": "announced",
+   "summary": "A branch-based teen group that meets regularly for games, activities and library input.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Harford County Public Library branches",
+     "county": "Harford",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "middle and high school youth"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://hcplonline.org/volapplication.php",
+    "window": "rolling",
+    "status": "open",
+    "selection": "open_enrollment",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "harfordlib-s1",
+   "url": "https://hcplonline.org/volunteers.php",
+   "title": "Harford County Public Library volunteers",
+   "publisher": "Harford County Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "harfordlib-s1",
+   "oid": "hcpl-summer-reading-2026",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026 summer reading volunteers",
+   "quote": "available through April 22, 2026, for summer reading volunteer opportunities summer of 2026"
+  },
+  {
+   "sid": "harfordlib-s1",
+   "oid": "hcpl-innovation-lab",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Innovation Lab and technology volunteers - ongoing",
+   "quote": "16 and older"
+  },
+  {
+   "sid": "harfordlib-s1",
+   "oid": "hcpl-tag",
+   "fields": [
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Teen Advisory Group - ongoing",
+   "quote": "middle and high school youth"
+  }
+ ]
+}

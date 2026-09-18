@@ -1,0 +1,156 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "si-npg-teen-museum-council",
+ "name": "National Portrait Gallery Teen Museum Council",
+ "org": "Smithsonian National Portrait Gallery",
+ "org_type": "museum",
+ "host_state": "DC",
+ "program_url": "https://npg.si.edu/learn/teens",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "si-npg-tmc-2026-27",
+   "cycle_kind": "academic_year",
+   "cycle_label": "2026-2027 school year",
+   "ann": "announced",
+   "summary": "A year-long teen council at the Portrait Gallery where DC-area teens plan and run museum events for other teens.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "subject_raw": [
+    "portraiture",
+    "art",
+    "museum experiences",
+    "leadership"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Smithsonian National Portrait Gallery",
+     "addr": "8th and G Streets NW",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20001",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "specified_school_year",
+    "school_year": "2026-2027",
+    "raw": "grades 9-12"
+   },
+   "residency": {
+    "status": "conditional",
+    "raw": "D.C.-area teens"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "schedule_raw": "Teen Museum Council meets once a week during the school year and requires a year-long commitment."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.gle/xdrUenmytZ7LVmUn9",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 8,
+      "day": 21,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "The application deadline is August 21. Teens will be notified by August 31."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "The page gives August 21 without a year; attributed to the 2026-2027 cohort described on the page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "npg-s1",
+   "url": "https://npg.si.edu/learn/teens",
+   "title": "Teens | National Portrait Gallery",
+   "publisher": "Smithsonian National Portrait Gallery",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "npg-s1",
+   "oid": "si-npg-tmc-2026-27",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "2026-2027 school year",
+   "quote": "grades 9-12 ... D.C.-area teens"
+  },
+  {
+   "sid": "npg-s1",
+   "oid": "si-npg-tmc-2026-27",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "2026-2027 school year",
+   "quote": "The application deadline is August 21. Teens will be notified by August 31."
+  },
+  {
+   "sid": "npg-s1",
+   "oid": "si-npg-tmc-2026-27",
+   "fields": [
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "2026-2027 school year",
+   "quote": "Teen Museum Council meets once a week during the school year and requires a year-long commitment."
+  }
+ ]
+}

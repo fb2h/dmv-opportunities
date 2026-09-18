@@ -1,0 +1,156 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pgc-syep",
+ "name": "Prince George's County Summer Youth Enrichment Program (SYEP)",
+ "org": "Prince George's County Office of Human Resources Management",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://www.princegeorgescountymd.gov/departments-offices/human-resources-management/youth-employment-and-internships/summer-youth-enrichment-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "pgc-syep-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A six-week county summer job placement for Prince George's County youth from age 14, with separate postings by age band.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Prince George's County government worksites",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "County youth and young adults ages 14 to 24"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Prince George's County, MD"
+    ],
+    "raw": "County youth and young adults"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "start": "2026-07-06",
+    "end": "2026-08-14",
+    "dur_min": 6,
+    "dur_unit": "week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.governmentjobs.com/careers/pgc/",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "month": 3,
+     "day": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications for summer job opportunities are accepted from March 1-March 31"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 31,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Applications for summer job opportunities are accepted from March 1-March 31"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated",
+     "The program page does not publish a wage; the age-band job postings do and remain unread"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pgcsyep-s1",
+   "url": "https://www.princegeorgescountymd.gov/departments-offices/human-resources-management/youth-employment-and-internships/summer-youth-enrichment-program",
+   "title": "Summer Youth Enrichment Program | Prince George's County",
+   "publisher": "Prince George's County, Maryland",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pgcsyep-s1",
+   "oid": "pgc-syep-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "County youth and young adults ages 14 to 24"
+  },
+  {
+   "sid": "pgcsyep-s1",
+   "oid": "pgc-syep-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Applications for summer job opportunities are accepted from March 1-March 31"
+  },
+  {
+   "sid": "pgcsyep-s1",
+   "oid": "pgc-syep-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "This year's program runs from July 6 to August 14, 2026"
+  }
+ ]
+}

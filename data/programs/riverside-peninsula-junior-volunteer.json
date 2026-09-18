@@ -1,0 +1,242 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "riverside-peninsula-junior-volunteer",
+ "name": "Riverside Health Peninsula Junior Volunteer Program",
+ "org": "Riverside Health System",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.riversideonline.com/en/patients-and-visitors/volunteer/peninsula-volunteering",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "riverside-peninsula-jr-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "High schoolers aged 14 to 18 spend the summer as junior volunteers at Riverside Regional Medical Center in Newport News.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Riverside Regional Medical Center",
+     "addr": "500 J. Clyde Morris Blvd.",
+     "city": "Newport News",
+     "county": "Newport News",
+     "state": "VA",
+     "zip": "23601",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 18,
+    "basis": "specified_date",
+    "raw": "High school students ages 14-18; must be 14 by June 15"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "month": 2,
+     "precision": "part_of_month",
+     "part": "mid",
+     "certainty": "tentative",
+     "raw": "Applications for Summer 2026 will be live in mid- to late-February"
+    },
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "parent_consent",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "parental consent needed"
+    },
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "attend mandatory orientation, and meet background check requirements"
+    }
+   ],
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  },
+  {
+   "oid": "riverside-peninsula-summer-2027",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2027 - applications announced for spring 2027",
+   "ann": "announced",
+   "summary": "High schoolers aged fourteen to eighteen volunteer over the summer at Riverside's Peninsula hospitals; the health system says applications open in spring 2027.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Riverside Regional Medical Center",
+     "addr": "500 J. Clyde Morris Boulevard",
+     "city": "Newport News",
+     "county": "Newport News",
+     "state": "VA",
+     "zip": "23601",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 18,
+    "basis": "specified_date",
+    "as_of": "06-15",
+    "raw": "This program is open to high school students between the ages of 14 and 18. (You must be 14 by by June 15.)"
+   },
+   "other": [
+    [
+     "required",
+     "being in good academic standing"
+    ],
+    [
+     "required",
+     "parental consent"
+    ],
+    [
+     "required",
+     "attend the mandatory orientation"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.riversideonline.com/en/patients-and-visitors/volunteer/peninsula-volunteering",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "host_selects",
+    "instructions": "Watch the Peninsula volunteering page for the application to go live, or ring volunteer services on 757-594-2044.",
+    "opens": {
+     "year": 2027,
+     "precision": "season",
+     "part": "spring",
+     "certainty": "confirmed",
+     "raw": "High school applications will open in Spring 2027 for the Summer."
+    },
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/opens/month",
+     "not_stated",
+     "The health system names spring 2027 without a month. Its previous cycle went live in mid to late February, which is a pattern and not a date."
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "riverside-s1",
+   "url": "https://www.riversideonline.com/en/patients-and-visitors/volunteer/peninsula-volunteering",
+   "title": "Peninsula Volunteering",
+   "publisher": "Riverside Health System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "riverside-s1",
+   "oid": "riverside-peninsula-jr-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "High school students ages 14-18; must be 14 by June 15"
+  },
+  {
+   "sid": "riverside-s1",
+   "oid": "riverside-peninsula-jr-2026",
+   "fields": [
+    "/application/opens"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Applications for Summer 2026 will be live in mid- to late-February"
+  },
+  {
+   "sid": "riverside-s1",
+   "oid": "riverside-peninsula-summer-2027",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer 2027 - applications announced for spring 2027",
+   "quote": "This program is open to high school students between the ages of 14 and 18. (You must be 14 by by June 15.)"
+  },
+  {
+   "sid": "riverside-s1",
+   "oid": "riverside-peninsula-summer-2027",
+   "fields": [
+    "/application/opens"
+   ],
+   "cycle": "Summer 2027 - applications announced for spring 2027",
+   "quote": "High school applications will open in Spring 2027 for the Summer."
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "sentara-vb-general-junior-volunteer",
+ "name": "Sentara Virginia Beach General Hospital Junior Volunteers",
+ "org": "Sentara Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.sentara.com/hospitalslocations/sentara-virginia-beach-general-hospital/about-us/volunteers",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital_long_tail",
+ "offerings": [
+  {
+   "oid": "sentara-vbgh-rolling-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling junior volunteer intake - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Junior volunteers aged fourteen to seventeen serve at Virginia Beach General over the summer and through the school year, starting with an initial summer programme.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Sentara Virginia Beach General Hospital",
+     "addr": "1060 First Colonial Road",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "zip": "23454",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "junior volunteers ages 14-17"
+   },
+   "other": [
+    [
+     "required",
+     "an initial summer program"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.sentara.com/hospitalslocations/sentara-virginia-beach-general-hospital/about-us/volunteers",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Contact the volunteer coordinator on 757-395-8014.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/eligibility/grades",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "vbgh-s1",
+   "url": "https://www.sentara.com/hospitalslocations/sentara-virginia-beach-general-hospital/about-us/volunteers",
+   "title": "Volunteers | Sentara Virginia Beach General Hospital",
+   "publisher": "Sentara Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "vbgh-s1",
+   "oid": "sentara-vbgh-rolling-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/season"
+   ],
+   "cycle": "Rolling junior volunteer intake - verified 2026-09-08",
+   "quote": "junior volunteers ages 14-17, wishing to work during the summer months and through the school year"
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "smv-teen-leadership",
+ "name": "Science Museum of Virginia Teen Leadership Program",
+ "org": "Science Museum of Virginia",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://smv.org/get-involved/join-our-team/teen-volunteer/",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "smv-teen-spring-2027",
+   "cycle_kind": "session",
+   "cycle_label": "Spring 2027 semester",
+   "ann": "announced",
+   "summary": "Teens run hands-on activities with museum guests at exhibits and labs and see how the museum works behind the scenes, over eight biweekly weekend shifts.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "science_research",
+    "education_working_with_kids",
+    "community_service",
+    "computing_technology"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Science Museum of Virginia",
+     "addr": "2500 West Broad Street",
+     "city": "Richmond",
+     "county": "Richmond City",
+     "state": "VA",
+     "zip": "23220",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "15-18 years old, or at least a rising sophomore in high school"
+   },
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "at least a rising sophomore in high school"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "start_raw": "January 16",
+    "end_raw": "May 2",
+    "dur_raw": "8 shifts over 16 weeks on biweekly Saturdays or Sundays"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "host_selects",
+    "opens": {
+     "month": 11,
+     "day": 8,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "2027 Spring semester applications open Sunday, November 8"
+    },
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "Must attend training on Saturday, January 10"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Only the opening date is published"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "smv-s1",
+   "url": "https://smv.org/get-involved/join-our-team/teen-volunteer/",
+   "title": "Teen Volunteer | Science Museum of Virginia",
+   "publisher": "Science Museum of Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "smv-s1",
+   "oid": "smv-teen-spring-2027",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Spring 2027 semester",
+   "quote": "15-18 years old, or at least a rising sophomore in high school"
+  },
+  {
+   "sid": "smv-s1",
+   "oid": "smv-teen-spring-2027",
+   "fields": [
+    "/application/opens",
+    "/cycle/announcement_state"
+   ],
+   "cycle": "Spring 2027 semester",
+   "quote": "2027 Spring semester applications open Sunday, November 8"
+  },
+  {
+   "sid": "smv-s1",
+   "oid": "smv-teen-spring-2027",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Spring 2027 semester",
+   "quote": "commit to 8 shifts over 16 weeks on biweekly Saturdays or Sundays"
+  }
+ ]
+}

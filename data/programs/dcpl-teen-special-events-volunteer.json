@@ -1,0 +1,125 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "dcpl-teen-special-events-volunteer",
+ "name": "DC Public Library Teen Special Events Volunteer",
+ "org": "District of Columbia Public Library",
+ "org_type": "library",
+ "host_state": "DC",
+ "program_url": "https://www.dclibrary.org/get-involved/volunteer-library",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "dcpl-special-events-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing, applications accepted at any time - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens aged 14 to 17 help run library events such as author talks, concerts, open houses and youth programmes, for a single day or as needed.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "author talks",
+    "concerts",
+    "open houses",
+    "youth programs"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "District of Columbia Public Library branches",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "ages 14-17"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "one day or as needed"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://dclibrary.galaxydigital.com/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations/0/address_line1",
+     "not_stated",
+     "Events are held across branches"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "dcplvol-s1",
+   "url": "https://www.dclibrary.org/get-involved/volunteer-library",
+   "title": "Volunteer at the Library | District of Columbia Public Library",
+   "publisher": "District of Columbia Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "dcplvol-s1",
+   "oid": "dcpl-special-events-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Ongoing, applications accepted at any time - verified 2026-09-08",
+   "quote": "ages 14-17"
+  },
+  {
+   "sid": "dcplvol-s1",
+   "oid": "dcpl-special-events-verified",
+   "fields": [
+    "/application/window_kind",
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Ongoing, applications accepted at any time - verified 2026-09-08",
+   "quote": "Applications are accepted on an ongoing basis ... one day or as needed"
+  }
+ ]
+}

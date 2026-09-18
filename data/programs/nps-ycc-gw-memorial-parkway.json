@@ -1,0 +1,126 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nps-ycc-gw-memorial-parkway",
+ "name": "Youth Conservation Corps at George Washington Memorial Parkway",
+ "org": "U.S. National Park Service, George Washington Memorial Parkway",
+ "org_type": "federal",
+ "host_state": "VA",
+ "program_url": "https://www.nps.gov/subjects/youthprograms/youth-conservation-corps-opportunities.htm",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "nps-gwmp-ycc-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A summer conservation crew restoring trails, doing maintenance and supporting visitor services along the George Washington Memorial Parkway.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "engineering_trades",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Restoring trails",
+    "maintenance",
+    "visitor services"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "George Washington Memorial Parkway",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "start_raw": "June 18",
+    "end_raw": "August 23"
+   },
+   "app": {
+    "route": "other",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "instructions": "Contact Talea Coleman or Scott Hill at the parkway",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "George Washington Memorial Parkway ... Application window: March 1"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The NPS opportunity listing does not restate the statutory 15 to 18 age range for this park"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated",
+     "No wage is published for this site"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "gwmpycc-s1",
+   "url": "https://www.nps.gov/subjects/youthprograms/youth-conservation-corps-opportunities.htm",
+   "title": "Youth Conservation Corps Opportunities",
+   "publisher": "U.S. National Park Service",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "gwmpycc-s1",
+   "oid": "nps-gwmp-ycc-2026",
+   "fields": [
+    "/application/deadlines/final/due",
+    "/schedule/start",
+    "/schedule/end",
+    "/subject_terms_raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "George Washington Memorial Parkway ... Application window: March 1 ... Session dates: June 18 - August 23 ... Restoring trails, maintenance, and visitor services"
+  }
+ ]
+}

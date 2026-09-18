@@ -1,0 +1,145 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "carroll-hospital-junior-volunteer-summer",
+ "name": "Carroll Hospital High School Summer Volunteer Program",
+ "org": "Carroll Hospital (LifeBridge Health)",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.lifebridgehealth.org/volunteers/carroll-hospital",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "carroll-hospital-jr-verified-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer junior volunteer, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Students aged 15 to 18 who have finished ninth grade spend at least eight summer weeks discharging patients by wheelchair, carrying lab samples, delivering flowers and helping at nursing stations.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "discharging patients via wheelchair",
+    "patient transfers",
+    "liaison between nursing stations and the lab",
+    "delivering flowers",
+    "nursing station support"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Carroll Hospital",
+     "addr": "200 Memorial Avenue",
+     "city": "Westminster",
+     "county": "Carroll",
+     "state": "MD",
+     "zip": "21157",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "Ages 15 to 18"
+   },
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "have completed 9th grade"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; students earn service hours toward Carroll County school system's required 75-hour community service"
+   },
+   "sched": {
+    "dur_raw": "Minimum of 8 weeks between June and August",
+    "schedule_raw": "typically 4 hours per day, once per week; shifts 8 a.m. to noon and noon to 4 p.m. Monday through Friday"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://app.betterimpact.com/Application?OrganizationGuid=7e433206-c5e1-4022-925b-6d7d47522b48&ApplicationFormNumber=1",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "carrollhosp-s1",
+   "url": "https://www.lifebridgehealth.org/volunteers/carroll-hospital",
+   "title": "Carroll Hospital Volunteers | LifeBridge Health",
+   "publisher": "LifeBridge Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "carrollhosp-s1",
+   "oid": "carroll-hospital-jr-verified-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Summer junior volunteer, verified 2026-09-08",
+   "quote": "Ages 15 to 18 ... have completed 9th grade"
+  },
+  {
+   "sid": "carrollhosp-s1",
+   "oid": "carroll-hospital-jr-verified-2026",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Summer junior volunteer, verified 2026-09-08",
+   "quote": "Minimum of 8 weeks between June and August"
+  },
+  {
+   "sid": "carrollhosp-s1",
+   "oid": "carroll-hospital-jr-verified-2026",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Summer junior volunteer, verified 2026-09-08",
+   "quote": "Discharging patients via wheelchair, assisting with patient transfers, acting as a liaison between nursing stations and the lab, delivering flowers, assisting at nursing station"
+  }
+ ]
+}

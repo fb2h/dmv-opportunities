@@ -1,0 +1,159 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "maryland-zoo-zoo-teens",
+ "name": "The Maryland Zoo Zoo Teen Program",
+ "org": "The Maryland Zoo in Baltimore",
+ "org_type": "museum",
+ "host_state": "MD",
+ "program_url": "https://www.marylandzoo.org/volunteer/teen-volunteering/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "md-zoo-teens-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "2026 Zoo Teen class",
+   "ann": "announced",
+   "summary": "Zoo Teens answer guest questions, help visitors find exhibits and support conservation and research projects, after a week-long training boot camp.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "The Maryland Zoo in Baltimore",
+     "addr": "One Safari Place",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21217",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "specified_date",
+    "raw": "ages 14-17 ... Zoo Teens must be 14 years old or older by Teen Bootcamp"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer position"
+   },
+   "sched": {
+    "dur_raw": "One-year minimum commitment; 4 shifts each month minimum",
+    "schedule_raw": "one-week training boot camp 9am-4pm daily, two sessions June 22-26 and June 29-July 3, 2026"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "date": "2026-01-29",
+     "year": 2026,
+     "month": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "January 29, 2026 - Zoo Teen Program Application Opens"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-04-09",
+      "year": 2026,
+      "month": 4,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "April 9, 2026 - Zoo Teen Program Application Closes"
+     }
+    ]
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "one-week training boot camp, 9am-4pm daily"
+    }
+   ],
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "The 2027 class is not yet announced; the page says to check back in 2027, which is a pattern and not a current-cycle date"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mdzoo-s1",
+   "url": "https://www.marylandzoo.org/volunteer/teen-volunteering/",
+   "title": "Teen Volunteering | The Maryland Zoo",
+   "publisher": "The Maryland Zoo in Baltimore",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mdzoo-s1",
+   "oid": "md-zoo-teens-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "2026 Zoo Teen class",
+   "quote": "Zoo Teens must be 14 years old or older by Teen Bootcamp"
+  },
+  {
+   "sid": "mdzoo-s1",
+   "oid": "md-zoo-teens-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "2026 Zoo Teen class",
+   "quote": "January 29, 2026 - Zoo Teen Program Application Opens ... April 9, 2026 - Zoo Teen Program Application Closes"
+  },
+  {
+   "sid": "mdzoo-s1",
+   "oid": "md-zoo-teens-2026",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "2026 Zoo Teen class",
+   "quote": "Teen Volunteer applications are currently closed. Please check back in 2027."
+  }
+ ]
+}

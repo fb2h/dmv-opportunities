@@ -1,0 +1,98 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "montgomery-county-humane-society-volunteer",
+ "name": "Montgomery County Humane Society Volunteer Program",
+ "org": "Montgomery County Humane Society",
+ "org_type": "nonprofit",
+ "host_state": "MD",
+ "program_url": "https://www.mchumane.org/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "out_of_scope",
+ "lane": "nonprofit_long_tail",
+ "offerings": [
+  {
+   "oid": "mchs-adult-only-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Adult volunteer intake - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "The shelter's volunteer programme is for people eighteen and over; under-eighteens are pointed to events rather than a volunteer role.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Montgomery County Humane Society",
+     "city": "Gaithersburg",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 18,
+    "basis": "application_date",
+    "raw": "Be 18 years of age and over. If you are younger than 18, there are other ways to get involved. (Events/Paws in the Park)"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.mchumane.org/volunteer",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "not_applicable",
+     "Adult-only volunteer programme. Under-eighteens are directed to one-off events, which is not a workplace-based role under P01."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mchs-s1",
+   "url": "https://www.mchumane.org/volunteer",
+   "title": "Volunteer | Montgomery County Humane Society",
+   "publisher": "Montgomery County Humane Society",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mchs-s1",
+   "oid": "mchs-adult-only-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/scope"
+   ],
+   "cycle": "Adult volunteer intake - verified 2026-09-08",
+   "quote": "Be 18 years of age and over. If you are younger than 18, there are other ways to get involved. (Events/Paws in the Park)"
+  }
+ ]
+}

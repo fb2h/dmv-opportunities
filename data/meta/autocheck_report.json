@@ -1,0 +1,248 @@
+{
+ "checked_at": "2026-09-18T19:42:03.349816Z",
+ "programs": 201,
+ "urls": 200,
+ "links_checked": false,
+ "errors": 2,
+ "warnings": 32,
+ "findings": [
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "ace-mentor-baltimore",
+   "oid": "ace-baltimore-standing",
+   "msg": "cycle label 'February to May mentoring season' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "alexandria-syep",
+   "oid": "alexandria-syep-2026",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "carroll-county-syep",
+   "oid": "carroll-syep-standing",
+   "msg": "cycle label 'Annual July to August placement' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "charles-county-student-internship",
+   "oid": "charles-student-internship",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "charles-county-student-internship",
+   "oid": "charles-student-internship",
+   "msg": "cycle label 'Summer student internship - two sessions' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "charles-county-student-internship",
+   "oid": "charles-syep",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "charles-county-student-internship",
+   "oid": "charles-syep",
+   "msg": "cycle label 'Summer Youth Employment Program' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "dc-dpr-summer-employment",
+   "oid": "dcdpr-summer-2026-verified",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "fairfax-park-authority-camp-jobs",
+   "oid": "ffx-camp-jobs-verified-adult",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "fairfax-park-authority-seasonal-jobs",
+   "oid": "ffx-park-seasonal-standing",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "hampton-youth-commission",
+   "oid": "hampton-youth-commission-standing",
+   "msg": "cycle label 'Annual spring intake' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "henrico-county-internship",
+   "oid": "henrico-internship-standing",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "howard-county-junior-counselor",
+   "oid": "howard-jr-counselor-standing",
+   "msg": "cycle label 'Annual summer junior counselor cohort' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "howard-county-syep",
+   "oid": "howard-syep-2026",
+   "msg": "type paid_job but compensation status is 'conditional'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "jh-summer-jobs",
+   "oid": "jh-summer-jobs-2026",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "maryland-conservation-jobs-corps",
+   "oid": "md-cjc-hiatus",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "mbsyep-dc",
+   "oid": "mbsyep-standing",
+   "msg": "type paid_job but compensation status is 'conditional'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "nps-ycc-gw-memorial-parkway",
+   "oid": "nps-gwmp-ycc-2026",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "pg-parks-summer-playtime-volunteer",
+   "oid": "pgparks-summer-playtime",
+   "msg": "cycle label 'Summer Playtime volunteer - age 14 and up' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "pg-parks-summer-playtime-volunteer",
+   "oid": "pgparks-summer-day-camp",
+   "msg": "cycle label 'Summer Day Camp volunteer - age 15 and up' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "pgc-syep",
+   "oid": "pgc-syep-2026",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "pwcs-summer-student-intern-teacher-aide",
+   "oid": "pwcs-summer-intern-2026",
+   "msg": "type paid_job but compensation status is 'not_mentioned'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "si-nasm-explainers",
+   "oid": "si-nasm-explainers-dc",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "ERROR",
+   "code": "NO_EVIDENCE",
+   "pid": "si-nasm-explainers",
+   "oid": "si-nasm-explainers-udvar",
+   "msg": "announced offering has no evidence"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "si-nasm-explainers",
+   "oid": "si-nasm-explainers-udvar",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-stmarys",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-stmarys",
+   "msg": "cycle label \"St. Mary's County - ages 14 to 24\" has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-charles-calvert",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-charles-calvert",
+   "msg": "cycle label 'Charles and Calvert Counties - ages 16 to 24' has no year and no dated deadline"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-verified-2026",
+   "msg": "type paid_job but compensation status is 'not_mentioned'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "tidalhealth-volunteen",
+   "oid": "tidalhealth-volunteen-md",
+   "msg": "cycle label 'Annual summer VolunTEEN session - Maryland sites' has no year and no dated deadline"
+  },
+  {
+   "level": "ERROR",
+   "code": "NO_EVIDENCE",
+   "pid": "umd-geog-hip",
+   "oid": "umd-hip-2026",
+   "msg": "announced offering has no evidence"
+  },
+  {
+   "level": "WARN",
+   "code": "PAID_TYPE_NO_PAY",
+   "pid": "virginia-beach-syep",
+   "oid": "vb-syep-2026",
+   "msg": "type paid_job but compensation status is 'unknown'"
+  },
+  {
+   "level": "WARN",
+   "code": "ANNUAL_NO_YEAR",
+   "pid": "vmfa-teen-programs",
+   "oid": "vmfa-teen-terns",
+   "msg": "cycle label \"Teen 'Terns paid summer internship\" has no year and no dated deadline"
+  }
+ ]
+}

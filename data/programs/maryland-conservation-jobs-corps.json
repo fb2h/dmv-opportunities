@@ -1,0 +1,107 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "maryland-conservation-jobs-corps",
+ "name": "Maryland Conservation Jobs Corps (CJC)",
+ "org": "Maryland Department of Natural Resources",
+ "org_type": "state_gov",
+ "host_state": "MD",
+ "program_url": "https://dnr.maryland.gov/publiclands/pages/cjc.aspx",
+ "status": "paused",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "md-cjc-hiatus",
+   "cycle_kind": "annual",
+   "cycle_label": "On hiatus as of 2026-09-08",
+   "ann": "unannounced",
+   "summary": "A summer conservation work program in Maryland State Parks, currently paused by the department.",
+   "types": [
+    "paid_job",
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "community_service",
+    "engineering_trades"
+   ],
+   "subject_raw": [
+    "building bridges and trails",
+    "rain barrel construction",
+    "environmental education"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "unknown",
+   "loc": [
+    {
+     "venue": "Maryland State Parks",
+     "state": "MD",
+     "kind": "to_be_assigned",
+     "raw": "Maryland State Parks"
+    }
+   ],
+   "fee": {
+    "status": "unknown"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "unknown",
+    "window": "none",
+    "status": "closed",
+    "selection": "unknown",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/program_status",
+     "not_applicable",
+     "The department states the program is on hiatus while it restructures; this corrects the carried-forward record, which listed it as an available opportunity"
+    ],
+    [
+     "/eligibility",
+     "not_stated"
+    ],
+    [
+     "/costs",
+     "unknown"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mdcjc-s1",
+   "url": "https://dnr.maryland.gov/publiclands/pages/cjc.aspx",
+   "title": "Maryland Conservation Jobs Corps (CJC)",
+   "publisher": "Maryland Department of Natural Resources",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mdcjc-s1",
+   "oid": "md-cjc-hiatus",
+   "fields": [
+    "/program_status",
+    "/cycle/announcement_state"
+   ],
+   "cycle": "On hiatus as of 2026-09-08",
+   "quote": "Note: This program is on hiatus while we undergo an organizational restructure and make future plans for the program."
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "_why": "Identity resolution against the carried-forward 2026-09-08 draft. 'merge' means the new first-party record IS the same program as the draft row (same program name, same host, same official URL) and refreshes it in place. 'dupes' means the records may or may not be the same program; both are retained under P21 until a person confirms.",
+ "merge": {
+  "nih-sip": "web-nih-sip",
+  "nist-ship": "web-nist-ship",
+  "nasa-goddard-space-club-scholars": "web-goddard-space-club-scholars-program-nasa-goddard-space-fligh",
+  "si-nmnh-hs-internship": "web-nmnh-summer-high-school-internship-program-smithsonian-national-mus",
+  "jh-summer-jobs": "web-johns-hopkins-summer-jobs-program-johns-hopkins-health-sys",
+  "childrens-national-summer-hs-volunteer": "web-summer-high-school-volunteer-program-children-s-national-hosp",
+  "sibley-junior-volunteer": "jh-sibley-teen-volunteer",
+  "howard-university-hospital-candy-striper": "howard-university-hospital-teen-volunteer",
+  "mwhc-summer-junior-volunteer": "mary-washington-junior-volunteer",
+  "gmu-assip": "web-aspiring-scientists-summer-internship-program-assip-george-mason-university",
+  "umd-geog-hip": "web-umd-geog-hip",
+  "alexandria-syep": "web-summer-youth-employment-program-syep-city-of-alexandria-workf",
+  "frederick-work-ready": "web-work-ready-frederick-county-workfor",
+  "howard-county-syep": "web-summer-youth-employment-program-howard-county-office-of-",
+  "pgc-syep": "web-prince-george-s-county-summer-youth-enrichment-program-syep-prince-george-s-county-g",
+  "jhu-wise": "web-whiting-internships-in-science-and-engineering-wise-johns-hopkins-university",
+  "jhuapl-aspire": "web-aspire-high-school-internship-johns-hopkins-university",
+  "georgetown-gep": "web-gateway-exploration-program-in-medicine-gep-georgetown-university-sc",
+  "nps-ycc-shenandoah": "web-youth-conservation-corps-shenandoah-national-park-u-s-national-park-servic"
+ },
+ "dupes": {
+  "inova-hs-student-volunteers": [
+   "inova-fairfax-hs-volunteer",
+   "inova-alexandria-hs-volunteer",
+   "inova-fair-oaks-hs-volunteer",
+   "inova-loudoun-hs-volunteer",
+   "inova-mount-vernon-hs-summer-volunteer"
+  ],
+  "adventist-healthcare-volunteer": [
+   "adventist-shady-grove-volunteer",
+   "adventist-white-oak-volunteer"
+  ],
+  "luminis-student-volunteers": [
+   "luminis-lhaamc-student-volunteer",
+   "luminis-lhdcmc-student-volunteer"
+  ],
+  "suburban-junior-volunteer": [
+   "eml-007"
+  ],
+  "si-nmnh-hs-internship": [
+   "smithsonian-qcrew"
+  ]
+ }
+}

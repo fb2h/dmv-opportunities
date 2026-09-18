@@ -1,0 +1,131 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pwc-fire-junior-member",
+ "name": "Prince William County Volunteer Fire and Rescue Junior Member Program",
+ "org": "Prince William Fire & Rescue System",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://fireandrescuesystem.pwcva.gov/faqs/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "emergency_services",
+ "offerings": [
+  {
+   "oid": "pwc-fire-junior-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing junior membership at participating departments",
+   "ann": "announced",
+   "summary": "Some Prince William County volunteer fire departments take junior members from age 16, with all gear, uniforms and training provided free.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "engineering_trades"
+   ],
+   "subject_raw": [
+    "fire and rescue"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Participating Prince William County volunteer fire departments",
+     "county": "Prince William",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Some Volunteer Departments accept members into their Junior Member Program at age 16."
+   },
+   "fee": {
+    "status": "none",
+    "raw": "No, all required equipment, protective gear, uniforms, and training are provided to you at no cost."
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_raw": "Thirty volunteer hours a month (360 hours a year)",
+    "dur_raw": "Training completion one to three months depending on the member's ability to complete the training"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://fireandrescuesystem.pwcva.gov/contact/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Apply directly to individual volunteer departments; each has its own membership process",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations",
+     "not_stated",
+     "The system page does not say which departments run a junior programme; students must contact departments individually"
+    ],
+    [
+     "/schedule/hours_per_week/raw",
+     "unclear",
+     "The 30 hours a month figure is published for volunteers generally and may not apply to junior members"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pwcfire-s1",
+   "url": "https://fireandrescuesystem.pwcva.gov/faqs/",
+   "title": "FAQs | Prince William Fire & Rescue System",
+   "publisher": "Prince William County, Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pwcfire-s1",
+   "oid": "pwc-fire-junior-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing junior membership at participating departments",
+   "quote": "Some Volunteer Departments accept members into their Junior Member Program at age 16."
+  },
+  {
+   "sid": "pwcfire-s1",
+   "oid": "pwc-fire-junior-standing",
+   "fields": [
+    "/costs/fee_status"
+   ],
+   "cycle": "Ongoing junior membership at participating departments",
+   "quote": "No, all required equipment, protective gear, uniforms, and training are provided to you at no cost."
+  },
+  {
+   "sid": "pwcfire-s1",
+   "oid": "pwc-fire-junior-standing",
+   "fields": [
+    "/schedule/hours_per_week/raw"
+   ],
+   "cycle": "Ongoing junior membership at participating departments",
+   "quote": "Thirty volunteer hours a month (360 hours a year)"
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "georgetown-gep",
+ "name": "Gateway Exploration Program (GEP)",
+ "org": "Georgetown University School of Medicine",
+ "org_type": "university",
+ "host_state": "DC",
+ "program_url": "https://meded.georgetown.edu/diversityequityandinclusion/high-school-summer-internships/gep/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "university",
+ "offerings": [
+  {
+   "oid": "georgetown-gep-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A six-week summer programme at Georgetown's medical school where students shadow clinicians, work through medical simulations and complete a health disparities research project.",
+   "types": [
+    "shadowing",
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "health_medicine",
+    "science_research",
+    "community_service"
+   ],
+   "subject_raw": [
+    "clinical shadowing",
+    "medical simulations",
+    "health disparities research"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Georgetown University Medical Dental Building",
+     "addr": "37th and O Streets, N.W.",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20057",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "rising sophomores, juniors and seniors"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "District of Columbia Public Schools",
+     "Prince William County Public Schools"
+    ],
+    "raw": "Historically from District of Columbia Public Schools; Starting Summer 2026, scholars from Prince William County Public Schools will also be invited."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": "2026-06-22",
+    "end": "2026-07-31",
+    "dur_min": 6,
+    "dur_unit": "week"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "instructions": "applications submitted through your participating school system",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Entry runs through the participating school system and no deadline is published on this page"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ],
+    [
+     "/costs",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "gep-s1",
+   "url": "https://meded.georgetown.edu/diversityequityandinclusion/high-school-summer-internships/gep/",
+   "title": "Gateway Exploration Program | Georgetown University",
+   "publisher": "Georgetown University School of Medicine",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "gep-s1",
+   "oid": "georgetown-gep-2026",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/school/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "rising sophomores, juniors and seniors ... Starting Summer 2026, scholars from Prince William County Public Schools will also be invited."
+  },
+  {
+   "sid": "gep-s1",
+   "oid": "georgetown-gep-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "June 22 - July 31, 2026"
+  }
+ ]
+}

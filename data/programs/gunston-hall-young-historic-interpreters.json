@@ -1,0 +1,142 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "gunston-hall-young-historic-interpreters",
+ "name": "Gunston Hall Young Historic Interpreters",
+ "org": "George Mason's Gunston Hall",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://gunstonhall.org/support/volunteering-and-internships/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "gunston-yhi-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing monthly programme",
+   "ann": "announced",
+   "summary": "Young interpreters meet monthly to learn eighteenth-century skills such as hearth cooking and historic clothing, then help set up and staff Gunston Hall's public events.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "subject_raw": [
+    "hearth cooking",
+    "18th-century games",
+    "historic clothing",
+    "Eagle Festival",
+    "Declaration Day",
+    "Summer Saturdays",
+    "Christmastide"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "George Mason's Gunston Hall",
+     "addr": "10709 Gunston Road",
+     "city": "Mason Neck",
+     "county": "Fairfax",
+     "state": "VA",
+     "zip": "22079",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 8,
+    "max": 16,
+    "basis": "application_date",
+    "raw": "aged 8-16 years old"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11"
+    ],
+    "basis": "application_date",
+    "raw": "aged 8-16 years old"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "schedule_raw": "Monthly meetings; multiple volunteer shifts at public programs throughout the year"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://app.betterimpact.com/Application?OrganizationGuid=a353f09d-6e2a-41bb-abae-615f5b08abc6&ApplicationFormNumber=2",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/max",
+     "unclear",
+     "The upper age of 16 excludes most twelfth graders and many eleventh graders; grade values are recorded conservatively"
+    ],
+    [
+     "/costs",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "gunston-s1",
+   "url": "https://gunstonhall.org/support/volunteering-and-internships/",
+   "title": "Volunteering and Internships - George Mason's Gunston Hall",
+   "publisher": "George Mason's Gunston Hall",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "gunston-s1",
+   "oid": "gunston-yhi-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Ongoing monthly programme",
+   "quote": "aged 8-16 years old"
+  },
+  {
+   "sid": "gunston-s1",
+   "oid": "gunston-yhi-standing",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Ongoing monthly programme",
+   "quote": "hearth cooking, 18th-century games, and historic clothing; help set up and decorate for programs; volunteer at public events including Eagle Festival, Declaration Day, Summer Saturdays, and Christmastide"
+  }
+ ]
+}

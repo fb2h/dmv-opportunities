@@ -1,0 +1,141 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "homeward-trails-shelter-helpers",
+ "name": "Homeward Trails Homer's Shelter Helpers",
+ "org": "Homeward Trails Animal Rescue",
+ "org_type": "nonprofit",
+ "host_state": "VA",
+ "program_url": "https://www.homewardtrails.org/help-out/homers-helpers-youth-volunteers/",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "nonprofit",
+ "offerings": [
+  {
+   "oid": "homeward-shelter-helpers",
+   "cycle_kind": "session",
+   "cycle_label": "Monthly Friday evening sessions",
+   "ann": "announced",
+   "summary": "Once a month, teens spend an evening at the animal rescue sorting donations, cleaning, organising supplies, making enrichment toys and caring for cats, earning 2.5 service hours.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "environment_outdoors",
+    "health_medicine"
+   ],
+   "subject_raw": [
+    "animal care",
+    "shelter operations"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Homeward Trails Adoption Center",
+     "city": "Fairfax Station",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 13,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Youth ages 13-17"
+   },
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "registration",
+      "min": 25,
+      "unit": "session",
+      "raw": "$25 per session",
+      "mandatory": true
+     }
+    ]
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; earns 2.5 community service hours per session"
+   },
+   "sched": {
+    "schedule_raw": "One Friday evening a month, 6:00 PM - 8:30 PM"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://www.signupgenius.com/go/20F084EA8AE2DA5F49-homers",
+    "window": "rolling",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Sessions are booked through a sign-up sheet rather than a deadline"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "homeward-s1",
+   "url": "https://www.homewardtrails.org/help-out/homers-helpers-youth-volunteers/",
+   "title": "Homer's Helpers Youth Programs",
+   "publisher": "Homeward Trails Animal Rescue",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "homeward-s1",
+   "oid": "homeward-shelter-helpers",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Monthly Friday evening sessions",
+   "quote": "Youth ages 13-17"
+  },
+  {
+   "sid": "homeward-s1",
+   "oid": "homeward-shelter-helpers",
+   "fields": [
+    "/costs/fees/0/amount"
+   ],
+   "cycle": "Monthly Friday evening sessions",
+   "quote": "$25 per session"
+  },
+  {
+   "sid": "homeward-s1",
+   "oid": "homeward-shelter-helpers",
+   "fields": [
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Monthly Friday evening sessions",
+   "quote": "One Friday evening a month ... 6:00 PM - 8:30 PM"
+  }
+ ]
+}

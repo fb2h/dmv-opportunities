@@ -1,0 +1,165 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nasa-goddard-space-club-scholars",
+ "name": "Goddard Space Club Scholars Program",
+ "org": "NASA Goddard Space Flight Center, Office of STEM Engagement",
+ "org_type": "federal",
+ "host_state": "MD",
+ "program_url": "https://www.nasa.gov/goddard/stem/space-club-scholars-program/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "nasa-space-club-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A six-week in-person summer NASA experience for local 10th-12th graders at Goddard in Greenbelt or Wallops Flight Facility.",
+   "types": [
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "science_research",
+    "engineering_trades",
+    "computing_technology"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "NASA Goddard Space Flight Center",
+     "city": "Greenbelt",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "confirmed_campus_approximation"
+    },
+    {
+     "venue": "NASA Wallops Flight Facility",
+     "city": "Wallops Island",
+     "county": "Accomack",
+     "state": "VA",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "At time of application, enrolled in grade 10, 11, or 12 and in good standing; Must have completed Sophomore year (10th grade) in high school by the starting date of the program"
+   },
+   "age": {
+    "min": 16,
+    "basis": "program_start",
+    "raw": "Must be 16 years of age by the starting date of the program"
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "Must be a U.S. citizen"
+   },
+   "residency": {
+    "status": "conditional",
+    "radius": 50,
+    "anchor": "NASA's Goddard Space Flight Center, Greenbelt, MD, or NASA's Wallops Flight Facility, Wallops Island, VA",
+    "raw": "Must live and maintain a permanent residence within commuting distance (50 miles) of NASA's Goddard Space Flight Center, Greenbelt, MD, or NASA's Wallops Flight Facility, Wallops Island, VA"
+   },
+   "gpa": {
+    "min": 3.0,
+    "scale": 4.0,
+    "raw": "Minimum 3.0 GPA (unweighted) on a 4.0 scale"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "start_raw": "June 29",
+    "end_raw": "August 7",
+    "dur_min": 6,
+    "dur_unit": "week",
+    "schedule_raw": "six weeks, five days per week"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 4,
+      "day": 17,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "The application deadline is April 17, 11:59 p.m. EST."
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not announced; page states Summer 2026 positions are filled"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "nasa-scs-s1",
+   "url": "https://www.nasa.gov/goddard/stem/space-club-scholars-program/",
+   "title": "Goddard Space Club Scholars Program",
+   "publisher": "NASA",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "nasa-scs-s1",
+   "oid": "nasa-space-club-2026",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/age/min",
+    "/eligibility/citizenship/raw",
+    "/eligibility/residency/radius_miles",
+    "/eligibility/gpa/min"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "At time of application, enrolled in grade 10, 11, or 12 and in good standing; Must have completed Sophomore year (10th grade) in high school by the starting date of the program; Must be 16 years of age by the starting date of the program; Must be a U.S. citizen; Must live and maintain a permanent residence within commuting distance (50 miles) of NASA's Goddard Space Flight Center, Greenbelt, MD, or NASA's Wallops Flight Facility, Wallops Island, VA. Minimum 3.0 GPA (unweighted) on a 4.0 scale"
+  },
+  {
+   "sid": "nasa-scs-s1",
+   "oid": "nasa-space-club-2026",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "All positions have been filled for Summer 2026. Please apply again next year."
+  }
+ ]
+}

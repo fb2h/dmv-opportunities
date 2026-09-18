@@ -1,0 +1,142 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "carroll-county-syep",
+ "name": "Carroll County Summer Youth Employment Program",
+ "org": "Carroll County Workforce Development",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://carrollworks.com/youth-young-adult/summer-youth-program/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "carroll-syep-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual July to August placement",
+   "ann": "announced",
+   "summary": "A six-week paid summer job with a Carroll County business at Maryland minimum wage, with career guidance, for eligible 16 to 18 year olds.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Carroll County business worksites",
+     "county": "Carroll",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "Ages 16-18"
+   },
+   "other": [
+    [
+     "required",
+     "IEP/504 Plan, low reading or math skills below 9th grade level, high school drop-out, homelessness, runaway or foster care status, pregnancy or parenting, criminal record, low income or SNAP/TCA/free lunch receipt, English Language Learner status, or disabilities"
+    ]
+   ],
+   "logic": "complex",
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "Participants will earn current Maryland Minimum Wage"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 6,
+    "dur_unit": "week",
+    "schedule_raw": "July - August each summer"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://carrollworks.com/youth/participant-application/",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/eligibility/logic",
+     "complex",
+     "Eligibility is an OR list of barrier criteria; do not flatten it into AND requirements"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named on the page"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "Pay is tied to the Maryland minimum wage rather than a published figure"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "carrollsyep-s1",
+   "url": "https://carrollworks.com/youth-young-adult/summer-youth-program/",
+   "title": "Summer Youth Employment Program - Carroll County Workforce Development",
+   "publisher": "Carroll County Workforce Development",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "carrollsyep-s1",
+   "oid": "carroll-syep-standing",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Annual July to August placement",
+   "quote": "Participants will earn current Maryland Minimum Wage"
+  },
+  {
+   "sid": "carrollsyep-s1",
+   "oid": "carroll-syep-standing",
+   "fields": [
+    "/summary",
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Annual July to August placement",
+   "quote": "career guidance and opportunities for youth to gain meaningful work experience onsite with Carroll businesses"
+  }
+ ]
+}

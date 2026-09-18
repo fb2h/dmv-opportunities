@@ -1,0 +1,144 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "henrico-doctors-junior-volunteer",
+ "name": "Henrico Doctors' Hospital Junior Volunteer Program",
+ "org": "Henrico Doctors' Hospital (HCA Virginia)",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.hcavirginia.com/locations/henrico-doctors-hospital/for-visitors/volunteers",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "henrico-doctors-jr-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual summer junior volunteer intake",
+   "ann": "unclear",
+   "summary": "High schoolers volunteer at Henrico Doctors' Hospital from June through August, with the option to continue through the school year.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Henrico Doctors' Hospital",
+     "addr": "1602 Skipwith Rd",
+     "city": "Richmond",
+     "county": "Henrico",
+     "state": "VA",
+     "zip": "23229",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "high school students"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "runs June through August with option to continue through school year"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/1453348013",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "opens": {
+     "month": 3,
+     "day": 15,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "late spring (March 15 - April 15)"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 4,
+      "day": 15,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "late spring (March 15 - April 15)"
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "The March 15 to April 15 window is published without a year"
+    ],
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year named"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "henricodoc-s1",
+   "url": "https://www.hcavirginia.com/locations/henrico-doctors-hospital/for-visitors/volunteers",
+   "title": "Volunteers | Henrico Doctors' Hospital",
+   "publisher": "HCA Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "henricodoc-s1",
+   "oid": "henrico-doctors-jr-standing",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Annual summer junior volunteer intake",
+   "quote": "late spring (March 15 - April 15)"
+  },
+  {
+   "sid": "henricodoc-s1",
+   "oid": "henrico-doctors-jr-standing",
+   "fields": [
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Annual summer junior volunteer intake",
+   "quote": "runs June through August"
+  }
+ ]
+}

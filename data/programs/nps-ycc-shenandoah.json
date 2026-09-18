@@ -1,0 +1,259 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nps-ycc-shenandoah",
+ "name": "Youth Conservation Corps at Shenandoah National Park",
+ "org": "U.S. National Park Service, Shenandoah National Park",
+ "org_type": "federal",
+ "host_state": "VA",
+ "program_url": "https://www.nps.gov/shen/learn/management/ycc.htm",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "nps-ycc-shen-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 YCC season",
+   "ann": "announced",
+   "summary": "A paid summer conservation crew at Shenandoah at $15 an hour, building trails, restoring streams, improving wildlife habitat and preserving historic buildings.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "engineering_trades",
+    "community_service"
+   ],
+   "subject_raw": [
+    "building trails",
+    "maintaining fences",
+    "cleaning up campgrounds",
+    "improving wildlife habitat",
+    "place-based STEM",
+    "stream restoration",
+    "historic building preservation"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Shenandoah National Park",
+     "city": "Luray",
+     "county": "Page",
+     "state": "VA",
+     "zip": "22835",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "Youth, 15-18 years old, who are U.S. citizens or permanent residents are eligible."
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "U.S. citizens or permanent residents"
+   },
+   "other": [
+    [
+     "required",
+     "Participants must commute daily; transportation unavailable"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "$15.00/hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start_raw": "June 15",
+    "end_raw": "August 6",
+    "dur_min": 8,
+    "dur_unit": "week"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "instructions": "Application form download; inquiries to nathaniel_phelps@nps.gov",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-04-24",
+      "year": 2026,
+      "month": 4,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Applications are being accepted for the 2026 season! The last day to apply is April 24, 2026."
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/reported_status",
+     "unclear",
+     "The page still reads as though the 2026 season is open although the stated deadline of April 24, 2026 has passed; treat as a past cycle and monitor for the 2027 announcement"
+    ],
+    [
+     "/schedule/hours_per_week",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "nps-shen-summer-youth-corps-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Shenandoah Summer Youth Corps 2026",
+   "ann": "announced",
+   "summary": "A paid four-week residential conservation crew run with the Appalachian Conservation Corps, doing trail and campground maintenance and invasive plant removal.",
+   "types": [
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "engineering_trades",
+    "community_service"
+   ],
+   "subject_raw": [
+    "trail maintenance",
+    "facilities rehabilitation and maintenance",
+    "campground maintenance",
+    "exotic/invasive plant removal"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "residential",
+   "loc": [
+    {
+     "venue": "Shenandoah National Park",
+     "city": "Luray",
+     "county": "Page",
+     "state": "VA",
+     "zip": "22835",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "Young people between 16 and 18 years of age, who are permanent residents of the United States, its Territories or possessions"
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "permanent residents of the United States, its Territories or possessions"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "$15 an hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 4,
+    "dur_unit": "week",
+    "dur_raw": "Two four-week sessions",
+    "housing_raw": "weekday camping in session one; full residential in session two"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://appalachiancc.org/open-positions",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The page states only that applications are now closed for the 2026 season"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "shenycc-s1",
+   "url": "https://www.nps.gov/shen/learn/management/ycc.htm",
+   "title": "Youth Corps Programs - Shenandoah National Park",
+   "publisher": "U.S. National Park Service",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "shenycc-s1",
+   "oid": "nps-ycc-shen-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/citizenship/raw"
+   ],
+   "cycle": "Summer 2026 YCC season",
+   "quote": "Youth, 15-18 years old, who are U.S. citizens or permanent residents are eligible."
+  },
+  {
+   "sid": "shenycc-s1",
+   "oid": "nps-ycc-shen-2026",
+   "fields": [
+    "/costs/compensation",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026 YCC season",
+   "quote": "$15.00/hour ... Applications are being accepted for the 2026 season! The last day to apply is April 24, 2026."
+  },
+  {
+   "sid": "shenycc-s1",
+   "oid": "nps-shen-summer-youth-corps-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/housing_mode"
+   ],
+   "cycle": "Shenandoah Summer Youth Corps 2026",
+   "quote": "Young people between 16 and 18 years of age, who are permanent residents of the United States, its Territories or possessions"
+  }
+ ]
+}

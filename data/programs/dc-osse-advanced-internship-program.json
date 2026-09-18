@@ -1,0 +1,176 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "dc-osse-advanced-internship-program",
+ "name": "DCPS Advanced Internship Program (AIP)",
+ "org": "DC Public Schools / OSSE - DCPS Career Ready",
+ "org_type": "school_district",
+ "host_state": "DC",
+ "program_url": "https://dcpscareerready.org/wbl/aip/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "dcps-aip-2025-26-verified",
+   "cycle_kind": "academic_year",
+   "cycle_label": "School year 2025-2026",
+   "ann": "announced",
+   "summary": "A paid school-year internship at seventeen dollars an hour, eight to twelve hours a week, for DC juniors and seniors who have completed two levels of their CTE pathway.",
+   "types": [
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "business_law_government",
+    "computing_technology",
+    "engineering_trades",
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across the District of Columbia",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "specified_school_year",
+    "school_year": "2025-2026",
+    "raw": "Be a DC high school senior or junior (priority given to seniors)"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "District of Columbia"
+    ],
+    "raw": "Be a DC resident"
+   },
+   "other": [
+    [
+     "required",
+     "Have completed at least the first and second-level courses in their CTE program of study"
+    ],
+    [
+     "preferred",
+     "priority given to seniors"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 17.0,
+      "unit": "hour",
+      "raw": "Paid at $17/hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": "2025-11-12",
+    "end": "2026-05-22",
+    "hpw_min": 8,
+    "hpw_max": 12,
+    "hpw_raw": "8-12 hours per week"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "date": "2025-04-09",
+     "year": 2025,
+     "month": 4,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "April 9 - July 2, 2025"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2025-07-02",
+      "year": 2025,
+      "month": 7,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "April 9 - July 2, 2025"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "Registration for school year 2026-2027 is described as expected in Spring 2026 but no dated window is published, so nothing current can be shown"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "dcpsaip-s1",
+   "url": "https://dcpscareerready.org/wbl/aip/",
+   "title": "Advanced Internship Program (AIP)",
+   "publisher": "DC Public Schools Career Ready",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "dcpsaip-s1",
+   "oid": "dcps-aip-2025-26-verified",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "School year 2025-2026",
+   "quote": "Be a DC resident ... Be a DC high school senior or junior (priority given to seniors)"
+  },
+  {
+   "sid": "dcpsaip-s1",
+   "oid": "dcps-aip-2025-26-verified",
+   "fields": [
+    "/costs/compensation",
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "School year 2025-2026",
+   "quote": "Paid at $17/hour ... 8-12 hours per week"
+  },
+  {
+   "sid": "dcpsaip-s1",
+   "oid": "dcps-aip-2025-26-verified",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "School year 2025-2026",
+   "quote": "November 12, 2025 - May 22, 2026"
+  }
+ ]
+}

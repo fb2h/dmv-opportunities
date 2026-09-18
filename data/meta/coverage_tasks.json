@@ -1,0 +1,686 @@
+[
+ {
+  "date": "2026-09-08",
+  "lane": "Federal science and museums",
+  "checked": "Smithsonian National Air and Space Museum internships",
+  "status": "checked_none",
+  "result": "Internships require a high school diploma plus college enrollment: 'Our interns are required to be high school graduates and must be enrolled in, or recently graduated from, a degree-granting undergraduate or graduate program at an accredited college or university.' Out of scope for high schoolers; the museum's Explainers role was captured separately.",
+  "action": "No further action; the Explainers route is the in-scope path at this museum.",
+  "url": "https://airandspace.si.edu/get-involved/internships"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Federal science and museums",
+  "checked": "Smithsonian Environmental Research Center internships, Edgewater MD",
+  "status": "checked_none",
+  "result": "Minimum level is a currently enrolled undergraduate or master's student, or a recent graduate. No high school route published, although the stipend is $700 per week.",
+  "action": "Recheck annually in case a high school track is added.",
+  "url": "https://internships.si.edu/opportunity/internship-opportunities-smithsonian-environmental-research-center"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Federal science and museums",
+  "checked": "NASA Goddard Astrophysics Science Division high school page",
+  "status": "checked_none",
+  "result": "The page is stale: the newest deadlines listed are from 2011 and one program links to a West Virginia site. Not usable as current-cycle evidence.",
+  "action": "Do not cite; monitor the Goddard STEM Engagement pages instead.",
+  "url": "https://science.gsfc.nasa.gov/660/student_opps/highschool.html"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Federal science and museums",
+  "checked": "Library of Congress High School Work Study Program page",
+  "status": "blocked",
+  "result": "The page returns HTTP 403 to a plain fetch, as does the Internships and Fellowships overview. The program exists but its current-cycle facts could not be retrieved.",
+  "action": "Retrieve through a rendered browser or request the program document directly before publishing anything about it.",
+  "url": "https://www.loc.gov/item/internships/high-school-work-study-program-hrs/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Federal science and museums",
+  "checked": "Smithsonian Associates Youth Teaching Assistants; NCI Frederick WHK program page; AEOP program pages",
+  "status": "blocked",
+  "result": "Three first-party pages could not be fetched in this session because the fetch permission request went unanswered. Facts for the WHK program came from the cancer.gov application page instead.",
+  "action": "Retry these three URLs, or open them in a browser, to confirm current-cycle dates.",
+  "url": "https://smithsonianassociates.org/ticketing/camp/yta/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Federal science",
+  "checked": "NOAA student opportunities database",
+  "status": "checked_found",
+  "result": "Most listed opportunities are national competitions, camps or college-level programs. In-scope leads: the Hutton Junior Fisheries Biology Program (paid, national placements) and the UMES Geosciences Bridge Program for graduating seniors.",
+  "action": "Verify Hutton and UMES against their own first-party pages and check whether any placements are in DC, Maryland or Virginia.",
+  "url": "https://www.noaa.gov/education/opportunities/students"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Maryland",
+  "checked": "Frederick Health volunteer opportunities",
+  "status": "checked_none",
+  "result": "Eighteen volunteer roles are listed with no age, grade or youth-program information of any kind.",
+  "action": "Call volunteer services to establish whether high schoolers are accepted before recording an opportunity.",
+  "url": "https://www.frederickhealth.org/about/volunteering/volunteer-opportunities/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Maryland",
+  "checked": "Kennedy Krieger Institute volunteer page",
+  "status": "checked_none",
+  "result": "Volunteer categories are listed (corporate groups, adaptive sports, events, pet therapy) with no stated age rule or teen-specific route.",
+  "action": "Contact volunteer engagement to confirm whether any role is open to high schoolers.",
+  "url": "https://www.kennedykrieger.org/about-us/stay-connected/volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Virginia",
+  "checked": "Valley Health Winchester Medical Center volunteering",
+  "status": "checked_none",
+  "result": "Only an adult volunteer application is published; no teen or junior program is described.",
+  "action": "Contact Volunteer Services to confirm whether a youth route exists.",
+  "url": "https://www.valleyhealthlink.com/about-us/volunteer/volunteer-at-winchester-medical-center/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Virginia",
+  "checked": "Carilion Clinic volunteer services",
+  "status": "blocked",
+  "result": "The volunteer page renders only a JavaScript error to a plain fetch, so no program facts could be read.",
+  "action": "Review in a rendered browser; Carilion is the main health system for the Roanoke region and is a coverage gap until then.",
+  "url": "https://www.carilionclinic.org/volunteers"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - regional systems",
+  "checked": "MedStar Health volunteer hub",
+  "status": "checked_found",
+  "result": "The hub lists eleven MedStar facilities but publishes no age rules; only the Washington Hospital Center page carried a described high school summer program.",
+  "action": "Read each facility volunteer page individually - Franklin Square, Good Samaritan, Harbor, Union Memorial, Montgomery, Southern Maryland, St. Mary's, Georgetown, National Rehabilitation.",
+  "url": "https://www.medstarhealth.org/services/volunteer-opportunities"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks and zoos",
+  "checked": "Smithsonian National Zoo teen volunteers",
+  "status": "checked_none",
+  "result": "The teen volunteer page states there are only adult opportunities at present: 'Unfortunately, there are only adult (18+) volunteer opportunities at this time.'",
+  "action": "Monitor; the zoo has run teen programs historically and the page is the announcement point.",
+  "url": "https://nationalzoo.si.edu/support/volunteer/teens"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - Virginia",
+  "checked": "Norfolk Emerging Leaders youth employment program",
+  "status": "blocked",
+  "result": "norfolk.gov could not be fetched: the robots.txt request timed out, so the page was not read.",
+  "action": "Retry or review in a browser; Norfolk Emerging Leaders is a paid city youth employment program and a real gap until confirmed.",
+  "url": "https://www.norfolk.gov/5647/Norfolk-Emerging-Leaders-NEL"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - Virginia",
+  "checked": "City of Chesapeake summer youth employment postings",
+  "status": "follow_up",
+  "result": "Individual Summer Youth Employment postings were found on the city jobs portal for Parks Recreation and Tourism, the Library, the Commissioner of Revenue and the Sheriff's Office, indicating a real city program with department placements.",
+  "action": "Read the city's program page and one or two live postings to capture wage, age rule and application window.",
+  "url": "https://jobs.cityofchesapeake.net/postings/17309"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - Virginia",
+  "checked": "Richmond, Henrico and Chesterfield summer youth employment",
+  "status": "follow_up",
+  "result": "Search returned mostly third-party directories, school summer academies and workforce-board pages rather than a first-party youth employment program page.",
+  "action": "Search each locality's own workforce or human services site directly; Capital Region Workforce Partnership is the likely host.",
+  "url": "https://henrico.gov/assets/youth_resource_guide.pdf"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Universities - Virginia",
+  "checked": "Virginia Space Grant Consortium BLAST program",
+  "status": "checked_none",
+  "result": "BLAST is a free three- to four-day residential STEM activity program for 8th and 9th graders at five Virginia universities. Students attend rather than perform duties, so it is out of scope under P01.",
+  "action": "None. Recorded so it is not re-collected.",
+  "url": "https://vsgc.odu.edu/blast/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Universities - Maryland",
+  "checked": "UMBC BUILD a Bridge to STEM summer research internship",
+  "status": "checked_none",
+  "result": "Designed for transfer students nominated by collaborating institutions, not high schoolers, and the page is archived and no longer updated.",
+  "action": "None.",
+  "url": "https://stembuild.umbc.edu/build-summer-research/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Universities - Virginia",
+  "checked": "Virginia Tech, William and Mary, Old Dominion high school research",
+  "status": "follow_up",
+  "result": "General searches surfaced only third-party listicles and undergraduate research pages. No first-party high school research program page was located for these three universities in this pass.",
+  "action": "Search each university's outreach or K-12 STEM office directly rather than by general query.",
+  "url": "https://www.research.undergraduate.vt.edu/research-and-engagement/student-research-and-engagement/summer-research/summer-undergraduate-research.html"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - DC utilities",
+  "checked": "DC Water Summer Internship Program",
+  "status": "checked_none",
+  "result": "Requires current full-time enrollment at a college or university with at least 30 credit hours completed. High school students are not eligible.",
+  "action": "None.",
+  "url": "https://www.dcwater.com/work-with-us/internship-program"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - Virginia",
+  "checked": "Newport News Youth Empowerment Program",
+  "status": "checked_none",
+  "result": "A 30 to 60 day supervision, life-skills and vocational-preparation service for at-risk youth aged 12 to 17. No work placement is described, so it fails the P01 work-duty test.",
+  "action": "None; recheck if a paid placement component is added.",
+  "url": "https://www.nnva.gov/2322/Youth-Empowerment-Program"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - Maryland",
+  "checked": "Baltimore County Summer Youth Employment Program news release",
+  "status": "blocked",
+  "result": "baltimorecountymd.gov returned HTTP 403 to a plain fetch. A 2026 Temporary Summer Youth Worker posting exists on the county's jobs portal, so the program is real but unverified here.",
+  "action": "Retrieve through a rendered browser or read the governmentjobs.com posting directly.",
+  "url": "https://www.baltimorecountymd.gov/departments/county-executive/news/baltimore-county-announces-open-applications-expanded-summer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - Virginia",
+  "checked": "Loudoun County PRCS volunteer portal and Sheriff youth programs",
+  "status": "follow_up",
+  "result": "Both county pages route to a volunteer portal without publishing any program facts. Loudoun teen volunteering exists but no ages, schedule or application window are on the county pages themselves.",
+  "action": "Query the volunteer.loudoun.gov portal by the teen_friendly keyword and capture individual listings.",
+  "url": "https://www.loudoun.gov/6266/Volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Employers",
+  "checked": "MITRE, Leidos, Booz Allen, Northrop Grumman high school internships",
+  "status": "checked_none",
+  "result": "General searching surfaced only third-party listicles and college or new-graduate programs. No first-party high school requisition in DC, Maryland or Virginia was confirmed in this pass.",
+  "action": "Query each employer's own job portal by minimum education level and age rather than by web search.",
+  "url": "https://www.northropgrumman.com/careers"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Nonprofits",
+  "checked": "ACE Mentor Program of Baltimore",
+  "status": "follow_up",
+  "result": "A free weekly mentored design programme for grades 9-12 running February to May, giving access to summer internships and scholarships. It sits on the P01 boundary because the sessions are a mentored project rather than assigned duties inside an organisation.",
+  "action": "Owner decision needed on scope; separately capture the summer internships it feeds, which would be clearly in scope.",
+  "url": "https://www.acementorbaltimore.org/students"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Maryland",
+  "checked": "MedStar Montgomery Medical Center volunteering",
+  "status": "checked_none",
+  "result": "No youth route is described and the page states the hospital is not currently accepting volunteers, apart from the Women's Board Gift Shop.",
+  "action": "Recheck when the hospital reopens volunteer intake.",
+  "url": "https://www.medstarhealth.org/locations/medstar-montgomery-medical-center/volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Libraries - Northern Virginia",
+  "checked": "Fairfax County Public Library volunteering",
+  "status": "follow_up",
+  "result": "Eight current volunteer roles are listed (Fix-it Clinic assistant, Scratch coding leader, technology tutor and others) but none states an age or grade rule on the library page; everything routes to the county volunteer portal.",
+  "action": "Query volunteer.fairfaxcounty.gov listing by listing to capture per-role age rules.",
+  "url": "https://www.fairfaxcounty.gov/library/branch-out/volunteering"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Libraries - Montgomery County",
+  "checked": "Montgomery County Public Libraries volunteering",
+  "status": "follow_up",
+  "result": "The page fetched carries general library service information and no volunteer program facts.",
+  "action": "Find the MCPL volunteer application page directly; the carried-forward Teen Advisory Board record remains unverified until then.",
+  "url": "https://www.montgomerycountymd.gov/Library/about/volunteer.html"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - DC",
+  "checked": "MBSYEP current-cycle dates on summerjobs.dc.gov",
+  "status": "follow_up",
+  "result": "The programme is confirmed for youth aged 14 to 24 but neither the DOES service page nor summerjobs.dc.gov published an application window, wage or programme dates in this pass; youth applications are shown as closed.",
+  "action": "Recheck in December or January when the next cycle opens; this is the District's largest paid youth programme and should not be published on pattern alone.",
+  "url": "https://summerjobs.dc.gov/page/mbsyep"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - National Park Service Maryland",
+  "checked": "Youth Conservation Corps at Catoctin Mountain Park",
+  "status": "follow_up",
+  "result": "The NPS article confirms a long-running YCC at Catoctin (which also partners with Antietam and Monocacy) for ages 15 to 18, but it is a history article with no current dates, wage or application route.",
+  "action": "Find the park's current-season YCC announcement page before recording a publishable offering.",
+  "url": "https://www.nps.gov/articles/000/the-youth-conservation-corps-at-catoctin-mountain-park.htm"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Local government - DC",
+  "checked": "DOES High School Internship Program page",
+  "status": "blocked",
+  "result": "does.dc.gov returned HTTP 403 to a plain fetch, so the HSIP current-cycle facts could not be re-verified.",
+  "action": "Retrieve through a rendered browser; HSIP is a carried-forward record that remains unverified.",
+  "url": "https://does.dc.gov/page/high-school-internship-program"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - DC",
+  "checked": "DCPS Career-Ready Internships",
+  "status": "follow_up",
+  "result": "The DCPS page carries a student success story about a paid CareFirst internship but publishes no eligibility, application window or wage.",
+  "action": "Request the programme one-pager from OSSE, which publishes a Career and Technical Education Advanced Internship Program document.",
+  "url": "https://dcps.dc.gov/page/career-ready-internships"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Libraries - Northern Virginia",
+  "checked": "Arlington Public Library teen volunteers",
+  "status": "follow_up",
+  "result": "Teen volunteering is confirmed to exist and is described as building job skills and community service hours, but no age, schedule or duty detail is published; everything routes to a Galaxy Digital portal.",
+  "action": "Read individual listings on the Arlington volunteer portal.",
+  "url": "https://library.arlingtonva.us/support-your-library/volunteer-opportunities/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Maryland",
+  "checked": "LifeBridge Northwest Hospital teen volunteer page",
+  "status": "blocked",
+  "result": "The teen volunteer URL now resolves to a page about a pharmacy residency; the teen programme content was not retrievable.",
+  "action": "Find LifeBridge's current teen volunteer page; the carried-forward Northwest Hospital teen record is unverified.",
+  "url": "https://lifebridgehealth.org/Northwest/TeenVolunteerProgram.aspx"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Virginia",
+  "checked": "Bon Secours Richmond volunteering",
+  "status": "follow_up",
+  "result": "An application link exists but the page publishes no age rule, duties or schedule, and does not say whether teens are accepted.",
+  "action": "Contact Richmond volunteer services or read the application form itself.",
+  "url": "https://www.bonsecours.com/jobs-education/volunteer/volunteer-in-richmond"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Eastern Shore",
+  "checked": "UM Shore Regional Health volunteering",
+  "status": "follow_up",
+  "result": "A student volunteer category is referenced but no age or grade rule, schedule or hospital site list is published.",
+  "action": "Read the how-to-apply page and the volunteer information packet.",
+  "url": "https://www.umms.org/shore/giving/volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Maryland",
+  "checked": "Montgomery Parks and M-NCPPC volunteer landing pages",
+  "status": "follow_up",
+  "result": "Both confirm Student Service Learning volunteering for teenagers but publish no ages, duties or schedules on the landing pages.",
+  "action": "Read montgomeryparks.org/support/volunteer/ssl/ and pgparks.com volunteer listings for the individual roles.",
+  "url": "https://www.mncppc.org/volunteer/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Employers - YMCA",
+  "checked": "YMCA of Metropolitan Washington careers",
+  "status": "follow_up",
+  "result": "The careers page lists role families including aquatics and child care but states no minimum age, so no teen job can be recorded from it.",
+  "action": "Read individual lifeguard and camp counsellor postings on the YMCA applicant portal, where the age floor is normally stated.",
+  "url": "https://www.ymcadc.org/careers/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Apprenticeship - Virginia",
+  "checked": "Virginia youth registered apprenticeship",
+  "status": "follow_up",
+  "result": "Searching doe.virginia.gov and doli.virginia.gov surfaced only an unrelated annual report. The Virginia Registered Apprenticeship youth overview exists as a PDF but no current programme page was located.",
+  "action": "Retrieve the DOLI youth apprenticeship overview packet directly and check each Northern Virginia school division's CTE work-based learning page.",
+  "url": "https://www.doli.virginia.gov/wp-content/uploads/2018/10/1-YRA-Overview-packet-revised-10-10-18.-3.pdf"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Nonprofits - animal welfare",
+  "checked": "Fairfax County Animal Services volunteering",
+  "status": "checked_none",
+  "result": "The shelter states plainly that volunteers must be at least 18 with no exceptions even with a parent. Separate youth activities (Reading Tails, How Kids Can Help, school projects) exist but were not detailed on this page.",
+  "action": "Check the Fairfax Animal Services youth programmes page for anything that meets the work-duty test.",
+  "url": "https://www.fairfaxcounty.gov/animalservices/volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Maryland",
+  "checked": "Baltimore County Recreation and Parks volunteering",
+  "status": "follow_up",
+  "result": "The page explains volunteer registration and background checks but names no roles and no age rules.",
+  "action": "Read the county's Job and Volunteer Opportunities listing for individual teen roles.",
+  "url": "https://www.baltimorecountymd.gov/departments/recreation/jobs-volunteers/volunteer-now"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Northern Virginia",
+  "checked": "Arlington County Parks teen internships and Park Corps",
+  "status": "blocked",
+  "result": "parks.arlingtonva.us could not be fetched: the robots.txt request failed. Arlington runs a Park Corps and teen internship route that remains unverified.",
+  "action": "Retrieve in a rendered browser; Arlington is a significant gap for Northern Virginia teens.",
+  "url": "https://parks.arlingtonva.us/programs/teens/internships-volunteering-skill-building/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Northern Virginia",
+  "checked": "Inova Loudoun Hospital high school volunteers",
+  "status": "checked_found",
+  "result": "Confirms the system-wide Inova high school programme at the Loudoun campus, 44045 Riverside Pkwy, Leesburg, minimum age 16; Fall 2026 registration is closed and Spring 2027 details are pending.",
+  "action": "Recheck in winter for the Spring 2027 registration window.",
+  "url": "https://www.inova.org/volunteer-opportunities-inova/inova-loudoun"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Virginia Beach",
+  "checked": "City of Virginia Beach volunteer resources",
+  "status": "checked_none",
+  "result": "Parks and Recreation Adopt-A-Programs are stated as 18 and older, and no teen-specific city volunteer role is named on the portal landing page.",
+  "action": "Contact the Office of Volunteer Resources; the city's Summer Youth Employment Program remains the confirmed teen route there.",
+  "url": "https://volunteer.virginiabeach.gov/volunteer-opportunities"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Nonprofits - Anne Arundel",
+  "checked": "Anne Arundel Youth Volunteer Corps (aacvc.org)",
+  "status": "checked_none",
+  "result": "The page's most recent dates are from the 2015 application cycle and it charges a nominal programme fee. Not usable as current-cycle evidence.",
+  "action": "Confirm whether the organisation is still operating before recording an opportunity.",
+  "url": "https://www.aacvc.org/YouthVolunteerCorps"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Fredericksburg region",
+  "checked": "Stafford County Parks and Recreation",
+  "status": "follow_up",
+  "result": "The department page names employment opportunities and coaching but publishes no teen volunteer or counsellor-in-training programme details.",
+  "action": "Read the Stafford employment opportunities page and the REC1 activity catalogue for teen roles.",
+  "url": "https://staffordcountyva.gov/government/departments_p-z/parks_and_recreation/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Nonprofits - Hampton Roads",
+  "checked": "Youth Volunteer Corps of Hampton Roads",
+  "status": "follow_up",
+  "result": "An active teen service organisation operating across Hampton Roads with a Summer of Service programme, found through search but not yet read at first-party level.",
+  "action": "Read yvchr.org and its Summer of Service page for ages, schedule and any fee.",
+  "url": "https://www.yvchr.org/sos"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Northern Virginia",
+  "checked": "Inova Alexandria Hospital high school volunteers",
+  "status": "blocked",
+  "result": "The campus high school volunteer page returned HTTP 403 to a plain fetch.",
+  "action": "Open in a browser; the Inova system-wide high school page carries the current session dates and is already recorded.",
+  "url": "https://www.inova.org/volunteer-opportunities-inova/inova-alexandria/high-school"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - Maryland",
+  "checked": "MCPS work-based learning internship; HCPSS Apprenticeship Maryland; FCPS Edison Academy apprenticeship",
+  "status": "blocked",
+  "result": "Three district pages could not be fetched in this session because the fetch permission request went unanswered.",
+  "action": "Retry these three URLs or open them in a browser to capture eligibility, hours and pay.",
+  "url": "https://www.montgomeryschoolsmd.org/departments/work-based-learning/internship-for-students"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Museums - Alexandria",
+  "checked": "Alexandria Archaeology volunteer programme",
+  "status": "blocked",
+  "result": "The city page could not be fetched in this session because the fetch permission request went unanswered.",
+  "action": "Retry or open in a browser to capture the age rule and lab schedule.",
+  "url": "https://www.alexandriava.gov/volunteering/basic-page/volunteering-at-alexandria-archaeology"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Northern Virginia",
+  "checked": "Huntley Meadows Park volunteering",
+  "status": "follow_up",
+  "result": "The park page links to the county volunteer portal but publishes no role, age rule or schedule of its own.",
+  "action": "Read the park's listing on volunteer.fairfaxcounty.gov, organisation 71671.",
+  "url": "https://www.fairfaxcounty.gov/parks/huntley-meadows"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - National Park Service DC",
+  "checked": "Rock Creek Park Volunteer-In-Parks programmes",
+  "status": "follow_up",
+  "result": "Five programmes are named (Weed Warrior, Visitor Services, Interpretation, Peirce Mill, SOLVE) but the overview page carries no age rule or application detail for any of them.",
+  "action": "Read each programme's own page for the minimum age.",
+  "url": "https://www.nps.gov/rocr/getinvolved/volunteer-opportunities.htm"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - DC",
+  "checked": "DCPS Career Ready CRI and AIP pages",
+  "status": "follow_up",
+  "result": "Both pages are two cycles out of date: CRI still advertises Summer 2025 and tells students to check back in Autumn 2025; AIP still advertises school year 2025-2026. Both pay $17 an hour, so they matter.",
+  "action": "Contact DCPS Career Ready for the current windows rather than relying on the site.",
+  "url": "https://dcpscareerready.org/wbl/cri/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - Maryland",
+  "checked": "PGCPS Registered Youth Apprenticeship / Apprenticeship Maryland Program",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08; the page was never retrieved.",
+  "action": "Open by hand and record eligible grades, minimum age, required hours, pay and the application deadline.",
+  "url": "https://www.pgcps.org/offices/career-and-technical-education/about-us"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - Maryland",
+  "checked": "Robert D. Stethem Educational Center CTE (Charles County)",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08.",
+  "action": "Open by hand and check whether any programme is a paid apprenticeship or work placement rather than a classroom course.",
+  "url": "https://stethem.ccboe.com/programs/career-and-technical-education-cte"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "State programmes - Maryland",
+  "checked": "Maryland Service Year Option",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08 for either serve.maryland.gov or the service year page.",
+  "action": "Open by hand and record the minimum age, whether current high school seniors qualify, the stipend amount and the application window.",
+  "url": "https://serve.maryland.gov/maryland-service-year-option/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - Virginia",
+  "checked": "Arlington Career Center (careercenter.apsva.us)",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08; only the APS catalogue entry was readable.",
+  "action": "Open by hand and find how students apply for the Career Center internships and when.",
+  "url": "https://careercenter.apsva.us/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - Virginia",
+  "checked": "ACPS Career and Technical Education / AC STEM",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08.",
+  "action": "Open by hand and check whether AC STEM or any ACPS CTE pathway includes a workplace placement, and record its grades and deadline.",
+  "url": "https://www.acps.k12.va.us/programs-services/career-technical-education"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Maryland",
+  "checked": "Sheppard Pratt volunteer programme",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08 for the careers site.",
+  "action": "Open by hand and record whether high schoolers may volunteer, the minimum age and how to apply.",
+  "url": "https://careers.sheppardpratt.org/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Fairfax County",
+  "checked": "Fairfax County volunteer portal (volunteer.fairfaxcounty.gov)",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08. The park and nature centre pages all route here for volunteer detail.",
+  "action": "Open by hand and record the minimum age for youth volunteers and any teen-specific roles at Huntley Meadows and Hidden Oaks.",
+  "url": "https://volunteer.fairfaxcounty.gov/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Libraries - Fairfax County",
+  "checked": "FCPL Summer Reading Adventure teen volunteer event listing",
+  "status": "blocked",
+  "result": "Automated fetch could not be authorised on 2026-09-08; the listing is a single dated event rather than a standing programme page.",
+  "action": "Open by hand and confirm whether the teen volunteer role recurs each summer and what the age floor is.",
+  "url": "https://librarycalendar.fairfaxcounty.gov/event/16704517"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Fire and rescue - Montgomery County",
+  "checked": "MCFRS Fire and Rescue Experience and cadet routes",
+  "status": "blocked",
+  "result": "The recorded event URL and two alternatives returned 404 on 2026-09-08, so no first-party page could be read.",
+  "action": "Find the current MCFRS youth page by hand and record the age range, dates, any fee and how to apply.",
+  "url": "https://www.montgomerycountymd.gov/MCFRS-recruiting/events/fire-rescue-experience.html"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Nature centres - Rockville",
+  "checked": "Croydon Creek Nature Center program assistant",
+  "status": "blocked",
+  "result": "rockvillemd.gov could not be retrieved on 2026-09-08; the facility URL also returned 404.",
+  "action": "Open the City of Rockville site by hand and record the teen programme assistant age floor, season and whether it is paid.",
+  "url": "https://www.rockvillemd.gov/places/croydon-creek-nature-center/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Nature centres - Arlington",
+  "checked": "Gulf Branch and Long Branch Nature Centers",
+  "status": "follow_up",
+  "result": "Both nature centre pages carry only a link to the county volunteer portal and one invasive plant removal work day on the second Saturday of each month; no age rule, application route or teen role is published.",
+  "action": "Ask Arlington Parks whether either centre runs a teen volunteer or junior naturalist role, since the county volunteer portal blocks automated access.",
+  "url": "https://www.arlingtonva.us/Government/Departments/Parks-Recreation/Locations/Nature-Centers/Gulf-Branch-Nature-Center-Park"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Parks - Fairfax County",
+  "checked": "Huntley Meadows Park and Hidden Oaks Nature Center",
+  "status": "follow_up",
+  "result": "Both park pages and the Park Authority volunteer page name volunteer opportunities but publish no minimum age, no teen role and no application detail.",
+  "action": "Contact the Park Authority volunteer programme coordinator for the youth age floor, or read the county volunteer portal by hand.",
+  "url": "https://www.fairfaxcounty.gov/parks/volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Maryland",
+  "checked": "Ascension Saint Agnes volunteer programme",
+  "status": "follow_up",
+  "result": "The hospital's own volunteer page describes no student, teen or junior track; the only age rule on it is 18 and over for the Trusted Ride chaperone role.",
+  "action": "Ring volunteer services to confirm whether a high school track exists before the row is either published or retired.",
+  "url": "https://healthcare.ascension.org/volunteer/mdbal-baltimore-md-ascension-saint-agnes-hospital-volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Schools - Maryland",
+  "checked": "Howard County CTE Center (CTEC)",
+  "status": "follow_up",
+  "result": "The centre's page lists thirteen career academies but says nothing about internships, apprenticeships or work placements attached to them.",
+  "action": "Read the individual academy pages by hand to see which carry a placement, then record those rather than the centre itself.",
+  "url": "https://ctec.hcpss.org/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Virginia",
+  "checked": "Inova high school student volunteer programme, system page",
+  "status": "checked_found",
+  "result": "One registration covers all five Inova hospitals. Age 16 on or before the session start, one shift a week of three to four hours, autumn 2026 registration ran 9-12 July.",
+  "action": "The four campus rows carried forward from the draft are kept for history but held back so the programme shows as one card.",
+  "url": "https://www.inova.org/our-services/inova-volunteer-services-system/students"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Maryland",
+  "checked": "MedStar Montgomery Medical Center volunteer services",
+  "status": "checked_found",
+  "result": "The hospital states it is not currently accepting volunteers; only the gift shop is. The carried-forward row is now marked paused.",
+  "action": "Re-check at the next refresh; hospital intakes reopen without notice.",
+  "url": "https://www.medstarhealth.org/locations/medstar-montgomery-medical-center/volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Virginia (Sentara)",
+  "checked": "Sentara junior volunteer programmes: Norfolk General, Leigh, Princess Anne, Virginia Beach General, Northern Virginia",
+  "status": "checked_found",
+  "result": "Five separate junior volunteer programmes found, each with its own age rule. Princess Anne publishes a full dated 2026 cycle; Northern Virginia is full for 2026 and reopens March 2027.",
+  "action": "Sweep the remaining Sentara hospitals (Careplex, Obici, Williamsburg, Halifax, Martha Jefferson, RMH) at the next pass.",
+  "url": "https://www.sentara.com/aboutus/careers/volunteer"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Hospitals - Virginia (other systems)",
+  "checked": "Riverside Peninsula, Bon Secours Hampton Roads, VCU Health junior volunteer programmes",
+  "status": "checked_found",
+  "result": "Riverside is 14-18 with applications opening spring 2027. Bon Secours Mary Immaculate still advertises its summer 2020 dates. VCU Health publishes a complete summer 2026 cycle that has now closed, with 2027 details due early 2027.",
+  "action": "Ring Bon Secours before the next publication; check VCU and Riverside again in early 2027.",
+  "url": "https://www.bonsecours.com/jobs-education/volunteer/volunteer-in-hampton-roads/student-junior-volunteer-programs"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Government - Virginia cities and counties",
+  "checked": "Virginia Beach SYEP, Henrico County internships, Chesterfield County internships, PWCS summer student intern",
+  "status": "checked_found",
+  "result": "Virginia Beach runs a full 16-21 SYEP with a January to March window. Henrico takes high schoolers at Intern I level. Chesterfield is undergraduate and graduate only, so it is out of scope. PWCS hires student interns aged 16 by mid June through a March job fair.",
+  "action": "Still to check: Richmond, Newport News, Chesapeake, Portsmouth, Suffolk, Hampton, Norfolk, Arlington, Fairfax County and Loudoun County youth employment.",
+  "url": "https://parks.virginiabeach.gov/programs-classes/youth-opportunities-office/summer-youth-employment-program"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Government - Maryland counties",
+  "checked": "Baltimore County SYEP, Southern Maryland SYEP, Anne Arundel County Police Youth Explorer",
+  "status": "checked_found",
+  "result": "Baltimore County's page has not moved past its 2024 cycle ($15 an hour, 14-21). Southern Maryland covers Charles, Calvert and St Mary's with no dated cycle. Anne Arundel runs an unpaid police youth explorer post for ninth graders and up.",
+  "action": "Still to check: Montgomery, Prince George's, Howard, Harford, Carroll, Frederick city, Washington and Wicomico county youth employment.",
+  "url": "https://www.baltimorecountymd.gov/departments/economic-development/job-seekers/youth-services"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Research institutes - Northern Virginia",
+  "checked": "HHMI Janelia Research Campus high school internship",
+  "status": "checked_found",
+  "result": "A paid full-time seven to eight week research internship for Loudoun County students aged 16 and over; the 2026 cycle ran 22 June to 7 August with applications due 14 January 2026.",
+  "action": "Check in early December for the next application system opening.",
+  "url": "https://www.janelia.org/you-janelia/students-and-postdocs/high-school-internship-program"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Animal welfare - Maryland",
+  "checked": "SPCA of Anne Arundel County and Montgomery County Humane Society",
+  "status": "checked_found",
+  "result": "The Anne Arundel SPCA takes 13-17 year olds paired with an adult, with a $30 processing fee and a six month commitment. Montgomery County Humane Society is 18 and over, so it is out of scope.",
+  "action": "Sweep Baltimore Humane Society, BARCS, Humane Rescue Alliance in DC and the Virginia shelters next.",
+  "url": "https://aacspca.org/volunteers/"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Public safety - explorer and cadet posts",
+  "checked": "James City County Fire Explorers and Anne Arundel County Police Youth Explorers",
+  "status": "checked_found",
+  "result": "Both take students from about fourteen and are unpaid training posts rather than jobs. James City is 14 (eighth grade complete) to 20; Anne Arundel is 14 (ninth grade) to 20 and requires US citizenship.",
+  "action": "Work through the remaining DMV fire and police departments department by department; most publish an explorer post but few appear in search.",
+  "url": "https://www.jamescitycountyva.gov/3011/Fire-Explorers"
+ },
+ {
+  "date": "2026-09-08",
+  "lane": "Government - Maryland",
+  "checked": "City of Annapolis Summer Intern Program",
+  "status": "follow_up",
+  "result": "The city page could not be retrieved on 2026-09-08 (robots check timed out), though press releases indicate a paid summer intern programme with applications opening in spring.",
+  "action": "Open annapolis.gov by hand and record the ages, pay rate, dates and deadline.",
+  "url": "https://www.annapolis.gov/2169/Summer-Intern-Program"
+ }
+]

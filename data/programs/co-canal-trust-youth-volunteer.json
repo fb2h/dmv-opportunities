@@ -1,0 +1,113 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "co-canal-trust-youth-volunteer",
+ "name": "C&O Canal Trust School and Youth Organization Volunteer Projects",
+ "org": "C&O Canal Trust",
+ "org_type": "nonprofit",
+ "host_state": "MD",
+ "program_url": "https://www.canaltrust.org/programs/volunteer-programs/school-and-youth-organization-volunteer-opportunities/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "co-canal-youth-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Group projects along the canal - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "School classes, scout troops and other youth groups spend about three hours on trash and invasive-species removal, painting, mulching, sign washing and pruning along the C&O Canal.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "community_service",
+    "engineering_trades"
+   ],
+   "subject_raw": [
+    "trash removal",
+    "invasive species removal",
+    "painting and scraping",
+    "spreading mulch or stone dust",
+    "washing signs",
+    "lopping and pruning vegetation"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "C&O Canal National Historical Park sites",
+     "city": "Williamsport",
+     "county": "Washington",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer programme"
+   },
+   "sched": {
+    "dur_raw": "Projects usually run about 3 hours"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://www.canaltrust.org/2022/02/school-and-youth-organization-volunteer-opportunities-interest-form/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "At least one month's advance notice required; response within one week",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "The programme is booked by a school or youth group rather than by an individual student, and no age rule is published"
+    ],
+    [
+     "/application/route_type",
+     "registration",
+     "Entry is through a group leader, not an individual application, which limits solo participation"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "cocanal-s1",
+   "url": "https://www.canaltrust.org/programs/volunteer-programs/school-and-youth-organization-volunteer-opportunities/",
+   "title": "School and Youth Organization Volunteer Opportunities",
+   "publisher": "C&O Canal Trust",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "cocanal-s1",
+   "oid": "co-canal-youth-verified",
+   "fields": [
+    "/subject_terms_raw",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Group projects along the canal - verified 2026-09-08",
+   "quote": "trash removal, invasive species removal, painting and scraping, spreading mulch or stone dust, washing signs, lopping and pruning vegetation ... Projects usually run about 3 hours."
+  }
+ ]
+}

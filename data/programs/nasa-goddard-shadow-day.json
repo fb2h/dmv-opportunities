@@ -1,0 +1,146 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nasa-goddard-shadow-day",
+ "name": "NASA Goddard High School Student Shadow Day",
+ "org": "NASA Goddard Space Flight Center, Office of STEM Engagement",
+ "org_type": "federal",
+ "host_state": "MD",
+ "program_url": "https://www.nasa.gov/goddard/stem/shadow-program/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "nasa-goddard-shadow-2025",
+   "cycle_kind": "annual",
+   "cycle_label": "Spring 2025",
+   "ann": "announced",
+   "summary": "A one-day job-shadow at NASA Goddard where students follow a NASA subject-matter expert in one of twelve STEM fields.",
+   "types": [
+    "shadowing"
+   ],
+   "subjects": [
+    "science_research",
+    "engineering_trades",
+    "computing_technology"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "NASA Goddard Space Flight Center",
+     "city": "Greenbelt",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "This opportunity is open to High School students"
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "United States citizens or Lawful Permanent Residents"
+   },
+   "school": {
+    "status": "restricted",
+    "raw": "Students must be enrolled in a public, private, charter, or home school located in the state of Maryland or the District of Columbia."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start_raw": "May 21, 2025",
+    "schedule_raw": "10 a.m. - 1 p.m. Eastern; arrival 9 - 9:45 a.m. for check-in"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://stemgateway.nasa.gov",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "first_come",
+    "opens": {
+     "date": "2025-03-24",
+     "year": 2025,
+     "month": 3,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Registration Opens - March 24, 2025"
+    },
+    "deadlines": [
+     {
+      "kind": "registration",
+      "date": "2025-04-18",
+      "year": 2025,
+      "month": 4,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Registration Closes - April 18, 2025 or until all slots filled"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "No 2026 or 2027 shadow day has been announced on this page; the 2025 cycle is retained as history and the page is a monitor target"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "nasa-shadow-s1",
+   "url": "https://www.nasa.gov/goddard/stem/shadow-program/",
+   "title": "Goddard High School Student Shadow Program",
+   "publisher": "NASA",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "nasa-shadow-s1",
+   "oid": "nasa-goddard-shadow-2025",
+   "fields": [
+    "/eligibility/citizenship/raw",
+    "/eligibility/school/raw"
+   ],
+   "cycle": "Spring 2025",
+   "quote": "This opportunity is open to High School students who are United States citizens or Lawful Permanent Residents. Students must be enrolled in a public, private, charter, or home school located in the state of Maryland or the District of Columbia."
+  },
+  {
+   "sid": "nasa-shadow-s1",
+   "oid": "nasa-goddard-shadow-2025",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/registration/due"
+   ],
+   "cycle": "Spring 2025",
+   "quote": "Registration Opens - March 24, 2025 ... Registration Closes - April 18, 2025 or until all slots filled"
+  }
+ ]
+}

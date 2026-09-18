@@ -1,0 +1,267 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "aacspca-teen-volunteer",
+ "name": "SPCA of Anne Arundel County Teen Volunteer Program",
+ "org": "SPCA of Anne Arundel County",
+ "org_type": "nonprofit",
+ "host_state": "MD",
+ "program_url": "https://aacspca.org/volunteers/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "nonprofit",
+ "offerings": [
+  {
+   "oid": "aacspca-teen-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing teen volunteer placements",
+   "ann": "announced",
+   "summary": "Teens aged 13 to 17 volunteer with an accompanying adult, walking dogs, socialising cats and staffing events, for at least six hours a month over six months.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "environment_outdoors",
+    "health_medicine"
+   ],
+   "subject_raw": [
+    "dog walking",
+    "cat socializing",
+    "petite suite socializing",
+    "event staffing"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "SPCA of Anne Arundel County",
+     "addr": "1815 Bay Ridge Avenue",
+     "city": "Annapolis",
+     "county": "Anne Arundel",
+     "state": "MD",
+     "zip": "21403",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 13,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "aged 13-17"
+   },
+   "other": [
+    [
+     "required",
+     "with adult supervision; adults can only volunteer with one teen at a time"
+    ]
+   ],
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "registration",
+      "min": 30,
+      "unit": "total",
+      "raw": "$30 non-refundable processing fee per person (covers t-shirt, handbook, training materials)",
+      "mandatory": true,
+      "refundable": false
+     }
+    ]
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "6 continuous months minimum, 6 hours per month minimum"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/ex/portal.dll/ap?ap=1781183019",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "capacity_raw": "2-month wait for Basic Volunteer Training Class as of page update",
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/other_conditions",
+     "unclear",
+     "Teens must be accompanied by an adult, which limits independent participation"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "aacspca-teen-rolling-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling teen intake - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens aged thirteen to seventeen volunteer at the shelter alongside a paired adult, committing to six hours a month for at least six months after paying a thirty dollar processing fee and completing training.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "environment_outdoors"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "SPCA of Anne Arundel County",
+     "addr": "1815 Bay Ridge Avenue",
+     "city": "Annapolis",
+     "county": "Anne Arundel",
+     "state": "MD",
+     "zip": "21403",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 13,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "aged 13-17, who want to volunteer"
+   },
+   "other": [
+    [
+     "required",
+     "adults can only volunteer with one teen at a time. The adult and teen must each complete a separate application"
+    ],
+    [
+     "required",
+     "Basic Volunteer Training Classes will be required"
+    ]
+   ],
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "application_fee",
+      "amount": 30.0,
+      "currency": "USD",
+      "refundable": false,
+      "raw": "A non-refundable $30 processing fee applies",
+      "mandatory": true
+     }
+    ]
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "commit to participate for a minimum of 6 continuous months, 6 hours per month"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://aacspca.org/volunteers/",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "first_come",
+    "instructions": "The teen and the accompanying adult each complete an Individual Volunteer Application Form, pay the processing fee and attend the basic training class.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/eligibility/other",
+     "restriction",
+     "A teen cannot volunteer alone; an adult must be paired with them."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "aacspca-s1",
+   "url": "https://aacspca.org/volunteers/",
+   "title": "Volunteer - SPCA of Anne Arundel County",
+   "publisher": "SPCA of Anne Arundel County",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "aacspca-s1",
+   "oid": "aacspca-teen-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/other_conditions"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "aged 13-17 ... adults can only volunteer with one teen at a time"
+  },
+  {
+   "sid": "aacspca-s1",
+   "oid": "aacspca-teen-standing",
+   "fields": [
+    "/costs/fees/0/amount"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "$30 non-refundable processing fee per person (covers t-shirt, handbook, training materials)"
+  },
+  {
+   "sid": "aacspca-s1",
+   "oid": "aacspca-teen-standing",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "6 continuous months minimum, 6 hours per month minimum"
+  },
+  {
+   "sid": "aacspca-s1",
+   "oid": "aacspca-teen-rolling-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Rolling teen intake - verified 2026-09-08",
+   "quote": "aged 13-17, who want to volunteer"
+  },
+  {
+   "sid": "aacspca-s1",
+   "oid": "aacspca-teen-rolling-2026",
+   "fields": [
+    "/schedule/dur_raw",
+    "/costs/fee"
+   ],
+   "cycle": "Rolling teen intake - verified 2026-09-08",
+   "quote": "commit to participate for a minimum of 6 continuous months, 6 hours per month ... A non-refundable $30 processing fee applies"
+  },
+  {
+   "sid": "aacspca-s1",
+   "oid": "aacspca-teen-rolling-2026",
+   "fields": [
+    "/eligibility/other"
+   ],
+   "cycle": "Rolling teen intake - verified 2026-09-08",
+   "quote": "adults can only volunteer with one teen at a time. The adult and teen must each complete a separate application"
+  }
+ ]
+}

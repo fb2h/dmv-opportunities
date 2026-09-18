@@ -1,0 +1,161 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mcps-youth-apprenticeship",
+ "name": "MCPS Youth Apprenticeship",
+ "org": "Montgomery County Public Schools, Work-Based Learning Office",
+ "org_type": "school_district",
+ "host_state": "MD",
+ "program_url": "https://www.montgomeryschoolsmd.org/departments/work-based-learning/apprenticeship-for-students/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "mcps-apprenticeship-verified",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Rising juniors and seniors at MCPS high schools work for an employer at minimum wage or better, completing 450 hours of on-the-job training plus a year of related classroom instruction.",
+   "types": [
+    "apprenticeship",
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "health_medicine",
+    "business_law_government",
+    "computing_technology"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Montgomery County",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "A rising junior or senior currently enrolled in an MCPS high school"
+   },
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Age 16 or older"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Montgomery County Public Schools"
+    ],
+    "raw": "currently enrolled in an MCPS high school"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "possess Social Security number or legal work authorization"
+   },
+   "other": [
+    [
+     "required",
+     "able to arrange transportation to work site"
+    ],
+    [
+     "preferred",
+     "highly motivated and responsible"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "earning at least minimum wage"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 450,
+    "dur_unit": "hour",
+    "dur_raw": "450 hours of work-based training and one year of related classroom instruction"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Use the Work-Based Learning Navigator in the student's Clever account",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "Pay is defined as at least minimum wage rather than a published rate"
+    ],
+    [
+     "/application/reported_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mcpsappr-s1",
+   "url": "https://www.montgomeryschoolsmd.org/departments/work-based-learning/apprenticeship-for-students/",
+   "title": "Apprenticeship for Students | Montgomery County Public Schools",
+   "publisher": "Montgomery County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mcpsappr-s1",
+   "oid": "mcps-apprenticeship-verified",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing placements - verified 2026-09-08",
+   "quote": "A rising junior or senior currently enrolled in an MCPS high school ... Age 16 or older"
+  },
+  {
+   "sid": "mcpsappr-s1",
+   "oid": "mcps-apprenticeship-verified",
+   "fields": [
+    "/costs/compensation",
+    "/schedule/duration/min"
+   ],
+   "cycle": "Ongoing placements - verified 2026-09-08",
+   "quote": "earning at least minimum wage ... 450 hours of work-based training and one year of related classroom instruction"
+  }
+ ]
+}

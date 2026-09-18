@@ -1,0 +1,118 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mbsyep-dc",
+ "name": "Mayor Marion S. Barry Summer Youth Employment Program (MBSYEP)",
+ "org": "District of Columbia Department of Employment Services",
+ "org_type": "local_gov",
+ "host_state": "DC",
+ "program_url": "https://does.dc.gov/service/mayor-marion-s-barry-summer-youth-employment-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "mbsyep-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual summer placement programme",
+   "ann": "unclear",
+   "summary": "A subsidised summer job in a District government office or a private employer, for DC young people aged 14 to 24.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Placements across the District of Columbia",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "14 to 24"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "District of Columbia"
+    ],
+    "raw": "District youth"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "conditional",
+    "raw": "subsidized placements in the private and government sectors"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://summerjobs.dc.gov/",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The service page carries no application window; summerjobs.dc.gov holds the current-cycle dates and was not read in this pass"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named on this page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mbsyep-s1",
+   "url": "https://does.dc.gov/service/mayor-marion-s-barry-summer-youth-employment-program",
+   "title": "Mayor Marion S. Barry Summer Youth Employment Program",
+   "publisher": "DC Department of Employment Services",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mbsyep-s1",
+   "oid": "mbsyep-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/summary"
+   ],
+   "cycle": "Annual summer placement programme",
+   "quote": "Provides District youth ages 14 to 24 with enriching and constructive summer work experiences through subsidized placements in the private and government sectors."
+  }
+ ]
+}

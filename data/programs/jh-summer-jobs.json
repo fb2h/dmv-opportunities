@@ -1,0 +1,139 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "jh-summer-jobs",
+ "name": "Johns Hopkins Summer Jobs Program",
+ "org": "Johns Hopkins Hospital and Health System",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.hopkinsmedicine.org/human-resources/learning-development/youth/summer-jobs",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "jh-summer-jobs-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A summer job at Johns Hopkins for Baltimore-area teens, placed in departments such as supply chain, nursing support, patient safety or volunteer services.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "health_medicine",
+    "business_law_government",
+    "community_service"
+   ],
+   "subject_raw": [
+    "geriatric psychiatry",
+    "supply chain",
+    "patient observation",
+    "volunteer services",
+    "patient safety",
+    "nursing",
+    "patient care"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Johns Hopkins hospitals and facilities",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "school": {
+    "status": "conditional",
+    "raw": "teens who attend school in and around Baltimore City"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.office.com/r/iRG2YUiiAt",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 2,
+      "day": 15,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Our application is currently open and accepting applications until February 15."
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ],
+    [
+     "/eligibility/grades/values",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated",
+     "Named a jobs program but the page does not state a wage; treat as unknown, not as pay"
+    ],
+    [
+     "/schedule/start",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "jhsj-s1",
+   "url": "https://www.hopkinsmedicine.org/human-resources/learning-development/youth/summer-jobs",
+   "title": "Johns Hopkins Summer Jobs Program",
+   "publisher": "Johns Hopkins Medicine",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "jhsj-s1",
+   "oid": "jh-summer-jobs-2026",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Our application is currently open and accepting applications until February 15."
+  },
+  {
+   "sid": "jhsj-s1",
+   "oid": "jh-summer-jobs-2026",
+   "fields": [
+    "/eligibility/school/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "teens who attend school in and around Baltimore City"
+  }
+ ]
+}

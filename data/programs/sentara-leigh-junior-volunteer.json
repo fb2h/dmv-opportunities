@@ -1,0 +1,137 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "sentara-leigh-junior-volunteer",
+ "name": "Sentara Leigh Hospital Junior Volunteer Program",
+ "org": "Sentara Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.sentara.com/hospitalslocations/sentara-leigh-hospital/about-us/volunteers/junior-volunteer-program",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital_long_tail",
+ "offerings": [
+  {
+   "oid": "sentara-leigh-rolling-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Year-round applications with a structured summer programme - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens who are fourteen by 1 June, have finished eighth grade and hold a C average may apply at any time; the hospital runs a structured summer junior volunteer programme.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Sentara Leigh Hospital",
+     "addr": "830 Kempsville Road",
+     "city": "Norfolk",
+     "county": "Norfolk",
+     "state": "VA",
+     "zip": "23502",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "specified_date",
+    "as_of": "06-01",
+    "raw": "Junior Volunteers must be at least 14 years old on or before June 1"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "complete the 8th grade by the end of June, with a 'C' or better average"
+   },
+   "other": [
+    [
+     "required",
+     "in-person interview"
+    ],
+    [
+     "required",
+     "health requirements"
+    ],
+    [
+     "required",
+     "recent grades and immunization records"
+    ],
+    [
+     "required",
+     "attend orientation"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.sentara.com/hospitalslocations/sentara-leigh-hospital/about-us/volunteers/junior-volunteer-program",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Apply through the hospital's online Volgistics form, then interview, complete health requirements and attend orientation. Ring the Volunteer Office on 757-261-8085 for dates and hours.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated",
+     "The page names a structured summer programme but publishes no dates or hours."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Applications are accepted year-round."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "sleigh-s1",
+   "url": "https://www.sentara.com/hospitalslocations/sentara-leigh-hospital/about-us/volunteers/junior-volunteer-program",
+   "title": "Junior Volunteer Program | Sentara Leigh Hospital",
+   "publisher": "Sentara Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "sleigh-s1",
+   "oid": "sentara-leigh-rolling-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Year-round applications with a structured summer programme - verified 2026-09-08",
+   "quote": "Junior Volunteers must be at least 14 years old on or before June 1 and complete the 8th grade by the end of June, with a 'C' or better average."
+  }
+ ]
+}

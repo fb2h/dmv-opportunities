@@ -1,0 +1,144 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fcps-md-youth-apprentice-program",
+ "name": "FCPS Youth Apprentice Program (Frederick County, Maryland)",
+ "org": "Frederick County Public Schools (Maryland)",
+ "org_type": "school_district",
+ "host_state": "MD",
+ "program_url": "https://apprenticeship.fcps.org/students",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "fcps-md-apprentice-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling placements with Fall 2026 openings listed - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Frederick County juniors and seniors work part-time for an hourly wage while finishing school, completing a 450-hour paid work experience before graduation.",
+   "types": [
+    "apprenticeship",
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "health_medicine",
+    "business_law_government",
+    "computing_technology"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites in Frederick and Washington Counties",
+     "county": "Frederick",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Must be a high school junior or senior at Frederick County Public Schools"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Frederick County Public Schools"
+    ],
+    "raw": "Must be a high school junior or senior at Frederick County Public Schools"
+   },
+   "other": [
+    [
+     "required",
+     "MUST have a minimum of one block in course schedule to participate"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "receive an hourly wage"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 450,
+    "dur_unit": "hour",
+    "dur_raw": "450-hour paid work experience required before graduation"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "https://apprenticeship.fcps.org/students",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "An hourly wage is promised but no rate is published"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "fcpsmd-s1",
+   "url": "https://apprenticeship.fcps.org/students",
+   "title": "Youth Apprenticeship Program - Students | Frederick County Public Schools",
+   "publisher": "Frederick County Public Schools (Maryland)",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "fcpsmd-s1",
+   "oid": "fcps-md-apprentice-verified",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/school/raw"
+   ],
+   "cycle": "Rolling placements with Fall 2026 openings listed - verified 2026-09-08",
+   "quote": "Must be a high school junior or senior at Frederick County Public Schools"
+  },
+  {
+   "sid": "fcpsmd-s1",
+   "oid": "fcps-md-apprentice-verified",
+   "fields": [
+    "/schedule/duration/min",
+    "/costs/compensation_status"
+   ],
+   "cycle": "Rolling placements with Fall 2026 openings listed - verified 2026-09-08",
+   "quote": "450-hour paid work experience"
+  }
+ ]
+}

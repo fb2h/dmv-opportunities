@@ -1,0 +1,223 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "janelia-hs-internship",
+ "name": "Janelia Research Campus High School Internship Program",
+ "org": "HHMI Janelia Research Campus",
+ "org_type": "research_institute",
+ "host_state": "VA",
+ "program_url": "https://www.janelia.org/you-janelia/students-and-postdocs/high-school-internship-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "research_long_tail",
+ "offerings": [
+  {
+   "oid": "janelia-hs-summer-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 - cycle complete",
+   "ann": "announced",
+   "summary": "Loudoun County students aged sixteen and over spend a paid full-time summer at HHMI's Janelia Research Campus doing research and analysis, forty hours a week from 22 June to 7 August 2026.",
+   "types": [
+    "internship",
+    "research"
+   ],
+   "subjects": [
+    "science_research",
+    "computing_technology",
+    "health_medicine"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "HHMI Janelia Research Campus",
+     "addr": "19700 Helix Drive",
+     "city": "Ashburn",
+     "county": "Loudoun",
+     "state": "VA",
+     "zip": "20147",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "who are 16 years or older"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Loudoun County Public Schools"
+    ],
+    "raw": "high school students that attend the Loudoun County Public Schools or are residents of Loudoun County"
+   },
+   "residency": {
+    "status": "restricted",
+    "raw": "or are residents of Loudoun County"
+   },
+   "other": [
+    [
+     "required",
+     "resume"
+    ],
+    [
+     "required",
+     "motivation statement"
+    ],
+    [
+     "required",
+     "description of science/math activities"
+    ],
+    [
+     "required",
+     "transcript"
+    ],
+    [
+     "required",
+     "one teacher letter of recommendation"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "raw": "full-time 7-week paid internship program"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": {
+     "year": 2026,
+     "month": 6,
+     "day": 22,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2026,
+     "month": 8,
+     "day": 7,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "hpw_raw": "dedicating 40 hours per week",
+    "dur_raw": "8 weeks at HHMI's Janelia Research Campus, performing research and analysis; full-time 7-week paid internship program (June 22 - August 7, 2026)"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.janelia.org/you-janelia/students-and-postdocs/high-school-internship-program",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "instructions": "Loudoun County Public Schools students apply through their school system; Loudoun residents at other schools send one combined PDF to the programme lead named on the campus page.",
+    "opens": {
+     "year": 2025,
+     "month": 12,
+     "day": 2,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "December 2, 2025 - Application system opens"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "year": 2026,
+      "month": 1,
+      "day": 14,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "January 14, 2026 - Student applications are due"
+     },
+     {
+      "kind": "recommendation",
+      "year": 2026,
+      "month": 1,
+      "day": 21,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "January 21, 2026 - Teacher recommendations are due"
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/cycle/lifecycle",
+     "expired",
+     "The summer 2026 cycle finished on 7 August 2026. The full 2026 details are kept because the campus runs the programme annually and they are the best predictor of the next cycle."
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "The campus says the internship is paid but publishes no rate."
+    ],
+    [
+     "/schedule/duration",
+     "conflict",
+     "The page describes the placement both as eight weeks and as a seven-week programme running 22 June to 7 August; both wordings are recorded verbatim."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "janelia-s1",
+   "url": "https://www.janelia.org/you-janelia/students-and-postdocs/high-school-internship-program",
+   "title": "High School Internship Program | Janelia Research Campus",
+   "publisher": "HHMI Janelia Research Campus",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "janelia-s1",
+   "oid": "janelia-hs-summer-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/school",
+    "/eligibility/residency"
+   ],
+   "cycle": "Summer 2026 - cycle complete",
+   "quote": "high school students that attend the Loudoun County Public Schools or are residents of Loudoun County, and who are 16 years or older"
+  },
+  {
+   "sid": "janelia-s1",
+   "oid": "janelia-hs-summer-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/schedule/hours_per_week",
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2026 - cycle complete",
+   "quote": "full-time 7-week paid internship program (June 22 - August 7, 2026) to which you will be dedicating 40 hours per week"
+  },
+  {
+   "sid": "janelia-s1",
+   "oid": "janelia-hs-summer-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/0",
+    "/application/deadlines/1"
+   ],
+   "cycle": "Summer 2026 - cycle complete",
+   "quote": "December 2, 2025 - Application system opens ... January 14, 2026 - Student applications are due ... January 21, 2026 - Teacher recommendations are due"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "sinai-hospital-hs-summer-volunteer",
+ "name": "Sinai Hospital High School Summer Volunteer Program",
+ "org": "Sinai Hospital of Baltimore (LifeBridge Health)",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.lifebridgehealth.org/volunteers/sinai-hospital",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "sinai-hs-summer-verified-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling year-round intake, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "High schoolers who have finished tenth grade volunteer about eighty hours across the summer at Sinai Hospital, applying at any time of year.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Sinai Hospital of Baltimore",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "specified_date",
+    "as_of": "2026-07-01",
+    "raw": "High School Students are 15 by July 1st and have completed the 10th grade"
+   },
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "have completed the 10th grade"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "80 hours for the summer, over 8 weeks of the 10 weeks that the program is running"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/1513989671",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "sinai-s1",
+   "url": "https://www.lifebridgehealth.org/volunteers/sinai-hospital",
+   "title": "Sinai Hospital Volunteers | LifeBridge Health",
+   "publisher": "LifeBridge Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "sinai-s1",
+   "oid": "sinai-hs-summer-verified-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Rolling year-round intake, verified 2026-09-08",
+   "quote": "High School Students are 15 by July 1st and have completed the 10th grade"
+  },
+  {
+   "sid": "sinai-s1",
+   "oid": "sinai-hs-summer-verified-2026",
+   "fields": [
+    "/application/window_kind"
+   ],
+   "cycle": "Rolling year-round intake, verified 2026-09-08",
+   "quote": "This program runs year-round, so the application process is rolling throughout the year"
+  },
+  {
+   "sid": "sinai-s1",
+   "oid": "sinai-hs-summer-verified-2026",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Rolling year-round intake, verified 2026-09-08",
+   "quote": "80 hours for the summer"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "gw-hospital-volunteer",
+ "name": "George Washington University Hospital Volunteer Program",
+ "org": "George Washington University Hospital",
+ "org_type": "hospital",
+ "host_state": "DC",
+ "program_url": "https://gwhospital.com/about/volunteer-program/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "out_of_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "gwh-verified-adult-only",
+   "cycle_kind": "continuous",
+   "cycle_label": "Adult applications only as of 2026-09-08",
+   "ann": "unclear",
+   "summary": "The hospital is currently accepting volunteer applications only from people aged 18 and over and asks high schoolers to check back.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "George Washington University Hospital",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 18,
+    "basis": "application_date",
+    "raw": "currently only accepting volunteer applications for people 18 and over. Please check back for future opportunities for high school students."
+   },
+   "fee": {
+    "status": "unknown"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "direct",
+    "window": "rolling",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "not_applicable",
+     "Out of scope while the age floor is 18. The hospital explicitly says to check back for high school opportunities, so this is a monitor target rather than a discontinued programme."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "gwh-s1",
+   "url": "https://gwhospital.com/about/volunteer-program/",
+   "title": "Volunteer Program | GW Hospital",
+   "publisher": "George Washington University Hospital",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "gwh-s1",
+   "oid": "gwh-verified-adult-only",
+   "fields": [
+    "/eligibility/age/min",
+    "/scope"
+   ],
+   "cycle": "Adult applications only as of 2026-09-08",
+   "quote": "currently only accepting volunteer applications for people 18 and over. Please check back for future opportunities for high school students."
+  }
+ ]
+}

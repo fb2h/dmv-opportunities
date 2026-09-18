@@ -1,0 +1,118 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mcps-it-foundation-network-operations",
+ "name": "MCPS Information Technology Foundation (Network Operations)",
+ "org": "Montgomery County Public Schools",
+ "org_type": "school_district",
+ "host_state": "MD",
+ "program_url": "https://www.montgomeryschoolsmd.org/schools/informationtechnology/enroll/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "out_of_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified 2026-09-08 and reclassified out of scope: the district's own page describes a for-credit CTE course sequence leading to certifications and college credit, not a workplace-based placement. The carried-forward row and its history are retained.",
+ "offerings": [
+  {
+   "oid": "mcps-it-foundation-verified-course",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Course enrolment - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "A high school course sequence in computer repair and networking that leads to CompTIA A+ and Network+ certifications and nine college credits; students also refurbish and sell used computers as part of the class.",
+   "types": [
+    "other"
+   ],
+   "subjects": [
+    "computing_technology"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Thomas Edison High School of Technology and Clarksburg High School",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "All high school students in Montgomery County Public Schools (MCPS) are eligible"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Montgomery County Public Schools"
+    ],
+    "raw": "All high school students in Montgomery County Public Schools (MCPS) are eligible"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "At Thomas Edison, complete the school's application and then specify the course codes when registering for classes; at Clarksburg, see your counsellor to enrol.",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "not_applicable",
+     "This is a for-credit class, and classes are outside the scope test in P01/P24. The service learning hours and computer refurbishment sit inside the course rather than at an employer."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mcpsitf-s1",
+   "url": "https://www.montgomeryschoolsmd.org/schools/informationtechnology/enroll/",
+   "title": "Enroll | Thomas Edison High School of Technology",
+   "publisher": "Montgomery County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mcpsitf-s1",
+   "oid": "mcps-it-foundation-verified-course",
+   "fields": [
+    "/scope",
+    "/summary"
+   ],
+   "cycle": "Course enrolment - verified 2026-09-08",
+   "quote": "Earn valuable industry-standard CompTIA certifications (A+/Network+) in computer repair and computer networking ... Earn 9 college credits in computer repair and networking while still in high school ... Earn 15 Student Service Learning (SSL) hours"
+  },
+  {
+   "sid": "mcpsitf-s1",
+   "oid": "mcps-it-foundation-verified-course",
+   "fields": [
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Course enrolment - verified 2026-09-08",
+   "quote": "All high school students in Montgomery County Public Schools (MCPS) are eligible"
+  }
+ ]
+}

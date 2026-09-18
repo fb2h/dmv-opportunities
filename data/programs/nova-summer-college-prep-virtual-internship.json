@@ -1,0 +1,182 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nova-summer-college-prep-virtual-internship",
+ "name": "NOVA Summer College Prep and Virtual Internship Program",
+ "org": "Northern Virginia Community College (NOVA)",
+ "org_type": "community_college",
+ "host_state": "VA",
+ "program_url": "https://www.nvcc.edu/student-resources/career-services/summer-prep.html",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "nova-summer-prep-2026-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Rising juniors and seniors in Virginia take a free one-credit college course and a fifty-hour paid virtual internship at fifteen dollars an hour.",
+   "types": [
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "business_law_government",
+    "computing_technology",
+    "community_service"
+   ],
+   "subject_raw": [
+    "college prep course SDV 100",
+    "project-based internship",
+    "workplace skills"
+   ],
+   "season": "summer",
+   "mode": "hybrid",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "NOVA Annandale Campus (in-person orientation only)",
+     "city": "Annandale",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "rising high school juniors and seniors"
+   },
+   "age": {
+    "min": 16,
+    "basis": "specified_date",
+    "as_of": "2026-06-23",
+    "raw": "16 or older by the first day of the class, June 23"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Virginia"
+    ],
+    "raw": "Student must live in Virginia and be authorized to work in the U.S. without sponsorship"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "authorized to work in the U.S. without sponsorship"
+   },
+   "gpa": {
+    "min": 3.0,
+    "raw": "High school cumulative GPA of 3.0 or higher, PSAT/SAT/ACT scores, or Virginia Placement Test qualification"
+   },
+   "logic": "complex",
+   "fee": {
+    "status": "none",
+    "raw": "No-cost program"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "$15 per hour for hours worked up to 50 hours"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": "2026-06-23",
+    "end": "2026-07-28",
+    "dur_min": 6,
+    "dur_unit": "week",
+    "dur_raw": "six weeks; 50-hour paid internship; 1 college credit course"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-05-03",
+      "year": 2026,
+      "month": 5,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "All steps and required documents must be submitted before Sunday, May 3"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility/logic",
+     "complex",
+     "The academic requirement is an OR of GPA, test scores or placement test result; it must not be flattened to a GPA rule alone"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "nova-s1",
+   "url": "https://www.nvcc.edu/student-resources/career-services/summer-prep.html",
+   "title": "Summer College Prep and Virtual Internship Program",
+   "publisher": "Northern Virginia Community College",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "nova-s1",
+   "oid": "nova-summer-prep-2026-verified",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/age/min",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "rising high school juniors and seniors ... 16 or older by the first day of the class, June 23 ... Student must live in Virginia and be authorized to work in the U.S. without sponsorship"
+  },
+  {
+   "sid": "nova-s1",
+   "oid": "nova-summer-prep-2026-verified",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "$15 per hour for hours worked up to 50 hours"
+  },
+  {
+   "sid": "nova-s1",
+   "oid": "nova-summer-prep-2026-verified",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "All steps and required documents must be submitted before Sunday, May 3"
+  }
+ ]
+}

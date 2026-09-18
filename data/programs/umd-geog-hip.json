@@ -1,0 +1,223 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "umd-geog-hip",
+ "name": "University of Maryland High School Internship Program (HIP)",
+ "org": "University of Maryland Department of Geographical Sciences",
+ "org_type": "university",
+ "host_state": "MD",
+ "program_url": "https://geog.umd.edu/high-school-hub/high-school-internship-program-hip",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "university",
+ "offerings": [
+  {
+   "oid": "umd-hip-2027",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2027",
+   "ann": "announced",
+   "summary": "A paid six-week remote research internship in geographical sciences for DMV high schoolers, ten hours a week with a faculty mentor and a poster at the end.",
+   "types": [
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "science_research",
+    "environment_outdoors",
+    "computing_technology"
+   ],
+   "subject_raw": [
+    "climate change",
+    "geospatial analysis",
+    "geographical sciences"
+   ],
+   "season": "summer",
+   "mode": "virtual",
+   "housing": "commuter",
+   "loc": [],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Applicants must be high school students from the DMV region"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "DC",
+     "MD",
+     "VA"
+    ],
+    "raw": "Applicants must be high school students from the DMV region and be authorized to work in the United States."
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "be authorized to work in the United States"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 900,
+      "unit": "total",
+      "raw": "Students receive a stipend of $900 for their commitment to 10 hours of work per week over the six-week program."
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 6,
+    "dur_unit": "week",
+    "hpw_min": 10,
+    "hpw_raw": "10 hours of work per week",
+    "schedule_raw": "conducted remotely over six weeks in the summer"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "opens": {
+     "year": 2027,
+     "precision": "unknown",
+     "certainty": "confirmed",
+     "raw": "Applications for the Summer 2027 High School Internship Program will open early 2027."
+    },
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Only a selection-results month is given: results released in early April"
+    ],
+    [
+     "/schedule/start",
+     "not_stated",
+     "2027 dates not yet published"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "umd-hip-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Prior cycle retained for history and refresh timing.",
+   "types": [
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "science_research",
+    "environment_outdoors"
+   ],
+   "season": "summer",
+   "mode": "virtual",
+   "loc": [],
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 900,
+      "unit": "total",
+      "raw": "stipend of $900"
+     }
+    ]
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": "2026-06-15",
+    "end": "2026-07-24",
+    "dur_min": 6,
+    "dur_unit": "week",
+    "hpw_min": 10
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed"
+   },
+   "public": false,
+   "hist": true,
+   "issues": []
+  }
+ ],
+ "sources": [
+  {
+   "sid": "umdhip-s1",
+   "url": "https://geog.umd.edu/high-school-hub/high-school-internship-program-hip",
+   "title": "High School Internship Program (HIP)",
+   "publisher": "University of Maryland Department of Geographical Sciences",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "umdhip-s1",
+   "oid": "umd-hip-2027",
+   "fields": [
+    "/cycle/announcement_state",
+    "/application/opens"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "Applications for the Summer 2027 High School Internship Program will open early 2027. Internship selection results will be released in early April."
+  },
+  {
+   "sid": "umdhip-s1",
+   "oid": "umd-hip-2027",
+   "fields": [
+    "/eligibility/residency/raw",
+    "/eligibility/work_authorization/raw"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "Applicants must be high school students from the DMV region and be authorized to work in the United States."
+  },
+  {
+   "sid": "umdhip-s1",
+   "oid": "umd-hip-2027",
+   "fields": [
+    "/costs/compensation",
+    "/schedule/hours_per_week/min",
+    "/schedule/duration/min"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "Students receive a stipend of $900 for their commitment to 10 hours of work per week over the six-week program."
+  },
+  {
+   "sid": "umdhip-s1",
+   "oid": "umd-hip-2027",
+   "fields": [
+    "/delivery_mode"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "The HIP program is conducted remotely over six weeks in the summer."
+  }
+ ]
+}

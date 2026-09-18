@@ -1,0 +1,162 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pratt-youth-collective",
+ "name": "Enoch Pratt Youth Collective (EPYC)",
+ "org": "Enoch Pratt Free Library",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.prattlibrary.org/support-us/volunteer/youth-collective",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "needs_review",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "pratt-epyc-fall-2026",
+   "cycle_kind": "session",
+   "cycle_label": "Fall 2026 cohorts",
+   "ann": "announced",
+   "summary": "Baltimore City teens attend four weekly library sessions, earning service-learning hours while building job and life skills; the autumn 2026 theme is hand sewing and design.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "community_service"
+   ],
+   "subject_raw": [
+    "hand sewing and design techniques",
+    "job skills",
+    "life skills"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Enoch Pratt Central Library",
+     "addr": "400 Cathedral Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Waverly Branch",
+     "addr": "400 E. 33rd Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Hamilton Branch",
+     "addr": "5910 Harford Road",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Baltimore City teens in grades 6-12"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Baltimore City, MD"
+    ],
+    "raw": "Baltimore City teens"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "schedule_raw": "Four weekly sessions. Cohort 1: Thursdays 3:30-5 pm, Oct 1-22, 2026. Cohort 2: Tuesdays 3:30-5 pm, Oct 27-Nov 24, 2026. Cohort 3: Thursdays 3:00-4:30 pm, Oct 27-Nov 24, 2026."
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://forms.cloud.microsoft/r/8Vqbp9xudR",
+    "window": "fixed",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": [
+     {
+      "kind": "registration",
+      "date": "2026-09-13",
+      "year": 2026,
+      "month": 9,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Application deadline is September 13, 2026"
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "unclear",
+     "Four weekly craft-and-skills sessions that grant service-learning hours read closer to enrichment than to assigned duties inside an organisation, so this sits on the P01 boundary and needs an owner decision. The carried-forward record listed it as likely in scope."
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "prattepyc-s1",
+   "url": "https://www.prattlibrary.org/support-us/volunteer/youth-collective",
+   "title": "Enoch Pratt Youth Collective - Enoch Pratt Free Library",
+   "publisher": "Enoch Pratt Free Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "prattepyc-s1",
+   "oid": "pratt-epyc-fall-2026",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Fall 2026 cohorts",
+   "quote": "Baltimore City teens in grades 6-12"
+  },
+  {
+   "sid": "prattepyc-s1",
+   "oid": "pratt-epyc-fall-2026",
+   "fields": [
+    "/application/deadlines/registration/due"
+   ],
+   "cycle": "Fall 2026 cohorts",
+   "quote": "Application deadline is September 13, 2026"
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "henrico-county-internship",
+ "name": "Henrico County Internship Program",
+ "org": "Henrico County Government",
+ "org_type": "government",
+ "host_state": "VA",
+ "program_url": "https://henrico.gov/services/internship/",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "government_long_tail",
+ "offerings": [
+  {
+   "oid": "henrico-internship-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Semester-by-semester postings - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Henrico County posts intern positions each semester, with high schoolers placed at the Intern I level; placements may be paid or taken for academic credit.",
+   "types": [
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service",
+    "computing_technology"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Henrico County government departments",
+     "county": "Henrico",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Internship opportunities are for currently enrolled high school and college students."
+   },
+   "other": [
+    [
+     "required",
+     "cover letter with three learning goals"
+    ],
+    [
+     "required",
+     "resume"
+    ],
+    [
+     "required",
+     "two references"
+    ],
+    [
+     "required",
+     "unofficial transcript with GPA"
+    ],
+    [
+     "note",
+     "High school interns are designated as Intern I level positions"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown",
+    "raw": "internships may be for pay or for academic credit"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://henrico.gov/services/internship/",
+    "window": "multiple_rounds",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Students must apply online through the county's website; check each semester for intern positions.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation",
+     "unclear",
+     "The county says placements may be paid or for credit but publishes no rate, so this record cannot answer the pay filter."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/eligibility/age",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "henricoint-s1",
+   "url": "https://henrico.gov/services/internship/",
+   "title": "Become an Intern | Henrico County, Virginia",
+   "publisher": "Henrico County Government",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "henricoint-s1",
+   "oid": "henrico-internship-standing",
+   "fields": [
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Semester-by-semester postings - verified 2026-09-08",
+   "quote": "Internship opportunities are for currently enrolled high school and college students."
+  },
+  {
+   "sid": "henricoint-s1",
+   "oid": "henrico-internship-standing",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Semester-by-semester postings - verified 2026-09-08",
+   "quote": "may be for pay or for academic credit"
+  }
+ ]
+}

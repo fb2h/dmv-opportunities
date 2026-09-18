@@ -1,0 +1,87 @@
+[
+ {
+  "pid": "virginia-beach-syep",
+  "kept_name": "Virginia Beach Summer Youth Employment Program (SYEP)",
+  "merged_name": "Virginia Beach Summer Youth Employment Program",
+  "lanes": [
+   "government",
+   "government_long_tail"
+  ],
+  "offerings_now": [
+   "vb-syep-2026",
+   "vbsyep-annual-verified"
+  ],
+  "note": "Same pid submitted by two lanes; offerings unioned. Check whether two 'standing' offerings describe the same thing."
+ },
+ {
+  "pid": "southern-maryland-syep",
+  "kept_name": "Southern Maryland JobSource Summer Youth Employment Program",
+  "merged_name": "Southern Maryland Summer Youth Employment Program",
+  "lanes": [
+   "government",
+   "government_long_tail"
+  ],
+  "offerings_now": [
+   "somd-syep-stmarys",
+   "somd-syep-charles-calvert",
+   "somd-syep-verified-2026"
+  ],
+  "note": "Same pid submitted by two lanes; offerings unioned. Check whether two 'standing' offerings describe the same thing."
+ },
+ {
+  "pid": "aacspca-teen-volunteer",
+  "kept_name": "SPCA of Anne Arundel County Teen Volunteer Program",
+  "merged_name": "SPCA of Anne Arundel County Teen Volunteer Program",
+  "lanes": [
+   "nonprofit",
+   "nonprofit_long_tail"
+  ],
+  "offerings_now": [
+   "aacspca-teen-standing",
+   "aacspca-teen-rolling-2026"
+  ],
+  "note": "Same pid submitted by two lanes; offerings unioned. Check whether two 'standing' offerings describe the same thing."
+ },
+ {
+  "pid": "riverside-peninsula-junior-volunteer",
+  "kept_name": "Riverside Health Peninsula Junior Volunteer Program",
+  "merged_name": "Riverside Health System Peninsula Junior Volunteer Program",
+  "lanes": [
+   "hospital",
+   "hospital_long_tail"
+  ],
+  "offerings_now": [
+   "riverside-peninsula-jr-2026",
+   "riverside-peninsula-summer-2027"
+  ],
+  "note": "Same pid submitted by two lanes; offerings unioned. Check whether two 'standing' offerings describe the same thing."
+ },
+ {
+  "pid": "bon-secours-hampton-roads-junior-volunteer",
+  "kept_name": "Bon Secours Hampton Roads Student/Junior Volunteer Program",
+  "merged_name": "Bon Secours Junior Volunteer Program (Mary Immaculate Hospital)",
+  "lanes": [
+   "hospital",
+   "hospital_long_tail"
+  ],
+  "offerings_now": [
+   "bon-secours-hr-jr-standing",
+   "bonsecours-jr-2020-last-published"
+  ],
+  "note": "Same pid submitted by two lanes; offerings unioned. Check whether two 'standing' offerings describe the same thing."
+ },
+ {
+  "pid": "chor-vcu-junior-volunteer",
+  "kept_name": "Children's Hospital of Richmond at VCU Junior Volunteer Program",
+  "merged_name": "VCU Health / Children's Hospital of Richmond Junior Volunteer Program",
+  "lanes": [
+   "hospital",
+   "hospital_long_tail"
+  ],
+  "offerings_now": [
+   "chor-vcu-jr-standing",
+   "chor-vcu-jr-summer-2026"
+  ],
+  "note": "Same pid submitted by two lanes; offerings unioned. Check whether two 'standing' offerings describe the same thing."
+ }
+]

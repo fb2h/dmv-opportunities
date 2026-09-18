@@ -1,0 +1,111 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "black-hill-discovery-center-volunteer",
+ "name": "Black Hill Discovery Center Volunteer",
+ "org": "Montgomery Parks (M-NCPPC)",
+ "org_type": "parks",
+ "host_state": "MD",
+ "program_url": "https://montgomeryparks.org/parks-and-trails/black-hill-discovery-center/volunteer/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "blackhill-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing volunteer roles - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Volunteers monitor bluebird nest boxes, tend native plant gardens, support special events and assist naturalists at the Black Hill Discovery Center, with Student Service-Learning opportunities available.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Bluebird nest box monitors",
+    "Native plant gardeners",
+    "Special events support",
+    "Naturalist aid",
+    "Student Service-Learning"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Black Hill Discovery Center",
+     "city": "Boyds",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Email the Volunteer Coordinator",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "No age rule is published on the centre page; the Montgomery Parks floor of 14 for unsupervised volunteering applies system-wide"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/locations/0/city",
+     "unclear",
+     "The page gives Rockville as a mailing reference while the discovery centre sits in Black Hill Regional Park near Boyds"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "blackhill-s1",
+   "url": "https://montgomeryparks.org/parks-and-trails/black-hill-discovery-center/volunteer/",
+   "title": "Black Hill Discovery Center Volunteer",
+   "publisher": "Montgomery Parks (M-NCPPC)",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "blackhill-s1",
+   "oid": "blackhill-verified",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Ongoing volunteer roles - verified 2026-09-08",
+   "quote": "Bluebird nest box monitors, Native plant gardeners, Special events support, Naturalist aid positions, Student Service-Learning opportunities"
+  }
+ ]
+}

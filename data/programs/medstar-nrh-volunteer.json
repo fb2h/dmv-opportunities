@@ -1,0 +1,103 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "medstar-nrh-volunteer",
+ "name": "MedStar National Rehabilitation Hospital Volunteer Program",
+ "org": "MedStar National Rehabilitation Hospital",
+ "org_type": "hospital",
+ "host_state": "DC",
+ "program_url": "https://www.medstarhealth.org/locations/medstar-national-rehabilitation-hospital/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "needs_review",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "medstar-nrh-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing volunteer intake - age rule unpublished, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "MedStar National Rehabilitation Hospital accepts volunteer applications by emailed form, but publishes no age or student eligibility rule.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "MedStar National Rehabilitation Hospital",
+     "addr": "102 Irving St, NW",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20010",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Submit a PDF form by email to mnrnvolunteerprogram@medstar.net or call 202-877-1949",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "No age or grade rule is published, so it cannot be shown as a high school opportunity without confirming with the volunteer office"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mnrh-s1",
+   "url": "https://www.medstarhealth.org/locations/medstar-national-rehabilitation-hospital/volunteer",
+   "title": "Volunteer Program | MedStar National Rehabilitation Hospital",
+   "publisher": "MedStar Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mnrh-s1",
+   "oid": "medstar-nrh-verified",
+   "fields": [
+    "/locations/0/address_line1",
+    "/application/instructions_raw"
+   ],
+   "cycle": "Ongoing volunteer intake - age rule unpublished, verified 2026-09-08",
+   "quote": "102 Irving St, NW, Washington, D.C. 20010"
+  }
+ ]
+}

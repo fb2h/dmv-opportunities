@@ -1,0 +1,127 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "dc-dpr-summer-employment",
+ "name": "DC Parks & Recreation Summer Employment",
+ "org": "DC Department of Parks and Recreation",
+ "org_type": "local_gov",
+ "host_state": "DC",
+ "program_url": "https://dpr.dc.gov/summerjobs",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "dcdpr-summer-2026-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 hiring - open as of 2026-09-08",
+   "ann": "announced",
+   "summary": "DC Parks and Recreation hires for summer lifeguard, pool operator, customer service, camp facilitator, park ranger and support roles, with free lifeguard training for applicants who are not yet certified.",
+   "types": [
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service",
+    "environment_outdoors",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "Lifeguard",
+    "Pool Operator",
+    "Customer Service Representative",
+    "Roving Leaders Camp facilitator",
+    "Teen Division",
+    "Boost Camp",
+    "Discovery Camp",
+    "Sports Camp",
+    "Therapeutic Recreation Camp",
+    "Camp Riverview",
+    "Park Rangers"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "DC Department of Parks and Recreation sites",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "fee": {
+    "status": "none",
+    "raw": "Free lifeguard training provided for unqualified applicants"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://earnwithdpr.splashthat.com/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "The hiring page publishes no minimum age for any role, so it cannot be shown as a high school opportunity without confirmation"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated",
+     "No wage is published"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "dcdpr-s1",
+   "url": "https://dpr.dc.gov/summerjobs",
+   "title": "Summer Jobs | DC Department of Parks and Recreation",
+   "publisher": "DC Department of Parks and Recreation",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "dcdpr-s1",
+   "oid": "dcdpr-summer-2026-verified",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2026 hiring - open as of 2026-09-08",
+   "quote": "DPR is hiring NOW for the summer of 2026"
+  },
+  {
+   "sid": "dcdpr-s1",
+   "oid": "dcdpr-summer-2026-verified",
+   "fields": [
+    "/costs/fee_status"
+   ],
+   "cycle": "Summer 2026 hiring - open as of 2026-09-08",
+   "quote": "Free lifeguard training provided for unqualified applicants"
+  }
+ ]
+}

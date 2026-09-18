@@ -1,0 +1,151 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "tidalhealth-volunteen",
+ "name": "TidalHealth VolunTEEN Program",
+ "org": "TidalHealth",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.tidalhealth.org/community-outreach-partners/volunteer-your-time/tidalhealth-volunteen-application",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "tidalhealth-volunteen-md",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual summer VolunTEEN session - Maryland sites",
+   "ann": "announced",
+   "summary": "Teens aged 14 and up volunteer two half days or one full day a week for at least six weeks over the summer at TidalHealth's Eastern Shore hospitals.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "TidalHealth Peninsula Regional",
+     "city": "Salisbury",
+     "county": "Wicomico",
+     "state": "MD",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "TidalHealth Atlantic General",
+     "city": "Berlin",
+     "county": "Worcester",
+     "state": "MD",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "TidalHealth McCready Pavilion",
+     "city": "Crisfield",
+     "county": "Somerset",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 14,
+    "basis": "application_date",
+    "raw": "Must be at least 14 years of age."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer position"
+   },
+   "sched": {
+    "schedule_raw": "June-August",
+    "dur_raw": "Able to volunteer for two half days or one full day a week for a minimum of six weeks."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/2014309094",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "competitive",
+    "opens": {
+     "month": 4,
+     "precision": "month",
+     "certainty": "unknown",
+     "raw": "April-Applications, Interviews-May, Orientation-June"
+    },
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "interview",
+     "required": true,
+     "stage": "selection",
+     "raw": "Interviews-May"
+    }
+   ],
+   "public": false,
+   "issues": [
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named; the page describes a recurring April to June intake"
+    ],
+    [
+     "/locations",
+     "unclear",
+     "The application list includes a Seaford, Delaware site that is out of scope and is not recorded here"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "tidal-s1",
+   "url": "https://www.tidalhealth.org/community-outreach-partners/volunteer-your-time/tidalhealth-volunteen-application",
+   "title": "TidalHealth VolunTEEN Application",
+   "publisher": "TidalHealth",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "tidal-s1",
+   "oid": "tidalhealth-volunteen-md",
+   "fields": [
+    "/eligibility/age/min",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Annual summer VolunTEEN session - Maryland sites",
+   "quote": "Must be at least 14 years of age. Able to volunteer for two half days or one full day a week for a minimum of six weeks."
+  },
+  {
+   "sid": "tidal-s1",
+   "oid": "tidalhealth-volunteen-md",
+   "fields": [
+    "/application/opens"
+   ],
+   "cycle": "Annual summer VolunTEEN session - Maryland sites",
+   "quote": "April-Applications, Interviews-May, Orientation-June"
+  }
+ ]
+}

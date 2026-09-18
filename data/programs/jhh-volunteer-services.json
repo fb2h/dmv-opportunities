@@ -1,0 +1,125 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "jhh-volunteer-services",
+ "name": "Johns Hopkins Hospital Volunteer Services",
+ "org": "The Johns Hopkins Hospital",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.hopkinsmedicine.org/volunteer-services/jhh",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "jhh-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing volunteer placements",
+   "ann": "announced",
+   "summary": "Volunteers aged 16 and up take regular shifts at Johns Hopkins Hospital helping visitors, supporting spiritual services or working with the animal-assisted therapy program.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "animal-assisted therapy",
+    "spiritual services",
+    "wayfinding"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "The Johns Hopkins Hospital, Volunteer Services",
+     "addr": "600 North Wolfe St., Carnegie 173",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21287",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Volunteers must be aged 16 or older."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "Minimum of 100 hours per year on a regular schedule",
+    "hpw_raw": "Most positions require 4 hours per shift/week over 6 or more months"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://volunteerservices.jhmi.edu/pages/JHHOPEN",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/grades/values",
+     "not_stated",
+     "Age 16 is the stated floor; no grade rule is published"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated",
+     "Health screening or clearance costs are not stated on this page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "jhh-s1",
+   "url": "https://www.hopkinsmedicine.org/volunteer-services/jhh",
+   "title": "Volunteer at The Johns Hopkins Hospital",
+   "publisher": "Johns Hopkins Medicine",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "jhh-s1",
+   "oid": "jhh-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing volunteer placements",
+   "quote": "Volunteers must be aged 16 or older."
+  },
+  {
+   "sid": "jhh-s1",
+   "oid": "jhh-vol-standing",
+   "fields": [
+    "/schedule/duration/raw",
+    "/schedule/hours_per_week/raw"
+   ],
+   "cycle": "Ongoing volunteer placements",
+   "quote": "Minimum of 100 hours per year on a regular schedule ... Most positions require 4 hours per shift/week over 6 or more months"
+  }
+ ]
+}

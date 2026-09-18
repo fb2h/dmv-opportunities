@@ -1,0 +1,94 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "medstar-southern-maryland-youth-volunteer",
+ "name": "MedStar Southern Maryland Hospital Center Volunteer Program",
+ "org": "MedStar Southern Maryland Hospital Center",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.medstarhealth.org/locations/medstar-southern-maryland-hospital-center/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "out_of_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "medstar-somd-verified-adult-only",
+   "cycle_kind": "continuous",
+   "cycle_label": "Adult volunteers only as of 2026-09-08",
+   "ann": "unclear",
+   "summary": "The hospital's volunteer programme is currently adult-only, so it is not available to high school students.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "MedStar Southern Maryland Hospital Center",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 18,
+    "basis": "application_date",
+    "raw": "18 years of age or older"
+   },
+   "fee": {
+    "status": "unknown"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "direct",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "unknown",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "not_applicable",
+     "The carried-forward record described a Youth Volunteer Program. The hospital's own page now states volunteers must be 18 or older and describes no youth route, so the record is reclassified out of scope and kept for history."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "msomd-s1",
+   "url": "https://www.medstarhealth.org/locations/medstar-southern-maryland-hospital-center/volunteer",
+   "title": "Volunteer Opportunities | MedStar Southern Maryland Hospital Center",
+   "publisher": "MedStar Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "msomd-s1",
+   "oid": "medstar-somd-verified-adult-only",
+   "fields": [
+    "/eligibility/age/min",
+    "/scope"
+   ],
+   "cycle": "Adult volunteers only as of 2026-09-08",
+   "quote": "18 years of age or older"
+  }
+ ]
+}

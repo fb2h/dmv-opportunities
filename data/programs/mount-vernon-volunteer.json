@@ -1,0 +1,141 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mount-vernon-volunteer",
+ "name": "George Washington's Mount Vernon Volunteer Program",
+ "org": "George Washington's Mount Vernon",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://www.mountvernon.org/about/volunteering",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "mount-vernon-vol-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual intake closing 13 February - applications closed as of 2026-09-08",
+   "ann": "announced",
+   "summary": "Volunteers aged 16 and up work in the archaeology lab, guest services, horticulture, interpretation, events or the sewing circle at Mount Vernon, for at least twenty-five hours a year.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "environment_outdoors",
+    "community_service",
+    "science_research"
+   ],
+   "subject_raw": [
+    "archaeology lab work",
+    "reception desk",
+    "events",
+    "flag flying",
+    "guest services",
+    "horticulture",
+    "interpretation support",
+    "sewing circle",
+    "estate beautification"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "George Washington's Mount Vernon",
+     "addr": "3200 Mount Vernon Memorial Highway",
+     "city": "Mount Vernon",
+     "county": "Fairfax",
+     "state": "VA",
+     "zip": "22121",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Mount Vernon volunteers must be 16 or older and contribute at least 25 hours per year to remain active volunteers."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "at least 25 hours per year"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/1876012504",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 2,
+      "day": 13,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Applications are accepted through February 13"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "February 13 is published without a year and applications are currently closed; treat as a recurring pattern"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mtvernon-s1",
+   "url": "https://www.mountvernon.org/about/volunteering",
+   "title": "Volunteering | George Washington's Mount Vernon",
+   "publisher": "George Washington's Mount Vernon",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mtvernon-s1",
+   "oid": "mount-vernon-vol-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Annual intake closing 13 February - applications closed as of 2026-09-08",
+   "quote": "Mount Vernon volunteers must be 16 or older and contribute at least 25 hours per year to remain active volunteers."
+  },
+  {
+   "sid": "mtvernon-s1",
+   "oid": "mount-vernon-vol-verified",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Annual intake closing 13 February - applications closed as of 2026-09-08",
+   "quote": "Applications for volunteering at Mount Vernon are currently closed."
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "sentara-princess-anne-junior-volunteer",
+ "name": "Sentara Princess Anne Hospital Junior Volunteer Program",
+ "org": "Sentara Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.sentara.com/hospitalslocations/sentara-princess-anne-hospital/about-us/volunteer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital_long_tail",
+ "offerings": [
+  {
+   "oid": "sentara-spah-summer-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 junior volunteer programme",
+   "ann": "announced",
+   "summary": "Teens who are fourteen by 1 June, have finished eighth grade and hold a C average volunteer at Sentara Princess Anne between 22 June and 14 August 2026.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Sentara Princess Anne Hospital",
+     "addr": "2025 Glenn Mitchell Drive",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "zip": "23456",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "specified_date",
+    "as_of": "2026-06-01",
+    "raw": "Junior volunteers must be at least 14 years old on or before June 1"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "have completed the 8th grade by the end of June"
+   },
+   "other": [
+    [
+     "required",
+     "a 'C' or better average"
+    ],
+    [
+     "required",
+     "copies of recent grades/report cards"
+    ],
+    [
+     "required",
+     "interview with the volunteer coordinator"
+    ],
+    [
+     "required",
+     "a short essay as part of the application"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "sched": {
+    "start": {
+     "year": 2026,
+     "month": 6,
+     "day": 22,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2026,
+     "month": 8,
+     "day": 14,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "dur_raw": "Summer junior program lasts from June 22 to August 14, 2026"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.sentara.com/hospitalslocations/sentara-princess-anne-hospital/about-us/volunteer",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "instructions": "Complete a junior volunteer application including a short essay, send recent grades and interview with the volunteer coordinator. Contact VolunteerSPAH@sentara.com.",
+    "opens": {
+     "year": 2026,
+     "month": 2,
+     "day": 9,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications will be available in February 9, 2026"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "year": 2026,
+      "month": 4,
+      "day": 20,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Application deadline is April 20, 2026."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule/hours_per_week",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "spah-s1",
+   "url": "https://www.sentara.com/hospitalslocations/sentara-princess-anne-hospital/about-us/volunteer",
+   "title": "Volunteers | Sentara Princess Anne Hospital",
+   "publisher": "Sentara Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "spah-s1",
+   "oid": "sentara-spah-summer-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Summer 2026 junior volunteer programme",
+   "quote": "Junior volunteers must be at least 14 years old on or before June 1 and have completed the 8th grade by the end of June, with a 'C' or better average."
+  },
+  {
+   "sid": "spah-s1",
+   "oid": "sentara-spah-summer-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026 junior volunteer programme",
+   "quote": "Summer junior program lasts from June 22 to August 14, 2026"
+  },
+  {
+   "sid": "spah-s1",
+   "oid": "sentara-spah-summer-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/0"
+   ],
+   "cycle": "Summer 2026 junior volunteer programme",
+   "quote": "Applications will be available in February 9, 2026 ... Application deadline is April 20, 2026."
+  }
+ ]
+}

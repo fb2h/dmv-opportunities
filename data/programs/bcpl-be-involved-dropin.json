@@ -1,0 +1,172 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "bcpl-be-involved-dropin",
+ "name": "Baltimore County Public Library Be Involved (Drop-In Teen Service)",
+ "org": "Baltimore County Public Library",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.bcpl.info/youth/teens",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "bcpl-be-involved-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Drop-in sessions at any branch - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Any teen can drop in at a Baltimore County branch and work on a hands-on project that benefits the local community, with no application or long-term commitment.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Baltimore County Public Library branches",
+     "county": "Baltimore County",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Any teen is welcome to participate at any branch"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "registration",
+    "window": "none",
+    "status": "no_application",
+    "selection": "open_enrollment",
+    "instructions": "No applications or long-term commitments",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "No age range is published; the page says any teen"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "bcpl-buddies-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Building, Programming and Reading Buddies - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens are matched with younger students to build literacy and problem-solving skills through reading, STEM activities and making things together.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service",
+    "science_research"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Baltimore County Public Library branches",
+     "county": "Baltimore County",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "Application-based but no age or grade rule is published"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "bcpl-s1",
+   "url": "https://www.bcpl.info/youth/teens",
+   "title": "Teens | Baltimore County Public Library",
+   "publisher": "Baltimore County Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "bcpl-s1",
+   "oid": "bcpl-be-involved-verified",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/application/window_kind"
+   ],
+   "cycle": "Drop-in sessions at any branch - verified 2026-09-08",
+   "quote": "Any teen is welcome to participate at any branch ... No applications or long-term commitments"
+  },
+  {
+   "sid": "bcpl-s1",
+   "oid": "bcpl-buddies-verified",
+   "fields": [
+    "/summary"
+   ],
+   "cycle": "Building, Programming and Reading Buddies - verified 2026-09-08",
+   "quote": "Connect teens with younger students to help develop their literacy and problem-solving skills"
+  }
+ ]
+}

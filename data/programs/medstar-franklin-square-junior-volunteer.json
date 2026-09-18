@@ -1,0 +1,130 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "medstar-franklin-square-junior-volunteer",
+ "name": "MedStar Franklin Square Junior Volunteer Program",
+ "org": "MedStar Franklin Square Medical Center",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.medstarhealth.org/locations/medstar-franklin-square-medical-center/volunteer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "medstar-fsmc-jr-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Summer junior volunteer, applications open the first Monday in February each year",
+   "ann": "announced",
+   "summary": "Students aged 16 to 18 volunteer four hours on assigned days over the summer in roles that comfort patients.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "MedStar Franklin Square Medical Center",
+     "city": "Baltimore",
+     "county": "Baltimore County",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "students between ages 16-18"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "Starting in mid to late June and ending in August prior to schools re-opening; four hours on assigned days"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://medstar.formstack.com/forms/mfsmc_adult_volunteer_application",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 2,
+      "precision": "month",
+      "certainty": "unknown",
+      "raw": "apply the first Monday in February"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "The first Monday in February is a recurring pattern published without a year; it must be shown as a pattern and never as this year's date"
+    ],
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ],
+    [
+     "/application/reported_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mfsmc-s1",
+   "url": "https://www.medstarhealth.org/locations/medstar-franklin-square-medical-center/volunteer",
+   "title": "Volunteer Opportunities | MedStar Franklin Square Medical Center",
+   "publisher": "MedStar Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mfsmc-s1",
+   "oid": "medstar-fsmc-jr-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer junior volunteer, applications open the first Monday in February each year",
+   "quote": "students between ages 16-18"
+  },
+  {
+   "sid": "mfsmc-s1",
+   "oid": "medstar-fsmc-jr-verified",
+   "fields": [
+    "/application/deadlines/final/due",
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Summer junior volunteer, applications open the first Monday in February each year",
+   "quote": "apply the first Monday in February ... Starting in mid to late June and ending in August prior to schools re-opening"
+  }
+ ]
+}

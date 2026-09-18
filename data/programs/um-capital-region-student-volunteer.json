@@ -1,0 +1,116 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "um-capital-region-student-volunteer",
+ "name": "UM Capital Region Health Student Volunteer Program",
+ "org": "UM Capital Region Health",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.umms.org/capital/giving/volunteer/volunteer-requirements",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "umcap-student-vol-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Year-round student volunteering, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Students aged 16 and up commit a hundred hours over twelve months at the Largo hospital, in four-hour shifts.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "UM Capital Region Medical Center",
+     "addr": "901 Harry S. Truman Drive North",
+     "city": "Largo",
+     "county": "Prince George's",
+     "state": "MD",
+     "zip": "20774",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Minimum age for students to volunteer is 16 years of age or older."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "Required to commit 100 hours within a 12-month period and 4 hours per shift"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.umms.org/capital/giving/volunteer",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "umcap-s1",
+   "url": "https://www.umms.org/capital/giving/volunteer/volunteer-requirements",
+   "title": "Volunteer Requirements | UM Capital Region Health",
+   "publisher": "University of Maryland Medical System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "umcap-s1",
+   "oid": "umcap-student-vol-verified",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Year-round student volunteering, verified 2026-09-08",
+   "quote": "Minimum age for students to volunteer is 16 years of age or older."
+  },
+  {
+   "sid": "umcap-s1",
+   "oid": "umcap-student-vol-verified",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Year-round student volunteering, verified 2026-09-08",
+   "quote": "Required to commit 100 hours within a 12-month period and 4 hours per shift."
+  }
+ ]
+}

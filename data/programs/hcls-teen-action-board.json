@@ -1,0 +1,119 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "hcls-teen-action-board",
+ "name": "Howard County Library Teen Action Board",
+ "org": "Howard County Library System",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.hclibrary.org/volunteer/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "hcls-teen-action-board-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Monthly meetings, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens meet monthly to shape book displays, classes and events at Howard County libraries.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Howard County Library System branches",
+     "county": "Howard",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 11,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Age: 11-17"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Age: 11-17"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "Meet monthly"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.hclibrary.org/?page_id=17092",
+    "window": "rolling",
+    "status": "open",
+    "selection": "open_enrollment",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/schedule/duration",
+     "not_stated",
+     "Commitment length is not published"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "hcls-s3",
+   "url": "https://www.hclibrary.org/volunteer/",
+   "title": "Volunteer | Howard County Library System",
+   "publisher": "Howard County Library System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "hcls-s3",
+   "oid": "hcls-teen-action-board-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Monthly meetings, verified 2026-09-08",
+   "quote": "Age: 11-17 ... Meet monthly to discuss topics that interest teens."
+  }
+ ]
+}

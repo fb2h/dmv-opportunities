@@ -1,0 +1,103 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "frederick-health-student-volunteer",
+ "name": "Frederick Health Junior Volunteers",
+ "org": "Frederick Health Hospital",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.frederickhealth.org/about/volunteering/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "frederick-health-jr-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Junior Volunteers - phone application only, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Frederick Health runs a Junior Volunteers programme, formerly the Candy Stripers; high school students must telephone the volunteer office rather than apply online.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Frederick Health Hospital",
+     "addr": "400 West 7th Street",
+     "city": "Frederick",
+     "county": "Frederick",
+     "state": "MD",
+     "zip": "21701",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "High school and full-time college students may not apply online; call 240-566-3567",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "No age or grade rule is published; the hospital directs high schoolers to phone for programme details. This corrects the earlier finding that Frederick Health published no youth route at all - the route exists but its facts are not online."
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "frederickhealth-s1",
+   "url": "https://www.frederickhealth.org/about/volunteering/",
+   "title": "Volunteering | Frederick Health",
+   "publisher": "Frederick Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "frederickhealth-s1",
+   "oid": "frederick-health-jr-verified",
+   "fields": [
+    "/application/instructions_raw"
+   ],
+   "cycle": "Junior Volunteers - phone application only, verified 2026-09-08",
+   "quote": "High school and full-time college students may not apply online."
+  }
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mcps-wbl-internship",
+ "name": "MCPS Work-Based Learning Internship (for credit)",
+ "org": "Montgomery County Public Schools, Work-Based Learning Office",
+ "org_type": "school_district",
+ "host_state": "MD",
+ "program_url": "https://www.montgomeryschoolsmd.org/departments/work-based-learning/internship-for-students/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the district's own work-based learning page on 2026-09-08. The three course options and their hour requirements are confirmed; the page publishes no grade floor, pay information or deadline, so those stay unknown.",
+ "offerings": [
+  {
+   "oid": "mcps-wbl-internship-verified-2026",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing placements by semester - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "MCPS students work outside school in a practical placement and earn advanced level credit, taking the internship as a single, double or triple period course worth 75, 150 or 225 hours a semester.",
+   "types": [
+    "internship",
+    "trainee"
+   ],
+   "subjects": [
+    "business_law_government",
+    "engineering_trades",
+    "health_medicine",
+    "computing_technology"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Montgomery County",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Montgomery County Public Schools"
+    ],
+    "raw": "Students enrol through the internship coordinator at their MCPS high school."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "dur_min": 75,
+    "dur_unit": "hour",
+    "dur_raw": "Internship A/B Single Period (WBL2014); 75 hours per semester. Internship A/B Double Period (WBL2015); 150 hours per semester. Internship A/B Triple Period (WBL2026); 225 per semester"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "https://www.montgomeryschoolsmd.org/departments/work-based-learning/internship-for-students/",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Contact the internship coordinator at your MCPS high school.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/grades",
+     "not_stated",
+     "The page names no grade levels."
+    ],
+    [
+     "/eligibility/age",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned",
+     "The page does not say whether placements are paid; students already working can convert existing employment to credit, which implies some are."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mcpswbl-s1",
+   "url": "https://www.montgomeryschoolsmd.org/departments/work-based-learning/internship-for-students/",
+   "title": "Internship for Students | Montgomery County Public Schools",
+   "publisher": "Montgomery County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mcpswbl-s1",
+   "oid": "mcps-wbl-internship-verified-2026",
+   "fields": [
+    "/summary"
+   ],
+   "cycle": "Ongoing placements by semester - verified 2026-09-08",
+   "quote": "An internship is a practical learning experience outside of the normal classroom setting."
+  },
+  {
+   "sid": "mcpswbl-s1",
+   "oid": "mcps-wbl-internship-verified-2026",
+   "fields": [
+    "/schedule/duration"
+   ],
+   "cycle": "Ongoing placements by semester - verified 2026-09-08",
+   "quote": "Internship A/B Single Period (WBL2014); 75 hours per semester; Internship A/B Double Period (WBL2015); 150 hours per semester; Internship A/B Triple Period (WBL2026); 225 per semester"
+  }
+ ]
+}

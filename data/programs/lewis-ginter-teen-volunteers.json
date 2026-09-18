@@ -1,0 +1,247 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "lewis-ginter-teen-volunteers",
+ "name": "Lewis Ginter Botanical Garden Teen Volunteer Opportunities",
+ "org": "Lewis Ginter Botanical Garden",
+ "org_type": "nonprofit",
+ "host_state": "VA",
+ "program_url": "https://www.lewisginter.org/support/volunteer/teen-volunteer-opportunities/",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "lewisginter-work-days",
+   "cycle_kind": "continuous",
+   "cycle_label": "Teen Work-Based Volunteer Days - bi-monthly",
+   "ann": "announced",
+   "summary": "Two-hour work sessions where teens do agriculture, horticulture, landscaping and trail maintenance at the botanical garden.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "engineering_trades",
+    "community_service"
+   ],
+   "subject_raw": [
+    "agriculture",
+    "horticulture",
+    "landscaping",
+    "trail maintenance"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Lewis Ginter Botanical Garden",
+     "addr": "1800 Lakeside Avenue",
+     "city": "Richmond",
+     "county": "Henrico",
+     "state": "VA",
+     "zip": "23228",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "between 14-17 years old"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "two hours long",
+    "schedule_raw": "ongoing bi-monthly sessions"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://forms.office.com/pages/responsepage.aspx?id=-p5QAJI5XkylFs9lKuE2jOgZqv0WQe5LjYyu1qXJJPJUNDFYMDYwMVFFSlQ1WFFLNUs5SDlHMFhIMC4u",
+    "window": "rolling",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "lewisginter-butterflies",
+   "cycle_kind": "continuous",
+   "cycle_label": "Butterflies Bloom exhibit youth volunteer - accepting applications",
+   "ann": "announced",
+   "summary": "Year-round volunteer shifts supporting the garden's butterfly exhibit.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Lewis Ginter Botanical Garden",
+     "addr": "1800 Lakeside Avenue",
+     "city": "Richmond",
+     "county": "Henrico",
+     "state": "VA",
+     "zip": "23228",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "Year-round or summer commitments available"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=-p5QAJI5XkylFs9lKuE2jOgZqv0WQe5LjYyu1qXJJPJUODFYRFhBVUVONUZCNzNMSVlENU1RRlNMRy4u",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The page lists this under teen opportunities but does not restate an age range for this role"
+    ]
+   ]
+  },
+  {
+   "oid": "lewisginter-summer-camp-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer camp youth volunteer 2026",
+   "ann": "announced",
+   "summary": "Teens help lead outdoor learning at the garden's summer camp for a week or more.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "environment_outdoors",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Lewis Ginter Botanical Garden",
+     "addr": "1800 Lakeside Avenue",
+     "city": "Richmond",
+     "county": "Henrico",
+     "state": "VA",
+     "zip": "23228",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none"
+   },
+   "sched": {
+    "dur_raw": "a week (or several!)"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/reported_status",
+     "not_applicable",
+     "Applications are closed for the 2026 summer camp season"
+    ],
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "ginter-s1",
+   "url": "https://www.lewisginter.org/support/volunteer/teen-volunteer-opportunities/",
+   "title": "Teen Volunteer Opportunities",
+   "publisher": "Lewis Ginter Botanical Garden",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "ginter-s1",
+   "oid": "lewisginter-work-days",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/subjects"
+   ],
+   "cycle": "Teen Work-Based Volunteer Days - bi-monthly",
+   "quote": "between 14-17 years old ... agriculture, horticulture, landscaping, and trail maintenance"
+  },
+  {
+   "sid": "ginter-s1",
+   "oid": "lewisginter-butterflies",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Butterflies Bloom exhibit youth volunteer - accepting applications",
+   "quote": "Currently accepting applications!"
+  },
+  {
+   "sid": "ginter-s1",
+   "oid": "lewisginter-summer-camp-2026",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer camp youth volunteer 2026",
+   "quote": "Applications are closed for the 2026 summer camp season"
+  }
+ ]
+}

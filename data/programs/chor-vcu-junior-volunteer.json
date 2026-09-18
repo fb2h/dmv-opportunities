@@ -1,0 +1,259 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "chor-vcu-junior-volunteer",
+ "name": "Children's Hospital of Richmond at VCU Junior Volunteer Program",
+ "org": "Children's Hospital of Richmond at VCU / VCU Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.vcuhealth.org/for-your-health/volunteer-services/junior-volunteer-program",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "chor-vcu-jr-standing",
+   "cycle_kind": "session",
+   "cycle_label": "Fall, spring and summer semester intakes",
+   "ann": "announced",
+   "summary": "High school students aged 14 and up volunteer at VCU Health and the children's hospital, with a new intake each fall, spring and summer.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "VCU Health / Children's Hospital of Richmond at VCU",
+     "city": "Richmond",
+     "county": "Richmond City",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "application_date",
+    "raw": "High school students (ages 14 and up)"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "At the start of every fall, spring and summer semester"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.vcuhealth.org/for-your-health/volunteer-services/junior-volunteer-program",
+    "window": "multiple_rounds",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "capacity_raw": "There are a limited number of positions available",
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Intake timing is described but no dated deadline is published"
+    ],
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "chor-vcu-jr-summer-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 junior volunteer programme - applications closed",
+   "ann": "announced",
+   "summary": "Teens who are fourteen and have finished eighth grade by 15 June 2026 complete mandatory training in mid June and then serve eight three-hour shifts across the eight weeks from 22 June to 14 August 2026.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "VCU Health / Children's Hospital of Richmond at VCU",
+     "addr": "1000 East Broad Street",
+     "city": "Richmond",
+     "county": "Richmond City",
+     "state": "VA",
+     "zip": "23219",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "specified_date",
+    "as_of": "2026-06-15",
+    "raw": "Applicants must be 14 years old and have completed 8th grade by June 15, 2026 to be eligible"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "have completed 8th grade by June 15, 2026"
+   },
+   "other": [
+    [
+     "required",
+     "a mandatory interview in order to be considered for the program"
+    ],
+    [
+     "required",
+     "Mandatory training will be offered at several different times June 15-19"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "sched": {
+    "start": {
+     "year": 2026,
+     "month": 6,
+     "day": 22,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2026,
+     "month": 8,
+     "day": 14,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "hours_raw": "at least eight (8) shifts over the eight (8) weeks of the program, with no more than two (2) shifts per in any week",
+    "dur_raw": "eight (8) weeks, from June 22, 2026 to August 14, 2026; shifts are three-hour blocks"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.vcuhealth.org/for-your-health/volunteer-services/junior-volunteer-program/",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "instructions": "Submit the application form with an email address, then attend the mandatory interview. Volunteer Services: volunteer@vcuhealth.org, (804) 828-0922.",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/reported_status",
+     "closed",
+     "The application period for 2026 has ended. Information about the summer 2027 program will be posted in early 2027."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The page gives no dated application deadline for the closed cycle."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "chor-s1",
+   "url": "https://www.chrichmond.org/about-us/volunteer/",
+   "title": "Hospital volunteer opportunities | Children's Hospital of Richmond at VCU",
+   "publisher": "VCU Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  },
+  {
+   "sid": "vcujr-s1",
+   "url": "https://www.vcuhealth.org/for-your-health/volunteer-services/junior-volunteer-program/",
+   "title": "Junior Volunteer Program | VCU Health",
+   "publisher": "VCU Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "chor-s1",
+   "oid": "chor-vcu-jr-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Fall, spring and summer semester intakes",
+   "quote": "High school students (ages 14 and up)"
+  },
+  {
+   "sid": "chor-s1",
+   "oid": "chor-vcu-jr-standing",
+   "fields": [
+    "/cycle/label"
+   ],
+   "cycle": "Fall, spring and summer semester intakes",
+   "quote": "At the start of every fall, spring and summer semester"
+  },
+  {
+   "sid": "vcujr-s1",
+   "oid": "chor-vcu-jr-summer-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Summer 2026 junior volunteer programme - applications closed",
+   "quote": "Applicants must be 14 years old and have completed 8th grade by June 15, 2026 to be eligible"
+  },
+  {
+   "sid": "vcujr-s1",
+   "oid": "chor-vcu-jr-summer-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/schedule/hours_raw"
+   ],
+   "cycle": "Summer 2026 junior volunteer programme - applications closed",
+   "quote": "eight (8) weeks, from June 22, 2026 to August 14, 2026 ... at least eight (8) shifts over the eight (8) weeks of the program, with no more than two (2) shifts per in any week"
+  },
+  {
+   "sid": "vcujr-s1",
+   "oid": "chor-vcu-jr-summer-2026",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2026 junior volunteer programme - applications closed",
+   "quote": "The application period for 2026 has ended. Information about the summer 2027 program will be posted in early 2027."
+  }
+ ]
+}

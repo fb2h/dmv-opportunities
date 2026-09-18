@@ -1,0 +1,152 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "chesapeake-regional-hs-summer-volunteer",
+ "name": "Chesapeake Regional Healthcare High School Student Summer Volunteer Program",
+ "org": "Chesapeake Regional Healthcare",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://chesapeakeregional.com/about-us/volunteer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "chesapeake-reg-hs-2027",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2027",
+   "ann": "announced",
+   "summary": "A summer volunteer program for high school students at Chesapeake Regional Medical Center, with applications opening March 1.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Chesapeake Regional Medical Center",
+     "city": "Chesapeake",
+     "county": "Chesapeake",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "opens": {
+     "month": 3,
+     "day": 1,
+     "year": 2027,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Online applications for our Summer 2027 program will open on March 1"
+    },
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ],
+    [
+     "/eligibility/grades/values",
+     "not_stated"
+    ],
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ],
+    [
+     "/schedule/start",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "chesapeake-reg-hs-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Prior cycle retained for history.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Chesapeake Regional Medical Center",
+     "city": "Chesapeake",
+     "county": "Chesapeake",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed"
+   },
+   "public": false,
+   "hist": true,
+   "issues": []
+  }
+ ],
+ "sources": [
+  {
+   "sid": "chesreg-s1",
+   "url": "https://chesapeakeregional.com/about-us/volunteer",
+   "title": "Volunteer | Chesapeake Regional Healthcare",
+   "publisher": "Chesapeake Regional Healthcare",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "chesreg-s1",
+   "oid": "chesapeake-reg-hs-2027",
+   "fields": [
+    "/application/opens",
+    "/cycle/announcement_state"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "Online applications for our Summer 2027 program will open on March 1"
+  },
+  {
+   "sid": "chesreg-s1",
+   "oid": "chesapeake-reg-hs-2026",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "The spots for Summer 2026 have been filled"
+  }
+ ]
+}

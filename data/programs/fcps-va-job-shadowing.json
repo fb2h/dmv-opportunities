@@ -1,0 +1,120 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fcps-va-job-shadowing",
+ "name": "FCPS Job Shadowing",
+ "org": "Fairfax County Public Schools, Career and Technical Education",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://www.fcps.edu/wbl",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "fcps-jobshadow-verified",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing shadow placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Students in grades nine to twelve observe a workplace and talk one to one or in groups with the people who work there.",
+   "types": [
+    "shadowing"
+   ],
+   "subjects": [
+    "business_law_government",
+    "health_medicine",
+    "engineering_trades",
+    "computing_technology",
+    "arts_media_humanities"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Fairfax County",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Suggested Grade Levels 9-12"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Fairfax County Public Schools"
+    ],
+    "raw": "Fairfax County Public Schools work-based learning route"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "fcpsjs-s1",
+   "url": "https://www.fcps.edu/wbl",
+   "title": "Work-Based Learning | Fairfax County Public Schools",
+   "publisher": "Fairfax County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "fcpsjs-s1",
+   "oid": "fcps-jobshadow-verified",
+   "fields": [
+    "/eligibility/grades/values",
+    "/costs/compensation_status",
+    "/summary"
+   ],
+   "cycle": "Ongoing shadow placements - verified 2026-09-08",
+   "quote": "Suggested Grade Levels 9-12 ... Unpaid ... Observe a workplace and to have one-on-one and/or group interactions with employees"
+  }
+ ]
+}

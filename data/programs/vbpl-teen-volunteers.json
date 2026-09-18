@@ -1,0 +1,301 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "vbpl-teen-volunteers",
+ "name": "Virginia Beach Public Library Teen Volunteer Roles",
+ "org": "Virginia Beach Public Library",
+ "org_type": "library",
+ "host_state": "VA",
+ "program_url": "https://libraries.virginiabeach.gov/about/get-involved/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "vbpl-tag",
+   "cycle_kind": "continuous",
+   "cycle_label": "Teen Advisory Group - ongoing",
+   "ann": "announced",
+   "summary": "Teens help plan and run the library's teen programs and community events.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "education_working_with_kids"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Virginia Beach Public Library branches",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 12,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Must be between the ages of 12-17"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/od/5915",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations",
+     "not_stated",
+     "Branch assignments are not published on the volunteer page"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "vbpl-summer-reading",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer Reading Challenge volunteer - not currently recruiting",
+   "ann": "unclear",
+   "summary": "Teens help run the library's Summer Reading Challenge: registration, prizes, materials and on-site programs.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Virginia Beach Public Library branches",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Must be between the ages of 14-17"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/od/5915",
+    "window": "unknown",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/reported_status",
+     "not_applicable",
+     "Listing states it is not currently accepting applicants"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year named"
+    ]
+   ]
+  },
+  {
+   "oid": "vbpl-reading-buddies",
+   "cycle_kind": "continuous",
+   "cycle_label": "Reading Buddies - not currently recruiting",
+   "ann": "unclear",
+   "summary": "Teens mentor beginning readers in grades K-3 through reading encouragement and group activities.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Virginia Beach Public Library branches",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Must be between the ages of 14-17"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/od/5915",
+    "window": "unknown",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/reported_status",
+     "not_applicable",
+     "Listing states it is not currently accepting applicants"
+    ]
+   ]
+  },
+  {
+   "oid": "vbpl-archives",
+   "cycle_kind": "continuous",
+   "cycle_label": "Archives volunteer - not currently recruiting",
+   "ann": "unclear",
+   "summary": "Volunteers scan, organize and preserve photographs, historical documents and maps, and may help curate displays.",
+   "types": [
+    "volunteer",
+    "internship"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "community_service",
+    "computing_technology"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Virginia Beach Public Library branches",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "application_date",
+    "raw": "Must be at least 15 years old"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/od/5915",
+    "window": "unknown",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/reported_status",
+     "not_applicable",
+     "Listing states it is not currently accepting applicants"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "vbpl-s1",
+   "url": "https://libraries.virginiabeach.gov/about/get-involved/volunteer",
+   "title": "Volunteer | Virginia Beach Public Library",
+   "publisher": "City of Virginia Beach",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "vbpl-s1",
+   "oid": "vbpl-tag",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Teen Advisory Group - ongoing",
+   "quote": "Must be between the ages of 12-17"
+  },
+  {
+   "sid": "vbpl-s1",
+   "oid": "vbpl-summer-reading",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer Reading Challenge volunteer - not currently recruiting",
+   "quote": "Must be between the ages of 14-17"
+  },
+  {
+   "sid": "vbpl-s1",
+   "oid": "vbpl-reading-buddies",
+   "fields": [
+    "/summary"
+   ],
+   "cycle": "Reading Buddies - not currently recruiting",
+   "quote": "Mentor beginning readers (grades K-3) through reading encouragement and group activities"
+  },
+  {
+   "sid": "vbpl-s1",
+   "oid": "vbpl-archives",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Archives volunteer - not currently recruiting",
+   "quote": "Must be at least 15 years old"
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "gw-dc-happ",
+ "name": "DC Health and Academic Prep Program (DC HAPP)",
+ "org": "George Washington University School of Medicine and Health Sciences",
+ "org_type": "university",
+ "host_state": "DC",
+ "program_url": "https://diversity.smhs.gwu.edu/programs/community-outreach-programs/dc-happ",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "university",
+ "offerings": [
+  {
+   "oid": "gw-dchapp-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 cohort",
+   "ann": "announced",
+   "summary": "A four-week summer programme where DC-area sophomores and juniors practise clinical skills, design a public health project and shadow healthcare professionals at GW Hospital.",
+   "types": [
+    "shadowing",
+    "internship",
+    "research"
+   ],
+   "subjects": [
+    "health_medicine",
+    "science_research",
+    "community_service"
+   ],
+   "subject_raw": [
+    "health professions",
+    "clinical skills",
+    "public health projects",
+    "shadowing"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "GW School of Medicine and Health Sciences, Ross Hall Suite 222",
+     "addr": "2300 Eye Street NW",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20037",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11"
+    ],
+    "basis": "application_date",
+    "raw": "Be currently enrolled as a full-time high school sophomore or junior in a DC/MD/VA school at the time of application"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "DC",
+     "MD",
+     "VA"
+    ],
+    "raw": "Must be a full-time resident of the DC metro area"
+   },
+   "school": {
+    "status": "restricted",
+    "raw": "in a DC/MD/VA school at the time of application"
+   },
+   "gpa": {
+    "min": 2.0,
+    "raw": "Have a minimum cumulative GPA of 2.0"
+   },
+   "other": [
+    [
+     "required",
+     "Demonstrate interest in pursuing a career in medicine or the healthcare field"
+    ],
+    [
+     "required",
+     "ability to commit to full four-week program with regular follow-up through high school graduation"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "dur_min": 4,
+    "dur_unit": "week",
+    "dur_raw": "Four-week summer program"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.gle/KM6L5wVRCYjqsfgdA",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-01-30",
+      "year": 2026,
+      "month": 1,
+      "time": "23:59:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Students must submit all required application materials by Friday, January 30th, 2026 at 11:59 PM"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/schedule/start",
+     "not_stated",
+     "Exact 2026 programme dates are not published"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "The 2027 cohort is not yet announced"
+    ],
+    [
+     "/costs",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "dchapp-s1",
+   "url": "https://diversity.smhs.gwu.edu/programs/community-outreach-programs/dc-happ",
+   "title": "DC Health and Academic Prep Program (DC HAPP)",
+   "publisher": "GW School of Medicine and Health Sciences",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "dchapp-s1",
+   "oid": "gw-dchapp-2026",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/residency/raw",
+    "/eligibility/gpa/min"
+   ],
+   "cycle": "Summer 2026 cohort",
+   "quote": "Be currently enrolled as a full-time high school sophomore or junior in a DC/MD/VA school at the time of application ... Have a minimum cumulative GPA of 2.0 ... Must be a full-time resident of the DC metro area"
+  },
+  {
+   "sid": "dchapp-s1",
+   "oid": "gw-dchapp-2026",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026 cohort",
+   "quote": "Students must submit all required application materials by Friday, January 30th, 2026 at 11:59 PM"
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nih-sip",
+ "name": "NIH Summer Internship Program in Biomedical Research (SIP)",
+ "org": "National Institutes of Health, Office of Intramural Training & Education",
+ "org_type": "federal",
+ "host_state": "MD",
+ "program_url": "https://www.training.nih.gov/research-training/pb/sip/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "nih-sip-2027",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2027",
+   "ann": "announced",
+   "summary": "A paid full-time summer research internship at NIH labs, open to graduating high school seniors who live near an NIH campus.",
+   "types": [
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "health_medicine",
+    "science_research"
+   ],
+   "subject_raw": [
+    "biomedical",
+    "behavioral",
+    "social sciences research"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "NIH main campus",
+     "city": "Bethesda",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "confirmed_campus_approximation",
+     "raw": "main campus in Bethesda, MD"
+    }
+   ],
+   "grades": {
+    "values": [
+     "12",
+     "graduated"
+    ],
+    "basis": "program_start",
+    "raw": "enrolled at least half-time as a senior in high school at the time of application and have graduated high school before the start of the internship"
+   },
+   "age": {
+    "min": 17,
+    "basis": "specified_date",
+    "as_of": "2027-06-01",
+    "raw": "18 years old by September 30, 2027. If you are a graduating high school senior who will be 17 years old as of June 1, 2027 but will turn 18 by September 30, 2027, your permanent home address must be located within 40 miles of an NIH campus"
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "U.S. citizen or permanent resident"
+   },
+   "residency": {
+    "status": "conditional",
+    "radius": 40,
+    "anchor": "an NIH campus",
+    "raw": "your permanent home address must be located within 40 miles of an NIH campus"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "raw": "Stipends for summer interns are adjusted annually and are based on educational level."
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_raw": "full-time summer"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.training.nih.gov/apply-to-train-at-nih/",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "opens": {
+     "year": 2026,
+     "month": 11,
+     "precision": "part_of_month",
+     "part": "mid",
+     "certainty": "confirmed",
+     "raw": "The SIP 2027 application will open in mid-November 2026."
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "year": 2027,
+      "month": 2,
+      "precision": "part_of_month",
+      "part": "mid",
+      "certainty": "confirmed",
+      "raw": "The application will close in mid-February, 2027."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "Stipend amount is set annually and not published on this page"
+    ],
+    [
+     "/schedule/start",
+     "not_stated",
+     "2027 dates not published"
+    ]
+   ]
+  },
+  {
+   "oid": "nih-sip-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Prior cycle retained for history.",
+   "types": [
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "health_medicine",
+    "science_research"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "NIH main campus",
+     "city": "Bethesda",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "sched": {
+    "start_raw": "May 11, 2026",
+    "end_raw": "August 31, 2026"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed"
+   },
+   "public": false,
+   "hist": true,
+   "issues": []
+  }
+ ],
+ "sources": [
+  {
+   "sid": "nih-sip-s1",
+   "url": "https://www.training.nih.gov/research-training/pb/sip/",
+   "title": "Summer Internship Program (SIP) | Office of Intramural Training & Education",
+   "publisher": "National Institutes of Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "nih-sip-s1",
+   "oid": "nih-sip-2027",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/residency/radius_miles"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "18 years old by September 30, 2027. If you are a graduating high school senior who will be 17 years old as of June 1, 2027 but will turn 18 by September 30, 2027, your permanent home address must be located within 40 miles of an NIH campus"
+  },
+  {
+   "sid": "nih-sip-s1",
+   "oid": "nih-sip-2027",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due",
+    "/cycle/announcement_state"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "The SIP 2027 application will open in mid-November 2026. The application will close in mid-February, 2027."
+  },
+  {
+   "sid": "nih-sip-s1",
+   "oid": "nih-sip-2027",
+   "fields": [
+    "/costs/compensation_status"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "Stipends for summer interns are adjusted annually and are based on educational level."
+  },
+  {
+   "sid": "nih-sip-s1",
+   "oid": "nih-sip-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "May 11, 2026 to August 31, 2026"
+  }
+ ]
+}

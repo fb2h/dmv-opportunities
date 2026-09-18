@@ -1,0 +1,145 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "dcpl-teens-of-distinction",
+ "name": "DC Public Library Teens of Distinction",
+ "org": "District of Columbia Public Library",
+ "org_type": "library",
+ "host_state": "DC",
+ "program_url": "https://www.dclibrary.org/node/43080",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "dcpl-teens-distinction-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual part-time library job intake",
+   "ann": "unclear",
+   "summary": "A paid part-time library job for teens aged 16 to 19, twelve hours a week at $10.51 an hour.",
+   "types": [
+    "paid_job"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "computing_technology"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Martin Luther King Jr. Memorial Library and DC Public Library branches",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 19,
+    "basis": "application_date",
+    "raw": "16- to 19-year-olds"
+   },
+   "gpa": {
+    "min": 2.5,
+    "raw": "Applicants must have a GPA of 2.5 or above"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 10.51,
+      "unit": "hour",
+      "raw": "Teens are paid $10.51 per hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "hpw_min": 12,
+    "hpw_raw": "work 12 hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 9,
+      "day": 12,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "All applications are due by Friday, Sept. 12"
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "The page gives Friday, Sept. 12 without a year. September 12 fell on a Friday in 2025, not 2026, so this is very likely a past cycle and must not be shown as a current deadline."
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "unclear",
+     "$10.51 per hour is below the current District minimum wage, which also suggests the page is out of date"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "dcpltod-s1",
+   "url": "https://www.dclibrary.org/node/43080",
+   "title": "Part-Time Jobs for Teens at the Library",
+   "publisher": "District of Columbia Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "dcpltod-s1",
+   "oid": "dcpl-teens-distinction-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/gpa/min"
+   ],
+   "cycle": "Annual part-time library job intake",
+   "quote": "16- to 19-year-olds ... Applicants must have a GPA of 2.5 or above"
+  },
+  {
+   "sid": "dcpltod-s1",
+   "oid": "dcpl-teens-distinction-standing",
+   "fields": [
+    "/costs/compensation",
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "Annual part-time library job intake",
+   "quote": "Teens are paid $10.51 per hour ... work 12 hours per week"
+  }
+ ]
+}

@@ -1,0 +1,287 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "bon-secours-hampton-roads-junior-volunteer",
+ "name": "Bon Secours Hampton Roads Student/Junior Volunteer Program",
+ "org": "Bon Secours Mercy Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.bonsecours.com/jobs-education/volunteer/volunteer-in-hampton-roads",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "bon-secours-hr-jr-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing student and junior volunteer placements, Hampton Roads",
+   "ann": "announced",
+   "summary": "Bon Secours runs a student and junior volunteer route at its Hampton Roads hospitals for volunteers under 18 who want a short-term commitment.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Bon Secours Mary Immaculate Hospital",
+     "city": "Newport News",
+     "county": "Newport News",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Bon Secours Maryview Medical Center",
+     "city": "Portsmouth",
+     "county": "Portsmouth",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Bon Secours Southampton Medical Center",
+     "city": "Franklin",
+     "county": "Franklin City",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "fee": {
+    "status": "unknown"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "direct",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The hub page names a Student/Junior Volunteer program but publishes no age or grade rule"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ],
+    [
+     "/costs",
+     "unknown",
+     "Neither fee nor pay information was located"
+    ]
+   ]
+  },
+  {
+   "oid": "bonsecours-jr-2020-last-published",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2020 - the last cycle the hospital has published",
+   "ann": "unclear",
+   "summary": "Teens who turn fourteen by 31 December of the previous year and hold a C average volunteer at Mary Immaculate Hospital for at least four hours a week over six weeks; the hospital's page still carries its 2020 dates.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Bon Secours Mary Immaculate Hospital",
+     "addr": "2 Bernardine Drive",
+     "city": "Newport News",
+     "county": "Newport News",
+     "state": "VA",
+     "zip": "23602",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "specified_date",
+    "as_of": "12-31",
+    "raw": "Must be 14 years of age by December 31st the previous year."
+   },
+   "gpa": {
+    "min": 2.0,
+    "scale": 4.0,
+    "raw": "At least a 2.0 GPA/C average."
+   },
+   "other": [
+    [
+     "required",
+     "Provide two (2) teacher or counselor references"
+    ],
+    [
+     "required",
+     "parental consent"
+    ],
+    [
+     "required",
+     "Attend a scheduled interview"
+    ],
+    [
+     "required",
+     "Complete volunteer orientation and tuberculosis screening before starting"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "sched": {
+    "start": {
+     "year": 2020,
+     "month": 7,
+     "day": 13,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2020,
+     "month": 8,
+     "day": 21,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "hours_raw": "Able to volunteer at least four (4) hours per week for a minimum of six (6) weeks."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.bonsecours.com/jobs-education/volunteer/volunteer-in-hampton-roads/student-junior-volunteer-programs",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Complete the online Junior Volunteer Application, supply two teacher or counsellor references and the parental consent items, interview, then finish orientation and TB screening.",
+    "opens": {
+     "month": 3,
+     "day": 1,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "applications will be accepted from March 1 - April 17"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 4,
+      "day": 17,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "applications will be accepted from March 1 - April 17"
+     },
+     {
+      "kind": "documents",
+      "year": 2020,
+      "month": 6,
+      "day": 2,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "all attached paperwork must be filled out completely and submitted to the Volunteer Department no later than June 2, 2020"
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/cycle/announcement_state",
+     "unclear",
+     "The hospital's page still advertises the summer 2020 session, so no current cycle is announced. The eligibility rules and the March 1 to April 17 window are kept because they are the best predictor of the next cycle."
+    ],
+    [
+     "/sources",
+     "stale",
+     "Page content dates from 2020 and needs a telephone check before publication."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "bonsecours-s1",
+   "url": "https://www.bonsecours.com/jobs-education/volunteer/volunteer-in-hampton-roads",
+   "title": "Volunteer in Hampton Roads | Bon Secours",
+   "publisher": "Bon Secours Mercy Health",
+   "auth": "first_party",
+   "roles": [
+    "discovery",
+    "program_detail"
+   ]
+  },
+  {
+   "sid": "bonsec-s1",
+   "url": "https://www.bonsecours.com/jobs-education/volunteer/volunteer-in-hampton-roads/student-junior-volunteer-programs",
+   "title": "Student and Junior Volunteer Programs | Bon Secours Hampton Roads",
+   "publisher": "Bon Secours",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "bonsecours-s1",
+   "oid": "bon-secours-hr-jr-standing",
+   "fields": [
+    "/opportunity_types",
+    "/locations"
+   ],
+   "cycle": "Ongoing student and junior volunteer placements, Hampton Roads",
+   "quote": "Student/Junior Volunteer program"
+  },
+  {
+   "sid": "bonsec-s1",
+   "oid": "bonsecours-jr-2020-last-published",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/gpa/min"
+   ],
+   "cycle": "Summer 2020 - the last cycle the hospital has published",
+   "quote": "Must be 14 years of age by December 31st the previous year. ... At least a 2.0 GPA/C average."
+  },
+  {
+   "sid": "bonsec-s1",
+   "oid": "bonsecours-jr-2020-last-published",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/schedule/hours_raw"
+   ],
+   "cycle": "Summer 2020 - the last cycle the hospital has published",
+   "quote": "The Junior program starts July 13, 2020 and finishes August 21, 2020. ... Able to volunteer at least four (4) hours per week for a minimum of six (6) weeks."
+  },
+  {
+   "sid": "bonsec-s1",
+   "oid": "bonsecours-jr-2020-last-published",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/0"
+   ],
+   "cycle": "Summer 2020 - the last cycle the hospital has published",
+   "quote": "applications will be accepted from March 1 - April 17"
+  }
+ ]
+}

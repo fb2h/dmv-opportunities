@@ -1,0 +1,133 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fairfax-volunteer-fire-junior-member",
+ "name": "Fairfax County Volunteer Fire Department Junior Membership",
+ "org": "Fairfax County Volunteer Fire & Rescue Association",
+ "org_type": "nonprofit",
+ "host_state": "VA",
+ "program_url": "https://fcvfra.org/resources/faqs/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "emergency_services",
+ "offerings": [
+  {
+   "oid": "fairfax-vfd-junior-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing junior membership at three Fairfax County stations",
+   "ann": "announced",
+   "summary": "Three Fairfax County volunteer fire departments take 16- and 17-year-olds as junior members, training and serving alongside the department.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "engineering_trades"
+   ],
+   "subject_raw": [
+    "fire and rescue",
+    "emergency medical services"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Vienna Volunteer Fire Department",
+     "city": "Vienna",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Centreville Volunteer Fire Department",
+     "city": "Centreville",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Greater Springfield Volunteer Fire Department",
+     "city": "Springfield",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 16,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "the Vienna, Centreville, and Greater Springfield Volunteer Fire Departments accept 16 and 17-year-olds as junior members"
+   },
+   "fee": {
+    "status": "unknown"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://vms.fcvfra.org/recruitment.cfm?action=info",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated",
+     "Time commitment for junior members is not published by the association"
+    ],
+    [
+     "/costs/fee_status",
+     "unknown",
+     "Each department sets its own terms and none were read"
+    ],
+    [
+     "/locations",
+     "not_stated",
+     "Station street addresses are not published on the association FAQ"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "fcvfra-s1",
+   "url": "https://fcvfra.org/resources/faqs/",
+   "title": "FAQs | Fairfax County Volunteer Fire & Rescue Association",
+   "publisher": "Fairfax County Volunteer Fire & Rescue Association",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "fcvfra-s1",
+   "oid": "fairfax-vfd-junior-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/locations"
+   ],
+   "cycle": "Ongoing junior membership at three Fairfax County stations",
+   "quote": "the Vienna, Centreville, and Greater Springfield Volunteer Fire Departments accept 16 and 17-year-olds as junior members"
+  }
+ ]
+}

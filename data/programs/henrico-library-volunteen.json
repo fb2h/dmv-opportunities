@@ -1,0 +1,172 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "henrico-library-volunteen",
+ "name": "Henrico County Public Library VolunTeen Program and Teen Advisory Board",
+ "org": "Henrico County Public Library",
+ "org_type": "library",
+ "host_state": "VA",
+ "program_url": "https://www.henricolibrary.org/volunteer-work-for-teens",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "henrico-volunteen",
+   "cycle_kind": "continuous",
+   "cycle_label": "VolunTeen Program - ongoing",
+   "ann": "announced",
+   "summary": "Teens aged 14 to 18 volunteer at Henrico County library branches and earn service hours.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Henrico County Public Library branches",
+     "county": "Henrico",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "for ages 14-18"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.henricolibrary.org/volunteen-program",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/reported_status",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/locations",
+     "not_stated",
+     "Branch addresses not published on this page"
+    ]
+   ]
+  },
+  {
+   "oid": "henrico-tab",
+   "cycle_kind": "continuous",
+   "cycle_label": "Teen Advisory Board - ongoing",
+   "ann": "announced",
+   "summary": "A teen board that advises the library and helps shape teen programming.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Henrico County Public Library branches",
+     "county": "Henrico",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 12,
+    "basis": "application_date",
+    "raw": "for ages 12 and up"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.henricolibrary.org/teen-advisory-board",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/reported_status",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "henrico-s1",
+   "url": "https://www.henricolibrary.org/volunteer-work-for-teens",
+   "title": "Volunteer Work for Teens",
+   "publisher": "Henrico County Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "henrico-s1",
+   "oid": "henrico-volunteen",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "VolunTeen Program - ongoing",
+   "quote": "for ages 14-18"
+  },
+  {
+   "sid": "henrico-s1",
+   "oid": "henrico-tab",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Teen Advisory Board - ongoing",
+   "quote": "for ages 12 and up"
+  }
+ ]
+}

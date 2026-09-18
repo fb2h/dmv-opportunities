@@ -1,0 +1,126 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "meadowside-nature-center-hs-internship",
+ "name": "Meadowside Nature Center MCPS High School Internship",
+ "org": "Montgomery Parks (M-NCPPC)",
+ "org_type": "parks",
+ "host_state": "MD",
+ "program_url": "https://montgomeryparks.org/parks-and-trails/rock-creek-regional-park/meadowside-nature-center/volunteers/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "meadowside-hs-internship-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing MCPS internship placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Montgomery County high schoolers care for reptiles, amphibians and insects and support education activities at Meadowside Nature Center, on a schedule agreed with staff.",
+   "types": [
+    "internship",
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "care of reptiles, amphibians, insects",
+    "supporting education activities"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Meadowside Nature Center",
+     "addr": "5100 Meadowside Lane",
+     "city": "Rockville",
+     "county": "Montgomery",
+     "state": "MD",
+     "zip": "20855",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "High school students"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Montgomery County Public Schools"
+    ],
+    "raw": "must be preapproved by Meadowside Volunteer Coordinator and School Internship Coordinator"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Volunteer-based, unpaid; separate paid seasonal internships with Montgomery Parks exist through a different application"
+   },
+   "sched": {
+    "schedule_raw": "offered based on staff availability to support the intern and the schedule of the student"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "volunteer.mnc@montgomeryparks.org or the MCPS Career Readiness page",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "meadowside-s1",
+   "url": "https://montgomeryparks.org/parks-and-trails/rock-creek-regional-park/meadowside-nature-center/volunteers/",
+   "title": "Meadowside Nature Center Volunteers",
+   "publisher": "Montgomery Parks (M-NCPPC)",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "meadowside-s1",
+   "oid": "meadowside-hs-internship-verified",
+   "fields": [
+    "/subject_terms_raw",
+    "/eligibility/school/raw"
+   ],
+   "cycle": "Ongoing MCPS internship placements - verified 2026-09-08",
+   "quote": "care of reptiles, amphibians, insects, and supporting education activities"
+  }
+ ]
+}

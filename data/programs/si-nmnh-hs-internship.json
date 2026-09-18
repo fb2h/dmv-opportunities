@@ -1,0 +1,189 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "si-nmnh-hs-internship",
+ "name": "NMNH Summer High School Internship Program (YES! Program)",
+ "org": "Smithsonian National Museum of Natural History",
+ "org_type": "museum",
+ "host_state": "DC",
+ "program_url": "https://naturalhistory.si.edu/education/youth-programs/high-school-internship-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "si-nmnh-hs-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A paid eight-week summer internship at the Natural History Museum where high schoolers work with museum departments on science and non-science projects.",
+   "types": [
+    "internship",
+    "research"
+   ],
+   "subjects": [
+    "science_research",
+    "arts_media_humanities",
+    "environment_outdoors",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "museum work",
+    "research",
+    "public engagement"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Smithsonian National Museum of Natural History",
+     "addr": "1000 Madison Drive NW",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20560",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Applicants must be currently enrolled high school students (grades 9 - 12)"
+   },
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "program_start",
+    "raw": "between the ages of 15 and 18 at the start of the internship program"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "DC",
+     "MD",
+     "VA"
+    ],
+    "raw": "All interns must be located within the D.C., Maryland, or Virginia area, within commuting distance of the National Museum of Natural History for the full duration of the internship program."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 5600,
+      "unit": "total",
+      "raw": "$5,600 stipend award ($700/week)"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": "2026-06-23",
+    "end": "2026-08-14",
+    "dur_min": 8,
+    "dur_unit": "week",
+    "hpw_min": 24,
+    "schedule_raw": "Tuesday - Friday, 10 a.m. to 4 p.m."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://solaa.si.edu/solaa/#/public",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "month": 2,
+     "day": 16,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "The application will launch on February 16th"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-03-20",
+      "year": 2026,
+      "month": 3,
+      "time": "23:59:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "the deadline to apply is: Friday, March 20th, 2026, at 11:59 p.m. (ET)"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 cycle not yet announced on this page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "nmnh-s1",
+   "url": "https://naturalhistory.si.edu/education/youth-programs/high-school-internship-program",
+   "title": "High School Internship Program",
+   "publisher": "Smithsonian National Museum of Natural History",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "nmnh-s1",
+   "oid": "si-nmnh-hs-2026",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Applicants must be currently enrolled high school students (grades 9 - 12) between the ages of 15 and 18 at the start of the internship program. All interns must be located within the D.C., Maryland, or Virginia area, within commuting distance of the National Museum of Natural History for the full duration of the internship program."
+  },
+  {
+   "sid": "nmnh-s1",
+   "oid": "si-nmnh-hs-2026",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "$5,600 stipend award ($700/week)"
+  },
+  {
+   "sid": "nmnh-s1",
+   "oid": "si-nmnh-hs-2026",
+   "fields": [
+    "/application/deadlines/final/due",
+    "/application/opens"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "The application will launch on February 16th and the deadline to apply is: Friday, March 20th, 2026, at 11:59 p.m. (ET)"
+  }
+ ]
+}

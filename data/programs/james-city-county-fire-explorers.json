@@ -1,0 +1,153 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "james-city-county-fire-explorers",
+ "name": "James City County Fire Explorers",
+ "org": "James City County Fire Department",
+ "org_type": "government",
+ "host_state": "VA",
+ "program_url": "https://www.jamescitycountyva.gov/3011/Fire-Explorers",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "public_safety_long_tail",
+ "offerings": [
+  {
+   "oid": "jcc-fire-explorers-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing post membership - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Young people aged fourteen and up who have finished eighth grade train with professional firefighters and paramedics in rope work, vehicle extrication, hose operations and first aid, and take part in community service projects.",
+   "types": [
+    "trainee",
+    "volunteer",
+    "job_shadowing"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "engineering_trades"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "James City County Fire Department",
+     "city": "Williamsburg",
+     "county": "James City",
+     "state": "VA",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 20,
+    "basis": "application_date",
+    "raw": "The program is open to young men and women ages 14 (and completed the eighth grade) through 20 years old."
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "ages 14 (and completed the eighth grade)"
+   },
+   "other": [
+    [
+     "note",
+     "Explorers aged 16 and over may take part in ride-alongs, regional skills competitions and the annual Fire Explorers Day Camp in Virginia Beach"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "hours_raw": "Time commitment involves monthly meetings, in addition to periodic special training and service events."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.jamescitycountyva.gov/3011/Fire-Explorers",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Contact the programme leaders through the county's Fire Explorers page.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/application/instructions",
+     "incomplete",
+     "The page says to contact the programme leaders but the contact details did not resolve on retrieval."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "jccfire-s1",
+   "url": "https://www.jamescitycountyva.gov/3011/Fire-Explorers",
+   "title": "Fire Explorers | James City County, VA",
+   "publisher": "James City County",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "jccfire-s1",
+   "oid": "jcc-fire-explorers-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Ongoing post membership - verified 2026-09-08",
+   "quote": "The program is open to young men and women ages 14 (and completed the eighth grade) through 20 years old."
+  },
+  {
+   "sid": "jccfire-s1",
+   "oid": "jcc-fire-explorers-verified",
+   "fields": [
+    "/summary"
+   ],
+   "cycle": "Ongoing post membership - verified 2026-09-08",
+   "quote": "Fire Explorers get to train with professional firefighters and paramedics to learn real life rescue skills such as rope repelling, vehicle extrication, fire hose operations and first aid. They also participate in community service projects."
+  },
+  {
+   "sid": "jccfire-s1",
+   "oid": "jcc-fire-explorers-verified",
+   "fields": [
+    "/schedule/hours_raw"
+   ],
+   "cycle": "Ongoing post membership - verified 2026-09-08",
+   "quote": "Time commitment involves monthly meetings, in addition to periodic special training and service events."
+  }
+ ]
+}

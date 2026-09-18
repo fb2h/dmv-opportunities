@@ -1,0 +1,137 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "capital-area-food-bank-volunteer",
+ "name": "Capital Area Food Bank Distribution Center Volunteering",
+ "org": "Capital Area Food Bank",
+ "org_type": "nonprofit",
+ "host_state": "DC",
+ "program_url": "https://volunteer.capitalareafoodbank.org/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "nonprofit",
+ "offerings": [
+  {
+   "oid": "cafb-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing distribution centre shifts",
+   "ann": "announced",
+   "summary": "Volunteers sort and pack food at the food bank's DC distribution centre on scheduled morning or afternoon shifts.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Capital Area Food Bank distribution center",
+     "addr": "4900 Puerto Rico Avenue, NE",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20017",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 12,
+    "basis": "application_date",
+    "raw": "The minimum requirement to volunteer in our distribution center is 12 years of age"
+   },
+   "other": [
+    [
+     "required",
+     "Have a waiver signed by a parent or guardian"
+    ],
+    [
+     "required",
+     "Be accompanied and actively supervised by an adult"
+    ],
+    [
+     "required",
+     "1 adult chaperone for every 10 volunteers age 18 or under"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "schedule_raw": "Morning shifts begin at 8:45 a.m.; afternoon shifts begin at 12:45 p.m."
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://volunteer.capitalareafoodbank.org/calendar",
+    "window": "rolling",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "parent_consent",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "Have a waiver signed by a parent or guardian"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/eligibility/other_conditions",
+     "unclear",
+     "Under-18 volunteers must be accompanied by an adult, which limits solo participation; students should check before signing up alone"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "cafb-s1",
+   "url": "https://volunteer.capitalareafoodbank.org/faqs",
+   "title": "Capital Area Food Bank | Frequently Asked Questions",
+   "publisher": "Capital Area Food Bank",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "cafb-s1",
+   "oid": "cafb-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing distribution centre shifts",
+   "quote": "The minimum requirement to volunteer in our distribution center is 12 years of age"
+  },
+  {
+   "sid": "cafb-s1",
+   "oid": "cafb-vol-standing",
+   "fields": [
+    "/eligibility/other_conditions"
+   ],
+   "cycle": "Ongoing distribution centre shifts",
+   "quote": "Have a waiver signed by a parent or guardian ... Be accompanied and actively supervised by an adult ... 1 adult chaperone for every 10 volunteers age 18 or under"
+  }
+ ]
+}

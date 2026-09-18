@@ -1,0 +1,122 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pgcmls-teen-action-group",
+ "name": "PGCMLS Teen Action Group (TAG)",
+ "org": "Prince George's County Memorial Library System",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.pgcmls.info/tag",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "pgcmls-tag-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Branch groups on varying schedules - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Prince George's County teens run community programmes and service learning through a branch Teen Action Group, meeting for one to two hours at a time.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "community-based programs",
+    "service learning",
+    "leadership",
+    "library advocacy"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "PGCMLS branches",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "residency": {
+    "status": "conditional",
+    "raw": "Prince George's County teens and tweens"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Prince George's County teens and tweens"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer opportunity"
+   },
+   "sched": {
+    "schedule_raw": "Each TAG meets on a different schedule; most TAG meetings last 1-2 hours"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://www.pgcmls.info/events?term=Teen+Action+Group",
+    "window": "rolling",
+    "status": "open",
+    "selection": "open_enrollment",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The page says teens and tweens without giving an age range"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pgcmlstag-s1",
+   "url": "https://www.pgcmls.info/tag",
+   "title": "Teen Action Group (TAG) | PGCMLS",
+   "publisher": "Prince George's County Memorial Library System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pgcmlstag-s1",
+   "oid": "pgcmls-tag-verified",
+   "fields": [
+    "/eligibility/residency/raw",
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Branch groups on varying schedules - verified 2026-09-08",
+   "quote": "Prince George's County teens and tweens ... Each TAG meets on a different schedule; Most TAG meetings last 1-2 hours"
+  }
+ ]
+}

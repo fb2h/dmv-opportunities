@@ -1,0 +1,118 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "howard-county-syep",
+ "name": "Howard County Summer Youth Employment Program",
+ "org": "Howard County Office of Workforce Development",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://www.howardcountymd.gov/youth-services",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "howard-syep-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A county summer work experience with career coaching and resume help for Howard County young people.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Paid/unpaid work experience",
+    "Career and employment coaching",
+    "Resume and interviewing assistance"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Howard County worksites",
+     "county": "Howard",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "conditional",
+    "raw": "Paid/unpaid work experience"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "instructions": "410-313-1060",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "The page publishes no age, grade or residency rule"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The page states only that the application period has closed"
+    ],
+    [
+     "/costs/compensation_status",
+     "conflicting",
+     "The page describes both paid and unpaid work experience without saying which applies to whom"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "howardsyep-s1",
+   "url": "https://www.howardcountymd.gov/youth-services",
+   "title": "Workforce Development Opportunities for Youth | Howard County",
+   "publisher": "Howard County, Maryland",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "howardsyep-s1",
+   "oid": "howard-syep-2026",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "The Summer Youth Employment Program application period has now closed."
+  },
+  {
+   "sid": "howardsyep-s1",
+   "oid": "howard-syep-2026",
+   "fields": [
+    "/costs/compensation_status"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Paid/unpaid work experience"
+  }
+ ]
+}

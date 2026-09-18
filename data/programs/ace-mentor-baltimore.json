@@ -1,0 +1,134 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "ace-mentor-baltimore",
+ "name": "ACE Mentor Program of Baltimore",
+ "org": "ACE Mentor Program of Baltimore",
+ "org_type": "nonprofit",
+ "host_state": "MD",
+ "program_url": "https://www.acementorbaltimore.org/students",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "needs_review",
+ "lane": "employer",
+ "offerings": [
+  {
+   "oid": "ace-baltimore-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "February to May mentoring season",
+   "ann": "announced",
+   "summary": "High schoolers meet weekly with architects, engineers and construction professionals to design a real project as a team, and gain access to summer internships and scholarships.",
+   "types": [
+    "trainee"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "arts_media_humanities",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "construction",
+    "architecture",
+    "engineering",
+    "interior design",
+    "landscape architecture",
+    "facilities management"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Local schools and libraries in Baltimore",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "all students in 9th through 12th grade who are interested in pursuing careers in construction, architecture, engineering, interior design, landscape architecture, facilities management, and related fields"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "conditional",
+    "raw": "access to summer internships, $150,000 worth of scholarships, and other development opportunities"
+   },
+   "sched": {
+    "schedule_raw": "2 hours / week from February-May"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://app.acementor.org/register",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "open_enrollment",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "unclear",
+     "The weekly sessions are a mentored design project rather than assigned duties inside an organization, which sits on the P01 boundary. The linked summer internships would be in scope; the mentoring season on its own needs an owner decision."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation_status",
+     "unclear",
+     "Internships and scholarships are described as access, not as compensation for the mentoring season"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "ace-s1",
+   "url": "https://www.acementorbaltimore.org/students",
+   "title": "Join as a Student - ACE Mentor of Baltimore",
+   "publisher": "ACE Mentor Program of Baltimore",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "ace-s1",
+   "oid": "ace-baltimore-standing",
+   "fields": [
+    "/eligibility/grades/values"
+   ],
+   "cycle": "February to May mentoring season",
+   "quote": "all students in 9th through 12th grade who are interested in pursuing careers in construction, architecture, engineering, interior design, landscape architecture, facilities management, and related fields"
+  },
+  {
+   "sid": "ace-s1",
+   "oid": "ace-baltimore-standing",
+   "fields": [
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "February to May mentoring season",
+   "quote": "2 hours / week from February-May"
+  }
+ ]
+}

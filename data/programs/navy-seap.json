@@ -1,0 +1,185 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "navy-seap",
+ "name": "Science and Engineering Apprenticeship Program (SEAP)",
+ "org": "U.S. Office of Naval Research / Department of the Navy",
+ "org_type": "federal",
+ "host_state": "DC",
+ "program_url": "https://www.navalsteminterns.us/seap/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "navy-seap-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "An eight-week paid summer apprenticeship doing real Navy research alongside a scientist or engineer mentor at a Navy laboratory.",
+   "types": [
+    "apprenticeship",
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "science_research",
+    "engineering_trades",
+    "computing_technology"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Participating Department of the Navy laboratory",
+     "kind": "to_be_assigned",
+     "raw": "More than 38 laboratories around the country"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "High school students who have completed at least Grade 9"
+   },
+   "age": {
+    "min": 16,
+    "basis": "program_start",
+    "raw": "Must be 16 years of age or older by the internship start date"
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "Solely U.S. Citizens"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 4000,
+      "unit": "session",
+      "raw": "New participant: $4,000"
+     },
+     {
+      "kind": "stipend",
+      "min": 4500,
+      "unit": "session",
+      "raw": "Returning participant: $4,500"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 8,
+    "dur_unit": "week",
+    "dur_raw": "Eight weeks"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://navalsteminterns.embark.com/embedded/seap",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "month": 8,
+     "day": 1,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "Applications Open August 1st- November 1st"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 11,
+      "day": 1,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Applications Open August 1st- November 1st"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/locations",
+     "unclear",
+     "The labs page does not list laboratory cities; DC/MD/VA sites must be confirmed at NRL and other Navy labs before publication"
+    ],
+    [
+     "/cycle",
+     "unclear",
+     "Page says applications closed for 2026 while also stating an August 1 - November 1 window; the 2027 cycle status needs confirmation"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "seap-s1",
+   "url": "https://www.navalsteminterns.us/seap/",
+   "title": "Science and Engineering Apprenticeship Program (SEAP)",
+   "publisher": "Naval STEM / Office of Naval Research",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  },
+  {
+   "sid": "seap-s2",
+   "url": "https://www.navalsteminterns.us/seap/labs.html",
+   "title": "SEAP participating laboratories",
+   "publisher": "Naval STEM",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "seap-s1",
+   "oid": "navy-seap-2026",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/age/min",
+    "/eligibility/citizenship/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "High school students who have completed at least Grade 9; Must be 16 years of age or older by the internship start date; Solely U.S. Citizens"
+  },
+  {
+   "sid": "seap-s1",
+   "oid": "navy-seap-2026",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "New participant: $4,000 / Returning participant: $4,500"
+  },
+  {
+   "sid": "seap-s1",
+   "oid": "navy-seap-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Applications Open August 1st- November 1st"
+  }
+ ]
+}

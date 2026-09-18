@@ -1,0 +1,300 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pg-parks-summer-playtime-volunteer",
+ "name": "Prince George's Parks Summer Volunteer Programs",
+ "org": "Maryland-National Capital Park and Planning Commission, Prince George's County Department of Parks and Recreation",
+ "org_type": "parks",
+ "host_state": "MD",
+ "program_url": "https://www.pgparks.com/get-involved/volunteer-opportunities",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "pgparks-summer-playtime",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer Playtime volunteer - age 14 and up",
+   "ann": "announced",
+   "summary": "Fourteen-year-olds and up help run the county's Summer Playtime programme for younger children, twelve to fifteen hours a week.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service",
+    "environment_outdoors"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Prince George's County parks and recreation sites",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "specified_date",
+    "as_of": "2026-05-31",
+    "raw": "Summer Playtime: 14 years old ... Must be required age on or before May 31"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_min": 12,
+    "hpw_max": 15,
+    "hpw_raw": "12-15 hours per week",
+    "schedule_raw": "pre-service training May/June"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://pgc.samaritan.com/custom/1543/opp_search",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "opens": {
+     "month": 3,
+     "day": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "March 1-May 1"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 5,
+      "day": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "March 1-May 1"
+     }
+    ]
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "pre-service training May/June"
+    }
+   ],
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "The March 1 to May 1 window is published without a year"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named"
+    ]
+   ]
+  },
+  {
+   "oid": "pgparks-summer-day-camp",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer Day Camp volunteer - age 15 and up",
+   "ann": "announced",
+   "summary": "Fifteen-year-olds and up help run county summer day camps, twelve to fifteen hours a week, after a background check.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service",
+    "environment_outdoors"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Prince George's County day camp sites",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "specified_date",
+    "as_of": "2026-05-31",
+    "raw": "Summer Day Camps: 15 years old ... Must be required age on or before May 31"
+   },
+   "other": [
+    [
+     "required",
+     "Youth volunteers ages 15+ must complete criminal background check"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_min": 12,
+    "hpw_max": 15,
+    "hpw_raw": "12-15 hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://pgc.samaritan.com/custom/1543/opp_search",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "opens": {
+     "month": 3,
+     "day": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "March 1-May 1"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 5,
+      "day": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "March 1-May 1"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "No year is published with the window"
+    ]
+   ]
+  },
+  {
+   "oid": "pgparks-weed-warrior",
+   "cycle_kind": "continuous",
+   "cycle_label": "Weed Warrior group events - ongoing",
+   "ann": "announced",
+   "summary": "Volunteers aged 16 and up identify and remove invasive plants in county parks and earn student service hours.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "community_service",
+    "science_research"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Prince George's County parks",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "16 or older"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; eligible for student service hours"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://pgc.samaritan.com/custom/1543/opp_search?keyword=weed%2520warrior",
+    "window": "rolling",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/locations",
+     "to_be_assigned",
+     "Event sites vary and are listed in the volunteer portal"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pgparks-s1",
+   "url": "https://www.pgparks.com/get-involved/volunteer-opportunities",
+   "title": "Volunteer Opportunities - Prince George's County Parks and Recreation",
+   "publisher": "M-NCPPC Prince George's County",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pgparks-s1",
+   "oid": "pgparks-summer-playtime",
+   "fields": [
+    "/eligibility/age/min",
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "Summer Playtime volunteer - age 14 and up",
+   "quote": "Summer Playtime: 14 years old ... Must be required age on or before May 31 ... 12-15 hours per week"
+  },
+  {
+   "sid": "pgparks-s1",
+   "oid": "pgparks-summer-day-camp",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/other_conditions"
+   ],
+   "cycle": "Summer Day Camp volunteer - age 15 and up",
+   "quote": "Summer Day Camps: 15 years old ... Youth volunteers ages 15+ must complete criminal background check"
+  },
+  {
+   "sid": "pgparks-s1",
+   "oid": "pgparks-weed-warrior",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Weed Warrior group events - ongoing",
+   "quote": "16 or older"
+  }
+ ]
+}

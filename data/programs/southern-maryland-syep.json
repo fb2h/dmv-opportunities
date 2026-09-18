@@ -1,0 +1,325 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "southern-maryland-syep",
+ "name": "Southern Maryland JobSource Summer Youth Employment Program",
+ "org": "Southern Maryland JobSource (Tri-County Council for Southern Maryland)",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://southernmarylandjobsource.org/youth/summer-youth-employment-program/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "somd-syep-stmarys",
+   "cycle_kind": "annual",
+   "cycle_label": "St. Mary's County - ages 14 to 24",
+   "ann": "announced",
+   "summary": "A six-week paid summer work placement with a local employer, plus resume and interview coaching, for St. Mary's County youth from age 14.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites in St. Mary's County",
+     "county": "St. Mary's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "St. Mary's County (ages 14-24)"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "St. Mary's County, MD"
+    ],
+    "raw": "living in ... St. Mary's County"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "dur_min": 6,
+    "dur_unit": "week",
+    "dur_raw": "6-week program"
+   },
+   "app": {
+    "route": "direct",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "instructions": "info@tccsmd.org | 301-844-6404",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated",
+     "A participant testimonial mentions being paid, but no wage is published"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year named"
+    ]
+   ]
+  },
+  {
+   "oid": "somd-syep-charles-calvert",
+   "cycle_kind": "annual",
+   "cycle_label": "Charles and Calvert Counties - ages 16 to 24",
+   "ann": "announced",
+   "summary": "The same six-week paid summer work placement for Charles and Calvert County youth, with a higher age floor of 16.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites in Charles and Calvert Counties",
+     "county": "Charles",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "between the ages of 16-24 living in Charles or Calvert County"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Charles County, MD",
+     "Calvert County, MD"
+    ],
+    "raw": "living in Charles or Calvert County"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "dur_min": 6,
+    "dur_unit": "week",
+    "dur_raw": "6-week program; an 11-week work-partnership program is also described"
+   },
+   "app": {
+    "route": "direct",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year named"
+    ]
+   ]
+  },
+  {
+   "oid": "somd-syep-verified-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Six-week summer programme - no current cycle published",
+   "ann": "unclear",
+   "summary": "A six-week summer employment programme for young people in Charles, Calvert and St Mary's counties, with an eleven-week work-partnership track alongside it.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites in Charles, Calvert and St. Mary's counties",
+     "county": "Charles",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    },
+    {
+     "venue": "Employer worksites in St. Mary's County",
+     "county": "St. Mary's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 14,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "Are you between the ages of 16-24 living in Charles or Calvert County? OR Do you live in St. Mary's County? (ages 14-24)"
+   },
+   "residency": {
+    "status": "restricted",
+    "raw": "living in Charles or Calvert County ... or St. Mary's County"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "dur_raw": "a 6-week program ... an 11-week work-partnership program"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://southernmarylandjobsource.org/youth/summer-youth-employment-program/",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Email info@tccsmd.org or ring 301-844-6404.",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/cycle/announcement_state",
+     "unclear",
+     "The page describes the programme but announces no dated cycle, so it is held back until a current window is published."
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned",
+     "The page does not state a wage or stipend."
+    ],
+    [
+     "/eligibility/age",
+     "split",
+     "The age floor differs by county: 16 in Charles and Calvert, 14 in St Mary's. The record uses the wider range and should be split once a cycle is announced."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "somd-s1",
+   "url": "https://southernmarylandjobsource.org/youth/summer-youth-employment-program/",
+   "title": "Summer Youth Employment Program | Southern Maryland JobSource",
+   "publisher": "Tri-County Council for Southern Maryland",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  },
+  {
+   "sid": "somdsyep-s1",
+   "url": "https://southernmarylandjobsource.org/youth/summer-youth-employment-program/",
+   "title": "Summer Youth Employment Program | Southern Maryland JobSource",
+   "publisher": "Tri-County Council for Southern Maryland",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "somd-s1",
+   "oid": "somd-syep-charles-calvert",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Charles and Calvert Counties - ages 16 to 24",
+   "quote": "between the ages of 16-24 living in Charles or Calvert County"
+  },
+  {
+   "sid": "somd-s1",
+   "oid": "somd-syep-stmarys",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "St. Mary's County - ages 14 to 24",
+   "quote": "St. Mary's County (ages 14-24)"
+  },
+  {
+   "sid": "somd-s1",
+   "oid": "somd-syep-charles-calvert",
+   "fields": [
+    "/schedule/duration/min"
+   ],
+   "cycle": "Charles and Calvert Counties - ages 16 to 24",
+   "quote": "6-week program"
+  },
+  {
+   "sid": "somdsyep-s1",
+   "oid": "somd-syep-verified-2026",
+   "fields": [
+    "/eligibility/age",
+    "/eligibility/residency"
+   ],
+   "cycle": "Six-week summer programme - no current cycle published",
+   "quote": "Are you between the ages of 16-24 living in Charles or Calvert County? OR Do you live in St. Mary's County? (ages 14-24)"
+  },
+  {
+   "sid": "somdsyep-s1",
+   "oid": "somd-syep-verified-2026",
+   "fields": [
+    "/schedule/dur_raw"
+   ],
+   "cycle": "Six-week summer programme - no current cycle published",
+   "quote": "a 6-week program ... an 11-week work-partnership program"
+  }
+ ]
+}

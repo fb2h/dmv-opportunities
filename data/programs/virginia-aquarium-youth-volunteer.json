@@ -1,0 +1,106 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "virginia-aquarium-youth-volunteer",
+ "name": "Virginia Aquarium & Marine Science Center Youth Volunteer Program",
+ "org": "Virginia Aquarium & Marine Science Center",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://virginiaaquarium.com/youth-volunteer-opportunities",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "va-aquarium-youth-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A summer youth volunteer program at the Virginia Aquarium in Virginia Beach.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Virginia Aquarium & Marine Science Center",
+     "addr": "717 General Booth Blvd.",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "zip": "23451",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "The page publishes no age or grade rule; the volunteer office must be contacted"
+    ],
+    [
+     "/application/reported_status",
+     "not_applicable",
+     "Youth volunteer applications for Summer 2026 are now closed"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "vaaq-s1",
+   "url": "https://virginiaaquarium.com/youth-volunteer-opportunities",
+   "title": "Youth Volunteer Opportunities | Virginia Aquarium",
+   "publisher": "Virginia Aquarium & Marine Science Center",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "vaaq-s1",
+   "oid": "va-aquarium-youth-2026",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Youth volunteer applications for Summer 2026 are now closed. Please check back later for upcoming opportunities!"
+  }
+ ]
+}

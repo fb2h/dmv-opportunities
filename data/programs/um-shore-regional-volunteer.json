@@ -1,0 +1,162 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "um-shore-regional-volunteer",
+ "name": "UM Shore Regional Health Student Volunteers",
+ "org": "University of Maryland Shore Regional Health",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.umms.org/shore/giving/volunteer/hospital-volunteers",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the health system's own hospital volunteers page on 2026-09-08. Confirmed a student track with an age floor of sixteen and completion of tenth grade, and a choice of year-round or summer-only placement.",
+ "offerings": [
+  {
+   "oid": "um-shore-student-verified-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling student intake - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Students aged sixteen and over who have completed tenth grade volunteer at UM Shore Regional Health for at least one shift a week, choosing a year-round or summer-only placement.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "University of Maryland Shore Regional Health",
+     "city": "Easton",
+     "county": "Talbot",
+     "state": "MD",
+     "zip": "21601",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Minimum age of 16"
+   },
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Completion of the 10th grade"
+   },
+   "other": [
+    [
+     "required",
+     "personal interview"
+    ],
+    [
+     "required",
+     "background screening"
+    ],
+    [
+     "required",
+     "disease immunity screening"
+    ],
+    [
+     "required",
+     "tuberculosis testing"
+    ],
+    [
+     "required",
+     "flu vaccination"
+    ],
+    [
+     "required",
+     "orientation training"
+    ],
+    [
+     "restriction",
+     "the programs do not count for academic credit or court-ordered community service"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "hours_raw": "Minimum commitment of one shift per week",
+    "dur_raw": "Students can choose between year-round or summer-only placement when applying."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.umms.org/shore/giving/volunteer/hospital-volunteers",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Submit an application, then complete a personal interview and the health screenings before orientation.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations",
+     "not_stated",
+     "The page does not say which of the health system's Eastern Shore sites take student volunteers; Easton is recorded as the system's principal hospital campus and should be confirmed."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "umshore-s1",
+   "url": "https://www.umms.org/shore/giving/volunteer/hospital-volunteers",
+   "title": "Hospital Volunteers | UM Shore Regional Health",
+   "publisher": "University of Maryland Medical System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "umshore-s1",
+   "oid": "um-shore-student-verified-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Rolling student intake - verified 2026-09-08",
+   "quote": "Minimum age of 16 ... Completion of the 10th grade"
+  },
+  {
+   "sid": "umshore-s1",
+   "oid": "um-shore-student-verified-2026",
+   "fields": [
+    "/schedule/hours_raw",
+    "/schedule/dur_raw"
+   ],
+   "cycle": "Rolling student intake - verified 2026-09-08",
+   "quote": "Students can choose between year-round or summer-only placement when applying ... Minimum commitment of one shift per week"
+  }
+ ]
+}

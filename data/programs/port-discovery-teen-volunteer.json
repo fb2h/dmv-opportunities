@@ -1,0 +1,130 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "port-discovery-teen-volunteer",
+ "name": "Port Discovery Children's Museum Volunteer Roles",
+ "org": "Port Discovery Children's Museum",
+ "org_type": "museum",
+ "host_state": "MD",
+ "program_url": "https://www.portdiscovery.org/join-donate/supporters/volunteer/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "port-discovery-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing volunteer roles - four exhibit areas",
+   "ann": "announced",
+   "summary": "High schoolers aged 15 and up run activities with young visitors in the early-childhood, space, visual-arts and visitor-engagement areas of the children's museum.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "arts_media_humanities",
+    "science_research",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Early Childhood Engagement",
+    "Space Workshop",
+    "Visitor Engagement",
+    "Visual Arts"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Port Discovery Children's Museum",
+     "addr": "35 Market Place",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "application_date",
+    "raw": "Must be over the age of 15 years old"
+   },
+   "school": {
+    "status": "conditional",
+    "raw": "must be attending high school if you are under the age of 18"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "Minimum six-month commitment",
+    "schedule_raw": "shifts approximately 10 AM-3 PM weekdays and weekends"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.cloud.microsoft/r/FHu70URytz",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "portdisc-s1",
+   "url": "https://www.portdiscovery.org/join-donate/supporters/volunteer/",
+   "title": "Volunteer & Internships | Port Discovery Children's Museum",
+   "publisher": "Port Discovery Children's Museum",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "portdisc-s1",
+   "oid": "port-discovery-vol-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/school/raw"
+   ],
+   "cycle": "Ongoing volunteer roles - four exhibit areas",
+   "quote": "Must be over the age of 15 years old ... must be attending high school if you are under the age of 18"
+  },
+  {
+   "sid": "portdisc-s1",
+   "oid": "port-discovery-vol-standing",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Ongoing volunteer roles - four exhibit areas",
+   "quote": "Minimum six-month commitment"
+  }
+ ]
+}

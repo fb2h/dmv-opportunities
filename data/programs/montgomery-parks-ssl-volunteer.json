@@ -1,0 +1,126 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "montgomery-parks-ssl-volunteer",
+ "name": "Montgomery Parks Student Service Learning Volunteer",
+ "org": "Montgomery Parks (M-NCPPC)",
+ "org_type": "parks",
+ "host_state": "MD",
+ "program_url": "https://montgomeryparks.org/support/volunteer/ssl/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "moco-parks-ssl-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing SSL-approved projects - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Students aged 14 and up join stream and park cleanups and natural-surface trail workdays that count toward Student Service Learning hours.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "community_service"
+   ],
+   "subject_raw": [
+    "stream & park cleanups",
+    "natural surface trail workdays"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Montgomery Parks sites",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "application_date",
+    "raw": "to volunteer without parental supervision, you must be 14 years old"
+   },
+   "other": [
+    [
+     "required",
+     "Under 14, an approved legal guardian must also volunteer and register separately"
+    ],
+    [
+     "required",
+     "Each job lists a minimum age - some jobs have a higher age limit"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid service-learning role"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://mcp.samaritan.com/custom/1491/opp_search?udf406095=Student%20Service%20Learning%20(SSL)%20Opportunities",
+    "window": "rolling",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "unclear",
+     "Fourteen is the floor for unsupervised volunteering, but individual jobs may set a higher age"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mocoparksssl-s1",
+   "url": "https://montgomeryparks.org/support/volunteer/ssl/",
+   "title": "Student Service Learning | Montgomery Parks",
+   "publisher": "Montgomery Parks (M-NCPPC)",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mocoparksssl-s1",
+   "oid": "moco-parks-ssl-verified",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing SSL-approved projects - verified 2026-09-08",
+   "quote": "to volunteer without parental supervision, you must be 14 years old"
+  },
+  {
+   "sid": "mocoparksssl-s1",
+   "oid": "moco-parks-ssl-verified",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Ongoing SSL-approved projects - verified 2026-09-08",
+   "quote": "stream & park cleanups, natural surface trail workdays, and others"
+  }
+ ]
+}

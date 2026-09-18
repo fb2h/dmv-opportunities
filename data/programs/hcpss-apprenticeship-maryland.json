@@ -1,0 +1,183 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "hcpss-apprenticeship-maryland",
+ "name": "Apprenticeship Maryland at HCPSS",
+ "org": "Howard County Public School System",
+ "org_type": "school_district",
+ "host_state": "MD",
+ "program_url": "https://www.hcpss.org/academy/apprenticeship/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the school system's own apprenticeship page on 2026-09-08. The March 1 application deadline is stated without a year, so it is recorded as a stated but undated requirement rather than a 2027 date.",
+ "offerings": [
+  {
+   "oid": "hcpss-amp-verified-2026",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing senior-year placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Howard County seniors work at least 450 hours for a participating employer, about twenty hours a week, while taking a year of related classroom instruction and drawing a paycheck.",
+   "types": [
+    "apprenticeship",
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "business_law_government"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Participating employer worksites across Howard County",
+     "county": "Howard",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "12"
+    ],
+    "basis": "current",
+    "raw": "seniors that are interested in beginning their career pathway while still in high school"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Howard County Public School System"
+    ],
+    "raw": "HCPSS students applying through the course registration process"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "all students must submit a completed work permit"
+   },
+   "other": [
+    [
+     "required",
+     "completed application form and all required documentation by March 1st"
+    ],
+    [
+     "preferred",
+     "motivated, hardworking students who are eager to learn and are committed to their personal and professional growth"
+    ],
+    [
+     "note",
+     "No prior work experience is necessary"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "Earn a paycheck from the start"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 450,
+    "dur_unit": "hour",
+    "dur_raw": "At least 450 hours (that's about 20+ hours a week) of hands-on experience",
+    "hours_raw": "about 20+ hours a week"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "https://www.hcpss.org/academy/apprenticeship/",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Complete the application form during the course registration process; a completed Maryland work permit is also required.",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 1,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Students must complete the application form and provide all required documentation by March 1st."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines/0/year",
+     "not_stated",
+     "The page gives March 1st with no year, so this is a stated requirement rather than a dated 2027 deadline."
+    ],
+    [
+     "/eligibility/age",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "Paid, but no rate is published."
+    ],
+    [
+     "/subjects",
+     "inferred",
+     "The page does not enumerate career clusters; subjects are taken from the programme type and should be narrowed once the employer list is published."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "hcpssamp-s1",
+   "url": "https://www.hcpss.org/academy/apprenticeship/",
+   "title": "Apprenticeship Maryland | Howard County Public School System",
+   "publisher": "Howard County Public School System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "hcpssamp-s1",
+   "oid": "hcpss-amp-verified-2026",
+   "fields": [
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Ongoing senior-year placements - verified 2026-09-08",
+   "quote": "seniors that are interested in beginning their career pathway while still in high school"
+  },
+  {
+   "sid": "hcpssamp-s1",
+   "oid": "hcpss-amp-verified-2026",
+   "fields": [
+    "/schedule/duration/min",
+    "/costs/compensation"
+   ],
+   "cycle": "Ongoing senior-year placements - verified 2026-09-08",
+   "quote": "At least 450 hours (that's about 20+ hours a week) of hands-on experience ... Earn a paycheck from the start"
+  },
+  {
+   "sid": "hcpssamp-s1",
+   "oid": "hcpss-amp-verified-2026",
+   "fields": [
+    "/application/deadlines/0"
+   ],
+   "cycle": "Ongoing senior-year placements - verified 2026-09-08",
+   "quote": "Students must complete the application form and provide all required documentation by March 1st."
+  }
+ ]
+}

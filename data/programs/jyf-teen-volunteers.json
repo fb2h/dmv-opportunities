@@ -1,0 +1,168 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "jyf-teen-volunteers",
+ "name": "Jamestown-Yorktown Foundation Teen Volunteers",
+ "org": "Jamestown-Yorktown Foundation",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://www.jyfmuseums.org/support-jyf/youth-volunteers",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "jyf-teen-vol-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "2026 teen volunteer class",
+   "ann": "announced",
+   "summary": "Teens serve as Junior Gallery Guides in the museums or Junior Historical Interpreters in the outdoor living-history areas at Jamestown Settlement and the American Revolution Museum at Yorktown.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Junior Gallery Guides",
+    "Junior Historical Interpreters",
+    "living history"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Jamestown Settlement",
+     "city": "Williamsburg",
+     "county": "James City",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "American Revolution Museum at Yorktown",
+     "city": "Yorktown",
+     "county": "York",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "grades": {
+    "values": [
+     "8",
+     "9",
+     "10",
+     "11"
+    ],
+    "basis": "rising_fall",
+    "raw": "Rising 8th-11th graders"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "start_raw": "Shifts begin June 22",
+    "schedule_raw": "Orientation May 16 or June 6, 2026 (9am-12:30pm); training week of June 15, five full-day sessions 9am-4pm",
+    "dur_raw": "minimum eight hours monthly in summer, four hours monthly during school year"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.jyfmuseums.org/support-jyf/youth-volunteers/teen-volunteer-application",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-05-27",
+      "year": 2026,
+      "month": 5,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Please submit your application by May 27, 2026"
+     }
+    ]
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "Orientation May 16 or June 6, 2026 and a full training week of five day-long sessions"
+    }
+   ],
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "The 2027 class is not yet announced"
+    ],
+    [
+     "/locations",
+     "unclear",
+     "Both museum sites are named; street addresses are not published on this page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "jyf-s1",
+   "url": "https://www.jyfmuseums.org/support-jyf/youth-volunteers",
+   "title": "Youth Volunteers | Jamestown-Yorktown Foundation",
+   "publisher": "Jamestown-Yorktown Foundation",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "jyf-s1",
+   "oid": "jyf-teen-vol-2026",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/grades/basis"
+   ],
+   "cycle": "2026 teen volunteer class",
+   "quote": "Rising 8th-11th graders"
+  },
+  {
+   "sid": "jyf-s1",
+   "oid": "jyf-teen-vol-2026",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "2026 teen volunteer class",
+   "quote": "Please submit your application by May 27, 2026"
+  },
+  {
+   "sid": "jyf-s1",
+   "oid": "jyf-teen-vol-2026",
+   "fields": [
+    "/opportunity_types",
+    "/subject_terms_raw"
+   ],
+   "cycle": "2026 teen volunteer class",
+   "quote": "Junior Gallery Guides engage visitors in our museums' indoor galleries ... Junior Historical Interpreters engage visitors in our outdoor living-history areas."
+  }
+ ]
+}

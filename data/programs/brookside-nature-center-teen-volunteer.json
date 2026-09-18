@@ -1,0 +1,128 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "brookside-nature-center-teen-volunteer",
+ "name": "Brookside Nature Center Volunteer",
+ "org": "Montgomery Parks (M-NCPPC)",
+ "org_type": "parks",
+ "host_state": "MD",
+ "program_url": "https://montgomeryparks.org/parks-and-trails/brookside-nature-center/volunteers/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "brookside-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Monthly workdays and long-term roles - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Volunteers greet visitors, help run nature programmes, provide animal enrichment and do outdoor maintenance at the Wheaton nature centre.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "education_working_with_kids",
+    "science_research",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Greeting visitors",
+    "Assisting with nature programs",
+    "Providing animal enrichment",
+    "weeding and mulching"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Brookside Nature Center",
+     "addr": "1400 Glenallan Ave",
+     "city": "Wheaton",
+     "county": "Montgomery",
+     "state": "MD",
+     "zip": "20902",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; MCPS students can earn SSL hours through monthly workdays"
+   },
+   "sched": {
+    "schedule_raw": "Monthly workdays available; long-term opportunities flexible by arrangement"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://montgomeryparks.org/support/volunteer/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "interview",
+     "required": true,
+     "stage": "selection",
+     "raw": "Long-term volunteers must apply, interview, and pass a background check"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "The centre page publishes no age rule; the Montgomery Parks floor of 14 for unsupervised volunteering applies system-wide"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "brookside-s1",
+   "url": "https://montgomeryparks.org/parks-and-trails/brookside-nature-center/volunteers/",
+   "title": "Brookside Nature Center Volunteers",
+   "publisher": "Montgomery Parks (M-NCPPC)",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "brookside-s1",
+   "oid": "brookside-verified",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Monthly workdays and long-term roles - verified 2026-09-08",
+   "quote": "Greeting visitors, Assisting with nature programs, Providing animal enrichment"
+  },
+  {
+   "sid": "brookside-s1",
+   "oid": "brookside-verified",
+   "fields": [
+    "/application/requirements"
+   ],
+   "cycle": "Monthly workdays and long-term roles - verified 2026-09-08",
+   "quote": "apply, interview, and pass a background check"
+  }
+ ]
+}

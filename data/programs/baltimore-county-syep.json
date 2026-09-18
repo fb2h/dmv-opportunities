@@ -1,0 +1,142 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "baltimore-county-syep",
+ "name": "Baltimore County Summer Youth Employment Program",
+ "org": "Baltimore County Department of Economic and Workforce Development",
+ "org_type": "government",
+ "host_state": "MD",
+ "program_url": "https://www.baltimorecountymd.gov/departments/economic-development/job-seekers/youth-services",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government_long_tail",
+ "offerings": [
+  {
+   "oid": "balt-co-syep-2024-last-published",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2024 - the last cycle the county has published",
+   "ann": "unclear",
+   "summary": "Baltimore County placed youths aged fourteen to twenty-one in paid summer jobs at fifteen dollars an hour for up to twenty-five hours a week, from 1 July to 9 August; the county's page has not been updated since that cycle closed.",
+   "types": [
+    "paid_job"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "hybrid",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Baltimore County",
+     "county": "Baltimore County",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 21,
+    "basis": "application_date",
+    "raw": "ages 14 to 21"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "earning $15 an hour for up to 25 hours per week"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": {
+     "year": 2024,
+     "month": 7,
+     "day": 1,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2024,
+     "month": 8,
+     "day": 9,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "hours_raw": "up to 25 hours per week",
+    "dur_raw": "from July 1 through August 9"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.baltimorecountymd.gov/departments/economic-development/job-seekers/youth-services",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "instructions": "Subscribe to the county's Youth Connections newsletter for the next cycle's opening.",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/cycle/announcement_state",
+     "unclear",
+     "The county's own page still carries the 2024 cycle and states applications are no longer accepted; no 2027 cycle has been announced. The 2024 details are kept as the best predictor of the next cycle."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "baltcosyep-s1",
+   "url": "https://www.baltimorecountymd.gov/departments/economic-development/job-seekers/youth-services",
+   "title": "Youth Services | Baltimore County Government",
+   "publisher": "Baltimore County Government",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "baltcosyep-s1",
+   "oid": "balt-co-syep-2024-last-published",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/costs/compensation/0"
+   ],
+   "cycle": "Summer 2024 - the last cycle the county has published",
+   "quote": "ages 14 to 21 ... earning $15 an hour for up to 25 hours per week"
+  },
+  {
+   "sid": "baltcosyep-s1",
+   "oid": "balt-co-syep-2024-last-published",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2024 - the last cycle the county has published",
+   "quote": "from July 1 through August 9 ... Youth applications for the 2024 Baltimore County Summer Youth Employment Program are no longer being accepted."
+  }
+ ]
+}

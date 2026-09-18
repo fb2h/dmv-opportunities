@@ -1,0 +1,282 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "jhu-wise",
+ "name": "Whiting Internships in Science and Engineering (WISE)",
+ "org": "Johns Hopkins University Whiting School of Engineering, Center for Educational Outreach",
+ "org_type": "university",
+ "host_state": "MD",
+ "program_url": "https://engineering.jhu.edu/outreach/ceo-programs/wise/",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "university",
+ "offerings": [
+  {
+   "oid": "jhu-wise-spring-2026",
+   "cycle_kind": "session",
+   "cycle_label": "Spring 2026 session",
+   "ann": "announced",
+   "summary": "A paid 15-week research internship for Baltimore City public high schoolers, two afternoons a week in a Hopkins engineering lab.",
+   "types": [
+    "research",
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "science_research",
+    "computing_technology",
+    "health_medicine"
+   ],
+   "subject_raw": [
+    "materials science",
+    "mechanical",
+    "electrical",
+    "computer",
+    "biomedical engineering"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Johns Hopkins University Homewood campus",
+     "addr": "3400 N. Charles Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21218",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Must be high school sophomores, juniors, or seniors"
+   },
+   "school": {
+    "status": "restricted",
+    "raw": "Must be enrolled in a Baltimore City public high school"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "To participate, student must be eligible to work in the U.S."
+   },
+   "gpa": {
+    "raw": "Students should have received As and Bs in all math and science courses"
+   },
+   "prereq": "Sophomores should have completed two years of high school-level math",
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "paid research mentored by JHU researchers; unpaid option currently unavailable"
+     }
+    ]
+   },
+   "sched": {
+    "dur_min": 15,
+    "dur_unit": "week",
+    "schedule_raw": "Early February-late May, 3 hours/day, 2 days/week, 4-7 p.m."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://engineering.jhu.edu/outreach/ceo-programs/wise/wise-application/",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2025-11-16",
+      "year": 2025,
+      "month": 11,
+      "time": "23:59:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "apply by Sunday, November 16, 2025 (11:59 p.m.)"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility/gpa/min",
+     "not_stated",
+     "As and Bs in math and science is not a numeric GPA"
+    ],
+    [
+     "/cycle",
+     "unclear",
+     "The page still advertises the Spring 2026 session as current although that deadline passed in November 2025; the Spring 2027 window needs confirmation"
+    ]
+   ]
+  },
+  {
+   "oid": "jhu-wise-summer-2026",
+   "cycle_kind": "session",
+   "cycle_label": "Summer 2026 session",
+   "ann": "announced",
+   "summary": "The four-week summer version of the same paid research internship, five hours a weekday.",
+   "types": [
+    "research",
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "science_research",
+    "computing_technology"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Johns Hopkins University Homewood campus",
+     "addr": "3400 N. Charles Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21218",
+     "kind": "confirmed_campus_approximation"
+    },
+    {
+     "venue": "Johns Hopkins Mt. Washington campus",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Johns Hopkins Hospital",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Must be high school sophomores, juniors, or seniors"
+   },
+   "school": {
+    "status": "restricted",
+    "raw": "Must be enrolled in a Baltimore City public high school"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "paid research internship"
+     }
+    ]
+   },
+   "sched": {
+    "start_raw": "July 9",
+    "end_raw": "August 7",
+    "dur_min": 4,
+    "dur_unit": "week",
+    "schedule_raw": "5 hours/weekday, 9 a.m.-3 p.m."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://engineering.jhu.edu/outreach/ceo-programs/wise/wise-application/",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-03-01",
+      "year": 2026,
+      "month": 3,
+      "time": "23:59:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "apply by Sunday, March 1, 2026 (11:59 p.m.)"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/costs/compensation/0/amount",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "wise-s1",
+   "url": "https://engineering.jhu.edu/outreach/ceo-programs/wise/",
+   "title": "Whiting Internships in Science and Engineering (WISE)",
+   "publisher": "Johns Hopkins University Whiting School of Engineering",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "wise-s1",
+   "oid": "jhu-wise-spring-2026",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/school/raw",
+    "/eligibility/gpa/raw"
+   ],
+   "cycle": "Spring 2026 session",
+   "quote": "Must be high school sophomores, juniors, or seniors ... Must be enrolled in a Baltimore City public high school ... Students should have received As and Bs in all math and science courses"
+  },
+  {
+   "sid": "wise-s1",
+   "oid": "jhu-wise-spring-2026",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Spring 2026 session",
+   "quote": "apply by Sunday, November 16, 2025 (11:59 p.m.)"
+  },
+  {
+   "sid": "wise-s1",
+   "oid": "jhu-wise-summer-2026",
+   "fields": [
+    "/application/deadlines/final/due",
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026 session",
+   "quote": "apply by Sunday, March 1, 2026 (11:59 p.m.) ... July 9 to August 7"
+  }
+ ]
+}

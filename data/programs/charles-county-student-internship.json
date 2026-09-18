@@ -1,0 +1,206 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "charles-county-student-internship",
+ "name": "Charles County Government Student Internship and Summer Youth Employment",
+ "org": "Charles County Government",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://www.charlescountymd.gov/i-want-to/apply-for-summer-part-time-internship-vacancy",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "charles-student-internship",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer student internship - two sessions",
+   "ann": "announced",
+   "summary": "A paid summer internship with Charles County government for county residents, offered as a ten-week or a six-week session.",
+   "types": [
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Charles County Government departments",
+     "county": "Charles",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "rising high school juniors, seniors, college graduates or current college or graduate students"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Charles County, MD"
+    ],
+    "raw": "All interns MUST be Charles County residents."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "dur_raw": "The first session is a 10-week program that is from June to August. The second session is a 6-week program in July and August."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.governmentjobs.com/careers/charlescountymd/transferjobs",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named on the page"
+    ]
+   ]
+  },
+  {
+   "oid": "charles-syep",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer Youth Employment Program",
+   "ann": "announced",
+   "summary": "A summer job for Charles County residents aged 16 to 24 who face academic or employment challenges.",
+   "types": [
+    "paid_job"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Charles County worksites",
+     "county": "Charles",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 24,
+    "basis": "application_date",
+    "raw": "ages 16-24"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Charles County, MD"
+    ],
+    "raw": "All interns MUST be Charles County residents, ages 16-24, and face academic or employment challenges."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "direct",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/eligibility/other_conditions",
+     "unclear",
+     "The academic or employment challenge criterion is not defined on this page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "charles-s1",
+   "url": "https://www.charlescountymd.gov/i-want-to/apply-for-summer-part-time-internship-vacancy",
+   "title": "Apply for a Summer Part-Time/Internship Vacancy",
+   "publisher": "Charles County, Maryland",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "charles-s1",
+   "oid": "charles-student-internship",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer student internship - two sessions",
+   "quote": "All interns MUST be Charles County residents ... rising high school juniors, seniors, college graduates or current college or graduate students"
+  },
+  {
+   "sid": "charles-s1",
+   "oid": "charles-syep",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer Youth Employment Program",
+   "quote": "All interns MUST be Charles County residents, ages 16-24, and face academic or employment challenges."
+  },
+  {
+   "sid": "charles-s1",
+   "oid": "charles-student-internship",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Summer student internship - two sessions",
+   "quote": "The first session is a 10-week program that is from June to August. The second session is a 6-week program in July and August."
+  }
+ ]
+}

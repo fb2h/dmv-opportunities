@@ -1,0 +1,134 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "um-st-joseph-student-volunteer",
+ "name": "UM St. Joseph Medical Center Student Volunteer Program",
+ "org": "University of Maryland St. Joseph Medical Center",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.umms.org/sjmc/giving/ways/volunteer-services/student-program-summer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "umsjmc-student-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing student volunteer placements",
+   "ann": "announced",
+   "summary": "Students aged 16 and up commit at least 100 hours helping with patient transport, reception, Emergency Department support, supplies and clerical work.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "patient transportation",
+    "patient/staff liaison",
+    "nursing assistance",
+    "Emergency Department support",
+    "welcome rounds",
+    "reception/greeter",
+    "office clerical support",
+    "laundry services",
+    "supply services"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "UM St. Joseph Medical Center",
+     "addr": "7601 Osler Drive",
+     "city": "Towson",
+     "county": "Baltimore County",
+     "state": "MD",
+     "zip": "21204",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Student volunteers: Minimum age of 16"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_min": 4,
+    "hpw_raw": "Minimum commitment of four (4) hours per week",
+    "dur_raw": "Student volunteers: Minimum commitment of 100 hours"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://share.vomevolunteer.com/NHeBjJMG7Qb",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/reported_status",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "umsjmc-s1",
+   "url": "https://www.umms.org/sjmc/giving/ways/volunteer-services/student-program-summer",
+   "title": "Volunteer Requirements | UM St. Joseph Medical Center",
+   "publisher": "University of Maryland Medical System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "umsjmc-s1",
+   "oid": "umsjmc-student-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Ongoing student volunteer placements",
+   "quote": "Student volunteers: Minimum age of 16 ... Minimum commitment of 100 hours"
+  },
+  {
+   "sid": "umsjmc-s1",
+   "oid": "umsjmc-student-standing",
+   "fields": [
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "Ongoing student volunteer placements",
+   "quote": "Minimum commitment of four (4) hours per week"
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "national-aquarium-youthworks",
+ "name": "National Aquarium YouthWorks Summer Jobs",
+ "org": "National Aquarium",
+ "org_type": "museum",
+ "host_state": "MD",
+ "program_url": "https://aqua.org/education/programs/youthworks",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "natl-aq-youthworks-2027",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2027",
+   "ann": "announced",
+   "summary": "A paid five-week summer job at the aquarium for Baltimore City teens, in animal husbandry, field conservation, guest engagement or guest services.",
+   "types": [
+    "paid_job",
+    "internship",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "education_working_with_kids",
+    "community_service",
+    "health_medicine"
+   ],
+   "subject_raw": [
+    "Aviculturist Husbandry Aide",
+    "Field Conservation Aide",
+    "Guest Engagement Representative",
+    "Guest Services Representative",
+    "Herpetologist/Aquarist Husbandry Aide"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "National Aquarium",
+     "addr": "501 E. Pratt St.",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21202",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Grades 9-12 targeted"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Baltimore City, MD"
+    ],
+    "raw": "Young people who live in Baltimore City"
+   },
+   "fee": {
+    "status": "none",
+    "raw": "Free to apply"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "will be paid $15.00 per hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://youthworks.oedworks.com/",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "opens": {
+     "year": 2027,
+     "month": 1,
+     "precision": "month",
+     "certainty": "confirmed",
+     "raw": "Interest forms for summer 2027 will open in January 2027."
+    },
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The 2026 rule was ages 14 to 21 on June 29, 2026; the 2027 age reference date is not yet published"
+    ],
+    [
+     "/schedule/start",
+     "not_stated",
+     "2027 session dates not yet published"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "natl-aq-youthworks-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Prior cycle retained for history and refresh timing.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "National Aquarium",
+     "addr": "501 E. Pratt St.",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21202",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Field sites including Fort McHenry wetland",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 21,
+    "basis": "specified_date",
+    "as_of": "2026-06-29",
+    "raw": "will be between the ages of 14 and 21 on June 29, 2026"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Baltimore City, MD"
+    ],
+    "raw": "Young people who live in Baltimore City"
+   },
+   "fee": {
+    "status": "none",
+    "raw": "Free to apply"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "will be paid $15.00 per hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": "2026-06-29",
+    "end": "2026-07-31",
+    "dur_min": 5,
+    "dur_unit": "week",
+    "hpw_max": 25,
+    "hpw_raw": "up to 25 hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://youthworks.oedworks.com/",
+    "window": "fixed",
+    "status": "closed"
+   },
+   "public": false,
+   "hist": true,
+   "issues": []
+  }
+ ],
+ "sources": [
+  {
+   "sid": "aqyw-s1",
+   "url": "https://aqua.org/education/programs/youthworks",
+   "title": "National Aquarium - YouthWorks",
+   "publisher": "National Aquarium",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "aqyw-s1",
+   "oid": "natl-aq-youthworks-2027",
+   "fields": [
+    "/application/opens",
+    "/cycle/announcement_state"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "The interest form for the summer 2026 session is now closed. We encourage you to complete our interest form next year. Interest forms for summer 2027 will open in January 2027."
+  },
+  {
+   "sid": "aqyw-s1",
+   "oid": "natl-aq-youthworks-2027",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "will be paid $15.00 per hour"
+  },
+  {
+   "sid": "aqyw-s1",
+   "oid": "natl-aq-youthworks-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Young people who live in Baltimore City and will be between the ages of 14 and 21 on June 29, 2026, are eligible to apply."
+  },
+  {
+   "sid": "aqyw-s1",
+   "oid": "natl-aq-youthworks-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/schedule/hours_per_week/max"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "June 29 - July 31, 2026 ... up to 25 hours per week"
+  }
+ ]
+}

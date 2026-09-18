@@ -1,0 +1,273 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "meritus-volunteens",
+ "name": "Meritus Medical Center Volunteens",
+ "org": "Meritus Health",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.meritushealth.com/about/volunteers",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "meritus-volunteens-14-15",
+   "cycle_kind": "continuous",
+   "cycle_label": "Volunteens aged 14 to 15 - retail placements",
+   "ann": "announced",
+   "summary": "Volunteens aged 14 and 15 help in the hospital gift shop or coffee shop, with a 50-hour commitment across the year.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "gift shop",
+    "coffee shop"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Meritus Medical Center",
+     "addr": "11116 Medical Campus Road",
+     "city": "Hagerstown",
+     "county": "Washington",
+     "state": "MD",
+     "zip": "21742",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 15,
+    "basis": "application_date",
+    "raw": "High school students, aged 14-18, are eligible for membership as Volunteens."
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "High school students"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "Minimum commitment: 50 hours throughout the calendar year"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Volunteer Services Office at 301-790-8143",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated",
+     "Applications are handled by the Volunteer Services Office by phone"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "meritus-volunteens-16",
+   "cycle_kind": "continuous",
+   "cycle_label": "Volunteens aged 16 - nursing unit support",
+   "ann": "announced",
+   "summary": "Sixteen-year-old Volunteens support nursing units, with a 50-hour commitment across the year.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "nursing unit support"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Meritus Medical Center",
+     "addr": "11116 Medical Campus Road",
+     "city": "Hagerstown",
+     "county": "Washington",
+     "state": "MD",
+     "zip": "21742",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 16,
+    "basis": "application_date",
+    "raw": "Ages 16: nursing unit support"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "Minimum commitment: 50 hours throughout the calendar year"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "meritus-volunteens-17-18",
+   "cycle_kind": "continuous",
+   "cycle_label": "Volunteens aged 17 to 18 - Emergency Department",
+   "ann": "announced",
+   "summary": "Volunteens aged 17 and 18 assist in the Emergency Department, with a 50-hour commitment across the year.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Emergency Department assistance"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Meritus Medical Center",
+     "addr": "11116 Medical Campus Road",
+     "city": "Hagerstown",
+     "county": "Washington",
+     "state": "MD",
+     "zip": "21742",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 17,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "Ages 17-18: Emergency Department assistance"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "Minimum commitment: 50 hours throughout the calendar year"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "meritus-s1",
+   "url": "https://www.meritushealth.com/about/volunteers",
+   "title": "Meritus Health Volunteers",
+   "publisher": "Meritus Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "meritus-s1",
+   "oid": "meritus-volunteens-14-15",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Volunteens aged 14 to 15 - retail placements",
+   "quote": "High school students, aged 14-18, are eligible for membership as Volunteens."
+  },
+  {
+   "sid": "meritus-s1",
+   "oid": "meritus-volunteens-16",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Volunteens aged 16 - nursing unit support",
+   "quote": "Ages 16: nursing unit support"
+  },
+  {
+   "sid": "meritus-s1",
+   "oid": "meritus-volunteens-17-18",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Volunteens aged 17 to 18 - Emergency Department",
+   "quote": "Ages 17-18: Emergency Department assistance"
+  },
+  {
+   "sid": "meritus-s1",
+   "oid": "meritus-volunteens-14-15",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Volunteens aged 14 to 15 - retail placements",
+   "quote": "Minimum commitment: 50 hours throughout the calendar year"
+  }
+ ]
+}

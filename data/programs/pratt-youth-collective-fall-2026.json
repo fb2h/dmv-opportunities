@@ -1,0 +1,342 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pratt-youth-collective-fall-2026",
+ "name": "Enoch Pratt Youth Collective (EPYC)",
+ "org": "Enoch Pratt Free Library",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.prattlibrary.org/support-us/volunteer/youth-collective",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "needs_review",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the library's own page on 2026-09-08. The autumn 2026 cycle is open with a stated application deadline of 13 September 2026 and three separate branch cohorts. Held at needs_review pending the owner's decision on whether a library youth collective counts as a workplace-based role under P01.",
+ "offerings": [
+  {
+   "oid": "epyc-fall-2026-central",
+   "cycle_kind": "session",
+   "cycle_label": "Fall 2026 - Central Library cohort",
+   "ann": "announced",
+   "summary": "Teens meet Thursday afternoons at the Central Library from 1 October to 22 October 2026 as part of the library's youth collective.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Central Library",
+     "addr": "400 Cathedral Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21201",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Teens in grades 6 through 12"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": {
+     "year": 2026,
+     "month": 10,
+     "day": 1,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2026,
+     "month": 10,
+     "day": 22,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "hours_raw": "Thursdays at Central Library, 3:30-5 pm",
+    "dur_raw": "October 1-October 22"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.prattlibrary.org/support-us/volunteer/youth-collective",
+    "window": "fixed",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Fill out the online application. Participants only participate in EPYC at one single branch location.",
+    "deadlines": [
+     {
+      "kind": "final",
+      "year": 2026,
+      "month": 9,
+      "day": 13,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Application deadline is September 13, 2026."
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "needs_review",
+     "Whether a library youth collective is a workplace-based role under P01 is an owner decision; the record is complete and ready to publish if the answer is yes."
+    ]
+   ]
+  },
+  {
+   "oid": "epyc-fall-2026-waverly",
+   "cycle_kind": "session",
+   "cycle_label": "Fall 2026 - Waverly Branch cohort",
+   "ann": "announced",
+   "summary": "Teens meet Tuesday afternoons at the Waverly Branch from 27 October to 24 November 2026 as part of the library's youth collective.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Waverly Branch",
+     "addr": "400 E. 33rd Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21218",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Teens in grades 6 through 12"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": {
+     "year": 2026,
+     "month": 10,
+     "day": 27,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2026,
+     "month": 11,
+     "day": 24,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "hours_raw": "Tuesdays at Waverly Branch, 3:30-5 pm",
+    "dur_raw": "October 27-November 24"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.prattlibrary.org/support-us/volunteer/youth-collective",
+    "window": "fixed",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": [
+     {
+      "kind": "final",
+      "year": 2026,
+      "month": 9,
+      "day": 13,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Application deadline is September 13, 2026."
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "needs_review",
+     "Same owner decision as the Central Library cohort."
+    ]
+   ]
+  },
+  {
+   "oid": "epyc-fall-2026-hamilton",
+   "cycle_kind": "session",
+   "cycle_label": "Fall 2026 - Hamilton Branch cohort",
+   "ann": "announced",
+   "summary": "Teens meet Thursday afternoons at the Hamilton Branch from 27 October to 24 November 2026 as part of the library's youth collective.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Hamilton Branch",
+     "addr": "5910 Harford Road",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21214",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Teens in grades 6 through 12"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": {
+     "year": 2026,
+     "month": 10,
+     "day": 27,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2026,
+     "month": 11,
+     "day": 24,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "hours_raw": "Thursdays at Hamilton Branch, 3:00-4:30 pm",
+    "dur_raw": "October 27-November 24"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.prattlibrary.org/support-us/volunteer/youth-collective",
+    "window": "fixed",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": [
+     {
+      "kind": "final",
+      "year": 2026,
+      "month": 9,
+      "day": 13,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Application deadline is September 13, 2026."
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "needs_review",
+     "Same owner decision as the Central Library cohort."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "epyc-s1",
+   "url": "https://www.prattlibrary.org/support-us/volunteer/youth-collective",
+   "title": "Youth Collective | Enoch Pratt Free Library",
+   "publisher": "Enoch Pratt Free Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "epyc-s1",
+   "oid": "epyc-fall-2026-central",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/application/deadlines/0"
+   ],
+   "cycle": "Fall 2026 - Central Library cohort",
+   "quote": "Teens in grades 6 through 12 ... Application deadline is September 13, 2026."
+  },
+  {
+   "sid": "epyc-s1",
+   "oid": "epyc-fall-2026-central",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Fall 2026 - Central Library cohort",
+   "quote": "October 1-October 22 (Thursdays at Central Library, 3:30-5 pm)"
+  },
+  {
+   "sid": "epyc-s1",
+   "oid": "epyc-fall-2026-waverly",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Fall 2026 - Waverly Branch cohort",
+   "quote": "October 27-November 24 (Tuesdays at Waverly Branch, 3:30-5 pm)"
+  },
+  {
+   "sid": "epyc-s1",
+   "oid": "epyc-fall-2026-hamilton",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Fall 2026 - Hamilton Branch cohort",
+   "quote": "October 27-November 24 (Thursdays at Hamilton Branch, 3:00-4:30 pm)"
+  }
+ ]
+}

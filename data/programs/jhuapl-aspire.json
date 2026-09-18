@@ -1,0 +1,199 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "jhuapl-aspire",
+ "name": "ASPIRE High School Internship",
+ "org": "Johns Hopkins University Applied Physics Laboratory",
+ "org_type": "university",
+ "host_state": "MD",
+ "program_url": "https://www.jhuapl.edu/education/stem-outreach/aspire",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "university",
+ "offerings": [
+  {
+   "oid": "jhuapl-aspire-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual summer internship - one application session per year",
+   "ann": "unclear",
+   "summary": "An unpaid full-time summer internship at the Applied Physics Laboratory where juniors and seniors work on a real project with an APL staff mentor.",
+   "types": [
+    "internship",
+    "research"
+   ],
+   "subjects": [
+    "science_research",
+    "engineering_trades",
+    "computing_technology"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Johns Hopkins University Applied Physics Laboratory",
+     "addr": "11100 Johns Hopkins Road",
+     "city": "Laurel",
+     "county": "Howard",
+     "state": "MD",
+     "zip": "20723",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "high school juniors and seniors"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "The ASPIRE program is an unpaid, intensive internship experience"
+   },
+   "sched": {
+    "hpw_min": 30,
+    "hpw_max": 40,
+    "hpw_raw": "on-site 30-40 hours per week",
+    "dur_raw": "available between June 23 and August 21 while achieving at least 190 hours during that time",
+    "schedule_raw": "Mandatory onboarding June 23-25; Student Showcase August 20; program ends August 21"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.jhuapl.edu/education/stem-outreach/aspire/application-process",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "opens": {
+     "month": 1,
+     "day": 1,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "Opens: January 1 at 12 a.m."
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 2,
+      "day": 15,
+      "time": "23:59:00",
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Closes: February 15 at 11:59 p.m."
+     },
+     {
+      "kind": "other",
+      "month": 3,
+      "day": 1,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Recommendation forms due: March 1 at 11:59 p.m."
+     }
+    ]
+   },
+   "reqs": [
+    {
+     "kind": "recommendation_letter",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "Recommendation forms due: March 1 at 11:59 p.m."
+    },
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "Mandatory onboarding June 23-25"
+    }
+   ],
+   "public": false,
+   "issues": [
+    [
+     "/cycle/label",
+     "unclear",
+     "The timeline page publishes month and day only, with no cycle year, so no current-cycle deadline can be asserted"
+    ],
+    [
+     "/application/reported_status",
+     "closed",
+     "The ASPIRE application is closed as of this check"
+    ],
+    [
+     "/eligibility/citizenship",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "aspire-s1",
+   "url": "https://www.jhuapl.edu/education/stem-outreach/aspire",
+   "title": "ASPIRE | Johns Hopkins University Applied Physics Laboratory",
+   "publisher": "Johns Hopkins University Applied Physics Laboratory",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  },
+  {
+   "sid": "aspire-s2",
+   "url": "https://www.jhuapl.edu/education/stem-outreach/aspire/internship-timeline",
+   "title": "ASPIRE Internship Timeline and Information",
+   "publisher": "Johns Hopkins University Applied Physics Laboratory",
+   "auth": "first_party",
+   "roles": [
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "aspire-s1",
+   "oid": "jhuapl-aspire-standing",
+   "fields": [
+    "/costs/compensation_status"
+   ],
+   "cycle": "Annual summer internship - one application session per year",
+   "quote": "The ASPIRE program is an unpaid, intensive internship experience"
+  },
+  {
+   "sid": "aspire-s1",
+   "oid": "jhuapl-aspire-standing",
+   "fields": [
+    "/eligibility/grades/values"
+   ],
+   "cycle": "Annual summer internship - one application session per year",
+   "quote": "high school juniors and seniors"
+  },
+  {
+   "sid": "aspire-s2",
+   "oid": "jhuapl-aspire-standing",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Annual summer internship - one application session per year",
+   "quote": "Opens: January 1 at 12 a.m. ... Closes: February 15 at 11:59 p.m."
+  },
+  {
+   "sid": "aspire-s2",
+   "oid": "jhuapl-aspire-standing",
+   "fields": [
+    "/schedule/hours_per_week/min",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Annual summer internship - one application session per year",
+   "quote": "on-site 30-40 hours per week ... available between June 23 and August 21 while achieving at least 190 hours during that time"
+  }
+ ]
+}

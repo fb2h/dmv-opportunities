@@ -1,0 +1,171 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "dcpl-teen-council-2026",
+ "name": "DC Public Library Teen Council",
+ "org": "District of Columbia Public Library",
+ "org_type": "library",
+ "host_state": "DC",
+ "program_url": "https://www.dclibrary.org/find-borrow/teens/teen-council",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "dcpl-teen-council-2026-cycle",
+   "cycle_kind": "annual",
+   "cycle_label": "2026 cohort",
+   "ann": "announced",
+   "summary": "A paid library job for DC teens at $17.87 an hour, twelve hours a week, advising on teen services and running events, content, tech support and outreach.",
+   "types": [
+    "paid_job",
+    "internship",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "computing_technology",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "teen services",
+    "teen events",
+    "website and social media content",
+    "customer service",
+    "tech support",
+    "community outreach"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "District of Columbia Public Library branches",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "organization_reference",
+     "raw": "across the District"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 19,
+    "basis": "application_date",
+    "raw": "14 to 19 years old"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "District of Columbia"
+    ],
+    "raw": "A resident of the District of Columbia"
+   },
+   "other": [
+    [
+     "required",
+     "Able to work 12 hours per week"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 17.87,
+      "unit": "hour",
+      "raw": "Teen Council members get paid $17.87 per hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "hpw_min": 12,
+    "hpw_raw": "12 hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-01-08",
+      "year": 2026,
+      "month": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "2026 Application Deadline: January 8"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "The 2027 cohort is not yet announced; the page says applications are closed and to check back next year"
+    ],
+    [
+     "/schedule/start",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "dcpltc-s1",
+   "url": "https://www.dclibrary.org/find-borrow/teens/teen-council",
+   "title": "Teen Council | District of Columbia Public Library",
+   "publisher": "District of Columbia Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "dcpltc-s1",
+   "oid": "dcpl-teen-council-2026-cycle",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "2026 cohort",
+   "quote": "14 to 19 years old ... A resident of the District of Columbia ... Able to work 12 hours per week"
+  },
+  {
+   "sid": "dcpltc-s1",
+   "oid": "dcpl-teen-council-2026-cycle",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "2026 cohort",
+   "quote": "Teen Council members get paid $17.87 per hour"
+  },
+  {
+   "sid": "dcpltc-s1",
+   "oid": "dcpl-teen-council-2026-cycle",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "2026 cohort",
+   "quote": "2026 Application Deadline: January 8"
+  }
+ ]
+}

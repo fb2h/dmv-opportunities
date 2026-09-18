@@ -1,0 +1,123 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "maryland-science-center-youth-volunteer",
+ "name": "Maryland Science Center Youth Volunteer",
+ "org": "Maryland Science Center",
+ "org_type": "museum",
+ "host_state": "MD",
+ "program_url": "https://www.mdsci.org/volunteer/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "mdsci-youth-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing youth volunteer placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Volunteers aged 15 to 17 support hands-on STEM education on the museum floor in Baltimore's Inner Harbor.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "science_research",
+    "education_working_with_kids",
+    "community_service",
+    "computing_technology"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Maryland Science Center",
+     "addr": "601 Light Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21230",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "ages 15 - 17"
+   },
+   "other": [
+    [
+     "required",
+     "Work well with children and teenagers, excellent communication skills, ability to follow directions, comfortable interacting with the public, adaptable to changing situations, work well independently and in a team atmosphere"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Youth Volunteer Application submitted to volunteers@mdsci.org, followed by a placement interview",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "interview",
+     "required": true,
+     "stage": "selection",
+     "raw": "contact Volunteer Coordinator for placement interview"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mdsci-s1",
+   "url": "https://www.mdsci.org/volunteer/",
+   "title": "Volunteer | Maryland Science Center",
+   "publisher": "Maryland Science Center",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mdsci-s1",
+   "oid": "mdsci-youth-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Ongoing youth volunteer placements - verified 2026-09-08",
+   "quote": "ages 15 - 17"
+  }
+ ]
+}

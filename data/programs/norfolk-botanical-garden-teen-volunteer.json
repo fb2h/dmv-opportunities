@@ -1,0 +1,174 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "norfolk-botanical-garden-teen-volunteer",
+ "name": "Norfolk Botanical Garden Teen Volunteer Summer Program",
+ "org": "Norfolk Botanical Garden",
+ "org_type": "nonprofit",
+ "host_state": "VA",
+ "program_url": "https://norfolkbotanicalgarden.org/learn/teen-volunteer-opportunities/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "nbg-teen-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Teens greet garden visitors, run Discovery Cart activities, help with weeding, pruning, planting and watering, and support youth summer classes.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "education_working_with_kids",
+    "community_service",
+    "science_research"
+   ],
+   "subject_raw": [
+    "Discovery Cart activities",
+    "garden maintenance",
+    "weeding",
+    "pruning",
+    "planting",
+    "watering",
+    "youth summer classes"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Norfolk Botanical Garden",
+     "addr": "6700 Azalea Garden Road",
+     "city": "Norfolk",
+     "county": "Norfolk",
+     "state": "VA",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "14-18 years old"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "school_year": "2026-2027",
+    "raw": "Entering grades 9-12 in Fall 2026"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "start_raw": "June 1",
+    "end_raw": "Sunday, August 23",
+    "schedule_raw": "Shift times 9AM-2PM or 2PM-7PM",
+    "dur_raw": "at least 10 hours every two weeks"
+   },
+   "app": {
+    "route": "other",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "instructions": "Email youthed@nbgs.org and volunteer@nbgs.org",
+    "opens": {
+     "month": 1,
+     "day": 26,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "The 2026 Teen Volunteer Summer Program application window is January 26 - March 31"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 31,
+      "year": 2026,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "The 2026 Teen Volunteer Summer Program application window is January 26 - March 31"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ],
+    [
+     "/application/application_url",
+     "not_stated",
+     "Applications are made by email"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "nbg-s1",
+   "url": "https://norfolkbotanicalgarden.org/learn/teen-volunteer-opportunities/",
+   "title": "Teen Volunteer Opportunities - Norfolk Botanical Garden",
+   "publisher": "Norfolk Botanical Garden",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "nbg-s1",
+   "oid": "nbg-teen-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/grades/values"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "14-18 years old ... Entering grades 9-12 in Fall 2026"
+  },
+  {
+   "sid": "nbg-s1",
+   "oid": "nbg-teen-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "The 2026 Teen Volunteer Summer Program application window is January 26 - March 31"
+  },
+  {
+   "sid": "nbg-s1",
+   "oid": "nbg-teen-2026",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "at least 10 hours every two weeks"
+  }
+ ]
+}

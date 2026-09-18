@@ -1,0 +1,106 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "alexandria-library-teen-volunteer",
+ "name": "Alexandria Library Teen Volunteers and Teen Advisory Group",
+ "org": "Alexandria Library",
+ "org_type": "library",
+ "host_state": "VA",
+ "program_url": "https://alexlibraryva.org/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "alexandria-teen-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing teen volunteer placements",
+   "ann": "announced",
+   "summary": "Alexandria teens volunteer at library branches and earn service hours.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "education_working_with_kids"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Alexandria Library branches",
+     "city": "Alexandria",
+     "county": "Alexandria",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 12,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "between the ages of 12-18"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; participants can earn service hours"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/2111282061",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "conflicting",
+     "One section of the page says ages 12-18 and another says 14-18; the wider range is recorded and the difference is flagged"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "alexlib-s1",
+   "url": "https://alexlibraryva.org/volunteer",
+   "title": "Volunteer - Alexandria Library",
+   "publisher": "Alexandria Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "alexlib-s1",
+   "oid": "alexandria-teen-vol-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "between the ages of 12-18"
+  }
+ ]
+}

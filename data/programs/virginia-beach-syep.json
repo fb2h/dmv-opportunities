@@ -1,0 +1,303 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "virginia-beach-syep",
+ "name": "Virginia Beach Summer Youth Employment Program (SYEP)",
+ "org": "City of Virginia Beach, Youth Opportunities Office",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://parks.virginiabeach.gov/programs-classes/youth-opportunities-office/summer-youth-employment-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "vb-syep-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "An eight-week paid summer job with the City of Virginia Beach or a local business, for Virginia Beach residents aged 16 and up.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "City of Virginia Beach departments and partner businesses",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 21,
+    "basis": "specified_date",
+    "as_of": "2026-06-04",
+    "raw": "Participants aged between 16-21. (Must be 16 before June 4th)"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Virginia Beach, VA"
+    ],
+    "raw": "Reside in the City of Virginia Beach (validated with a report card or college transcript or proof of residency)"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "start_raw": "June 22",
+    "end_raw": "August 5",
+    "dur_min": 8,
+    "dur_unit": "week",
+    "schedule_raw": "June until August up to 7 days per week as needed; orientation June 15-18 (in person)"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://phg.tbe.taleo.net/phg02/ats/careers/v2/viewRequisition?org=VBGOV&cws=37&rid=48207",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "month": 1,
+     "day": 15,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications open: Jan. 15"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 12,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Application deadline: March 12"
+     }
+    ]
+   },
+   "other": [
+    [
+     "required",
+     "Commit to the entire 8-week program and the entire job readiness orientation"
+    ]
+   ],
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "The page refers to a minimum rate for employers but the wage figure is cut off; pay is not recorded as confirmed"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  },
+  {
+   "oid": "vbsyep-annual-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Eight-week summer placement - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Virginia Beach residents aged sixteen to twenty-one are placed with an employer for eight weeks, with orientation in mid June and work from late June to early August.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Virginia Beach",
+     "city": "Virginia Beach",
+     "county": "Virginia Beach",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 21,
+    "basis": "specified_date",
+    "as_of": "06-04",
+    "raw": "Participants aged between 16-21. (Must be 16 before June 4th)"
+   },
+   "residency": {
+    "status": "restricted",
+    "raw": "Reside in the City of Virginia Beach (validated with a report card or college transcript or proof of residency)."
+   },
+   "other": [
+    [
+     "required",
+     "youth worker questionnaire"
+    ],
+    [
+     "required",
+     "two professional recommendations via the recommendation form"
+    ],
+    [
+     "required",
+     "a recent report card or transcript sent to SYEP@VBgov.com"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "employers pay the minimum rate provided by the programme"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": {
+     "month": 6,
+     "day": 22,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "First day of work: June 22"
+    },
+    "end": {
+     "month": 8,
+     "day": 5,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "Last day of work: August 5"
+    },
+    "dur_raw": "Program duration: 8 weeks. Orientation: June 15-18"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://parks.virginiabeach.gov/programs-classes/youth-opportunities-office/summer-youth-employment-program",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Submit the online application, complete the youth worker questionnaire, send two recommendations and a recent report card or transcript. Applications are reviewed every Monday and documents are due two weeks from the following Monday.",
+    "opens": {
+     "month": 1,
+     "day": 15,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "Applications open: Jan. 15"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 12,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Application deadline: March 12"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines/0/year",
+     "not_stated",
+     "The city publishes the window as Jan. 15 to March 12 with no year."
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "The page states employers pay a minimum rate but the rate itself did not resolve on retrieval and should be confirmed."
+    ],
+    [
+     "/schedule/start/year",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "vbsyep-s1",
+   "url": "https://parks.virginiabeach.gov/programs-classes/youth-opportunities-office/summer-youth-employment-program",
+   "title": "Summer Youth Employment Program | City of Virginia Beach",
+   "publisher": "City of Virginia Beach",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "vbsyep-s1",
+   "oid": "vb-syep-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Participants aged between 16-21. (Must be 16 before June 4th) ... Reside in the City of Virginia Beach (validated with a report card or college transcript or proof of residency)"
+  },
+  {
+   "sid": "vbsyep-s1",
+   "oid": "vb-syep-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Applications open: Jan. 15 ... Application deadline: March 12"
+  },
+  {
+   "sid": "vbsyep-s1",
+   "oid": "vbsyep-annual-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency"
+   ],
+   "cycle": "Eight-week summer placement - verified 2026-09-08",
+   "quote": "Participants aged between 16-21. (Must be 16 before June 4th) ... Reside in the City of Virginia Beach (validated with a report card or college transcript or proof of residency)."
+  },
+  {
+   "sid": "vbsyep-s1",
+   "oid": "vbsyep-annual-verified",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/application/opens",
+    "/application/deadlines/0"
+   ],
+   "cycle": "Eight-week summer placement - verified 2026-09-08",
+   "quote": "Orientation: June 15-18 ... First day of work: June 22 ... Last day of work: August 5 ... Applications open: Jan. 15 ... Application deadline: March 12"
+  }
+ ]
+}

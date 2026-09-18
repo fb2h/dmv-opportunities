@@ -1,0 +1,2405 @@
+{
+ "generated_at": "2026-09-18T19:42:03Z",
+ "reference_date": "2026-09-18",
+ "published_offerings": 126,
+ "withheld_offerings": 117,
+ "disagreements_with_collector_flag": [
+  {
+   "pid": "adventist-healthcare-volunteer",
+   "oid": "adventist-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "bon-secours-hampton-roads-junior-volunteer",
+   "oid": "bon-secours-hr-jr-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "carroll-hospital-junior-volunteer-summer",
+   "oid": "carroll-hospital-jr-verified-2026",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "fairfax-park-authority-seasonal-jobs",
+   "oid": "ffx-park-seasonal-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "frederick-health-student-volunteer",
+   "oid": "frederick-health-jr-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "grace-medical-center-hs-summer-volunteer",
+   "oid": "grace-hs-summer-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "hcls-teen-summer-reading-volunteer",
+   "oid": "hcls-summer-reading-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "luminis-student-volunteers",
+   "oid": "luminis-student-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "pg-parks-summer-day-camp-volunteer",
+   "oid": "pgparks-summer-day-camp-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "pg-parks-summer-day-camp-volunteer",
+   "oid": "pgparks-summer-playtime-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "sentara-nova-junior-volunteer",
+   "oid": "sentara-nova-2026-full",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "sentara-princess-anne-junior-volunteer",
+   "oid": "sentara-spah-summer-2026",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-14"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "si-nasm-explainers",
+   "oid": "si-nasm-explainers-udvar",
+   "publish": false,
+   "reasons": [
+    "no evidence for this offering"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "virginia-beach-syep",
+   "oid": "vbsyep-annual-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "vmfa-teen-programs",
+   "oid": "vmfa-teen-terns",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  }
+ ],
+ "decisions": [
+  {
+   "pid": "aacounty-police-youth-explorer",
+   "oid": "aacounty-explorer-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aacounty-rec-youth-volunteer",
+   "oid": "aacounty-rec-youth-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aacpl-volunteer",
+   "oid": "aacpl-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aacspca-teen-volunteer",
+   "oid": "aacspca-teen-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aacspca-teen-volunteer",
+   "oid": "aacspca-teen-rolling-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "ace-mentor-baltimore",
+   "oid": "ace-baltimore-standing",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "adventist-healthcare-volunteer",
+   "oid": "adventist-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "adventist-shady-grove-volunteer",
+   "oid": "adventist-sgmc-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "adventist-white-oak-volunteer",
+   "oid": "adventist-whiteoak-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aeop-gems-near-peer",
+   "oid": "aeop-gems-anpm-md",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aeop-hsap",
+   "oid": "aeop-hsap-md-sites",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "alexandria-library-teen-volunteer",
+   "oid": "alexandria-teen-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "alexandria-rpca-future-leaders",
+   "oid": "alexandria-future-leaders-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-05-27"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "alexandria-syep",
+   "oid": "alexandria-syep-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "apprenticeship-maryland-program-statewide",
+   "oid": "amp-statewide-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aps-arlington-career-center-ghc",
+   "oid": "arl-career-center-verified-2026",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "aps-arlington-tech",
+   "oid": "arlington-tech-verified-2026",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "arlington-library-teen-volunteer",
+   "oid": "arl-library-teen-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "baltimore-city-youthworks",
+   "oid": "baltimore-youthworks-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "baltimore-county-syep",
+   "oid": "balt-co-syep-2024-last-published",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "cycle ended 2024-08-09"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "bcpl-be-involved-dropin",
+   "oid": "bcpl-be-involved-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "bcpl-be-involved-dropin",
+   "oid": "bcpl-buddies-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "bcpl-summer-teen-advisory-board",
+   "oid": "bcpl-tab-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "black-hill-discovery-center-volunteer",
+   "oid": "blackhill-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "bon-secours-hampton-roads-junior-volunteer",
+   "oid": "bon-secours-hr-jr-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "bon-secours-hampton-roads-junior-volunteer",
+   "oid": "bonsecours-jr-2020-last-published",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "cycle ended 2020-08-21"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "brookside-nature-center-teen-volunteer",
+   "oid": "brookside-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "capital-area-food-bank-volunteer",
+   "oid": "cafb-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "carroll-county-syep",
+   "oid": "carroll-syep-standing",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "carroll-hospital-junior-volunteer-summer",
+   "oid": "carroll-hospital-jr-verified-2026",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "charles-county-student-internship",
+   "oid": "charles-student-internship",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "charles-county-student-internship",
+   "oid": "charles-syep",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chesapeake-regional-hs-summer-volunteer",
+   "oid": "chesapeake-reg-hs-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chesapeake-regional-hs-summer-volunteer",
+   "oid": "chesapeake-reg-hs-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chesterfield-county-internship",
+   "oid": "chesterfield-internship-2026-college",
+   "publish": false,
+   "reasons": [
+    "scope=out_of_scope",
+    "cycle ended 2026-07-30"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chesterfield-county-volunteer",
+   "oid": "chesterfield-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "childrens-national-summer-hs-volunteer",
+   "oid": "cnh-summer-hs-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chkd-junior-volunteer",
+   "oid": "chkd-jr-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chkd-junior-volunteer",
+   "oid": "chkd-jr-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-13"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chor-vcu-junior-volunteer",
+   "oid": "chor-vcu-jr-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "chor-vcu-junior-volunteer",
+   "oid": "chor-vcu-jr-summer-2026",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-14"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "cmor-junior-volunteers",
+   "oid": "cmor-junior-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "co-canal-trust-youth-volunteer",
+   "oid": "co-canal-youth-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "dc-dpr-summer-employment",
+   "oid": "dcdpr-summer-2026-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "dc-osse-advanced-internship-program",
+   "oid": "dcps-aip-2025-26-verified",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-05-22"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "dc-osse-career-ready-internships",
+   "oid": "dcps-cri-2025-verified",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2025-08-01"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "dcpl-teen-council-2026",
+   "oid": "dcpl-teen-council-2026-cycle",
+   "publish": false,
+   "reasons": [
+    "historical cycle"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "dcpl-teen-special-events-volunteer",
+   "oid": "dcpl-special-events-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "dcpl-teens-of-distinction",
+   "oid": "dcpl-teens-distinction-standing",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fairfax-county-fire-rescue-explorer-post-1949",
+   "oid": "ffx-fire-explorer-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fairfax-eye-summer",
+   "oid": "fairfax-eye-standing",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fairfax-eye-summer",
+   "oid": "fairfax-wioa-youth",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fairfax-park-authority-camp-jobs",
+   "oid": "ffx-camp-jobs-verified-adult",
+   "publish": false,
+   "reasons": [
+    "scope=out_of_scope",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fairfax-park-authority-seasonal-jobs",
+   "oid": "ffx-park-seasonal-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "fairfax-public-safety-cadets",
+   "oid": "fairfax-cadets-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fairfax-rec-pac-cit",
+   "oid": "ffx-cit-2023-stale",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2023-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fairfax-volunteer-fire-junior-member",
+   "oid": "fairfax-vfd-junior-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcpl-teen-advisory-board",
+   "oid": "fcpl-tab-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcps-edison-academy-apprenticeship",
+   "oid": "fcps-edison-appr-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcps-md-youth-apprentice-program",
+   "oid": "fcps-md-apprentice-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcps-va-clinical-experience",
+   "oid": "fcps-clinical-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcps-va-job-shadowing",
+   "oid": "fcps-jobshadow-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcps-va-summer-internship-program",
+   "oid": "fcps-summer-internship-2026-verified",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-14"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcps-va-wbl-internship",
+   "oid": "fcps-wbl-internship-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "fcps-va-youth-registered-apprenticeship",
+   "oid": "fcps-yra-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "frederick-health-student-volunteer",
+   "oid": "frederick-health-jr-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "frederick-work-ready",
+   "oid": "frederick-work-ready-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "gbmc-hs-summer-volunteer",
+   "oid": "gbmc-hs-summer-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "georgetown-gep",
+   "oid": "georgetown-gep-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "gmu-assip",
+   "oid": "gmu-assip-2026-inperson",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-12"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "gmu-assip",
+   "oid": "gmu-assip-2026-remote",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-12"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "grace-medical-center-hs-summer-volunteer",
+   "oid": "grace-hs-summer-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "gunston-hall-young-historic-interpreters",
+   "oid": "gunston-yhi-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "gw-dc-happ",
+   "oid": "gw-dchapp-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "gw-hospital-volunteer",
+   "oid": "gwh-verified-adult-only",
+   "publish": false,
+   "reasons": [
+    "scope=out_of_scope",
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "hampton-youth-commission",
+   "oid": "hampton-youth-commission-standing",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "hcls-teen-action-board",
+   "oid": "hcls-teen-action-board-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "hcls-teen-summer-reading-volunteer",
+   "oid": "hcls-summer-reading-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "hcls-teens-teach",
+   "oid": "hcls-teens-teach-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "hcpl-harford-teen-volunteer",
+   "oid": "hcpl-summer-reading-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "hcpl-harford-teen-volunteer",
+   "oid": "hcpl-innovation-lab",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "hcpl-harford-teen-volunteer",
+   "oid": "hcpl-tag",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "hcpss-apprenticeship-maryland",
+   "oid": "hcpss-amp-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "henrico-county-internship",
+   "oid": "henrico-internship-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "henrico-doctors-junior-volunteer",
+   "oid": "henrico-doctors-jr-standing",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "henrico-library-volunteen",
+   "oid": "henrico-volunteen",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "henrico-library-volunteen",
+   "oid": "henrico-tab",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "holy-cross-summer-hs-volunteer",
+   "oid": "holy-cross-summer-hs-standing",
+   "publish": false,
+   "reasons": [
+    "program status=unknown",
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "homeward-trails-shelter-helpers",
+   "oid": "homeward-shelter-helpers",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "howard-county-junior-counselor",
+   "oid": "howard-jr-counselor-standing",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "howard-county-syep",
+   "oid": "howard-syep-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "howard-university-hospital-candy-striper",
+   "oid": "huh-candy-striper-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "inova-alexandria-hs-volunteer",
+   "oid": "inova-alexandria-superseded-2026",
+   "publish": false,
+   "reasons": [
+    "offering superseded by a system-wide record"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "inova-fair-oaks-hs-volunteer",
+   "oid": "inova-fair-oaks-superseded-2026",
+   "publish": false,
+   "reasons": [
+    "offering superseded by a system-wide record"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "inova-fairfax-hs-volunteer",
+   "oid": "inova-fairfax-superseded-2026",
+   "publish": false,
+   "reasons": [
+    "offering superseded by a system-wide record"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "inova-hs-student-volunteers",
+   "oid": "inova-hs-fall-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "inova-loudoun-hs-volunteer",
+   "oid": "inova-loudoun-superseded-2026",
+   "publish": false,
+   "reasons": [
+    "offering superseded by a system-wide record"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "inova-mount-vernon-hs-summer-volunteer",
+   "oid": "inova-mvh-summer-2023-stale",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2023-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "james-city-county-fire-explorers",
+   "oid": "jcc-fire-explorers-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "janelia-hs-internship",
+   "oid": "janelia-hs-summer-2026",
+   "publish": false,
+   "reasons": [
+    "collector marked cycle expired",
+    "cycle ended 2026-08-07"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jh-bayview-summer-junior-volunteer",
+   "oid": "jhbayview-summer-jr-verified",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jh-howard-county-volunteer",
+   "oid": "jhhcmc-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jh-summer-jobs",
+   "oid": "jh-summer-jobs-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jhh-volunteer-services",
+   "oid": "jhh-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jhu-wise",
+   "oid": "jhu-wise-spring-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-05-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jhu-wise",
+   "oid": "jhu-wise-summer-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jhuapl-aspire",
+   "oid": "jhuapl-aspire-standing",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jlab-hsshp",
+   "oid": "jlab-hsshp-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jlab-hsshp",
+   "oid": "jlab-hsshp-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "jyf-teen-volunteers",
+   "oid": "jyf-teen-vol-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "lewis-ginter-teen-volunteers",
+   "oid": "lewisginter-work-days",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "lewis-ginter-teen-volunteers",
+   "oid": "lewisginter-butterflies",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "lewis-ginter-teen-volunteers",
+   "oid": "lewisginter-summer-camp-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "locust-grove-animal-care-volunteer",
+   "oid": "locust-grove-animal-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "locust-grove-camp-counselor-volunteer",
+   "oid": "locust-grove-counselor-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "loudoun-prcs-teen-volunteer",
+   "oid": "loudoun-prcs-teen-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "luminis-lhaamc-student-volunteer",
+   "oid": "luminis-aamc-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "luminis-lhdcmc-student-volunteer",
+   "oid": "luminis-dcmc-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "luminis-student-volunteers",
+   "oid": "luminis-student-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "maryland-conservation-jobs-corps",
+   "oid": "md-cjc-hiatus",
+   "publish": false,
+   "reasons": [
+    "program status=paused",
+    "announcement_state=unannounced"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "maryland-food-bank-volunteer",
+   "oid": "mdfb-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "maryland-science-center-youth-volunteer",
+   "oid": "mdsci-youth-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "maryland-zoo-zoo-teens",
+   "oid": "md-zoo-teens-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mbsyep-dc",
+   "oid": "mbsyep-standing",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mcpd-police-explorer-post-1986",
+   "oid": "mcpd-explorer-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mcpl-teen-advisory-board",
+   "oid": "mcpl-tab-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mcps-it-foundation-network-operations",
+   "oid": "mcps-it-foundation-verified-course",
+   "publish": false,
+   "reasons": [
+    "scope=out_of_scope"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mcps-summer-rise-2027",
+   "oid": "mcps-summer-rise-2027-cycle",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mcps-wbl-internship",
+   "oid": "mcps-wbl-internship-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mcps-youth-apprenticeship",
+   "oid": "mcps-apprenticeship-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "meadowside-nature-center-hs-internship",
+   "oid": "meadowside-hs-internship-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-franklin-square-junior-volunteer",
+   "oid": "medstar-fsmc-jr-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-good-samaritan-junior-volunteer",
+   "oid": "medstar-gsh-jr-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-harbor-junior-volunteer",
+   "oid": "medstar-harbor-jr-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-montgomery-volunteer",
+   "oid": "medstar-montgomery-paused-2026",
+   "publish": false,
+   "reasons": [
+    "program status=paused",
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-nrh-volunteer",
+   "oid": "medstar-nrh-verified",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-southern-maryland-youth-volunteer",
+   "oid": "medstar-somd-verified-adult-only",
+   "publish": false,
+   "reasons": [
+    "scope=out_of_scope",
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-st-marys-shadow-program",
+   "oid": "medstar-stmarys-shadow-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-union-memorial-junior-volunteer",
+   "oid": "medstar-umh-jr-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "medstar-whc-summer-hs",
+   "oid": "medstar-whc-summer-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "meritus-volunteens",
+   "oid": "meritus-volunteens-14-15",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "meritus-volunteens",
+   "oid": "meritus-volunteens-16",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "meritus-volunteens",
+   "oid": "meritus-volunteens-17-18",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "moco-rec-seasonal-jobs",
+   "oid": "moco-rec-seasonal-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "moco-rec-teenworks",
+   "oid": "moco-teenworks-fall-intake",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "montgomery-county-humane-society-volunteer",
+   "oid": "mchs-adult-only-verified",
+   "publish": false,
+   "reasons": [
+    "scope=out_of_scope"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "montgomery-parks-ssl-volunteer",
+   "oid": "moco-parks-ssl-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mount-vernon-student-advisory-board",
+   "oid": "mtvernon-sab-2026-27",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mount-vernon-volunteer",
+   "oid": "mount-vernon-vol-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "mwhc-summer-junior-volunteer",
+   "oid": "mwhc-summer-jr-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nara-volunteer-dc",
+   "oid": "nara-vol-dc-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nara-volunteer-dc",
+   "oid": "nara-vol-collegepark-none",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nasa-goddard-shadow-day",
+   "oid": "nasa-goddard-shadow-2025",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2025-05-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nasa-goddard-space-club-scholars",
+   "oid": "nasa-space-club-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "national-aquarium-volunteer-adult-track",
+   "oid": "natl-aq-general-verified-adult",
+   "publish": false,
+   "reasons": [
+    "scope=out_of_scope"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "national-aquarium-youth-exhibit-guide",
+   "oid": "natl-aq-yeg-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "national-aquarium-youth-exhibit-guide",
+   "oid": "natl-aq-yeg-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-09"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "national-aquarium-youthworks",
+   "oid": "natl-aq-youthworks-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "national-aquarium-youthworks",
+   "oid": "natl-aq-youthworks-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "navy-seap",
+   "oid": "navy-seap-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nci-frederick-whk",
+   "oid": "nci-whk-standing",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nih-sip",
+   "oid": "nih-sip-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nih-sip",
+   "oid": "nih-sip-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nist-ship",
+   "oid": "nist-ship-2027-gaithersburg",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "norfolk-botanical-garden-teen-volunteer",
+   "oid": "nbg-teen-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "northwest-hospital-school-year-internship",
+   "oid": "northwest-school-year-internship-verified",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "northwest-hospital-teen-volunteer",
+   "oid": "northwest-teen-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "northwest-hospital-teen-volunteer",
+   "oid": "northwest-hs-summer-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nova-summer-college-prep-virtual-internship",
+   "oid": "nova-summer-prep-2026-verified",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-28"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nps-ycc-gw-memorial-parkway",
+   "oid": "nps-gwmp-ycc-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nps-ycc-prince-william-forest",
+   "oid": "nps-prwi-ycc-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nps-ycc-prince-william-forest",
+   "oid": "nps-prwi-ycc-2025",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2025-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nps-ycc-shenandoah",
+   "oid": "nps-ycc-shen-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "nps-ycc-shenandoah",
+   "oid": "nps-shen-summer-youth-corps-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pg-parks-summer-day-camp-volunteer",
+   "oid": "pgparks-summer-day-camp-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "pg-parks-summer-day-camp-volunteer",
+   "oid": "pgparks-summer-playtime-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "pg-parks-summer-playtime-volunteer",
+   "oid": "pgparks-summer-playtime",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pg-parks-summer-playtime-volunteer",
+   "oid": "pgparks-summer-day-camp",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pg-parks-summer-playtime-volunteer",
+   "oid": "pgparks-weed-warrior",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pgc-syep",
+   "oid": "pgc-syep-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-14"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pgcmls-teen-action-group",
+   "oid": "pgcmls-tag-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pgcmls-volunteen",
+   "oid": "pgcmls-volunteen-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "port-discovery-teen-volunteer",
+   "oid": "port-discovery-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pratt-teen-library-board-2026-27",
+   "oid": "pratt-tlb-2026-27",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pratt-youth-collective-fall-2026",
+   "oid": "epyc-fall-2026-central",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pratt-youth-collective-fall-2026",
+   "oid": "epyc-fall-2026-waverly",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pratt-youth-collective-fall-2026",
+   "oid": "epyc-fall-2026-hamilton",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pratt-youth-collective",
+   "oid": "pratt-epyc-fall-2026",
+   "publish": false,
+   "reasons": [
+    "scope=needs_review"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pratt-youthworks-summer",
+   "oid": "pratt-youthworks-2026-verified",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pwc-fire-junior-member",
+   "oid": "pwc-fire-junior-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pwcs-summer-student-intern-teacher-aide",
+   "oid": "pwcs-summer-intern-2026",
+   "publish": false,
+   "reasons": [
+    "collector marked cycle expired",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pwcs-work-based-learning",
+   "oid": "pwcs-wbl-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "pwpl-summer-reading-volunteers",
+   "oid": "pwpl-summer-reading-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "riverside-peninsula-junior-volunteer",
+   "oid": "riverside-peninsula-jr-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "riverside-peninsula-junior-volunteer",
+   "oid": "riverside-peninsula-summer-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "rock-creek-conservation-corps-rc3",
+   "oid": "rc3-2026-verified",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-07"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sca-dc-urban-green",
+   "oid": "sca-urban-green-hs-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sentara-leigh-junior-volunteer",
+   "oid": "sentara-leigh-rolling-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sentara-norfolk-general-junior-volunteer",
+   "oid": "sentara-sngh-rolling-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sentara-norfolk-general-junior-volunteers",
+   "oid": "sentara-ngh-jr-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sentara-nova-junior-volunteer",
+   "oid": "sentara-nova-2026-full",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": false,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "sentara-nova-junior-volunteer",
+   "oid": "sentara-nova-2027-next",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sentara-princess-anne-junior-volunteer",
+   "oid": "sentara-spah-summer-2026",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-14"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "sentara-vb-general-junior-volunteer",
+   "oid": "sentara-vbgh-rolling-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "si-nasm-explainers",
+   "oid": "si-nasm-explainers-dc",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "si-nasm-explainers",
+   "oid": "si-nasm-explainers-udvar",
+   "publish": false,
+   "reasons": [
+    "no evidence for this offering"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "si-nmnh-hs-internship",
+   "oid": "si-nmnh-hs-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-14"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "si-npg-teen-museum-council",
+   "oid": "si-npg-tmc-2026-27",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sibley-junior-volunteer",
+   "oid": "sibley-jr-2027-spring-summer",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "sinai-hospital-hs-summer-volunteer",
+   "oid": "sinai-hs-summer-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "smithsonian-qcrew",
+   "oid": "qcrew-verified-2026",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "smv-teen-leadership",
+   "oid": "smv-teen-spring-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-stmarys",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-charles-calvert",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "southern-maryland-syep",
+   "oid": "somd-syep-verified-2026",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "spotsylvania-regional-volunteer",
+   "oid": "spotsylvania-vol-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "stonesprings-junior-volunteer",
+   "oid": "stonesprings-jr-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "suburban-junior-volunteer",
+   "oid": "suburban-jr-2027-spring-summer",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "tidalhealth-volunteen",
+   "oid": "tidalhealth-volunteen-md",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "um-capital-region-student-volunteer",
+   "oid": "umcap-student-vol-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "um-shore-regional-volunteer",
+   "oid": "um-shore-student-verified-2026",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "um-st-joseph-student-volunteer",
+   "oid": "umsjmc-student-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "um-upper-chesapeake-shadowing",
+   "oid": "umuch-shadow-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "um-upper-chesapeake-student-volunteer",
+   "oid": "umuch-student-vol-verified",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "umd-geog-hip",
+   "oid": "umd-hip-2027",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "umd-geog-hip",
+   "oid": "umd-hip-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-24",
+    "no evidence for this offering"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "ummc-volunteer",
+   "oid": "ummc-vol-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "upmc-western-maryland-teen-volunteer",
+   "oid": "upmc-wmd-teen-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "uva-charlottesville-junior-volunteer",
+   "oid": "uva-cville-jr-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-07-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "uva-prince-william-junior-volunteer",
+   "oid": "uva-pw-jr-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "uva-pw-summer-teen-patient-engagement",
+   "oid": "uva-pw-summer-teen-standing",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "vbpl-teen-volunteers",
+   "oid": "vbpl-tag",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "vbpl-teen-volunteers",
+   "oid": "vbpl-summer-reading",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear",
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "vbpl-teen-volunteers",
+   "oid": "vbpl-reading-buddies",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "vbpl-teen-volunteers",
+   "oid": "vbpl-archives",
+   "publish": false,
+   "reasons": [
+    "announcement_state=unclear"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "virginia-aquarium-youth-volunteer",
+   "oid": "va-aquarium-youth-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "virginia-beach-syep",
+   "oid": "vb-syep-2026",
+   "publish": false,
+   "reasons": [
+    "historical cycle",
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": false,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "virginia-beach-syep",
+   "oid": "vbsyep-annual-verified",
+   "publish": false,
+   "reasons": [
+    "cycle ended 2026-08-31"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  },
+  {
+   "pid": "virginia-state-parks-ycc-2027",
+   "oid": "va-ycc-2027-session1",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "virginia-state-parks-ycc-2027",
+   "oid": "va-ycc-2027-session2",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "virginia-zoo-conservation-youth-team",
+   "oid": "va-zoo-cyt-standing",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "vmfa-teen-programs",
+   "oid": "vmfa-mlit",
+   "publish": true,
+   "reasons": [],
+   "collector_public_flag": true,
+   "agrees_with_collector": true
+  },
+  {
+   "pid": "vmfa-teen-programs",
+   "oid": "vmfa-teen-terns",
+   "publish": false,
+   "reasons": [
+    "annual cycle without an identifiable year (7.1.2: label must be interpretable)"
+   ],
+   "collector_public_flag": true,
+   "agrees_with_collector": false
+  }
+ ]
+}

@@ -1,0 +1,164 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pratt-teen-library-board-2026-27",
+ "name": "Enoch Pratt Free Library Teen Library Board",
+ "org": "Enoch Pratt Free Library",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.prattlibrary.org/support-us/volunteer/teen-board",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "pratt-tlb-2026-27",
+   "cycle_kind": "academic_year",
+   "cycle_label": "November 2026 to June 2027 board",
+   "ann": "announced",
+   "summary": "Baltimore City students in grades 9 to 12 plan and run a library program for teens, advise library leaders and may speak at Board of Trustees meetings, meeting twice a month for eight months.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "business_law_government",
+    "education_working_with_kids"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Enoch Pratt Free Library Central Library",
+     "addr": "400 Cathedral Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "specified_school_year",
+    "school_year": "2026-2027",
+    "raw": "currently enrolled in grades 9-12"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Baltimore City, MD"
+    ],
+    "raw": "Live in Baltimore City"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start_raw": "November 2026",
+    "end_raw": "June 2027",
+    "dur_raw": "Eight-month program",
+    "schedule_raw": "1st and 3rd Wednesdays of the month, 6:00 to 7:30 pm"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.cloud.microsoft/r/ZK5aCCggN6",
+    "window": "fixed",
+    "status": "open",
+    "selection": "competitive",
+    "opens": {
+     "date": "2026-08-03",
+     "year": 2026,
+     "month": 8,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications will be accepted from August 3, 2026 through October 2"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 10,
+      "day": 2,
+      "year": 2026,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Applications will be accepted from August 3, 2026 through October 2"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "October 2 is given without repeating the year; it is attributed to the August 3, 2026 window on the same line"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pratttlb-s1",
+   "url": "https://www.prattlibrary.org/support-us/volunteer/teen-board",
+   "title": "Teen Library Board - Enoch Pratt Free Library",
+   "publisher": "Enoch Pratt Free Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pratttlb-s1",
+   "oid": "pratt-tlb-2026-27",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "November 2026 to June 2027 board",
+   "quote": "currently enrolled in grades 9-12 ... Live in Baltimore City"
+  },
+  {
+   "sid": "pratttlb-s1",
+   "oid": "pratt-tlb-2026-27",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "November 2026 to June 2027 board",
+   "quote": "Applications will be accepted from August 3, 2026 through October 2"
+  },
+  {
+   "sid": "pratttlb-s1",
+   "oid": "pratt-tlb-2026-27",
+   "fields": [
+    "/schedule/schedule_raw",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "November 2026 to June 2027 board",
+   "quote": "on the 1st and 3rd Wednesdays of the month ... 6:00 to 7:30 pm"
+  }
+ ]
+}

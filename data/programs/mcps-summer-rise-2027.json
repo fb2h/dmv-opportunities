@@ -1,0 +1,162 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mcps-summer-rise-2027",
+ "name": "MCPS Summer RISE",
+ "org": "Montgomery County Public Schools Office of Partnerships",
+ "org_type": "school_district",
+ "host_state": "MD",
+ "program_url": "https://www.montgomeryschoolsmd.org/departments/partnerships/summer-rise/for-students/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "mcps-summer-rise-2027-cycle",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2027",
+   "ann": "announced",
+   "summary": "A five-week summer placement with a Montgomery County employer for rising MCPS juniors and seniors, doing real work such as lab setup, research, customer service or social media.",
+   "types": [
+    "internship",
+    "trainee"
+   ],
+   "subjects": [
+    "business_law_government",
+    "science_research",
+    "computing_technology",
+    "education_working_with_kids",
+    "health_medicine"
+   ],
+   "subject_raw": [
+    "teaching assistance",
+    "lab setup",
+    "business meeting attendance",
+    "research",
+    "website creation",
+    "social media management",
+    "customer service",
+    "data maintenance",
+    "client support"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Host organisations across Montgomery County",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "rising MCPS juniors and seniors"
+   },
+   "school": {
+    "status": "restricted",
+    "raw": "rising MCPS juniors and seniors"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "conditional",
+    "raw": "Receive a stipend, if funded"
+   },
+   "sched": {
+    "start_raw": "June 21",
+    "end_raw": "July 23",
+    "dur_min": 5,
+    "dur_unit": "week",
+    "dur_raw": "5 weeks, 50 hours total",
+    "schedule_raw": "hours determined by host organization between 7:00 a.m.-6:00 p.m., Monday-Friday"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "opens": {
+     "month": 1,
+     "precision": "month",
+     "certainty": "confirmed",
+     "raw": "opens January"
+    },
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Only a January opening and April or May notification are published"
+    ],
+    [
+     "/costs/compensation_status",
+     "conditional",
+     "A stipend is offered only if funded, so this does not qualify as With pay"
+    ],
+    [
+     "/schedule/start",
+     "unclear",
+     "June 21 to July 23 is published without a year"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "summerrise-s1",
+   "url": "https://www.montgomeryschoolsmd.org/departments/partnerships/summer-rise/for-students/",
+   "title": "SUMMER RISE - Information for Students",
+   "publisher": "Montgomery County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "summerrise-s1",
+   "oid": "mcps-summer-rise-2027-cycle",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/school/raw"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "rising MCPS juniors and seniors"
+  },
+  {
+   "sid": "summerrise-s1",
+   "oid": "mcps-summer-rise-2027-cycle",
+   "fields": [
+    "/costs/compensation_status"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "Receive a stipend, if funded"
+  },
+  {
+   "sid": "summerrise-s1",
+   "oid": "mcps-summer-rise-2027-cycle",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "June 21 - July 23 (5 weeks, 50 hours total)"
+  }
+ ]
+}

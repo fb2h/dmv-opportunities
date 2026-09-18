@@ -1,0 +1,130 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "adventist-shady-grove-volunteer",
+ "name": "Adventist HealthCare Shady Grove Medical Center Volunteer Services",
+ "org": "Adventist HealthCare Shady Grove Medical Center",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.adventisthealthcare.com/volunteer/shady-grove-medical-center/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "adventist-sgmc-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing volunteer placements, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Volunteers aged 15 and up greet visitors, support nursing units and work in the gift shop, oncology, paediatrics, maternity, orthopaedics and the emergency department.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "information desks",
+    "nursing units",
+    "clerical projects",
+    "gift shop",
+    "Emergency Department",
+    "Medical Surgical Units",
+    "Mother/Baby Unit",
+    "Oncology",
+    "Orthopedics",
+    "Pediatrics",
+    "Guest Relations",
+    "Behavioral Health"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Adventist HealthCare Shady Grove Medical Center",
+     "addr": "9901 Medical Center Drive",
+     "city": "Rockville",
+     "county": "Montgomery",
+     "state": "MD",
+     "zip": "20850",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "application_date",
+    "raw": "ages 15 and older"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "adventsg-s1",
+   "url": "https://www.adventisthealthcare.com/volunteer/shady-grove-medical-center/",
+   "title": "Volunteer at Shady Grove Medical Center",
+   "publisher": "Adventist HealthCare",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "adventsg-s1",
+   "oid": "adventist-sgmc-verified",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing volunteer placements, verified 2026-09-08",
+   "quote": "ages 15 and older"
+  },
+  {
+   "sid": "adventsg-s1",
+   "oid": "adventist-sgmc-verified",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Ongoing volunteer placements, verified 2026-09-08",
+   "quote": "Emergency Department, Medical Surgical Units, Mother/Baby Unit, Oncology, Orthopedics, Pediatrics, Guest Relations, Clerical, or Behavioral Health positions"
+  }
+ ]
+}

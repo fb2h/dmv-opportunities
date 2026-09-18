@@ -1,0 +1,128 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mcpl-teen-advisory-board",
+ "name": "MCPL Teen Advisory Board (TAB)",
+ "org": "Montgomery County Public Libraries",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.montgomerycountymd.gov/library/board/teen-advisory-board.html",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "mcpl-tab-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing board membership, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens help plan and run library events, give feedback on programmes and advocate for youth services, earning Student Service Learning hours.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "arts_media_humanities",
+    "education_working_with_kids"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Montgomery County Public Libraries branches",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 13,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "13 or in 8th grade at time of application up to 17 or 18 and a Senior in high school"
+   },
+   "grades": {
+    "values": [
+     "8",
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "13 or in 8th grade at time of application up to 17 or 18 and a Senior in high school"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; Student Service Learning hours available"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.office.com/pages/responsepage.aspx?id=-bEBbuWxc0Csl3eAaaCtZBcyUVFZhjlNrmyVkMdnYYZUMEZPSTA3RVZNWEhGNksxMzNKQ0wySFBWTC4u",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated",
+     "Meeting frequency is not published"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mcpltab-s1",
+   "url": "https://www.montgomerycountymd.gov/library/board/teen-advisory-board.html",
+   "title": "Teen Advisory Board (TAB) | Montgomery County Public Libraries",
+   "publisher": "Montgomery County Public Libraries",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mcpltab-s1",
+   "oid": "mcpl-tab-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Ongoing board membership, verified 2026-09-08",
+   "quote": "13 or in 8th grade at time of application up to 17 or 18 and a Senior in high school"
+  },
+  {
+   "sid": "mcpltab-s1",
+   "oid": "mcpl-tab-verified",
+   "fields": [
+    "/opportunity_types",
+    "/summary"
+   ],
+   "cycle": "Ongoing board membership, verified 2026-09-08",
+   "quote": "implementing, promoting and advocating for youth services"
+  }
+ ]
+}

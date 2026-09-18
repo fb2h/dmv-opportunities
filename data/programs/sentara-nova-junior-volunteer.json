@@ -1,0 +1,175 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "sentara-nova-junior-volunteer",
+ "name": "Sentara Northern Virginia Medical Center Junior Volunteer Program",
+ "org": "Sentara Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.sentara.com/hospitalslocations/sentara-northern-virginia-medical-center/about-us/volunteer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital_long_tail",
+ "offerings": [
+  {
+   "oid": "sentara-nova-2026-full",
+   "cycle_kind": "annual",
+   "cycle_label": "2026 programme - full",
+   "ann": "announced",
+   "summary": "The 2026 junior volunteer programme at Sentara Northern Virginia is full and closed to applications; the hospital says the next cycle reopens in March 2027.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Sentara Northern Virginia Medical Center",
+     "addr": "2300 Opitz Boulevard",
+     "city": "Woodbridge",
+     "county": "Prince William",
+     "state": "VA",
+     "zip": "22191",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.sentara.com/hospitalslocations/sentara-northern-virginia-medical-center/about-us/volunteer",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "first_come",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/reported_status",
+     "closed",
+     "Our 2026 program is now full, and we are no longer accepting applications."
+    ],
+    [
+     "/eligibility/age",
+     "not_stated",
+     "The page publishes no age or grade rule for the junior programme."
+    ]
+   ]
+  },
+  {
+   "oid": "sentara-nova-2027-next",
+   "cycle_kind": "annual",
+   "cycle_label": "2027 programme - reopening announced",
+   "ann": "announced",
+   "summary": "The hospital states that the junior volunteer application cycle reopens in March 2027.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Sentara Northern Virginia Medical Center",
+     "addr": "2300 Opitz Boulevard",
+     "city": "Woodbridge",
+     "county": "Prince William",
+     "state": "VA",
+     "zip": "22191",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.sentara.com/hospitalslocations/sentara-northern-virginia-medical-center/about-us/volunteer",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "first_come",
+    "opens": {
+     "year": 2027,
+     "month": 3,
+     "precision": "month",
+     "certainty": "confirmed",
+     "raw": "check back when the application cycle reopens in March 2027"
+    },
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "snova-s1",
+   "url": "https://www.sentara.com/hospitalslocations/sentara-northern-virginia-medical-center/about-us/volunteer",
+   "title": "Volunteer at Sentara Northern Virginia Medical Center",
+   "publisher": "Sentara Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "snova-s1",
+   "oid": "sentara-nova-2026-full",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "2026 programme - full",
+   "quote": "Our 2026 program is now full, and we are no longer accepting applications."
+  },
+  {
+   "sid": "snova-s1",
+   "oid": "sentara-nova-2027-next",
+   "fields": [
+    "/application/opens"
+   ],
+   "cycle": "2027 programme - reopening announced",
+   "quote": "check back when the application cycle reopens in March 2027"
+  }
+ ]
+}

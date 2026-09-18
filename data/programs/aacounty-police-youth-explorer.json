@@ -1,0 +1,158 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "aacounty-police-youth-explorer",
+ "name": "Anne Arundel County Police Youth Explorer Program",
+ "org": "Anne Arundel County Police Department",
+ "org_type": "government",
+ "host_state": "MD",
+ "program_url": "https://www.aacounty.org/police-department/career-opportunities/youth-explorer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "public_safety_long_tail",
+ "offerings": [
+  {
+   "oid": "aacounty-explorer-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing post membership - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "High schoolers aged fourteen and in ninth grade or above meet weekly with the county police, receiving the kind of training a recruit officer gets, as unpaid members.",
+   "types": [
+    "trainee",
+    "volunteer",
+    "job_shadowing"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Anne Arundel County Police Department",
+     "county": "Anne Arundel",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 20,
+    "basis": "application_date",
+    "raw": "at least 14 (and in ninth grade) to 20 years of age"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "at least 14 (and in ninth grade)"
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "U.S. Citizen"
+   },
+   "other": [
+    [
+     "required",
+     "No Arrests and/or criminal history"
+    ],
+    [
+     "required",
+     "Interest in law enforcement"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "non-paid members"
+   },
+   "sched": {
+    "hours_raw": "meet once a week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.aacounty.org/police-department/career-opportunities/youth-explorer",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Email CPU@aacounty.org.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/locations/address",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "aacpd-s1",
+   "url": "https://www.aacounty.org/police-department/career-opportunities/youth-explorer",
+   "title": "Youth Explorer | Anne Arundel County Government",
+   "publisher": "Anne Arundel County Government",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "aacpd-s1",
+   "oid": "aacounty-explorer-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Ongoing post membership - verified 2026-09-08",
+   "quote": "at least 14 (and in ninth grade) to 20 years of age"
+  },
+  {
+   "sid": "aacpd-s1",
+   "oid": "aacounty-explorer-verified",
+   "fields": [
+    "/eligibility/citizenship",
+    "/eligibility/other"
+   ],
+   "cycle": "Ongoing post membership - verified 2026-09-08",
+   "quote": "U.S. Citizen ... No Arrests and/or criminal history"
+  },
+  {
+   "sid": "aacpd-s1",
+   "oid": "aacounty-explorer-verified",
+   "fields": [
+    "/schedule/hours_raw",
+    "/costs/compensation"
+   ],
+   "cycle": "Ongoing post membership - verified 2026-09-08",
+   "quote": "meet once a week ... non-paid members"
+  }
+ ]
+}

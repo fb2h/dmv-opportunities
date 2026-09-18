@@ -1,0 +1,231 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "si-nasm-explainers",
+ "name": "National Air and Space Museum Explainers Program",
+ "org": "Smithsonian National Air and Space Museum",
+ "org_type": "museum",
+ "host_state": "DC",
+ "program_url": "https://airandspace.si.edu/get-involved/student-jobs",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "si-nasm-explainers-dc",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling - spring and fall hiring rounds, Washington DC building",
+   "ann": "announced",
+   "summary": "Teen and college Explainers run hands-on demonstrations and activity carts for museum visitors, with a year-long commitment of at least 15 hours a month.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "science_research",
+    "engineering_trades",
+    "education_working_with_kids",
+    "arts_media_humanities"
+   ],
+   "subject_raw": [
+    "flight",
+    "space exploration",
+    "engineering"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "National Air and Space Museum",
+     "addr": "650 Jefferson Drive SW",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11"
+    ],
+    "basis": "application_date",
+    "raw": "For high school students: you must be a sophomore or junior."
+   },
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Be at least 16 years of age"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "be a U.S. citizen or have INS work authorization"
+   },
+   "gpa": {
+    "min": 2.7,
+    "raw": "maintain a 2.7 GPA"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "dur_raw": "commit to onsite work for at least one year",
+    "hpw_raw": "work minimum 15 hours monthly"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://trustcareers.si.edu/#js-careers-jobs-block",
+    "window": "multiple_rounds",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "precision": "unknown",
+      "certainty": "unknown",
+      "raw": "The Explainers Program accepts applications twice a year: in the spring and the fall."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated",
+     "The role is posted on the Smithsonian trust careers site under Museum Aid; the pay rate is on a linked job posting that has not been read"
+    ],
+    [
+     "/application/reported_status",
+     "unclear",
+     "The page does not state whether a round is currently open"
+    ]
+   ]
+  },
+  {
+   "oid": "si-nasm-explainers-udvar",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling - spring and fall hiring rounds, Udvar-Hazy Center",
+   "ann": "announced",
+   "summary": "The same Explainers role at the museum's Virginia building near Dulles Airport.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "science_research",
+    "engineering_trades",
+    "education_working_with_kids",
+    "arts_media_humanities"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Steven F. Udvar-Hazy Center",
+     "addr": "14390 Air and Space Museum Parkway",
+     "city": "Chantilly",
+     "county": "Fairfax",
+     "state": "VA",
+     "zip": "20151",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11"
+    ],
+    "basis": "application_date",
+    "raw": "For high school students: you must be a sophomore or junior."
+   },
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "Be at least 16 years of age"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "sched": {
+    "dur_raw": "at least one year",
+    "hpw_raw": "minimum 15 hours monthly"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://trustcareers.si.edu/#js-careers-jobs-block",
+    "window": "multiple_rounds",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "precision": "unknown",
+      "certainty": "unknown",
+      "raw": "The Explainers Program accepts applications twice a year: in the spring and the fall."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/application/reported_status",
+     "unclear"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "nasm-s1",
+   "url": "https://airandspace.si.edu/get-involved/student-jobs",
+   "title": "Student Jobs - Explainers Program",
+   "publisher": "Smithsonian National Air and Space Museum",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "nasm-s1",
+   "oid": "si-nasm-explainers-dc",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw",
+    "/eligibility/gpa/min",
+    "/schedule/hours_per_week/raw"
+   ],
+   "cycle": "Rolling - spring and fall hiring rounds, Washington DC building",
+   "quote": "Be at least 16 years of age ... For high school students: you must be a sophomore or junior ... maintain a 2.7 GPA, commit to onsite work for at least one year, work minimum 15 hours monthly"
+  },
+  {
+   "sid": "nasm-s1",
+   "oid": "si-nasm-explainers-dc",
+   "fields": [
+    "/application/window_kind"
+   ],
+   "cycle": "Rolling - spring and fall hiring rounds, Washington DC building",
+   "quote": "The Explainers Program accepts applications twice a year: in the spring and the fall."
+  }
+ ]
+}

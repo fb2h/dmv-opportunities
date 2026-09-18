@@ -1,0 +1,205 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "vmfa-teen-programs",
+ "name": "Virginia Museum of Fine Arts Museum Leaders in Training and Teen 'Terns",
+ "org": "Virginia Museum of Fine Arts",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://www.vmfa.museum/programs/for-teens",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "vmfa-mlit",
+   "cycle_kind": "continuous",
+   "cycle_label": "Museum Leaders in Training - ongoing",
+   "ann": "announced",
+   "summary": "Richmond teens go behind the scenes at the art museum, learn how it works and earn community service hours.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Virginia Museum of Fine Arts",
+     "addr": "200 N Arthur Ashe Boulevard",
+     "city": "Richmond",
+     "county": "Richmond City",
+     "state": "VA",
+     "zip": "23220",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "8",
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Richmond teens (grades 8 through 12)"
+   },
+   "residency": {
+    "status": "conditional",
+    "raw": "Richmond teens"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; participants earn community service hours"
+   },
+   "app": {
+    "route": "direct",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "vmfa-teen-terns",
+   "cycle_kind": "annual",
+   "cycle_label": "Teen 'Terns paid summer internship",
+   "ann": "announced",
+   "summary": "A paid summer internship at the art museum for teens who have completed Museum Leaders in Training.",
+   "types": [
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "community_service",
+    "business_law_government"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Virginia Museum of Fine Arts",
+     "addr": "200 N Arthur Ashe Boulevard",
+     "city": "Richmond",
+     "county": "Richmond City",
+     "state": "VA",
+     "zip": "23220",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "8",
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Completion of M.LiT required"
+   },
+   "prereq": "Completion of Museum Leaders in Training",
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "Get paid to be creative, build career skills, and connect with community"
+     }
+    ]
+   },
+   "app": {
+    "route": "referral",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "The page says the internship is paid but publishes no rate"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/schedule/start",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "vmfa-s1",
+   "url": "https://www.vmfa.museum/programs/for-teens",
+   "title": "For Teens - Virginia Museum of Fine Arts",
+   "publisher": "Virginia Museum of Fine Arts",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "vmfa-s1",
+   "oid": "vmfa-mlit",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Museum Leaders in Training - ongoing",
+   "quote": "Richmond teens (grades 8 through 12)"
+  },
+  {
+   "sid": "vmfa-s1",
+   "oid": "vmfa-teen-terns",
+   "fields": [
+    "/costs/compensation_status"
+   ],
+   "cycle": "Teen 'Terns paid summer internship",
+   "quote": "Get paid to be creative, build career skills, and connect with community"
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fcpl-teen-advisory-board",
+ "name": "Fairfax County Public Library Teen Advisory Boards",
+ "org": "Fairfax County Public Library",
+ "org_type": "library",
+ "host_state": "VA",
+ "program_url": "https://www.fairfaxcounty.gov/library/branch-out/teen-volunteer-opportunities",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the library's own teen volunteer page on 2026-09-08. The page confirms the boards exist and that students apply at their branch, but publishes no age, grade, hours or deadline.",
+ "offerings": [
+  {
+   "oid": "fcpl-tab-verified-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Branch-level openings - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens join a branch Teen Advisory Board to take service learning further and build leadership skills; positions are arranged with staff at the local branch.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Fairfax County Public Library branches",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Teen Advisory Boards where you can take your service learning to the next level and develop leadership skills."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.fairfaxcounty.gov/library/branch-out/teen-volunteer-opportunities",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Ask staff at your nearest branch what positions they have available.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/grades",
+     "not_stated",
+     "The page describes the boards as teen opportunities but publishes no age or grade floor."
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "fcpltab-s1",
+   "url": "https://www.fairfaxcounty.gov/library/branch-out/teen-volunteer-opportunities",
+   "title": "Teen Volunteer Opportunities | Fairfax County Public Library",
+   "publisher": "Fairfax County Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "fcpltab-s1",
+   "oid": "fcpl-tab-verified-2026",
+   "fields": [
+    "/summary",
+    "/application/instructions"
+   ],
+   "cycle": "Branch-level openings - verified 2026-09-08",
+   "quote": "Teen Advisory Boards where you can take your service learning to the next level and develop leadership skills ... Ask staff at your nearest branch what positions they have available."
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "dc-osse-career-ready-internships",
+ "name": "DCPS Career Ready Internships (CRI)",
+ "org": "DC Public Schools / OSSE - DCPS Career Ready",
+ "org_type": "school_district",
+ "host_state": "DC",
+ "program_url": "https://dcpscareerready.org/wbl/cri/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "dcps-cri-2025-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2025 (most recent cycle published)",
+   "ann": "announced",
+   "summary": "A paid six-week summer internship at seventeen dollars an hour for DC tenth and eleventh graders who have taken the first two courses in their CTE pathway.",
+   "types": [
+    "internship",
+    "paid_job"
+   ],
+   "subjects": [
+    "business_law_government",
+    "computing_technology",
+    "engineering_trades",
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across the District of Columbia",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11"
+    ],
+    "basis": "application_date",
+    "raw": "Be a DC high school 10th or 11th grader"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "District of Columbia"
+    ],
+    "raw": "Be a DC resident"
+   },
+   "other": [
+    [
+     "required",
+     "Have completed or be enrolled in the first and second-level courses in their CTE program of study"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 17.0,
+      "unit": "hour",
+      "raw": "Earn $17 per hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start": "2025-06-23",
+    "end": "2025-08-01",
+    "dur_min": 6,
+    "dur_unit": "week",
+    "hpw_max": 25,
+    "hpw_raw": "Up to 25 hours per week"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "date": "2024-09-30",
+     "year": 2024,
+     "month": 9,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "September 30, 2024 - January 31, 2025"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2025-01-31",
+      "year": 2025,
+      "month": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "September 30, 2024 - January 31, 2025"
+     },
+     {
+      "kind": "other",
+      "date": "2025-02-13",
+      "year": 2025,
+      "month": 2,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "resume due February 13, 2025"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "conflicting",
+     "The page still advertises the 2025 cycle and tells students to check back in Fall 2025, so it has not been updated for two cycles. No current-cycle facts can be published from it."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "dcpscri-s1",
+   "url": "https://dcpscareerready.org/wbl/cri/",
+   "title": "Career Ready Internships (CRI)",
+   "publisher": "DC Public Schools Career Ready",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "dcpscri-s1",
+   "oid": "dcps-cri-2025-verified",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer 2025 (most recent cycle published)",
+   "quote": "Be a DC resident ... Be a DC high school 10th or 11th grader ... Have completed or be enrolled in the first and second-level courses in their CTE program of study"
+  },
+  {
+   "sid": "dcpscri-s1",
+   "oid": "dcps-cri-2025-verified",
+   "fields": [
+    "/costs/compensation",
+    "/schedule/hours_per_week/max"
+   ],
+   "cycle": "Summer 2025 (most recent cycle published)",
+   "quote": "Earn $17 per hour ... Up to 25 hours per week"
+  }
+ ]
+}

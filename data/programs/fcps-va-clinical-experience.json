@@ -1,0 +1,127 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fcps-va-clinical-experience",
+ "name": "FCPS Clinical Experience (Health and Medical Sciences)",
+ "org": "Fairfax County Public Schools, Career and Technical Education",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://www.fcps.edu/wbl",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "fcps-clinical-verified",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing clinical placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Juniors and seniors in health and medical sciences courses practise clinical skills in a real healthcare setting, unpaid, with hours set by state and federal health boards.",
+   "types": [
+    "internship",
+    "trainee",
+    "shadowing"
+   ],
+   "subjects": [
+    "health_medicine",
+    "science_research"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Healthcare settings across Fairfax County",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Suggested Grade Levels 11 & 12"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Fairfax County Public Schools"
+    ],
+    "raw": "Available in Health & Medical Sciences courses"
+   },
+   "other": [
+    [
+     "required",
+     "may require vaccination proof, background check, drug screening"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid"
+   },
+   "sched": {
+    "dur_raw": "Hours are established by federal and state health regulatory boards"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated",
+     "Vaccination records, a background check and drug screening may be required; the page does not say who pays"
+    ],
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "fcpsclin-s1",
+   "url": "https://www.fcps.edu/wbl",
+   "title": "Work-Based Learning | Fairfax County Public Schools",
+   "publisher": "Fairfax County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "fcpsclin-s1",
+   "oid": "fcps-clinical-verified",
+   "fields": [
+    "/eligibility/grades/values",
+    "/costs/compensation_status",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Ongoing clinical placements - verified 2026-09-08",
+   "quote": "Suggested Grade Levels 11 & 12 ... Unpaid ... Hours are established by federal and state health regulatory boards"
+  }
+ ]
+}

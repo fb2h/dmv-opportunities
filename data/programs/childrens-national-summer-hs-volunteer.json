@@ -1,0 +1,166 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "childrens-national-summer-hs-volunteer",
+ "name": "Children's National Summer High School Volunteer Program",
+ "org": "Children's National Hospital",
+ "org_type": "hospital",
+ "host_state": "DC",
+ "program_url": "https://www.childrensnational.org/make-a-difference/volunteer/summer-volunteer-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "cnh-summer-hs-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A six-week summer volunteer program at the children's hospital with hospitality shifts, group projects and career workshops.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "hospitality",
+    "guest speakers and workshops",
+    "group projects"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Children's National Hospital",
+     "addr": "111 Michigan Avenue NW",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20010",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "program_start",
+    "raw": "must be 15 years of age or older by the start of the program, and must be a current high school student who is returning to high school in the fall"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11"
+    ],
+    "basis": "program_start",
+    "raw": "must be a current high school student who is returning to high school in the fall"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer program"
+   },
+   "sched": {
+    "start_raw": "June 23",
+    "end_raw": "July 31",
+    "dur_min": 6,
+    "dur_unit": "week",
+    "hpw_raw": "twice per week for a minimum total of 50 service hours",
+    "schedule_raw": "10am-3pm"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://childrensnational.vsyslive.com/pages/app/HSAPP",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "month": 3,
+     "day": 9,
+     "time": "17:00:00",
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "March 9 at 5 p.m."
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 13,
+      "time": "17:00:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "close on March 13 at 5 p.m."
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "cnh-s1",
+   "url": "https://www.childrensnational.org/make-a-difference/volunteer/summer-volunteer-program",
+   "title": "Summer Volunteer Program",
+   "publisher": "Children's National Hospital",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "cnh-s1",
+   "oid": "cnh-summer-hs-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "must be 15 years of age or older by the start of the program, and must be a current high school student who is returning to high school in the fall"
+  },
+  {
+   "sid": "cnh-s1",
+   "oid": "cnh-summer-hs-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "March 9 at 5 p.m., and close on March 13 at 5 p.m."
+  },
+  {
+   "sid": "cnh-s1",
+   "oid": "cnh-summer-hs-2026",
+   "fields": [
+    "/schedule/hours_per_week/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "twice per week for a minimum total of 50 service hours"
+  }
+ ]
+}

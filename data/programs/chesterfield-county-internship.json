@@ -1,0 +1,139 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "chesterfield-county-internship",
+ "name": "Chesterfield County Internship Program",
+ "org": "Chesterfield County Government",
+ "org_type": "government",
+ "host_state": "VA",
+ "program_url": "https://www.chesterfield.gov/325/Internship-Program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "out_of_scope",
+ "lane": "government_long_tail",
+ "offerings": [
+  {
+   "oid": "chesterfield-internship-2026-college",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 - college students only",
+   "ann": "announced",
+   "summary": "Chesterfield County's ten-week summer internship is limited to current undergraduate and graduate students, so high schoolers are not eligible.",
+   "types": [
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Chesterfield County government departments",
+     "county": "Chesterfield",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "other": [
+    [
+     "required",
+     "students must be enrolled as current undergraduate or graduate students"
+    ],
+    [
+     "required",
+     "Minimum GPA of 2.8"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": {
+     "year": 2026,
+     "month": 5,
+     "day": 26,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "end": {
+     "year": 2026,
+     "month": 7,
+     "day": 30,
+     "precision": "day",
+     "certainty": "confirmed"
+    },
+    "dur_raw": "The 10-week internship program will be held May 26-July 30, 2026."
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.chesterfield.gov/325/Internship-Program",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "year": 2026,
+      "month": 2,
+      "day": 15,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "The deadline to submit applications is Sunday, Feb. 15, 2026."
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "not_applicable",
+     "College and graduate students only, so it fails the high school scope test."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "chesterfield-s1",
+   "url": "https://www.chesterfield.gov/325/Internship-Program",
+   "title": "Internship Program | Chesterfield County, VA",
+   "publisher": "Chesterfield County Government",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "chesterfield-s1",
+   "oid": "chesterfield-internship-2026-college",
+   "fields": [
+    "/scope",
+    "/eligibility/other"
+   ],
+   "cycle": "Summer 2026 - college students only",
+   "quote": "students must be enrolled as current undergraduate or graduate students"
+  },
+  {
+   "sid": "chesterfield-s1",
+   "oid": "chesterfield-internship-2026-college",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/application/deadlines/0"
+   ],
+   "cycle": "Summer 2026 - college students only",
+   "quote": "The 10-week internship program will be held May 26-July 30, 2026. ... The deadline to submit applications is Sunday, Feb. 15, 2026."
+  }
+ ]
+}

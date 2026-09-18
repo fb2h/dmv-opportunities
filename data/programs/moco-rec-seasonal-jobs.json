@@ -1,0 +1,144 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "moco-rec-seasonal-jobs",
+ "name": "Montgomery County Recreation Seasonal Jobs",
+ "org": "Montgomery County Recreation",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://www.montgomerycountymd.gov/rec/howto/seasonal.html",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "moco-rec-seasonal-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Currently hiring - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Paid seasonal county jobs starting at eighteen dollars an hour, including camp counsellor, lifeguard, swim instructor, score keeper, cashier and recreation assistant roles, open from age fifteen through TeenWorks.",
+   "types": [
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service",
+    "business_law_government",
+    "environment_outdoors"
+   ],
+   "subject_raw": [
+    "Camp Counselors",
+    "Score Keepers",
+    "Field Supervisors",
+    "Lifeguards",
+    "Swim Instructors",
+    "Cashiers",
+    "Recreation Assistant"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Montgomery County pools, recreation and senior centres, camps and parks",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "application_date",
+    "raw": "at least 15 years old"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 18.0,
+      "unit": "hour",
+      "raw": "The part-time/seasonal pay rate starts at $18 per hour and increases with experience"
+     }
+    ],
+    "guaranteed": true
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.governmentjobs.com/careers/montgomerycountymd?keywords=recreation",
+    "window": "rolling",
+    "status": "open",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "unclear",
+     "Fifteen is the floor stated for the TeenWorks route; individual postings such as lifeguard may set a higher age or require certification"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mocorecseason-s1",
+   "url": "https://www.montgomerycountymd.gov/rec/howto/seasonal.html",
+   "title": "Seasonal Employment - Montgomery County Recreation",
+   "publisher": "Montgomery County Recreation",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mocorecseason-s1",
+   "oid": "moco-rec-seasonal-verified",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Currently hiring - verified 2026-09-08",
+   "quote": "The part-time/seasonal pay rate starts at $18 per hour and increases with experience"
+  },
+  {
+   "sid": "mocorecseason-s1",
+   "oid": "moco-rec-seasonal-verified",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Currently hiring - verified 2026-09-08",
+   "quote": "at least 15 years old"
+  },
+  {
+   "sid": "mocorecseason-s1",
+   "oid": "moco-rec-seasonal-verified",
+   "fields": [
+    "/locations"
+   ],
+   "cycle": "Currently hiring - verified 2026-09-08",
+   "quote": "Locations for positions may vary including pools, recreation and senior centers, various camps and parks"
+  }
+ ]
+}

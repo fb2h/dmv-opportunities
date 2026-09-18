@@ -1,0 +1,120 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "hcls-teen-summer-reading-volunteer",
+ "name": "Howard County Library Summer Reading Teen Volunteer",
+ "org": "Howard County Library System",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.hclibrary.org/volunteer/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "hcls-summer-reading-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer Reading volunteer, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens aged 14 to 17 encourage customers to join the Summer Reading Games, help staff with displays, data entry and class prep, and hand out prizes.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "education_working_with_kids",
+    "arts_media_humanities"
+   ],
+   "subject_raw": [
+    "Summer Reading Games",
+    "display",
+    "data entry",
+    "class prep",
+    "prizes"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Howard County Library System branches",
+     "county": "Howard",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Ages 14-17"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=NDiqaUrHpkK3_s37lUEFKsI-DImDZstAtzm49aBLViFUQ09FWlM5UE1UNTRPTDRBVTVGOUNDWERMSSQlQCN0PWcu",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "hcls-s1",
+   "url": "https://www.hclibrary.org/volunteer/",
+   "title": "Volunteer | Howard County Library System",
+   "publisher": "Howard County Library System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "hcls-s1",
+   "oid": "hcls-summer-reading-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer Reading volunteer, verified 2026-09-08",
+   "quote": "Ages 14-17"
+  },
+  {
+   "sid": "hcls-s1",
+   "oid": "hcls-summer-reading-verified",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Summer Reading volunteer, verified 2026-09-08",
+   "quote": "Volunteers encourage customers to participate in Summer Reading Games, support staff with a variety of tasks like display, data entry, class prep, etc., and distribute prizes at the culmination of Summer Reading."
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "uva-charlottesville-junior-volunteer",
+ "name": "UVA Health Junior Volunteer Program (Charlottesville)",
+ "org": "UVA Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://uvahealth.com/about/volunteering/junior-volunteer-summer-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "uva-cville-jr-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "An eight-week summer volunteer placement across the UVA Medical Center for teens aged 14 to 18.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "UVA Medical Center",
+     "city": "Charlottesville",
+     "county": "Charlottesville",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "High school youth ages 14-18"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "start": "2026-06-08",
+    "end": "2026-07-31",
+    "dur_min": 8,
+    "dur_unit": "week",
+    "dur_raw": "Minimum of 50 hours/one full weekday over the course of the 8-week program"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/1158031170",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-02-20",
+      "year": 2026,
+      "month": 2,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "submit an application of interest by February 20, 2026"
+     }
+    ]
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "selection",
+     "raw": "Mandatory virtual information sessions required for all applicants before selection; orientation/training mandatory on June 8"
+    }
+   ],
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "uva-cville-s1",
+   "url": "https://uvahealth.com/about/volunteering/junior-volunteer-summer-program",
+   "title": "Junior Volunteer Program in Charlottesville",
+   "publisher": "UVA Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "uva-cville-s1",
+   "oid": "uva-cville-jr-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "High school youth ages 14-18"
+  },
+  {
+   "sid": "uva-cville-s1",
+   "oid": "uva-cville-jr-2026",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "submit an application of interest by February 20, 2026"
+  },
+  {
+   "sid": "uva-cville-s1",
+   "oid": "uva-cville-jr-2026",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Minimum of 50 hours/one full weekday over the course of the 8-week program"
+  }
+ ]
+}

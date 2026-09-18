@@ -1,0 +1,145 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "upmc-western-maryland-teen-volunteer",
+ "name": "UPMC Western Maryland Teen Volunteer Program",
+ "org": "UPMC Western Maryland",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.upmc.com/locations/hospitals/western-maryland/about/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "upmc-wmd-teen-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing teen volunteer placements",
+   "ann": "announced",
+   "summary": "Teens aged 15 to 17 volunteer in the gift shop, at the information desk, in hospice, recreation, patient advocacy or as wellness ambassadors at the Cumberland hospital.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "gift shop",
+    "greeter",
+    "hospice",
+    "information desk",
+    "mail room",
+    "patient advocate",
+    "recreation assistant",
+    "office assistant",
+    "waiting room",
+    "wellness ambassadors"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "UPMC Western Maryland",
+     "addr": "12500 Willowbrook Rd.",
+     "city": "Cumberland",
+     "county": "Allegany",
+     "state": "MD",
+     "zip": "21502",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Teens must 15 to 17"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/2122111359",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "240-964-8499",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "Must complete orientation via website; provide documentation of current flu shot and Tdap vaccine; complete TB blood test through Employee Health"
+    },
+    {
+     "kind": "parent_consent",
+     "required": true,
+     "stage": "after_acceptance",
+     "raw": "sign confidentiality agreement and parent/guardian consent form"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated",
+     "No minimum hours or shift pattern is published"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated",
+     "A TB blood test and vaccination documentation are required; the page does not say who pays for them"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "upmcwmd-s1",
+   "url": "https://www.upmc.com/locations/hospitals/western-maryland/about/volunteer",
+   "title": "Volunteering at UPMC Western Maryland",
+   "publisher": "UPMC Western Maryland",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "upmcwmd-s1",
+   "oid": "upmc-wmd-teen-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "Teens must 15 to 17"
+  },
+  {
+   "sid": "upmcwmd-s1",
+   "oid": "upmc-wmd-teen-standing",
+   "fields": [
+    "/application/requirements"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "provide documentation of current flu shot and Tdap vaccine; complete TB blood test through Employee Health"
+  }
+ ]
+}

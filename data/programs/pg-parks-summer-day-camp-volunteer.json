@@ -1,0 +1,260 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pg-parks-summer-day-camp-volunteer",
+ "name": "Prince George's Parks Youth Volunteer - Summer Day Camps and Summer Playtime",
+ "org": "M-NCPPC Prince George's County Department of Parks and Recreation",
+ "org_type": "parks_department",
+ "host_state": "MD",
+ "program_url": "https://www.pgparks.com/get-involved/volunteer-opportunities",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the department's own volunteer page on 2026-09-08. Split into the two youth tracks because the age floors differ. The March 1 to May 1 application window is published without a year.",
+ "offerings": [
+  {
+   "oid": "pgparks-summer-day-camp-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer Day Camp youth volunteers - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens aged fifteen and over help run Prince George's County summer day camps for twelve to fifteen hours a week after completing pre-service training in the spring.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Summer day camp sites across Prince George's County",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "specified_date",
+    "as_of": "05-31",
+    "raw": "Youth volunteers must be the required age on or before May 31 to volunteer: ... Summer Day Camps: 15 years old"
+   },
+   "other": [
+    [
+     "required",
+     "Individuals ages 15 and older must complete a criminal background history check"
+    ],
+    [
+     "required",
+     "All youth volunteers must attend pre-service training in May/June"
+    ],
+    [
+     "required",
+     "transportation is not provided"
+    ],
+    [
+     "restriction",
+     "Youth Individuals cannot volunteer at a site where a younger sibling or child is a registered participant"
+    ],
+    [
+     "restriction",
+     "Individuals can sign up to volunteer at only one Summer Playtime or Summer Day Camp"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "hours_raw": "Volunteers are scheduled 12-15 hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.pgparks.com/get-involved/volunteer-opportunities",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "first_come",
+    "instructions": "Apply online during the spring window, then attend pre-service training in May or June.",
+    "opens": {
+     "month": 3,
+     "day": 1,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "Volunteer applications are accepted online from March 1-May 1"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 5,
+      "day": 1,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Volunteer applications are accepted online from March 1-May 1"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines/0/year",
+     "not_stated",
+     "The March 1 to May 1 window is published without a year."
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned",
+     "The page does not say whether these youth roles carry a stipend."
+    ],
+    [
+     "/schedule/start",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "pgparks-summer-playtime-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer Playtime youth volunteers - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens aged fourteen and over help run the county's Summer Playtime sites for twelve to fifteen hours a week after spring pre-service training.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Summer Playtime sites across Prince George's County",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "specified_date",
+    "as_of": "05-31",
+    "raw": "Youth volunteers must be the required age on or before May 31 to volunteer: Summer Playtime: 14 years old"
+   },
+   "other": [
+    [
+     "required",
+     "All youth volunteers must attend pre-service training in May/June"
+    ],
+    [
+     "required",
+     "transportation is not provided"
+    ],
+    [
+     "restriction",
+     "Individuals can sign up to volunteer at only one Summer Playtime or Summer Day Camp"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "hours_raw": "Volunteers are scheduled 12-15 hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.pgparks.com/get-involved/volunteer-opportunities",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "first_come",
+    "opens": {
+     "month": 3,
+     "day": 1,
+     "precision": "day",
+     "certainty": "unknown",
+     "raw": "Volunteer applications are accepted online from March 1-May 1"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 5,
+      "day": 1,
+      "precision": "day",
+      "certainty": "unknown",
+      "raw": "Volunteer applications are accepted online from March 1-May 1"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines/0/year",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pgparksvol-s1",
+   "url": "https://www.pgparks.com/get-involved/volunteer-opportunities",
+   "title": "Volunteer Opportunities | Prince George's County Department of Parks and Recreation",
+   "publisher": "M-NCPPC Prince George's County Department of Parks and Recreation",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pgparksvol-s1",
+   "oid": "pgparks-summer-day-camp-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/as_of"
+   ],
+   "cycle": "Summer Day Camp youth volunteers - verified 2026-09-08",
+   "quote": "Youth volunteers must be the required age on or before May 31 to volunteer: Summer Playtime: 14 years old; Summer Day Camps: 15 years old"
+  },
+  {
+   "sid": "pgparksvol-s1",
+   "oid": "pgparks-summer-day-camp-verified",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/0",
+    "/schedule/hours_raw"
+   ],
+   "cycle": "Summer Day Camp youth volunteers - verified 2026-09-08",
+   "quote": "Volunteer applications are accepted online from March 1-May 1 ... Volunteers are scheduled 12-15 hours per week; transportation is not provided."
+  },
+  {
+   "sid": "pgparksvol-s1",
+   "oid": "pgparks-summer-playtime-verified",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Summer Playtime youth volunteers - verified 2026-09-08",
+   "quote": "Youth volunteers must be the required age on or before May 31 to volunteer: Summer Playtime: 14 years old"
+  }
+ ]
+}

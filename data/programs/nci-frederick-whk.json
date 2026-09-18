@@ -1,0 +1,163 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nci-frederick-whk",
+ "name": "Werner H. Kirsten Student Internship Program (WHK SIP)",
+ "org": "National Cancer Institute at Frederick",
+ "org_type": "federal",
+ "host_state": "MD",
+ "program_url": "https://www.cancer.gov/about-nci/organization/nci-frederick/training/whksip-application",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "federal",
+ "offerings": [
+  {
+   "oid": "nci-whk-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual cycle - applied for in junior year",
+   "ann": "unclear",
+   "summary": "A year-long cancer research internship at NCI-Frederick: eight full-time weeks in the summer after junior year, then part-time work through senior year.",
+   "types": [
+    "internship",
+    "research"
+   ],
+   "subjects": [
+    "health_medicine",
+    "science_research"
+   ],
+   "subject_raw": [
+    "laboratory research",
+    "cancer research"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "National Cancer Institute at Frederick",
+     "city": "Frederick",
+     "county": "Frederick",
+     "state": "MD",
+     "kind": "organization_reference",
+     "raw": "National Cancer Institute-Frederick (NCI-F)"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11"
+    ],
+    "basis": "application_date",
+    "raw": "Be in their junior year of high school when applying."
+   },
+   "age": {
+    "min": 17,
+    "basis": "program_start",
+    "raw": "Student must be 17 years old by the first day of the internship."
+   },
+   "citizenship": {
+    "status": "restricted",
+    "raw": "be sixteen years of age or older, and a U.S. citizen or resident alien"
+   },
+   "gpa": {
+    "min": 3.0,
+    "raw": "Have an overall un-weighted grade point average of 3.0 or greater."
+   },
+   "prereq": "Have taken or planning to take both a science and mathematics course their junior year or have the equivalent of three math/science years of credits. Have valid health insurance. Have been absent from high school 10 days or less during their sophomore year.",
+   "fee": {
+    "status": "none",
+    "raw": "There is no fee or charge for participation in the WHK SIP"
+   },
+   "comp": {
+    "status": "conditional",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 3600,
+      "unit": "session",
+      "raw": "approximately $3600"
+     }
+    ],
+    "raw": "summer paid at approximately $3600; students will not be compensated for their service during the school year"
+   },
+   "sched": {
+    "dur_raw": "Eight consecutive weeks during summer (8.5 hours/day); minimum three hours daily during senior year"
+   },
+   "app": {
+    "route": "direct",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The application page read does not publish an open date or deadline; the current-cycle window must be confirmed before publication"
+    ],
+    [
+     "/cycle/announcement_state",
+     "unclear",
+     "No cycle year is stated on the page read"
+    ],
+    [
+     "/locations/0/address_kind",
+     "not_stated",
+     "No street address published"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "whk-s1",
+   "url": "https://www.cancer.gov/about-nci/organization/nci-frederick/training/whksip-application",
+   "title": "WHK SIP application",
+   "publisher": "National Cancer Institute",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "whk-s1",
+   "oid": "nci-whk-standing",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/age/min",
+    "/eligibility/gpa/min",
+    "/eligibility/citizenship/raw"
+   ],
+   "cycle": "Annual cycle - applied for in junior year",
+   "quote": "Be in their junior year of high school when applying. Student must be 17 years old by the first day of the internship. ... Have an overall un-weighted grade point average of 3.0 or greater. Be able to qualify for the Cancer Research Training Award (CRTA) Program which requires that the student be sixteen years of age or older, and a U.S. citizen or resident alien."
+  },
+  {
+   "sid": "whk-s1",
+   "oid": "nci-whk-standing",
+   "fields": [
+    "/costs/fee_status"
+   ],
+   "cycle": "Annual cycle - applied for in junior year",
+   "quote": "There is no fee or charge for participation in the WHK SIP"
+  },
+  {
+   "sid": "whk-s1",
+   "oid": "nci-whk-standing",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Annual cycle - applied for in junior year",
+   "quote": "approximately $3600"
+  }
+ ]
+}

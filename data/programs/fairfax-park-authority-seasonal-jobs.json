@@ -1,0 +1,115 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fairfax-park-authority-seasonal-jobs",
+ "name": "Fairfax County Park Authority Seasonal Jobs",
+ "org": "Fairfax County Park Authority",
+ "org_type": "parks",
+ "host_state": "VA",
+ "program_url": "https://www.fairfaxcounty.gov/parks/jobs-internships",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "ffx-park-seasonal-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Seasonal hiring - currently hiring",
+   "ann": "announced",
+   "summary": "Paid seasonal park jobs including lifeguard, camp counselor, recreation leader, interpreter, cashier and maintenance roles.",
+   "types": [
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "education_working_with_kids",
+    "community_service",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "lifeguards",
+    "camp counselors",
+    "recreation leaders",
+    "interpreters",
+    "maintenance workers",
+    "security",
+    "cashiers",
+    "supervisors"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Fairfax County Park Authority sites",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "unknown"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.fairfaxcounty.gov/parks/jobs-internships",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The hub page publishes no age floor; individual postings and the lifeguard certification page carry it and remain unread"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated",
+     "Named as paid seasonal work but no wage is published on this page"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "ffxpark-s1",
+   "url": "https://www.fairfaxcounty.gov/parks/jobs-internships",
+   "title": "Jobs at the Park Authority",
+   "publisher": "Fairfax County Park Authority",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "ffxpark-s1",
+   "oid": "ffx-park-seasonal-standing",
+   "fields": [
+    "/subject_terms_raw",
+    "/application/reported_status"
+   ],
+   "cycle": "Seasonal hiring - currently hiring",
+   "quote": "HIRING NOW"
+  }
+ ]
+}

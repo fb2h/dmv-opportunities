@@ -1,0 +1,174 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fcps-edison-academy-apprenticeship",
+ "name": "Registered Apprenticeship at Edison Academy",
+ "org": "Fairfax County Public Schools - Edison Academy",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://edisonacademy.fcps.edu/academics/courses/apprenticeship",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against Edison Academy's own course page on 2026-09-08. Confirmed as a paid registered apprenticeship in the skilled trades, open to students already in the matching CTE course sequence.",
+ "offerings": [
+  {
+   "oid": "fcps-edison-appr-verified-2026",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Ongoing placements - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Fairfax students who have finished a level 1 CTE course in auto technology, construction, electrical or HVAC-R work for a sponsoring employer at a competitive wage while continuing classroom instruction at Edison Academy.",
+   "types": [
+    "apprenticeship",
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "engineering_trades"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Edison Academy and sponsoring employer worksites",
+     "city": "Alexandria",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "program_start",
+    "raw": "Must be 16 years old before beginning work experience"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Fairfax County Public Schools"
+    ],
+    "raw": "Must have successfully completed a level 1 CTE high school course in the same course sequence"
+   },
+   "other": [
+    [
+     "required",
+     "Must have successfully completed a level 1 CTE high school course in the same course sequence"
+    ],
+    [
+     "required",
+     "a 2.5 cumulative GPA"
+    ],
+    [
+     "required",
+     "Must secure the work experience with sponsored apprenticeship employer by October but preferably prior to the school year start date"
+    ],
+    [
+     "required",
+     "Students must complete training agreements before the experience begins"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "Earn a Competitive Wage"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 280,
+    "dur_unit": "hour",
+    "dur_raw": "A minimum of 280 On the Job Training/work hours to receive 1 course credit",
+    "hours_raw": "An average of 20 hours earned per year...for a minimum of 2,000 hours"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "https://edisonacademy.fcps.edu/academics/courses/apprenticeship",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Register through the Edison Academy CTE course sequence and secure a sponsoring employer.",
+    "deadlines": [
+     {
+      "kind": "other",
+      "month": 10,
+      "precision": "month",
+      "certainty": "unknown",
+      "raw": "Must secure the work experience with sponsored apprenticeship employer by October but preferably prior to the school year start date"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/grades",
+     "not_stated",
+     "The page states an age floor and a CTE prerequisite but no grade levels."
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines/0/year",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "fcpsedison-s1",
+   "url": "https://edisonacademy.fcps.edu/academics/courses/apprenticeship",
+   "title": "Apprenticeship | Edison Academy",
+   "publisher": "Fairfax County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "fcpsedison-s1",
+   "oid": "fcps-edison-appr-verified-2026",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing placements - verified 2026-09-08",
+   "quote": "Must be 16 years old before beginning work experience"
+  },
+  {
+   "sid": "fcpsedison-s1",
+   "oid": "fcps-edison-appr-verified-2026",
+   "fields": [
+    "/schedule/duration/min",
+    "/costs/compensation"
+   ],
+   "cycle": "Ongoing placements - verified 2026-09-08",
+   "quote": "A minimum of 144 hours of Related Technical Instruction in the high school CTE classroom ... A minimum of 280 On the Job Training/work hours to receive 1 course credit ... Earn a Competitive Wage"
+  },
+  {
+   "sid": "fcpsedison-s1",
+   "oid": "fcps-edison-appr-verified-2026",
+   "fields": [
+    "/eligibility/other"
+   ],
+   "cycle": "Ongoing placements - verified 2026-09-08",
+   "quote": "Must have successfully completed a level 1 CTE high school course in the same course sequence ... a 2.5 cumulative GPA"
+  }
+ ]
+}

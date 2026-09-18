@@ -1,0 +1,133 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pwcs-summer-student-intern-teacher-aide",
+ "name": "PWCS Summer Student Intern - Teacher's Aide",
+ "org": "Prince William County Public Schools",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://www.pwcs.edu/careers/employment_opportunities/summer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government_long_tail",
+ "offerings": [
+  {
+   "oid": "pwcs-summer-intern-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 - cycle complete",
+   "ann": "announced",
+   "summary": "Prince William students aged sixteen or over by 18 June 2026 worked as teacher's aide interns in the district's summer school, recruited at a job fair at Colgan High School in March.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Prince William County Public Schools summer school sites",
+     "county": "Prince William",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "specified_date",
+    "as_of": "2026-06-18",
+    "raw": "Be 16 or older by June 18, 2026"
+   },
+   "other": [
+    [
+     "required",
+     "attend the Student Intern job fair, Monday, March 23, 2026, at 5:30-6:30 p.m. at Colgan High School"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.pwcs.edu/careers/employment_opportunities/summer",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "instructions": "View the job postings on the PWCS employment website and attend the student intern job fair.",
+    "deadlines": [
+     {
+      "kind": "other",
+      "year": 2026,
+      "month": 3,
+      "day": 23,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Monday, March 23, 2026, at 5:30-6:30 p.m."
+     }
+    ]
+   },
+   "public": false,
+   "issues": [
+    [
+     "/cycle/lifecycle",
+     "expired",
+     "The summer 2026 cycle has finished. The eligibility rule and the March job fair route are kept as the best predictor of the next cycle."
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned",
+     "No rate is published for the student intern role."
+    ],
+    [
+     "/eligibility/grades",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pwcssum-s1",
+   "url": "https://www.pwcs.edu/careers/employment_opportunities/summer",
+   "title": "Summer Employment | Prince William County Public Schools",
+   "publisher": "Prince William County Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pwcssum-s1",
+   "oid": "pwcs-summer-intern-2026",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Summer 2026 - cycle complete",
+   "quote": "Be 16 or older by June 18, 2026"
+  },
+  {
+   "sid": "pwcssum-s1",
+   "oid": "pwcs-summer-intern-2026",
+   "fields": [
+    "/application/deadlines/0"
+   ],
+   "cycle": "Summer 2026 - cycle complete",
+   "quote": "Monday, March 23, 2026, at 5:30-6:30 p.m."
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "loudoun-prcs-teen-volunteer",
+ "name": "Loudoun County PRCS Teen Volunteer Program",
+ "org": "Loudoun County Parks, Recreation and Community Services",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://www.loudoun.gov/6266/Volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "loudoun-prcs-teen-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing teen volunteer placements",
+   "ann": "announced",
+   "summary": "Loudoun teens from age 13 volunteer at community and recreation centres, athletic fields, pools, senior centres, parks and historic properties across the county.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "education_working_with_kids",
+    "environment_outdoors",
+    "arts_media_humanities"
+   ],
+   "subject_raw": [
+    "baseball fields",
+    "community centers",
+    "classroom programs",
+    "swimming pools",
+    "senior centers",
+    "parks",
+    "historic properties"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Loudoun County PRCS Youth Services",
+     "addr": "20145 Ashbrook Place #170",
+     "city": "Ashburn",
+     "county": "Loudoun",
+     "state": "VA",
+     "zip": "20147",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 13,
+    "basis": "application_date",
+    "raw": "Students as young as 13 can volunteer with PRCS, but may be limited to specific volunteer opportunities."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "Volunteer shifts are scheduled between Site Supervisor and volunteer"
+   },
+   "app": {
+    "route": "direct",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Contact, complete volunteer application, attend orientation workshop, visit your chosen host site; youthservices@loudoun.gov, (703) 777-0697",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "Attend our Orientation Workshop"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "unclear",
+     "Thirteen-year-olds may be limited to specific roles; the handbook does not say which"
+    ],
+    [
+     "/locations",
+     "organization_reference",
+     "Only the Youth Services office address is published; host sites vary across the county"
+    ],
+    [
+     "/application/reported_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "loudounprcs-s1",
+   "url": "https://www.loudoun.gov/DocumentCenter/View/106624/Teen-Volunteer-Handbook",
+   "title": "Teen Volunteer Handbook",
+   "publisher": "Loudoun County Parks, Recreation and Community Services",
+   "auth": "first_party",
+   "medium": "pdf",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "loudounprcs-s1",
+   "oid": "loudoun-prcs-teen-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "Students as young as 13 can volunteer with PRCS, but may be limited to specific volunteer opportunities."
+  },
+  {
+   "sid": "loudounprcs-s1",
+   "oid": "loudoun-prcs-teen-standing",
+   "fields": [
+    "/application/instructions_raw"
+   ],
+   "cycle": "Ongoing teen volunteer placements",
+   "quote": "Contact, Complete Volunteer Application, Check out our video, Attend our Orientation Workshop, Visit your chosen host site."
+  }
+ ]
+}

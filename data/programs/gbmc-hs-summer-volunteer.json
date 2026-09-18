@@ -1,0 +1,140 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "gbmc-hs-summer-volunteer",
+ "name": "GBMC High School Summer Volunteer Program",
+ "org": "Greater Baltimore Medical Center",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.gbmc.org/services/volunteers/high-school-student-program",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "gbmc-hs-summer-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Rising juniors and seniors volunteer at least one four-hour shift a week over the summer, greeting and escorting patients, supporting nursing units and helping in retail.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "greeting",
+    "escorting",
+    "nursing support",
+    "retail"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Greater Baltimore Medical Center",
+     "addr": "6701 N. Charles St",
+     "city": "Towson",
+     "county": "Baltimore County",
+     "state": "MD",
+     "zip": "21204",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "specified_date",
+    "as_of": "2026-07-01",
+    "raw": "Students who are 16 years of age by July 1"
+   },
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "school_year": "2026-2027",
+    "raw": "Students entering the 11th or 12th grade in Fall 2026"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer program"
+   },
+   "sched": {
+    "schedule_raw": "June, July, and August",
+    "hpw_min": 4,
+    "hpw_raw": "minimum of 4 hours per week (one shift)"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/212258726",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "capacity": 28,
+   "capacity_raw": "approximately 25-30 openings available",
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/cycle",
+     "unclear",
+     "The page still shows an Apply Now button while describing the Fall 2026 cohort; the Summer 2027 cycle needs confirmation"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "gbmc-s1",
+   "url": "https://www.gbmc.org/services/volunteers/high-school-student-program",
+   "title": "Volunteers - High School Student Program",
+   "publisher": "GBMC HealthCare",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "gbmc-s1",
+   "oid": "gbmc-hs-summer-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/values"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Students who are 16 years of age by July 1 ... Students entering the 11th or 12th grade in Fall 2026"
+  },
+  {
+   "sid": "gbmc-s1",
+   "oid": "gbmc-hs-summer-2026",
+   "fields": [
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "minimum of 4 hours per week (one shift)"
+  }
+ ]
+}

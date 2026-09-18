@@ -1,0 +1,142 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "medstar-whc-summer-hs",
+ "name": "MedStar Washington Hospital Center Summer High School Student Program",
+ "org": "MedStar Washington Hospital Center",
+ "org_type": "hospital",
+ "host_state": "DC",
+ "program_url": "https://www.medstarhealth.org/locations/medstar-washington-hospital-center/volunteer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "medstar-whc-summer-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Summer volunteers aged 16 and up serve as patient comfort ambassadors, patient navigators or inpatient unit support at the hospital.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "patient comfort ambassador",
+    "patient navigator",
+    "inpatient unit support"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "MedStar Washington Hospital Center",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "At least 16 years of age. Role-specific positions may require 18+ years."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_raw": "one 4-hour shift per week minimum",
+    "dur_raw": "100-hour minimum commitment"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/1116601298",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "date": "2026-03-01",
+     "year": 2026,
+     "month": 3,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications will be accepted March 1 through April 3, 2026."
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-04-03",
+      "year": 2026,
+      "month": 4,
+      "time": "23:59:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "The application deadline is Friday, April 3, 2026, at 11:59 p.m."
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "medstar-whc-s1",
+   "url": "https://www.medstarhealth.org/locations/medstar-washington-hospital-center/volunteer",
+   "title": "Volunteer Opportunities | MedStar Washington Hospital Center",
+   "publisher": "MedStar Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "medstar-whc-s1",
+   "oid": "medstar-whc-summer-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Applications will be accepted March 1 through April 3, 2026. The application deadline is Friday, April 3, 2026, at 11:59 p.m."
+  },
+  {
+   "sid": "medstar-whc-s1",
+   "oid": "medstar-whc-summer-2026",
+   "fields": [
+    "/opportunity_types",
+    "/subjects"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "serve in a patient comfort ambassador, patient navigator, or inpatient unit support position"
+  }
+ ]
+}

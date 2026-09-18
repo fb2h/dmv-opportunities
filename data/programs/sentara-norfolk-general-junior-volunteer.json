@@ -1,0 +1,127 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "sentara-norfolk-general-junior-volunteer",
+ "name": "Sentara Norfolk General Hospital Junior Volunteers",
+ "org": "Sentara Health",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.sentara.com/hospitalslocations/sentara-norfolk-general-hospital/about-us/volunteers",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital_long_tail",
+ "offerings": [
+  {
+   "oid": "sentara-sngh-rolling-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling junior volunteer intake - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Junior volunteers aged fifteen to eighteen serve at Norfolk General over the summer and through the school year, starting with an initial summer programme.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Sentara Norfolk General Hospital",
+     "addr": "600 Gresham Drive",
+     "city": "Norfolk",
+     "county": "Norfolk",
+     "state": "VA",
+     "zip": "23507",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "junior volunteers ages 15-18"
+   },
+   "other": [
+    [
+     "required",
+     "attending an initial summer program"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid junior volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.sentara.com/hospitalslocations/sentara-norfolk-general-hospital/about-us/volunteers",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "Submit the SNGH junior volunteer application through Volgistics, or ring volunteer services on 757-388-3461.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/eligibility/grades",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "sngh-s1",
+   "url": "https://www.sentara.com/hospitalslocations/sentara-norfolk-general-hospital/about-us/volunteers",
+   "title": "Junior Volunteers at Sentara Norfolk General Hospital",
+   "publisher": "Sentara Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "sngh-s1",
+   "oid": "sentara-sngh-rolling-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Rolling junior volunteer intake - verified 2026-09-08",
+   "quote": "junior volunteers ages 15-18"
+  },
+  {
+   "sid": "sngh-s1",
+   "oid": "sentara-sngh-rolling-2026",
+   "fields": [
+    "/season",
+    "/eligibility/other"
+   ],
+   "cycle": "Rolling junior volunteer intake - verified 2026-09-08",
+   "quote": "wishing to volunteer during the summer months and through the school year ... attending an initial summer program"
+  }
+ ]
+}

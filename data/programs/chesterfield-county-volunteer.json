@@ -1,0 +1,116 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "chesterfield-county-volunteer",
+ "name": "Chesterfield County Volunteer Program",
+ "org": "Chesterfield County Government",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://www.chesterfield.gov/327/Volunteer-Engagement-and-Opportunities",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "chesterfield-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing county volunteer placements",
+   "ann": "announced",
+   "summary": "Chesterfield County places volunteers aged 14 and up across county departments including libraries, the historical park, water quality monitoring and Adopt-A-Spot.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "environment_outdoors",
+    "business_law_government",
+    "arts_media_humanities"
+   ],
+   "subject_raw": [
+    "Adopt-A-Spot",
+    "library",
+    "historical park",
+    "election officer",
+    "water quality monitor"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Chesterfield County departments",
+     "county": "Chesterfield",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "application_date",
+    "raw": "Volunteers must be 14 years of age or older unless otherwise specified"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.cognitoforms.com/ChesterfieldCountyVA1/ChesterfieldVolunteerApplication",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/eligibility/age/min",
+     "unclear",
+     "The 14 floor applies unless a specific placement says otherwise, so individual roles may be higher"
+    ],
+    [
+     "/locations",
+     "not_stated",
+     "Placement sites are assigned rather than published"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "chesterfield-s1",
+   "url": "https://www.chesterfield.gov/327/Volunteer-Engagement-and-Opportunities",
+   "title": "Volunteer Engagement and Opportunities | Chesterfield County",
+   "publisher": "Chesterfield County, Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "chesterfield-s1",
+   "oid": "chesterfield-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing county volunteer placements",
+   "quote": "Volunteers must be 14 years of age or older unless otherwise specified"
+  }
+ ]
+}

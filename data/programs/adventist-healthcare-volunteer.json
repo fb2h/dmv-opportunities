@@ -1,0 +1,132 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "adventist-healthcare-volunteer",
+ "name": "Adventist HealthCare Volunteer Services",
+ "org": "Adventist HealthCare",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.adventisthealthcare.com/volunteer/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "adventist-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing volunteer placements, Maryland campuses",
+   "ann": "announced",
+   "summary": "Adventist HealthCare accepts volunteers from age 15 at its Maryland hospitals and rehabilitation campuses.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Adventist HealthCare Shady Grove Medical Center",
+     "city": "Rockville",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Adventist HealthCare White Oak Medical Center",
+     "city": "Silver Spring",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Adventist HealthCare Fort Washington Medical Center",
+     "city": "Fort Washington",
+     "county": "Prince George's",
+     "state": "MD",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Adventist HealthCare Rehabilitation",
+     "city": "Rockville",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 15,
+    "basis": "application_date",
+    "raw": "volunteers, aged 15 and older"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "app": {
+    "route": "direct",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated",
+     "The overview page routes to facility pages without a single application link"
+    ],
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/publication",
+     "not_applicable",
+     "Superseded for display by the campus records (Shady Grove and White Oak), verified individually on 2026-09-08. Kept as the system-level identity covering the Fort Washington and Rehabilitation campuses, which have no campus record yet."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "adventist-s1",
+   "url": "https://www.adventisthealthcare.com/volunteer/",
+   "title": "Volunteer at Adventist HealthCare",
+   "publisher": "Adventist HealthCare",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "adventist-s1",
+   "oid": "adventist-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing volunteer placements, Maryland campuses",
+   "quote": "volunteers, aged 15 and older"
+  }
+ ]
+}

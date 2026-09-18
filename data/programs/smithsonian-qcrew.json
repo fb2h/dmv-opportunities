@@ -1,0 +1,151 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "smithsonian-qcrew",
+ "name": "Q?rius Q?Crew Teen Volunteers",
+ "org": "Smithsonian National Museum of Natural History",
+ "org_type": "museum",
+ "host_state": "DC",
+ "program_url": "https://naturalhistory.si.edu/education/youth-programs/qcrew-teen-volunteers",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "qcrew-verified-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Annual cohort starting end of June - application details pending as of 2026-09-08",
+   "ann": "unclear",
+   "summary": "DC-area teens investigate specimens and talk with visitors in the museum's Q?rius space, working two four-hour shifts a month toward a hundred hours by November.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "science_research",
+    "education_working_with_kids",
+    "community_service",
+    "environment_outdoors"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Smithsonian National Museum of Natural History",
+     "addr": "1000 Madison Drive NW",
+     "city": "Washington",
+     "state": "DC",
+     "zip": "20560",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "14-18 years old and currently enrolled in high school"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "currently enrolled in high school"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "DC",
+     "MD",
+     "VA"
+    ],
+    "raw": "Live in the D.C. Metro area"
+   },
+   "other": [
+    [
+     "required",
+     "Available starting at the end of June"
+    ],
+    [
+     "required",
+     "Committed to serving at least 100 hours by November"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_raw": "at least two 4-hour shifts each month",
+    "dur_raw": "minimum commitment of 100 hours by November"
+   },
+   "app": {
+    "route": "direct",
+    "window": "unknown",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The page says to check back later for information on how to apply, so no current-cycle window can be asserted"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "qcrew-s1",
+   "url": "https://naturalhistory.si.edu/education/youth-programs/qcrew-teen-volunteers",
+   "title": "Q?Crew Teen Volunteers",
+   "publisher": "Smithsonian National Museum of Natural History",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "qcrew-s1",
+   "oid": "qcrew-verified-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Annual cohort starting end of June - application details pending as of 2026-09-08",
+   "quote": "14-18 years old and currently enrolled in high school ... Live in the D.C. Metro area"
+  },
+  {
+   "sid": "qcrew-s1",
+   "oid": "qcrew-verified-2026",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Annual cohort starting end of June - application details pending as of 2026-09-08",
+   "quote": "Committed to serving at least 100 hours by November ... at least two 4-hour shifts each month"
+  }
+ ]
+}

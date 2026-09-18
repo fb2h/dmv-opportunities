@@ -1,0 +1,179 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "frederick-work-ready",
+ "name": "Work Ready: Frederick County Summer Jobs Program",
+ "org": "Frederick County Workforce Services",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://www.frederickworks.com/summer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "frederick-work-ready-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A paid part-time summer job in Frederick County at $15 an hour, up to 20 hours a week, in roles such as camp aide, administrative assistant, retail assistant or farm and nursery helper.",
+   "types": [
+    "paid_job",
+    "internship"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service",
+    "education_working_with_kids",
+    "environment_outdoors"
+   ],
+   "subject_raw": [
+    "Summer Camp Program Aide",
+    "Administrative Assistant",
+    "Custodial Assistant",
+    "Retail Assistant",
+    "Farm & Nursery Helper"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Employer worksites across Frederick County",
+     "county": "Frederick",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 21,
+    "basis": "application_date",
+    "raw": "Frederick County residents between the ages of 14 and 21 who are authorized to work in the United States"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Frederick County, MD"
+    ],
+    "raw": "living in Frederick County"
+   },
+   "work_auth": {
+    "status": "restricted",
+    "raw": "authorized to work in the United States"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "Youth will earn minimum wage, $15 per hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start_raw": "June 29",
+    "end_raw": "August 7",
+    "hpw_max": 20,
+    "hpw_raw": "up to 20 hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://frederickcountymd-youth-and-young-adult-workforce-services.app.transform.civicplus.com/forms/workready",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2026-04-01",
+      "year": 2026,
+      "month": 4,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "will close on April 1, 2026"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ],
+    [
+     "/schedule/start",
+     "unclear",
+     "June 29 to August 7 is published without a year and is attributed to the 2026 cycle described on the page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "frederickwr-s1",
+   "url": "https://www.frederickworks.com/summer",
+   "title": "Work Ready: Summer Jobs Program",
+   "publisher": "Frederick County Workforce Services",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "frederickwr-s1",
+   "oid": "frederick-work-ready-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Frederick County residents between the ages of 14 and 21 who are authorized to work in the United States"
+  },
+  {
+   "sid": "frederickwr-s1",
+   "oid": "frederick-work-ready-2026",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Youth will earn minimum wage, $15 per hour"
+  },
+  {
+   "sid": "frederickwr-s1",
+   "oid": "frederick-work-ready-2026",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "will close on April 1, 2026"
+  },
+  {
+   "sid": "frederickwr-s1",
+   "oid": "frederick-work-ready-2026",
+   "fields": [
+    "/schedule/hours_per_week/max"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "up to 20 hours per week"
+  }
+ ]
+}

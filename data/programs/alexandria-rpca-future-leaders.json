@@ -1,0 +1,150 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "alexandria-rpca-future-leaders",
+ "name": "Alexandria RPCA Future Leaders Teen Program",
+ "org": "City of Alexandria Department of Recreation, Parks and Cultural Activities",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://www.alexandriava.gov/recreation-programs/rpca-future-leaders",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "alexandria-future-leaders-2026",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Spring 2026 cohort",
+   "ann": "announced",
+   "summary": "A weekly teen service programme in Alexandria running environmental, community, STEM, early-childhood and customer-service projects, with paid summer internships for eligible graduates of the programme.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "environment_outdoors",
+    "science_research",
+    "education_working_with_kids",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "environmental conservation",
+    "community volunteerism",
+    "STEM education",
+    "early childhood engagement",
+    "customer service"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Lee Center, Gold Room",
+     "city": "Alexandria",
+     "county": "Alexandria",
+     "state": "VA",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "conditional",
+    "raw": "Paid Summer Internships for eligible graduating participants"
+   },
+   "sched": {
+    "start": "2026-01-28",
+    "end": "2026-05-27",
+    "schedule_raw": "Wednesdays, 6-7 p.m."
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://survey.alexandriava.gov/s3/RPCA-Future-Leaders",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "opens": {
+     "month": 12,
+     "day": 8,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Registration Period: December 8-19"
+    },
+    "deadlines": [
+     {
+      "kind": "registration",
+      "month": 12,
+      "day": 19,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Registration Period: December 8-19"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility",
+     "not_stated",
+     "The page publishes no age or grade rule"
+    ],
+    [
+     "/costs/compensation_status",
+     "conditional",
+     "Pay applies only to the summer internships that follow, not to the programme itself"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "The 2027 cohort is not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "alexfl-s1",
+   "url": "https://www.alexandriava.gov/recreation-programs/rpca-future-leaders",
+   "title": "RPCA Future Leaders | City of Alexandria",
+   "publisher": "City of Alexandria, Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "alexfl-s1",
+   "oid": "alexandria-future-leaders-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Spring 2026 cohort",
+   "quote": "Start Date: Wednesday, January 28, 2026 ... May 27, 2026 ... Wednesdays, 6-7 p.m."
+  },
+  {
+   "sid": "alexfl-s1",
+   "oid": "alexandria-future-leaders-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/registration/due"
+   ],
+   "cycle": "Spring 2026 cohort",
+   "quote": "Registration Period: December 8-19"
+  }
+ ]
+}

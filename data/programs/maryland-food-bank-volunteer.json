@@ -1,0 +1,172 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "maryland-food-bank-volunteer",
+ "name": "Maryland Food Bank Volunteer Shifts",
+ "org": "Maryland Food Bank",
+ "org_type": "nonprofit",
+ "host_state": "MD",
+ "program_url": "https://mdfoodbank.org/ways-to-give/volunteer/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "nonprofit",
+ "offerings": [
+  {
+   "oid": "mdfb-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing warehouse and market shifts",
+   "ann": "announced",
+   "summary": "Volunteers work three-hour warehouse, kitchen or market shifts at the Maryland Food Bank's Baltimore, Salisbury and Hagerstown sites.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service"
+   ],
+   "subject_raw": [
+    "warehouse",
+    "kitchen",
+    "HEART Markets",
+    "Farm to Food Bank"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Maryland Food Bank Baltimore",
+     "addr": "2200 Halethorpe Farms Rd",
+     "city": "Baltimore",
+     "county": "Baltimore County",
+     "state": "MD",
+     "zip": "21227",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Maryland Food Bank Eastern Shore",
+     "addr": "28500 Owens Branch Rd",
+     "city": "Salisbury",
+     "county": "Wicomico",
+     "state": "MD",
+     "zip": "21801",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Maryland Food Bank Western Branch",
+     "addr": "220 McRand Court",
+     "city": "Hagerstown",
+     "county": "Washington",
+     "state": "MD",
+     "zip": "21740",
+     "kind": "activity_site"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 13,
+    "basis": "application_date",
+    "raw": "The minimum age to volunteer varies depending on the activity. Check the shift descriptions for specific requirements."
+   },
+   "other": [
+    [
+     "required",
+     "All Volunteers under 18 will need a waiver signed by a parent of a guardian."
+    ],
+    [
+     "required",
+     "Minors aged 16-18 volunteering alone must complete a separate Solo Youth Volunteering Waiver"
+    ],
+    [
+     "required",
+     "Volunteers under 16 at Salisbury must be accompanied by a chaperone"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "schedule_raw": "stand for three hours"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://mdfoodbank.rosterfy.com/login",
+    "window": "rolling",
+    "status": "open",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "parent_consent",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "All Volunteers under 18 will need a waiver signed by a parent of a guardian."
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "unclear",
+     "The minimum age is set per shift and ranges roughly 13 to 16; the floor is recorded as 13 with this note rather than a single confirmed rule"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mdfb-s1",
+   "url": "https://mdfoodbank.org/ways-to-give/volunteer/",
+   "title": "Volunteer | Maryland Food Bank",
+   "publisher": "Maryland Food Bank",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mdfb-s1",
+   "oid": "mdfb-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing warehouse and market shifts",
+   "quote": "The minimum age to volunteer varies depending on the activity. Check the shift descriptions for specific requirements."
+  },
+  {
+   "sid": "mdfb-s1",
+   "oid": "mdfb-vol-standing",
+   "fields": [
+    "/eligibility/other_conditions"
+   ],
+   "cycle": "Ongoing warehouse and market shifts",
+   "quote": "All Volunteers under 18 will need a waiver signed by a parent of a guardian."
+  },
+  {
+   "sid": "mdfb-s1",
+   "oid": "mdfb-vol-standing",
+   "fields": [
+    "/locations"
+   ],
+   "cycle": "Ongoing warehouse and market shifts",
+   "quote": "Baltimore: 2200 Halethorpe Farms Rd, Baltimore, MD 21227; Salisbury: 28500 Owens Branch Rd, Salisbury, MD 21801; Hagerstown: 220 McRand Court, Hagerstown, MD 21740"
+  }
+ ]
+}

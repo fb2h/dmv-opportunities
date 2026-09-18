@@ -1,0 +1,181 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "chkd-junior-volunteer",
+ "name": "CHKD Junior Volunteer Summer Program",
+ "org": "Children's Hospital of The King's Daughters",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.chkd.org/support-us/volunteer/junior-volunteers/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "chkd-jr-2027",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2027",
+   "ann": "announced",
+   "summary": "A summer volunteer program at the children's hospital where teens work in playrooms, clinics, the gift shop and therapy services.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "subject_raw": [
+    "playrooms",
+    "clinics",
+    "gift shop",
+    "surgery waiting room",
+    "therapy services",
+    "sports medicine"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Children's Hospital of The King's Daughters",
+     "addr": "601 Children's Lane",
+     "city": "Norfolk",
+     "county": "Norfolk",
+     "state": "VA",
+     "zip": "23507",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "basis": "specified_date",
+    "raw": "teenagers who turn 15 on or before June 1 and are still in high school"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "opens": {
+     "date": "2027-03-01",
+     "year": 2027,
+     "month": 3,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Online applications for next Summer's program will open on March 1, 2027."
+    },
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "Only the opening date for the 2027 cycle is published"
+    ],
+    [
+     "/schedule/start",
+     "not_stated",
+     "2027 session dates not yet published"
+    ]
+   ]
+  },
+  {
+   "oid": "chkd-jr-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Prior cycle retained for history.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "education_working_with_kids"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Children's Hospital of The King's Daughters",
+     "addr": "601 Children's Lane",
+     "city": "Norfolk",
+     "county": "Norfolk",
+     "state": "VA",
+     "zip": "23507",
+     "kind": "activity_site"
+    }
+   ],
+   "sched": {
+    "start": "2026-06-22",
+    "end": "2026-08-13",
+    "schedule_raw": "Four two-week sessions; Monday-Thursday, morning (9 a.m.-12 p.m.) or afternoon (1-4 p.m.) shifts"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed"
+   },
+   "public": false,
+   "hist": true,
+   "issues": []
+  }
+ ],
+ "sources": [
+  {
+   "sid": "chkd-s1",
+   "url": "https://www.chkd.org/support-us/volunteer/junior-volunteers/",
+   "title": "Junior Volunteers | CHKD",
+   "publisher": "Children's Hospital of The King's Daughters",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "chkd-s1",
+   "oid": "chkd-jr-2027",
+   "fields": [
+    "/application/opens",
+    "/cycle/announcement_state"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "Online applications for next Summer's program will open on March 1, 2027."
+  },
+  {
+   "sid": "chkd-s1",
+   "oid": "chkd-jr-2027",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Summer 2027",
+   "quote": "teenagers who turn 15 on or before June 1 and are still in high school"
+  },
+  {
+   "sid": "chkd-s1",
+   "oid": "chkd-jr-2026",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Four two-week sessions in summer 2026 (June 22-Aug 13)"
+  }
+ ]
+}

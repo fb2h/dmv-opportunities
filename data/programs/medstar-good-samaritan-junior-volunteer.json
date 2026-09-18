@@ -1,0 +1,126 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "medstar-good-samaritan-junior-volunteer",
+ "name": "MedStar Good Samaritan Junior Volunteer Program",
+ "org": "MedStar Good Samaritan Hospital",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.medstarhealth.org/locations/medstar-good-samaritan-hospital/volunteer",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "medstar-gsh-jr-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Summer junior volunteer, applications open early March each year",
+   "ann": "announced",
+   "summary": "Students aged 16 to 18 volunteer four hours on assigned days from late June to August in roles that comfort patients.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "MedStar Good Samaritan Hospital",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "students between ages 16-18"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "schedule_raw": "Starting in mid to late June and ending in August, prior to schools re-opening; four hours on assigned days"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://medstar.formstack.com/forms/mgsh_volunteer_application",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "competitive",
+    "opens": {
+     "month": 3,
+     "precision": "month",
+     "part": "early",
+     "certainty": "unknown",
+     "raw": "apply early in March"
+    },
+    "deadlines": []
+   },
+   "capacity_raw": "limited and competitive",
+   "public": true,
+   "issues": [
+    [
+     "/application/opens",
+     "unclear",
+     "Apply early in March is a recurring pattern, published without a year; it must be shown as a pattern and never as this year's date"
+    ],
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mgsh-s1",
+   "url": "https://www.medstarhealth.org/locations/medstar-good-samaritan-hospital/volunteer",
+   "title": "Volunteer Opportunities | MedStar Good Samaritan Hospital",
+   "publisher": "MedStar Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mgsh-s1",
+   "oid": "medstar-gsh-jr-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer junior volunteer, applications open early March each year",
+   "quote": "students between ages 16-18"
+  },
+  {
+   "sid": "mgsh-s1",
+   "oid": "medstar-gsh-jr-verified",
+   "fields": [
+    "/application/opens",
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Summer junior volunteer, applications open early March each year",
+   "quote": "apply early in March ... Starting in mid to late June and ending in August, prior to schools re-opening"
+  }
+ ]
+}

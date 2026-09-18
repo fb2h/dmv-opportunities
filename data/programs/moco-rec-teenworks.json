@@ -1,0 +1,166 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "moco-rec-teenworks",
+ "name": "Montgomery County Recreation TeenWorks Employment Program",
+ "org": "Montgomery County Recreation",
+ "org_type": "local_gov",
+ "host_state": "MD",
+ "program_url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/activities-programs/youth-development/teenworks-employment-program",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "moco-teenworks-fall-intake",
+   "cycle_kind": "session",
+   "cycle_label": "August to November intake - open now",
+   "ann": "announced",
+   "summary": "A paid year-round teen job with Montgomery County Recreation: making informational materials, market research, customer service, maintaining park grounds, event setup and safety inspections.",
+   "types": [
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service",
+    "environment_outdoors",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "informational materials",
+    "market research",
+    "customer service",
+    "park grounds",
+    "event setup",
+    "safety inspections",
+    "surveys"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Montgomery County Recreation sites",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "specified_school_year",
+    "school_year": "2026-2027",
+    "raw": "maximum hours based on grade: 9th grade (350 hours), 10th grade (300 hours), 11th/12th grade (200 hours each)"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "earning a paycheck ... earn pay"
+     }
+    ]
+   },
+   "sched": {
+    "dur_raw": "Full-year commitment; maximum hours by grade - 9th grade 350 hours, 10th grade 300 hours, 11th and 12th grade 200 hours each",
+    "schedule_raw": "Schedules vary by site; weekdays, evenings, and weekends available"
+   },
+   "app": {
+    "route": "direct",
+    "window": "multiple_rounds",
+    "status": "open",
+    "selection": "competitive",
+    "opens": {
+     "month": 8,
+     "day": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Aug. 1 - Nov. 30"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 11,
+      "day": 30,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Aug. 1 - Nov. 30"
+     },
+     {
+      "kind": "other",
+      "month": 3,
+      "day": 30,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Jan. 2 - March 30"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated",
+     "The page gives hour caps by grade but no age floor"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "Described as paid but no wage rate is published"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "teenworks-s1",
+   "url": "https://www.montgomerycountymd.gov/montgomery-county-recreation/activities-programs/youth-development/teenworks-employment-program",
+   "title": "TeenWorks Employment Program",
+   "publisher": "Montgomery County Recreation",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "teenworks-s1",
+   "oid": "moco-teenworks-fall-intake",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines"
+   ],
+   "cycle": "August to November intake - open now",
+   "quote": "Jan. 2 - March 30 ... Aug. 1 - Nov. 30"
+  },
+  {
+   "sid": "teenworks-s1",
+   "oid": "moco-teenworks-fall-intake",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "August to November intake - open now",
+   "quote": "9th grade (350 hours), 10th grade (300 hours), 11th/12th grade (200 hours each)"
+  }
+ ]
+}

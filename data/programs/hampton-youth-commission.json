@@ -1,0 +1,136 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "hampton-youth-commission",
+ "name": "Hampton Youth Commission",
+ "org": "City of Hampton",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://www.hampton.gov/221/Youth-Commission",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "needs_review",
+ "lane": "government",
+ "offerings": [
+  {
+   "oid": "hampton-youth-commission-standing",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Annual spring intake",
+   "ann": "announced",
+   "summary": "Twenty to thirty Hampton high schoolers sit on a city commission that shapes youth policy and runs civic and community engagement work.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "City of Hampton",
+     "city": "Hampton",
+     "county": "Hampton",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "The commission is composed of 20-30 high school teens from the City of Hampton"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Hampton, VA"
+    ],
+    "raw": "from the City of Hampton"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "schedule_raw": "First three Mondays of each month at 6 p.m. (does not meet in July or August)"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "unknown",
+    "selection": "competitive",
+    "opens": {
+     "precision": "season",
+     "certainty": "unknown",
+     "raw": "Applications are accepted each spring"
+    },
+    "deadlines": []
+   },
+   "capacity": 30,
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "unclear",
+     "A city advisory commission sits on the P01 boundary: members shape policy and run engagement work rather than performing assigned duties inside an organisation. Owner decision needed, consistent with how the carried-forward Loudoun Youth Advisory Council record was handled."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/application/application_url",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "hamptonyc-s1",
+   "url": "https://www.hampton.gov/221/Youth-Commission",
+   "title": "Youth Commission | Hampton, VA",
+   "publisher": "City of Hampton, Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "hamptonyc-s1",
+   "oid": "hampton-youth-commission-standing",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/capacity"
+   ],
+   "cycle": "Annual spring intake",
+   "quote": "The commission is composed of 20-30 high school teens from the City of Hampton"
+  },
+  {
+   "sid": "hamptonyc-s1",
+   "oid": "hampton-youth-commission-standing",
+   "fields": [
+    "/schedule/schedule_raw"
+   ],
+   "cycle": "Annual spring intake",
+   "quote": "First three Mondays of each month at 6 p.m. (does not meet in July or August)"
+  }
+ ]
+}

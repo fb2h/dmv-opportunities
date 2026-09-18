@@ -1,0 +1,154 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "stonesprings-junior-volunteer",
+ "name": "StoneSprings Hospital Center Junior Volunteer Program",
+ "org": "StoneSprings Hospital Center (HCA Virginia)",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.hcavirginia.com/locations/stonesprings-hospital-center/for-visitors/volunteers",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "stonesprings-jr-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing junior volunteer placements, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Volunteers aged 16 to 18 help admit and discharge patients, move wheelchairs, run errands to the lab and imaging, and deliver flowers and mail at the Sterling hospital.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "admitting and discharging patients",
+    "transferring wheelchair patients",
+    "errands to the laboratory, diagnostic imaging, patient registration",
+    "delivering floral arrangements and mail"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "StoneSprings Hospital Center",
+     "addr": "24440 Stone Springs Blvd",
+     "city": "Sterling",
+     "county": "Loudoun",
+     "state": "VA",
+     "zip": "20166",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "Applicants must be between 16 and 18 years of age."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; a cafeteria meal is provided for three-hour shifts during breaks and summer"
+   },
+   "sched": {
+    "schedule_raw": "flexible scheduling attempted; 24-hour notice required for absences"
+   },
+   "app": {
+    "route": "direct",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "reqs": [
+    {
+     "kind": "parent_consent",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "parental permission form"
+    },
+    {
+     "kind": "recommendation_letter",
+     "required": true,
+     "min_count": 2,
+     "stage": "initial_application",
+     "raw": "adult recommendation (non-family), teacher/guidance counselor recommendation"
+    },
+    {
+     "kind": "other",
+     "required": true,
+     "stage": "initial_application",
+     "raw": "immunization record"
+    }
+   ],
+   "public": true,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated",
+     "The application form is submitted by email or post"
+    ],
+    [
+     "/schedule/duration",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "stonesprings-s1",
+   "url": "https://www.hcavirginia.com/locations/stonesprings-hospital-center/for-visitors/volunteers",
+   "title": "Volunteers | StoneSprings Hospital Center",
+   "publisher": "HCA Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "stonesprings-s1",
+   "oid": "stonesprings-jr-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Ongoing junior volunteer placements, verified 2026-09-08",
+   "quote": "Applicants must be between 16 and 18 years of age."
+  },
+  {
+   "sid": "stonesprings-s1",
+   "oid": "stonesprings-jr-verified",
+   "fields": [
+    "/subject_terms_raw"
+   ],
+   "cycle": "Ongoing junior volunteer placements, verified 2026-09-08",
+   "quote": "Assist in admitting and discharging patients. Assist in transferring wheelchair patients. Assist staff in errands to and from the laboratory, diagnostic imaging, patient registration, patient floors, etc. Deliver floral arrangements/mail to appropriate patients."
+  },
+  {
+   "sid": "stonesprings-s1",
+   "oid": "stonesprings-jr-verified",
+   "fields": [
+    "/application/requirements"
+   ],
+   "cycle": "Ongoing junior volunteer placements, verified 2026-09-08",
+   "quote": "Must submit parental permission form, adult recommendation (non-family), teacher/guidance counselor recommendation, and immunization record."
+  }
+ ]
+}

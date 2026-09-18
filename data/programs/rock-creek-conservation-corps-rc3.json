@@ -1,0 +1,180 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "rock-creek-conservation-corps-rc3",
+ "name": "Rock Creek Conservation Corps (RC3)",
+ "org": "Rock Creek Conservancy",
+ "org_type": "nonprofit",
+ "host_state": "DC",
+ "program_url": "https://www.rockcreekconservancy.org/rc3",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "rc3-2026-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A paid six-week summer conservation crew paying a $2,000 stipend for invasive plant removal, litter cleanups, forest and water monitoring and stormwater work in Rock Creek parks.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer",
+    "research"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "community_service"
+   ],
+   "subject_raw": [
+    "invasive plant removals",
+    "litter cleanups",
+    "forest health and water quality monitoring",
+    "stormwater management"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Carter Barron and Fort Totten Park",
+     "city": "Washington",
+     "state": "DC",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Glenmont Local Park",
+     "city": "Glenmont",
+     "county": "Montgomery",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 14,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "Students ages 14 to 18"
+   },
+   "residency": {
+    "status": "conditional",
+    "raw": "DC students must also apply to DC Summer Youth Employment Program (SYEP). Priority given to students attending partner schools in Montgomery County, MD and Washington, DC."
+   },
+   "logic": "complex",
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 2000,
+      "unit": "session",
+      "raw": "Stipend: $2,000, with payment distributed regularly based on attendance and hours worked"
+     }
+    ],
+    "guaranteed": false
+   },
+   "sched": {
+    "start": "2026-06-29",
+    "end": "2026-08-07",
+    "dur_min": 6,
+    "dur_unit": "week",
+    "hpw_min": 20,
+    "hpw_max": 25,
+    "hpw_raw": "20 to 25 hours a week",
+    "schedule_raw": "typically Monday-Friday, 8:00 AM to 1:00 PM"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The page states only that applications are no longer being accepted for Summer 2026"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ],
+    [
+     "/eligibility/logic",
+     "complex",
+     "DC applicants must also apply to MBSYEP; priority rules add a second condition"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "rc3-s1",
+   "url": "https://www.rockcreekconservancy.org/rc3",
+   "title": "Rock Creek Conservation Corps (RC3)",
+   "publisher": "Rock Creek Conservancy",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "rc3-s1",
+   "oid": "rc3-2026-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Students ages 14 to 18"
+  },
+  {
+   "sid": "rc3-s1",
+   "oid": "rc3-2026-verified",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Stipend: $2,000"
+  },
+  {
+   "sid": "rc3-s1",
+   "oid": "rc3-2026-verified",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end",
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "June 29 to August 7, 2026 (6 weeks); 20 to 25 hours a week"
+  },
+  {
+   "sid": "rc3-s1",
+   "oid": "rc3-2026-verified",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "We're no longer accepting applications for the Summer 2026 program."
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "spotsylvania-regional-volunteer",
+ "name": "Spotsylvania Regional Medical Center Volunteer Program",
+ "org": "Spotsylvania Regional Medical Center (HCA Virginia)",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.hcavirginia.com/locations/spotsylvania-regional-medical-center/for-visitors/volunteers",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "spotsylvania-vol-verified",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing volunteer placements, verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Volunteers aged 16 and up choose from more than thirty roles greeting guests, serving in the gift shop or supporting patients and staff, one four-hour shift a week.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "greeting guests",
+    "gift shop",
+    "patient and staff support"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Spotsylvania Regional Medical Center",
+     "addr": "4600 Spotsylvania Parkway",
+     "city": "Fredericksburg",
+     "county": "Spotsylvania",
+     "state": "VA",
+     "zip": "22408",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "At least 16 years of age"
+   },
+   "other": [
+    [
+     "required",
+     "ability to read, speak and understand English"
+    ],
+    [
+     "required",
+     "valid Social Security number required"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_raw": "at least one scheduled four-hour shift per week",
+    "dur_raw": "Serve at least 100 hours over a period of six months"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.volgistics.com/appform/140099306",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "spotsy-s1",
+   "url": "https://www.hcavirginia.com/locations/spotsylvania-regional-medical-center/for-visitors/volunteers",
+   "title": "Volunteers | Spotsylvania Regional Medical Center",
+   "publisher": "HCA Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "spotsy-s1",
+   "oid": "spotsylvania-vol-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Ongoing volunteer placements, verified 2026-09-08",
+   "quote": "At least 16 years of age ... Serve at least 100 hours over a period of six months"
+  },
+  {
+   "sid": "spotsy-s1",
+   "oid": "spotsylvania-vol-verified",
+   "fields": [
+    "/application/reported_status"
+   ],
+   "cycle": "Ongoing volunteer placements, verified 2026-09-08",
+   "quote": "We are now accepting volunteer applications"
+  }
+ ]
+}

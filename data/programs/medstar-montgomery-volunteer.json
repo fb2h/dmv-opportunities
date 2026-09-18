@@ -1,0 +1,109 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "medstar-montgomery-volunteer",
+ "name": "MedStar Montgomery Medical Center Volunteer Services",
+ "org": "MedStar Health",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.medstarhealth.org/locations/medstar-montgomery-medical-center/volunteer",
+ "status": "paused",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified 2026-09-08: the hospital's own page states it is not currently accepting volunteers, so the carried-forward row is marked paused and taken off the public catalogue. The row and its history are retained for the next refresh.",
+ "offerings": [
+  {
+   "oid": "medstar-montgomery-paused-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Intake paused - verified 2026-09-08",
+   "ann": "unclear",
+   "summary": "MedStar Montgomery is not taking volunteers at present; only the Women's Board Gift Shop is still accepting them, with no age or hours stated.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "MedStar Montgomery Medical Center",
+     "addr": "18101 Prince Philip Drive",
+     "city": "Olney",
+     "county": "Montgomery",
+     "state": "MD",
+     "zip": "20832",
+     "kind": "activity_site"
+    }
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://www.medstarhealth.org/locations/medstar-montgomery-medical-center/volunteer",
+    "window": "rolling",
+    "status": "closed",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/program_status",
+     "paused",
+     "MedStar Montgomery Medical Center is not currently accepting volunteers."
+    ],
+    [
+     "/eligibility/age",
+     "not_stated",
+     "No age or grade rule is published for the gift shop role that remains open."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "medstarmont-s1",
+   "url": "https://www.medstarhealth.org/locations/medstar-montgomery-medical-center/volunteer",
+   "title": "Volunteer | MedStar Montgomery Medical Center",
+   "publisher": "MedStar Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "medstarmont-s1",
+   "oid": "medstar-montgomery-paused-2026",
+   "fields": [
+    "/program_status"
+   ],
+   "cycle": "Intake paused - verified 2026-09-08",
+   "quote": "Note: MedStar Montgomery Medical Center is not currently accepting volunteers."
+  },
+  {
+   "sid": "medstarmont-s1",
+   "oid": "medstar-montgomery-paused-2026",
+   "fields": [
+    "/summary"
+   ],
+   "cycle": "Intake paused - verified 2026-09-08",
+   "quote": "The Women's Board Gift Shop is still accepting volunteers at this time."
+  }
+ ]
+}

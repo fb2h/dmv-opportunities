@@ -1,0 +1,277 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "gmu-assip",
+ "name": "Aspiring Scientists Summer Internship Program (ASSIP)",
+ "org": "George Mason University College of Science",
+ "org_type": "university",
+ "host_state": "VA",
+ "program_url": "https://science.gmu.edu/assip",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "university",
+ "offerings": [
+  {
+   "oid": "gmu-assip-2026-inperson",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 - in person and hybrid lab placements",
+   "ann": "announced",
+   "summary": "An eight-week summer research internship where students work one-on-one with a George Mason faculty researcher in a real lab.",
+   "types": [
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "science_research",
+    "health_medicine",
+    "computing_technology",
+    "engineering_trades",
+    "environment_outdoors"
+   ],
+   "subject_raw": [
+    "proteomic and genomic analyses of cancer and other diseases",
+    "Neuroscience",
+    "Chemistry",
+    "Biochemistry",
+    "Biodefense",
+    "Computer Science",
+    "Bioinformatics",
+    "Nanotechnology",
+    "Physics",
+    "Environmental Science"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "George Mason University",
+     "addr": "4400 University Drive",
+     "city": "Fairfax",
+     "county": "Fairfax",
+     "state": "VA",
+     "zip": "22030",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "specified_date",
+    "as_of": "2026-06-18",
+    "raw": "must be 16 or older by June 18, 2026"
+   },
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "program_start",
+    "raw": "designed for high school and undergraduate students"
+   },
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "application",
+      "min": 25,
+      "unit": "total",
+      "raw": "$25 application fee",
+      "mandatory": true,
+      "conditions": "waivable"
+     },
+     {
+      "kind": "tuition",
+      "min": 1299,
+      "unit": "total",
+      "raw": "$1299 tuition for 3 credits",
+      "mandatory": false,
+      "conditions": "waivable with demonstrated financial need"
+     }
+    ]
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": "2026-06-18",
+    "end": "2026-08-12",
+    "dur_min": 8,
+    "dur_unit": "week",
+    "dur_raw": "8 weeks full-time"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://science.gmu.edu/assip/how-apply",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The 2026 deadline is no longer published on the page"
+    ],
+    [
+     "/costs/fees/1/mandatory",
+     "unclear",
+     "The page does not say whether the 3-credit tuition is required of every intern or only of those taking credit; recorded as not mandatory with this note"
+    ]
+   ]
+  },
+  {
+   "oid": "gmu-assip-2026-remote",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026 - remote placements",
+   "ann": "announced",
+   "summary": "The remote version of the same eight-week research internship, open from age 15.",
+   "types": [
+    "research",
+    "internship"
+   ],
+   "subjects": [
+    "science_research",
+    "computing_technology",
+    "health_medicine"
+   ],
+   "season": "summer",
+   "mode": "virtual",
+   "housing": "commuter",
+   "loc": [],
+   "age": {
+    "min": 15,
+    "basis": "specified_date",
+    "as_of": "2026-06-18",
+    "raw": "must be 15 years or older by June 18, 2026"
+   },
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "application",
+      "min": 25,
+      "unit": "total",
+      "raw": "$25 application fee",
+      "mandatory": true,
+      "conditions": "waivable"
+     }
+    ]
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start": "2026-06-18",
+    "end": "2026-08-12",
+    "dur_min": 8,
+    "dur_unit": "week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://science.gmu.edu/assip/how-apply",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "assip-s1",
+   "url": "https://science.gmu.edu/assip",
+   "title": "Aspiring Scientists Summer Internship Program (ASSIP)",
+   "publisher": "George Mason University College of Science",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  },
+  {
+   "sid": "assip-s2",
+   "url": "https://capmm.science.gmu.edu/students/undergraduate-and-high-school-student-research-opportunities/",
+   "title": "Undergraduate and High School Student Research Opportunities",
+   "publisher": "George Mason University Center for Applied Proteomics and Molecular Medicine",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "assip-s1",
+   "oid": "gmu-assip-2026-inperson",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Summer 2026 - in person and hybrid lab placements",
+   "quote": "must be 16 or older by June 18, 2026"
+  },
+  {
+   "sid": "assip-s1",
+   "oid": "gmu-assip-2026-remote",
+   "fields": [
+    "/eligibility/age/min",
+    "/delivery_mode"
+   ],
+   "cycle": "Summer 2026 - remote placements",
+   "quote": "must be 15 years or older by June 18, 2026"
+  },
+  {
+   "sid": "assip-s1",
+   "oid": "gmu-assip-2026-inperson",
+   "fields": [
+    "/costs/fees"
+   ],
+   "cycle": "Summer 2026 - in person and hybrid lab placements",
+   "quote": "$25 application fee ... $1299 ... waivable with demonstrated financial need"
+  },
+  {
+   "sid": "assip-s1",
+   "oid": "gmu-assip-2026-inperson",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026 - in person and hybrid lab placements",
+   "quote": "June 18-August 12, 2026"
+  },
+  {
+   "sid": "assip-s2",
+   "oid": "gmu-assip-2026-inperson",
+   "fields": [
+    "/subjects",
+    "/subject_terms_raw"
+   ],
+   "cycle": "Summer 2026 - in person and hybrid lab placements",
+   "quote": "real-world projects related to proteomic and genomic analyses of cancer and other diseases; and in Neuroscience, Chemistry, Biochemistry, Biodefense, Computer Science, Bioinformatics, Nanotechnology, Physics and Environmental Science"
+  }
+ ]
+}

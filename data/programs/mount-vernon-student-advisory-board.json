@@ -1,0 +1,190 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "mount-vernon-student-advisory-board",
+ "name": "George Washington's Mount Vernon Student Advisory Board",
+ "org": "George Washington's Mount Vernon",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://www.mountvernon.org/education/student-advisory-board",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "mtvernon-sab-2026-27",
+   "cycle_kind": "academic_year",
+   "cycle_label": "September 2026 to August 2027 term",
+   "ann": "announced",
+   "summary": "DMV high schoolers serve a one-year paid term advising Mount Vernon on student programmes, meeting monthly on site and doing three to six hours of independent work a month for a $1,000 payment.",
+   "types": [
+    "trainee",
+    "volunteer",
+    "internship"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "subject_raw": [
+    "student programs and resources",
+    "classroom and community resources",
+    "learning standards",
+    "educational content development"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "George Washington's Mount Vernon",
+     "addr": "3200 Mount Vernon Memorial Highway",
+     "city": "Mount Vernon",
+     "county": "Fairfax",
+     "state": "VA",
+     "zip": "22121",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "Rising Sophomore, Juniors, or Seniors in high school"
+   },
+   "school": {
+    "status": "restricted",
+    "raw": "enrolled in DMV area schools"
+   },
+   "other": [
+    [
+     "required",
+     "able to serve one-year term (September-August)"
+    ],
+    [
+     "required",
+     "attend monthly on-site meetings"
+    ],
+    [
+     "required",
+     "complete 3-6 hours monthly work independently"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 1000,
+      "unit": "total",
+      "raw": "$1,000 one-time payment"
+     },
+     {
+      "kind": "reimbursement",
+      "raw": "travel stipend for meeting attendance"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start_raw": "September 2026",
+    "end_raw": "August 2027",
+    "hpw_raw": "3-6 hours monthly independent work plus monthly on-site meetings"
+   },
+   "app": {
+    "route": "school_nomination",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "opens": {
+     "date": "2026-01-01",
+     "year": 2026,
+     "month": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Nomination Window: January 1-June 1, 2026"
+    },
+    "deadlines": [
+     {
+      "kind": "nomination",
+      "date": "2026-06-01",
+      "year": 2026,
+      "month": 6,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Nomination Window: January 1-June 1, 2026"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated",
+     "Entry runs through a nomination rather than a public form"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "mtvsab-s1",
+   "url": "https://www.mountvernon.org/education/student-advisory-board",
+   "title": "Student Advisory Board | George Washington's Mount Vernon",
+   "publisher": "George Washington's Mount Vernon",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "mtvsab-s1",
+   "oid": "mtvernon-sab-2026-27",
+   "fields": [
+    "/eligibility/grades/values",
+    "/eligibility/school/raw"
+   ],
+   "cycle": "September 2026 to August 2027 term",
+   "quote": "Rising Sophomore, Juniors, or Seniors in high school ... enrolled in DMV area schools"
+  },
+  {
+   "sid": "mtvsab-s1",
+   "oid": "mtvernon-sab-2026-27",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/nomination/due"
+   ],
+   "cycle": "September 2026 to August 2027 term",
+   "quote": "Nomination Window: January 1-June 1, 2026 ... Award Notification: Early September 2026"
+  },
+  {
+   "sid": "mtvsab-s1",
+   "oid": "mtvernon-sab-2026-27",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "September 2026 to August 2027 term",
+   "quote": "$1,000 one-time payment; travel stipend for meeting attendance"
+  }
+ ]
+}

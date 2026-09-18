@@ -1,0 +1,142 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "luminis-lhaamc-student-volunteer",
+ "name": "Luminis Health Anne Arundel Medical Center Student Volunteer Program",
+ "org": "Luminis Health Anne Arundel Medical Center",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.luminishealth.org/en/volunteer/student-volunteers",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "luminis-aamc-verified",
+   "cycle_kind": "session",
+   "cycle_label": "Semester intakes - summer, autumn and spring",
+   "ann": "announced",
+   "summary": "Students aged 16 and up volunteer three hours a week for a full semester at the Annapolis hospital.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Luminis Health Anne Arundel Medical Center",
+     "city": "Annapolis",
+     "county": "Anne Arundel",
+     "state": "MD",
+     "kind": "organization_reference"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "specified_date",
+    "raw": "Must be at least 16 years of age or older by the date of orientation"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_min": 3,
+    "hpw_raw": "Able to commit to at least three hours per week of volunteering in an assigned placement for an entire semester"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://askaamc.formstack.com/forms/student_app_2023",
+    "window": "multiple_rounds",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 5,
+      "day": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Summer Semester: May 1st"
+     },
+     {
+      "kind": "final",
+      "month": 8,
+      "day": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Fall Semester: August 1st"
+     },
+     {
+      "kind": "final",
+      "month": 12,
+      "day": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Spring Semester: December 1st"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "unclear",
+     "The three semester deadlines are published without years and repeat annually"
+    ],
+    [
+     "/locations/0/address_line1",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "luminisaamc-s1",
+   "url": "https://www.luminishealth.org/en/volunteer/student-volunteers",
+   "title": "Student Volunteers | Luminis Health",
+   "publisher": "Luminis Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "luminisaamc-s1",
+   "oid": "luminis-aamc-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "Semester intakes - summer, autumn and spring",
+   "quote": "Must be at least 16 years of age or older by the date of orientation ... Able to commit to at least three hours per week of volunteering in an assigned placement for an entire semester"
+  },
+  {
+   "sid": "luminisaamc-s1",
+   "oid": "luminis-aamc-verified",
+   "fields": [
+    "/application/deadlines"
+   ],
+   "cycle": "Semester intakes - summer, autumn and spring",
+   "quote": "LHAAMC, in Annapolis, Md., accepts applications for the Summer Semester until May 1st; Fall Semester until August 1st; Spring Semester until December 1st."
+  }
+ ]
+}

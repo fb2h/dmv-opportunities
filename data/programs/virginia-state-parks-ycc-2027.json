@@ -1,0 +1,292 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "virginia-state-parks-ycc-2027",
+ "name": "Virginia State Parks Youth Conservation Corps - Crew Member",
+ "org": "Virginia Department of Conservation and Recreation",
+ "org_type": "state_gov",
+ "host_state": "VA",
+ "program_url": "https://www.dcr.virginia.gov/state-parks/ycc-crewmember",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "parks",
+ "offerings": [
+  {
+   "oid": "va-ycc-2027-session1",
+   "cycle_kind": "session",
+   "cycle_label": "2027 session one, June 20 to July 3",
+   "ann": "announced",
+   "summary": "A two-week residential conservation crew in a Virginia state park, paying a $750 stipend on completion, open to rising ninth graders and up.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "community_service",
+    "engineering_trades"
+   ],
+   "subject_raw": [
+    "outdoor conservation work",
+    "park maintenance",
+    "environmental projects"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "residential",
+   "loc": [
+    {
+     "venue": "Virginia state parks",
+     "state": "VA",
+     "kind": "to_be_assigned",
+     "raw": "state parks"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "specified_date",
+    "as_of": "2026-06-01",
+    "raw": "Youth must be at least 14 years of age by June 1, 2026, and be going into their first/freshman year of high school."
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "going into their first/freshman year of high school"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 750,
+      "unit": "session",
+      "raw": "Crew Members will receive a $750 stipend upon successful completion of the two-week program."
+     }
+    ],
+    "guaranteed": false
+   },
+   "sched": {
+    "start": "2027-06-20",
+    "end": "2027-07-03",
+    "dur_min": 2,
+    "dur_unit": "week"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "time_zone": "America/New_York",
+    "opens": {
+     "date": "2027-01-01",
+     "year": 2027,
+     "month": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications for the 2027 Crew Member positions will open on January 1, 2027"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2027-03-19",
+      "year": 2027,
+      "month": 3,
+      "time": "17:00:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "and remain open until March 19, 2027, at 5 p.m."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations",
+     "to_be_assigned",
+     "The park a crew member is assigned to is not published in advance"
+    ],
+    [
+     "/eligibility/age/min",
+     "unclear",
+     "The age reference date published is June 1, 2026, which belongs to the previous cycle; the 2027 reference date is not yet stated"
+    ],
+    [
+     "/costs/compensation/0/guaranteed",
+     "conditional",
+     "The stipend is paid on successful completion, so it is not unconditional"
+    ]
+   ]
+  },
+  {
+   "oid": "va-ycc-2027-session2",
+   "cycle_kind": "session",
+   "cycle_label": "2027 session two, July 11 to July 24",
+   "ann": "announced",
+   "summary": "The second two-week session of the same residential conservation crew programme.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "community_service",
+    "engineering_trades"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "residential",
+   "loc": [
+    {
+     "venue": "Virginia state parks",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 17,
+    "basis": "specified_date",
+    "raw": "Youth, ages 14 through 17, are encouraged to apply."
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "going into their first/freshman year of high school"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "stipend",
+      "min": 750,
+      "unit": "session",
+      "raw": "a $750 stipend upon successful completion of the two-week program"
+     }
+    ]
+   },
+   "sched": {
+    "start": "2027-07-11",
+    "end": "2027-07-24",
+    "dur_min": 2,
+    "dur_unit": "week"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "not_yet_open",
+    "selection": "competitive",
+    "opens": {
+     "date": "2027-01-01",
+     "year": 2027,
+     "month": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications for the 2027 Crew Member positions will open on January 1, 2027"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2027-03-19",
+      "year": 2027,
+      "month": 3,
+      "time": "17:00:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "and remain open until March 19, 2027, at 5 p.m."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations",
+     "to_be_assigned"
+    ],
+    [
+     "/schedule/hours_per_week",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "vaycc-s1",
+   "url": "https://www.dcr.virginia.gov/state-parks/ycc-crewmember",
+   "title": "Youth Conservation Corps - Crew Member Applicants",
+   "publisher": "Virginia Department of Conservation and Recreation",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "vaycc-s1",
+   "oid": "va-ycc-2027-session1",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due",
+    "/cycle/announcement_state"
+   ],
+   "cycle": "2027 session one, June 20 to July 3",
+   "quote": "Applications for the 2027 Crew Member positions will open on January 1, 2027, and remain open until March 19, 2027, at 5 p.m."
+  },
+  {
+   "sid": "vaycc-s1",
+   "oid": "va-ycc-2027-session1",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "2027 session one, June 20 to July 3",
+   "quote": "Crew Members will receive a $750 stipend upon successful completion of the two-week program."
+  },
+  {
+   "sid": "vaycc-s1",
+   "oid": "va-ycc-2027-session1",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "2027 session one, June 20 to July 3",
+   "quote": "Youth, ages 14 through 17, are encouraged to apply. Youth must be at least 14 years of age by June 1, 2026, and be going into their first/freshman year of high school."
+  },
+  {
+   "sid": "vaycc-s1",
+   "oid": "va-ycc-2027-session2",
+   "fields": [
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "2027 session two, July 11 to July 24",
+   "quote": "2027 sessions: June 20-July 3 and July 11-24"
+  }
+ ]
+}

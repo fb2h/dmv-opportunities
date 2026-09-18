@@ -1,0 +1,151 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "fairfax-public-safety-cadets",
+ "name": "Fairfax County Police Public Safety Cadets",
+ "org": "Fairfax County Police Department",
+ "org_type": "local_gov",
+ "host_state": "VA",
+ "program_url": "https://www.fairfaxcounty.gov/police/public-safety-cadets",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "emergency_services",
+ "offerings": [
+  {
+   "oid": "fairfax-cadets-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing cadet units - four Fairfax County sites",
+   "ann": "announced",
+   "summary": "Teens train with Fairfax County police officers in law enforcement skills, ride along with patrols and build leadership through a local cadet unit.",
+   "types": [
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "business_law_government",
+    "community_service"
+   ],
+   "subject_raw": [
+    "law enforcement",
+    "criminal justice",
+    "leadership",
+    "ethics"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Fairfax County Criminal Justice Academy Annex",
+     "addr": "14601 Lee Rd.",
+     "city": "Chantilly",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "Annandale High School unit",
+     "addr": "4700 Medford Dr.",
+     "city": "Annandale",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "West Potomac High School unit",
+     "addr": "6500 Quander Rd.",
+     "city": "Alexandria",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "activity_site"
+    },
+    {
+     "venue": "South Lakes High School unit",
+     "addr": "11400 South Lakes Dr.",
+     "city": "Reston",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "activity_site"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 14,
+    "max": 20,
+    "basis": "application_date",
+    "raw": "young people 14-20 years old with an interest in a career in law enforcement"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://forms.office.com/g/ZHLTuRZtDn",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Interest form plus a downloadable application; First Nighter events scheduled for September 2026",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation_status",
+     "not_stated"
+    ],
+    [
+     "/schedule",
+     "not_stated",
+     "Meeting schedule is not published"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "ffxcadet-s1",
+   "url": "https://www.fairfaxcounty.gov/police/public-safety-cadets",
+   "title": "Public Safety Cadets | Fairfax County Police",
+   "publisher": "Fairfax County, Virginia",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "ffxcadet-s1",
+   "oid": "fairfax-cadets-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Ongoing cadet units - four Fairfax County sites",
+   "quote": "young people 14-20 years old with an interest in a career in law enforcement"
+  },
+  {
+   "sid": "ffxcadet-s1",
+   "oid": "fairfax-cadets-standing",
+   "fields": [
+    "/locations"
+   ],
+   "cycle": "Ongoing cadet units - four Fairfax County sites",
+   "quote": "Fairfax County Criminal Justice Academy Annex, 14601 Lee Rd., Chantilly, VA; Annandale High School, 4700 Medford Dr., Annandale, VA; West Potomac High School, 6500 Quander Rd., Alexandria, VA; South Lakes High School, 11400 South Lakes Dr., Reston, VA"
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "northwest-hospital-teen-volunteer",
+ "name": "Northwest Hospital Teen Volunteer Program",
+ "org": "Northwest Hospital (LifeBridge Health)",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.lifebridgehealth.org/volunteers/northwest-hospital",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "northwest-teen-verified-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Teen Volunteer Program, ongoing - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens aged 15 to 18 volunteer at Northwest Hospital and earn service hours toward school requirements.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Northwest Hospital",
+     "addr": "5401 Old Court Rd.",
+     "city": "Randallstown",
+     "county": "Baltimore County",
+     "state": "MD",
+     "zip": "21133",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "must be between the ages of 15 and 18 to participate"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid; service hours earned toward school requirements"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://app.betterimpact.com/Application?OrganizationGuid=ab053f5c-155d-44ca-8120-c52e4111e433&ApplicationFormNumber=1",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/schedule",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  },
+  {
+   "oid": "northwest-hs-summer-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "High School Summer Volunteer Program 2026",
+   "ann": "announced",
+   "summary": "A summer volunteer placement at Northwest Hospital with a seventy-five hour expectation.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Northwest Hospital",
+     "addr": "5401 Old Court Rd.",
+     "city": "Randallstown",
+     "county": "Baltimore County",
+     "state": "MD",
+     "zip": "21133",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "High school students"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "dur_raw": "Students are expected to perform at least 75 volunteer hours"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "host_selects",
+    "opens": {
+     "year": 2026,
+     "month": 3,
+     "precision": "month",
+     "certainty": "confirmed",
+     "raw": "We will begin accepting Summer Volunteer applications March 2026"
+    },
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/eligibility/age/min",
+     "not_stated"
+    ],
+    [
+     "/cycle",
+     "unclear",
+     "The page still advertises a March 2026 opening; the Summer 2027 window is not published"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "northwest-s1",
+   "url": "https://www.lifebridgehealth.org/volunteers/northwest-hospital",
+   "title": "Northwest Hospital Volunteers | LifeBridge Health",
+   "publisher": "LifeBridge Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "northwest-s1",
+   "oid": "northwest-teen-verified-2026",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max"
+   ],
+   "cycle": "Teen Volunteer Program, ongoing - verified 2026-09-08",
+   "quote": "must be between the ages of 15 and 18 to participate"
+  },
+  {
+   "sid": "northwest-s1",
+   "oid": "northwest-hs-summer-2026",
+   "fields": [
+    "/application/opens",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "High School Summer Volunteer Program 2026",
+   "quote": "We will begin accepting Summer Volunteer applications March 2026 ... Students are expected to perform at least 75 volunteer hours"
+  }
+ ]
+}

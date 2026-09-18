@@ -1,0 +1,120 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "aps-arlington-career-center-ghc",
+ "name": "Arlington Career Center / Grace Hopper Center CTE Programs",
+ "org": "Arlington Public Schools - Arlington Career Center",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://catalog.apsva.us/arlington-career-center",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "needs_review",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the APS programme catalogue on 2026-09-08. The catalogue confirms that work-based learning experiences such as internships and client projects are part of the Career Center's offer, but publishes no eligibility, application route or deadline; the career centre's own site could not be retrieved and is on the manual lookup list.",
+ "offerings": [
+  {
+   "oid": "arl-career-center-verified-2026",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Programme enrolment - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Arlington Career Center CTE programmes pair classroom instruction with industry certifications, college credit and work-based learning experiences such as internships and client projects.",
+   "types": [
+    "internship",
+    "other"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "computing_technology",
+    "health_medicine",
+    "business_law_government"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Arlington Career Center",
+     "addr": "816 South Walter Reed Drive",
+     "city": "Arlington",
+     "county": "Arlington",
+     "state": "VA",
+     "zip": "22204",
+     "kind": "activity_site"
+    }
+   ],
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Arlington Public Schools"
+    ],
+    "raw": "Arlington Public Schools career and technical education programmes"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "https://careercenter.apsva.us/",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "host_selects",
+    "instructions": "The catalogue directs students to the Career Center on 703-228-5800.",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "needs_review",
+     "The listing is a CTE course catalogue with internships attached; the owner should decide whether to list the internship component separately."
+    ],
+    [
+     "/eligibility/grades",
+     "not_stated"
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/sources",
+     "incomplete",
+     "careercenter.apsva.us could not be retrieved on 2026-09-08 and is on the manual lookup list."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "arlcc-s1",
+   "url": "https://catalog.apsva.us/arlington-career-center",
+   "title": "Arlington Career Center | APS Program Catalog",
+   "publisher": "Arlington Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "arlcc-s1",
+   "oid": "arl-career-center-verified-2026",
+   "fields": [
+    "/summary",
+    "/types"
+   ],
+   "cycle": "Programme enrolment - verified 2026-09-08",
+   "quote": "enhanced opportunities in four areas: 1) Project based curriculum; 2) industry certifications; 3) college credit; and 4) work-based learning experiences such as internships and client projects."
+  }
+ ]
+}

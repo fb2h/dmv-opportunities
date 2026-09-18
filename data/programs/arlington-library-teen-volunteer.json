@@ -1,0 +1,136 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "arlington-library-teen-volunteer",
+ "name": "Arlington Public Library Teen Volunteers",
+ "org": "Arlington Public Library",
+ "org_type": "library",
+ "host_state": "VA",
+ "program_url": "https://library.arlingtonva.us/volunteer/teen-volunteers/",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the library's own teen volunteer page on 2026-09-08. Openings are posted continuously on the library's volunteer portal; the page states no age or grade floor.",
+ "offerings": [
+  {
+   "oid": "arl-library-teen-verified-2026",
+   "cycle_kind": "continuous",
+   "cycle_label": "Rolling openings on the library volunteer portal - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "Teens take posted library roles behind the scenes, at public programmes and at large events, applying independently through the library's volunteer portal; seniors doing a senior experience go through their guidance counsellor instead.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "community_service",
+    "education_working_with_kids"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Arlington Public Library branches",
+     "county": "Arlington",
+     "state": "VA",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Explore opportunities for teens that build community connections, develop job skills and provide community service hours."
+   },
+   "other": [
+    [
+     "note",
+     "Senior Experience volunteers do not need to complete a library volunteer application"
+    ],
+    [
+     "required",
+     "complete a teen library volunteer application independently"
+    ]
+   ],
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "hours_raw": "shifts of two to three hours per week"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://arlingtonlibrary.galaxydigital.com/need/index?q=Teen",
+    "window": "rolling",
+    "status": "unknown",
+    "selection": "first_come",
+    "instructions": "View the teen volunteer openings on the library's volunteer portal and complete a teen library volunteer application independently. Seniors pursuing a senior experience should check with their guidance counsellor and the youth services librarian.",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/grades",
+     "not_stated",
+     "This is the library's teen volunteer page; it publishes no minimum age or grade, so the high school range is taken from the page's framing and should be confirmed with the volunteer coordinator."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/costs/compensation",
+     "not_mentioned"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "arllibteen-s1",
+   "url": "https://library.arlingtonva.us/volunteer/teen-volunteers/",
+   "title": "Teen Volunteers | Arlington Public Library",
+   "publisher": "Arlington Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "arllibteen-s1",
+   "oid": "arl-library-teen-verified-2026",
+   "fields": [
+    "/summary",
+    "/application/instructions"
+   ],
+   "cycle": "Rolling openings on the library volunteer portal - verified 2026-09-08",
+   "quote": "Explore opportunities for teens that build community connections, develop job skills and provide community service hours ... complete a teen library volunteer application independently"
+  },
+  {
+   "sid": "arllibteen-s1",
+   "oid": "arl-library-teen-verified-2026",
+   "fields": [
+    "/schedule/hours_raw"
+   ],
+   "cycle": "Rolling openings on the library volunteer portal - verified 2026-09-08",
+   "quote": "shifts of two to three hours per week"
+  }
+ ]
+}

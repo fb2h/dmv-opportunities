@@ -1,0 +1,176 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "virginia-zoo-conservation-youth-team",
+ "name": "Virginia Zoo Conservation Youth Team (CYT)",
+ "org": "Virginia Zoo",
+ "org_type": "museum",
+ "host_state": "VA",
+ "program_url": "https://virginiazoo.org/school-programs/conservation-youth-team/",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "museum",
+ "offerings": [
+  {
+   "oid": "va-zoo-cyt-standing",
+   "cycle_kind": "session",
+   "cycle_label": "Summer, fall and spring semesters",
+   "ann": "announced",
+   "summary": "Teens teach zoo visitors about animals, help run Safari Camp and mentor campers, assist with learning labs and animal encounters, and join community service projects.",
+   "types": [
+    "volunteer",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "education_working_with_kids",
+    "community_service"
+   ],
+   "subject_raw": [
+    "animal education",
+    "Safari Camp",
+    "learning labs",
+    "animal encounters"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Virginia Zoo",
+     "addr": "3500 Granby St",
+     "city": "Norfolk",
+     "county": "Norfolk",
+     "state": "VA",
+     "zip": "23504",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 13,
+    "max": 17,
+    "basis": "application_date",
+    "raw": "Be in high school, including incoming ninth graders, and aged 13-17"
+   },
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "Be in high school, including incoming ninth graders"
+   },
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "registration",
+      "min": 100,
+      "unit": "total",
+      "raw": "If you are selected to participate in the Conservation Youth Team, there is a required $100 registration fee. This amount covers your Zoo uniform shirts, name tag, and additional program materials.",
+      "mandatory": true
+     }
+    ]
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer program"
+   },
+   "sched": {
+    "dur_raw": "Summer approximately 150 hours; eight-hour volunteer days required",
+    "schedule_raw": "Three semesters: Summer (June-August), Fall (September-December), Spring (February-May)"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://app.betterimpact.com/Application?OrganizationGuid=ca5e5ff3-e970-42c2-ad96-0807dbef1f06&ApplicationFormNumber=3",
+    "window": "multiple_rounds",
+    "status": "open",
+    "selection": "competitive",
+    "opens": {
+     "month": 12,
+     "day": 1,
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Applications Open: December 1"
+    },
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 3,
+      "day": 16,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "please complete the application by March 16th"
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines/final/due",
+     "unclear",
+     "The March 16 deadline is published without a year; it applies to the recurring intake described on the page"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named for the current semester intake"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "vazoo-s1",
+   "url": "https://virginiazoo.org/school-programs/conservation-youth-team/",
+   "title": "Conservation Youth Team | Virginia Zoo",
+   "publisher": "Virginia Zoo",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "vazoo-s1",
+   "oid": "va-zoo-cyt-standing",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Summer, fall and spring semesters",
+   "quote": "Be in high school, including incoming ninth graders, and aged 13-17"
+  },
+  {
+   "sid": "vazoo-s1",
+   "oid": "va-zoo-cyt-standing",
+   "fields": [
+    "/costs/fees/0/amount"
+   ],
+   "cycle": "Summer, fall and spring semesters",
+   "quote": "If you are selected to participate in the Conservation Youth Team, there is a required $100 registration fee. This amount covers your Zoo uniform shirts, name tag, and additional program materials."
+  },
+  {
+   "sid": "vazoo-s1",
+   "oid": "va-zoo-cyt-standing",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer, fall and spring semesters",
+   "quote": "Applications Open: December 1 ... please complete the application by March 16th"
+  }
+ ]
+}

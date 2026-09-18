@@ -1,0 +1,133 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "aps-arlington-tech",
+ "name": "Arlington Tech",
+ "org": "Arlington Public Schools - Arlington Career Center",
+ "org_type": "school_district",
+ "host_state": "VA",
+ "program_url": "https://catalog.apsva.us/arlington-tech-at-the-career-center/",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "needs_review",
+ "lane": "legacy_reverify",
+ "note": "Re-verified against the APS programme catalogue on 2026-09-08. Grades 9-12 confirmed, and the senior capstone places students as interns, consultants or independent researchers. Held at needs_review because the programme itself is a course of study rather than a placement, and the owner should decide whether the embedded senior capstone internship belongs on the site.",
+ "offerings": [
+  {
+   "oid": "arlington-tech-verified-2026",
+   "cycle_kind": "academic_year",
+   "cycle_label": "Programme enrolment - verified 2026-09-08",
+   "ann": "announced",
+   "summary": "A project-based programme of study at the Arlington Career Center in which seniors complete a year-long capstone employed as an intern, a consultant or an independent researcher.",
+   "types": [
+    "internship",
+    "other"
+   ],
+   "subjects": [
+    "computing_technology",
+    "engineering_trades",
+    "business_law_government"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Arlington Career Center",
+     "addr": "816 South Walter Reed Drive",
+     "city": "Arlington",
+     "county": "Arlington",
+     "state": "VA",
+     "zip": "22204",
+     "kind": "activity_site"
+    }
+   ],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "current",
+    "raw": "Grade(s): 9-12"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Arlington Public Schools"
+    ],
+    "raw": "Arlington Public Schools programme of study"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "not_mentioned"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "https://catalog.apsva.us/arlington-tech-at-the-career-center/",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/scope",
+     "needs_review",
+     "The programme is a course of study; only the senior capstone is workplace-based. Owner decision needed on whether to list it."
+    ],
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/application/instructions",
+     "not_stated",
+     "The catalogue page carries no application process."
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "arltech-s1",
+   "url": "https://catalog.apsva.us/arlington-tech-at-the-career-center/",
+   "title": "Arlington Tech at the Career Center | APS Program Catalog",
+   "publisher": "Arlington Public Schools",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "arltech-s1",
+   "oid": "arlington-tech-verified-2026",
+   "fields": [
+    "/eligibility/grades/raw"
+   ],
+   "cycle": "Programme enrolment - verified 2026-09-08",
+   "quote": "Grade(s): 9-12"
+  },
+  {
+   "sid": "arltech-s1",
+   "oid": "arlington-tech-verified-2026",
+   "fields": [
+    "/summary",
+    "/types"
+   ],
+   "cycle": "Programme enrolment - verified 2026-09-08",
+   "quote": "will complete a year-long senior capstone project in which they would be employed as an intern, a consultant, or act as an independent researcher"
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "inova-hs-student-volunteers",
+ "name": "Inova High School Student Volunteer Program",
+ "org": "Inova Health System",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
+ "status": "active",
+ "recurrence": "multiple_per_year",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "inova-hs-fall-2026",
+   "cycle_kind": "session",
+   "cycle_label": "Fall 2026 session",
+   "ann": "announced",
+   "summary": "High schoolers aged 16 and up take one weekly shift at an Inova hospital helping with patient care support, retail or operations.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "patient care",
+    "retail",
+    "operations"
+   ],
+   "season": "school_year",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Inova Fairfax Medical Campus",
+     "city": "Falls Church",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Inova Alexandria Hospital",
+     "city": "Alexandria",
+     "county": "Alexandria",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Inova Fair Oaks Hospital",
+     "city": "Fairfax",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Inova Loudoun Hospital",
+     "city": "Leesburg",
+     "county": "Loudoun",
+     "state": "VA",
+     "kind": "organization_reference"
+    },
+    {
+     "venue": "Inova Mount Vernon Hospital",
+     "city": "Alexandria",
+     "county": "Fairfax",
+     "state": "VA",
+     "kind": "organization_reference"
+    }
+   ],
+   "loc_rel": "alternatives",
+   "age": {
+    "min": 16,
+    "basis": "program_start",
+    "raw": "High school students must be at least 16 years of age on or before the start of the session"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "start_raw": "August 11-17, 2026",
+    "end": "2027-01-03",
+    "hpw_raw": "Commit to 1 shift per week, 3-4 hours each"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://forms.office.com/r/4YLQ5skywc",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "first_come",
+    "time_zone": "America/New_York",
+    "opens": {
+     "month": 7,
+     "day": 9,
+     "time": "08:00:00",
+     "precision": "day",
+     "certainty": "confirmed",
+     "raw": "Registration window for the 2026 fall session opens on July 9 at 8:00 a.m."
+    },
+    "deadlines": [
+     {
+      "kind": "registration",
+      "month": 7,
+      "day": 12,
+      "time": "23:45:00",
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "closes on July 12 at 11:45 p.m."
+     }
+    ]
+   },
+   "public": true,
+   "issues": [
+    [
+     "/locations",
+     "unclear",
+     "City assignments for each Inova campus are not stated on this page and need address verification"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ],
+    [
+     "/application/selection_method",
+     "unclear",
+     "A short registration window suggests capacity limits; the page does not state whether selection is first come or reviewed"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "inova-s1",
+   "url": "https://www.inova.org/our-services/inova-volunteer-services-system/students",
+   "title": "High school student volunteers",
+   "publisher": "Inova Health System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "inova-s1",
+   "oid": "inova-hs-fall-2026",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Fall 2026 session",
+   "quote": "High school students must be at least 16 years of age on or before the start of the session"
+  },
+  {
+   "sid": "inova-s1",
+   "oid": "inova-hs-fall-2026",
+   "fields": [
+    "/application/opens",
+    "/application/deadlines/registration/due"
+   ],
+   "cycle": "Fall 2026 session",
+   "quote": "Registration window for the 2026 fall session opens on July 9 at 8:00 a.m. and closes on July 12 at 11:45 p.m."
+  },
+  {
+   "sid": "inova-s1",
+   "oid": "inova-hs-fall-2026",
+   "fields": [
+    "/schedule/hours_per_week/raw"
+   ],
+   "cycle": "Fall 2026 session",
+   "quote": "Commit to 1 shift per week, 3-4 hours each"
+  }
+ ]
+}

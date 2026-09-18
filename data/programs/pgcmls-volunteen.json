@@ -1,0 +1,120 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pgcmls-volunteen",
+ "name": "PGCMLS VolunTEEN Book Review Program",
+ "org": "Prince George's County Memorial Library System",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.pgcmls.info/volunteen",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "pgcmls-volunteen-standing",
+   "cycle_kind": "academic_year",
+   "cycle_label": "School-year book review programme",
+   "ann": "announced",
+   "summary": "Prince George's County students write book reviews for the library's teen readers and earn up to six service hours a school year, one hour per review.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "arts_media_humanities",
+    "community_service"
+   ],
+   "season": "school_year",
+   "mode": "virtual",
+   "housing": "commuter",
+   "loc": [],
+   "grades": {
+    "values": [
+     "9",
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "application_date",
+    "raw": "Students in grades 6-12 who live in Prince George's County"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Prince George's County, MD"
+    ],
+    "raw": "who live in Prince George's County"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "Unpaid service-learning programme"
+   },
+   "sched": {
+    "dur_raw": "Runs during the school year; earn up to 6 service hours per school year, each review worth 1 hour"
+   },
+   "app": {
+    "route": "registration",
+    "url": "https://pgcmls.beanstack.org/reader365",
+    "window": "rolling",
+    "status": "open",
+    "selection": "open_enrollment",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated"
+    ],
+    [
+     "/delivery_mode",
+     "unclear",
+     "Reviews are submitted through an online platform, so the role is recorded as virtual; the library does not state whether any in-branch attendance is required"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "pgcmlsvt-s1",
+   "url": "https://www.pgcmls.info/volunteen",
+   "title": "VolunTEEN - Prince George's County Memorial Library System",
+   "publisher": "Prince George's County Memorial Library System",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "pgcmlsvt-s1",
+   "oid": "pgcmls-volunteen-standing",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "School-year book review programme",
+   "quote": "Students in grades 6-12 who live in Prince George's County"
+  },
+  {
+   "sid": "pgcmlsvt-s1",
+   "oid": "pgcmls-volunteen-standing",
+   "fields": [
+    "/schedule/duration/raw"
+   ],
+   "cycle": "School-year book review programme",
+   "quote": "earn up to 6 service hours per school year ... each review worth 1 hour"
+  }
+ ]
+}

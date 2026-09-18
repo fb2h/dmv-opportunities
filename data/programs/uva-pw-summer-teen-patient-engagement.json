@@ -1,0 +1,148 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "uva-pw-summer-teen-patient-engagement",
+ "name": "UVA Health Summer Teen Patient Engagement Program (Prince William)",
+ "org": "UVA Health Prince William Medical Center",
+ "org_type": "hospital",
+ "host_state": "VA",
+ "program_url": "https://uvahealth.com/services/volunteer/prince-william/summer-teen",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "uva-pw-summer-teen-standing",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer two-week sessions",
+   "ann": "unclear",
+   "summary": "Teens who have finished tenth grade spend a two-week summer session helping in the emergency department, guest services, surgical services, physical therapy, registration or the gift shop.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Emergency Department",
+    "guest services",
+    "surgical services",
+    "materials management",
+    "physical therapy",
+    "registration",
+    "gift shop"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "UVA Health Prince William Medical Center",
+     "addr": "8700 Sudley Road",
+     "city": "Manassas",
+     "county": "Manassas City",
+     "state": "VA",
+     "zip": "20110",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "grades": {
+    "values": [
+     "10",
+     "11",
+     "12"
+    ],
+    "basis": "rising_fall",
+    "raw": "Have or will finish the sophomore year of high school by summer"
+   },
+   "gpa": {
+    "raw": "Be a student in good standing with a 'B' grade point average or above"
+   },
+   "fee": {
+    "status": "required",
+    "items": [
+     {
+      "kind": "supplies",
+      "min": 20,
+      "unit": "total",
+      "raw": "$20 uniform shirt purchase at orientation",
+      "mandatory": true
+     }
+    ]
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer program"
+   },
+   "sched": {
+    "dur_raw": "Choice of 4 2-week sessions"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://brand.uvahealth.com/share/GkCHoEj1fFrPtf7LnXF8",
+    "window": "unknown",
+    "status": "unknown",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "No application window or deadline published"
+    ],
+    [
+     "/cycle/label",
+     "unclear",
+     "No cycle year is named on the page"
+    ],
+    [
+     "/schedule/start",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "uva-pwst-s1",
+   "url": "https://uvahealth.com/services/volunteer/prince-william/summer-teen",
+   "title": "Summer Teen Patient Engagement Program - Prince William Medical Center",
+   "publisher": "UVA Health",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "uva-pwst-s1",
+   "oid": "uva-pw-summer-teen-standing",
+   "fields": [
+    "/eligibility/grades/raw",
+    "/eligibility/gpa/raw"
+   ],
+   "cycle": "Summer two-week sessions",
+   "quote": "Have or will finish the sophomore year of high school by summer ... Be a student in good standing with a 'B' grade point average or above"
+  },
+  {
+   "sid": "uva-pwst-s1",
+   "oid": "uva-pw-summer-teen-standing",
+   "fields": [
+    "/costs/fees/0/amount"
+   ],
+   "cycle": "Summer two-week sessions",
+   "quote": "$20 uniform shirt purchase at orientation"
+  }
+ ]
+}

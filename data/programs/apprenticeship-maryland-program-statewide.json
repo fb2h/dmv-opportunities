@@ -1,0 +1,179 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "apprenticeship-maryland-program-statewide",
+ "name": "Apprenticeship Maryland Program (Youth Apprenticeship)",
+ "org": "Maryland Department of Labor, Maryland Apprenticeship and Training Program",
+ "org_type": "state_gov",
+ "host_state": "MD",
+ "program_url": "https://www.labor.maryland.gov/employment/appr/youthapprfaqs.shtml",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "apprenticeship",
+ "offerings": [
+  {
+   "oid": "amp-statewide-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing youth apprenticeship across 21 Maryland jurisdictions",
+   "ann": "announced",
+   "summary": "A paid youth apprenticeship where a high schooler works at least 450 hours with a mentor in a high-demand occupation while taking related classes at school.",
+   "types": [
+    "apprenticeship",
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "engineering_trades",
+    "health_medicine",
+    "business_law_government",
+    "computing_technology",
+    "education_working_with_kids"
+   ],
+   "subject_raw": [
+    "high-demand occupations",
+    "on-the-job training",
+    "related classroom instruction"
+   ],
+   "season": "both",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Participating employer worksites in Allegany, Anne Arundel, Baltimore, Calvert, Caroline, Carroll, Charles, Dorchester, Frederick, Harford, Howard, Kent, Montgomery, Prince George's, Queen Anne's, St. Mary's, Talbot, Washington, Wicomico and Worcester Counties and Baltimore City",
+     "state": "MD",
+     "kind": "to_be_assigned"
+    }
+   ],
+   "grades": {
+    "values": [
+     "11",
+     "12"
+    ],
+    "basis": "unknown",
+    "raw": "Presently available to high school students in twenty Maryland counties"
+   },
+   "school": {
+    "status": "restricted",
+    "eligible_districts": [
+     "Allegany",
+     "Anne Arundel",
+     "Baltimore County",
+     "Calvert",
+     "Caroline",
+     "Carroll",
+     "Charles",
+     "Dorchester",
+     "Frederick",
+     "Harford",
+     "Howard",
+     "Kent",
+     "Montgomery",
+     "Prince George's",
+     "Queen Anne's",
+     "St. Mary's",
+     "Talbot",
+     "Washington",
+     "Wicomico",
+     "Worcester",
+     "Baltimore City"
+    ],
+    "raw": "High school students in participating counties may apply to be a youth apprentice by contacting their school's work-based learning coordinator, their school counselor, or their school system's Youth Apprenticeship Coordinator."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "raw": "Pay the youth apprentice for all work performed during the program at no less than minimum wage"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "dur_min": 450,
+    "dur_unit": "hour",
+    "dur_raw": "work a minimum of 450 hours within not to exceed 14 months"
+   },
+   "app": {
+    "route": "school_nomination",
+    "url": "http://youthapp.mdapprenticeship.com/",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Contact the school's work-based learning coordinator, school counselor, or the school system's Youth Apprenticeship Coordinator",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/grades/values",
+     "not_stated",
+     "The FAQ does not state a grade level; grades 11 and 12 are recorded from the programme's structure and flagged for confirmation"
+    ],
+    [
+     "/costs/compensation/0/amount",
+     "not_stated",
+     "Pay is defined as at least minimum wage, which varies by employer"
+    ],
+    [
+     "/locations",
+     "to_be_assigned",
+     "Worksites are assigned by the employer and school system"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "amp-s1",
+   "url": "https://www.labor.maryland.gov/employment/appr/youthapprfaqs.shtml",
+   "title": "Youth Apprenticeship Frequently Asked Questions",
+   "publisher": "Maryland Department of Labor",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "amp-s1",
+   "oid": "amp-statewide-standing",
+   "fields": [
+    "/eligibility/school/raw",
+    "/application/route_type"
+   ],
+   "cycle": "Ongoing youth apprenticeship across 21 Maryland jurisdictions",
+   "quote": "High school students in participating counties may apply to be a youth apprentice by contacting their school's work-based learning coordinator, their school counselor, or their school system's Youth Apprenticeship Coordinator."
+  },
+  {
+   "sid": "amp-s1",
+   "oid": "amp-statewide-standing",
+   "fields": [
+    "/costs/compensation"
+   ],
+   "cycle": "Ongoing youth apprenticeship across 21 Maryland jurisdictions",
+   "quote": "Pay the youth apprentice for all work performed during the program at no less than minimum wage"
+  },
+  {
+   "sid": "amp-s1",
+   "oid": "amp-statewide-standing",
+   "fields": [
+    "/schedule/duration/min",
+    "/schedule/duration/raw"
+   ],
+   "cycle": "Ongoing youth apprenticeship across 21 Maryland jurisdictions",
+   "quote": "work a minimum of 450 hours ... not to exceed 14 months"
+  }
+ ]
+}

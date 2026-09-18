@@ -1,0 +1,154 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "pratt-youthworks-summer",
+ "name": "YouthWorks at the Enoch Pratt Free Library",
+ "org": "Enoch Pratt Free Library / Baltimore City Mayor's Office of Employment Development",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.prattlibrary.org/youthworks",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "pratt-youthworks-2026-verified",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "Baltimore City teens aged 14 to 21 work paid library placements at fifteen dollars an hour in library science, programme planning, education, technology, IT, leadership or facilities.",
+   "types": [
+    "paid_job",
+    "internship",
+    "trainee"
+   ],
+   "subjects": [
+    "community_service",
+    "computing_technology",
+    "arts_media_humanities",
+    "education_working_with_kids",
+    "business_law_government"
+   ],
+   "subject_raw": [
+    "library science",
+    "program planning",
+    "education",
+    "youth work",
+    "technology services",
+    "IT",
+    "leadership",
+    "facilities management"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Enoch Pratt Free Library Central Library and branches",
+     "addr": "400 Cathedral Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "zip": "21201",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "max": 21,
+    "basis": "application_date",
+    "raw": "Baltimore city youth ages 14 through 21"
+   },
+   "residency": {
+    "status": "restricted",
+    "areas": [
+     "Baltimore City, MD"
+    ],
+    "raw": "Baltimore city youth"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "$15 per hour"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "hpw_max": 25,
+    "hpw_raw": "up to 25 hours a week for the full duration of the program between the hours of 10 am and 4 pm"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://youthworks.oedworks.com/",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": []
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/application/deadlines",
+     "not_stated",
+     "The library page states only that applications are closed for Summer 2026; the city YouthWorks window is recorded on the Baltimore City record"
+    ],
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "prattyw-s1",
+   "url": "https://www.prattlibrary.org/youthworks",
+   "title": "YouthWorks - Enoch Pratt Free Library",
+   "publisher": "Enoch Pratt Free Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "prattyw-s1",
+   "oid": "pratt-youthworks-2026-verified",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/eligibility/residency/raw"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Baltimore city youth ages 14 through 21"
+  },
+  {
+   "sid": "prattyw-s1",
+   "oid": "pratt-youthworks-2026-verified",
+   "fields": [
+    "/costs/compensation",
+    "/schedule/hours_per_week/max"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "$15 per hour ... up to 25 hours a week for the full duration of the program between the hours of 10 am and 4 pm"
+  }
+ ]
+}

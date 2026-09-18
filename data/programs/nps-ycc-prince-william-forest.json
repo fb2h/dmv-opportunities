@@ -1,0 +1,241 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "nps-ycc-prince-william-forest",
+ "name": "Youth Conservation Corps at Prince William Forest Park",
+ "org": "U.S. National Park Service, Prince William Forest Park",
+ "org_type": "federal",
+ "host_state": "VA",
+ "program_url": "https://www.nps.gov/prwi/learn/news/prince-william-forest-park-seeks-high-school-age-students-for-paid-summer-jobs.htm",
+ "status": "active",
+ "recurrence": "annual",
+ "scope": "in_scope",
+ "lane": "legacy_reverify",
+ "offerings": [
+  {
+   "oid": "nps-prwi-ycc-2026",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2026",
+   "ann": "announced",
+   "summary": "A paid summer conservation crew at Prince William Forest Park doing trail maintenance, stream quality monitoring, painting and staining, and visitor services.",
+   "types": [
+    "paid_job",
+    "trainee",
+    "volunteer"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "science_research",
+    "engineering_trades",
+    "community_service"
+   ],
+   "subject_raw": [
+    "Trail maintenance",
+    "stream quality monitoring",
+    "painting",
+    "staining",
+    "visitor services"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Prince William Forest Park",
+     "city": "Triangle",
+     "county": "Prince William",
+     "state": "VA",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "15 through 18 years old"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "$15.00 per hour for a 40-hour work week"
+     }
+    ],
+    "guaranteed": true
+   },
+   "sched": {
+    "start_raw": "June 15",
+    "end_raw": "August 7",
+    "hpw_min": 40,
+    "hpw_raw": "40-hour work week"
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "selection": "competitive",
+    "deadlines": [
+     {
+      "kind": "final",
+      "month": 5,
+      "day": 1,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Prince William Forest Park: application window May 1 (2026)"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": [
+    [
+     "/cycle",
+     "not_stated",
+     "Summer 2027 not yet announced"
+    ],
+    [
+     "/costs/compensation",
+     "unclear",
+     "The $15.00 per hour rate is quoted from the park's 2025 news release; the NPS 2026 listing does not restate a wage"
+    ]
+   ]
+  },
+  {
+   "oid": "nps-prwi-ycc-2025",
+   "cycle_kind": "annual",
+   "cycle_label": "Summer 2025",
+   "ann": "announced",
+   "summary": "Prior cycle retained for history.",
+   "types": [
+    "paid_job",
+    "trainee"
+   ],
+   "subjects": [
+    "environment_outdoors",
+    "engineering_trades"
+   ],
+   "season": "summer",
+   "mode": "in_person",
+   "loc": [
+    {
+     "venue": "Prince William Forest Park",
+     "city": "Triangle",
+     "county": "Prince William",
+     "state": "VA",
+     "kind": "confirmed_campus_approximation"
+    }
+   ],
+   "age": {
+    "min": 15,
+    "max": 18,
+    "basis": "application_date",
+    "raw": "15 through 18 years old"
+   },
+   "comp": {
+    "status": "provided",
+    "items": [
+     {
+      "kind": "wage",
+      "min": 15.0,
+      "unit": "hour",
+      "raw": "$15.00 per hour for a 40-hour work week"
+     }
+    ]
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "sched": {
+    "start_raw": "June 16",
+    "end_raw": "August 8",
+    "hpw_min": 40
+   },
+   "app": {
+    "route": "direct",
+    "window": "fixed",
+    "status": "closed",
+    "deadlines": [
+     {
+      "kind": "final",
+      "date": "2025-05-09",
+      "year": 2025,
+      "month": 5,
+      "precision": "day",
+      "certainty": "confirmed",
+      "raw": "Applications are now being accepted...until Friday, May 9, 2025"
+     }
+    ]
+   },
+   "public": false,
+   "hist": true,
+   "issues": []
+  }
+ ],
+ "sources": [
+  {
+   "sid": "prwiycc-s1",
+   "url": "https://www.nps.gov/prwi/learn/news/prince-william-forest-park-seeks-high-school-age-students-for-paid-summer-jobs.htm",
+   "title": "Prince William Forest Park seeks high school age students for paid summer jobs",
+   "publisher": "U.S. National Park Service",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  },
+  {
+   "sid": "npsycc-s1",
+   "url": "https://www.nps.gov/subjects/youthprograms/youth-conservation-corps-opportunities.htm",
+   "title": "Youth Conservation Corps Opportunities",
+   "publisher": "U.S. National Park Service",
+   "auth": "first_party",
+   "roles": [
+    "discovery",
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "prwiycc-s1",
+   "oid": "nps-prwi-ycc-2025",
+   "fields": [
+    "/eligibility/age/min",
+    "/eligibility/age/max",
+    "/costs/compensation"
+   ],
+   "cycle": "Summer 2025",
+   "quote": "15 through 18 years old ... $15.00 per hour for a 40-hour work week"
+  },
+  {
+   "sid": "prwiycc-s1",
+   "oid": "nps-prwi-ycc-2025",
+   "fields": [
+    "/application/deadlines/final/due"
+   ],
+   "cycle": "Summer 2025",
+   "quote": "Applications are now being accepted...until Friday, May 9, 2025"
+  },
+  {
+   "sid": "npsycc-s1",
+   "oid": "nps-prwi-ycc-2026",
+   "fields": [
+    "/application/deadlines/final/due",
+    "/schedule/start",
+    "/schedule/end"
+   ],
+   "cycle": "Summer 2026",
+   "quote": "Prince William Forest Park ... Application window: May 1 ... Session dates: June 15 - August 7"
+  }
+ ]
+}

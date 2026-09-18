@@ -1,0 +1,117 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "ummc-volunteer",
+ "name": "University of Maryland Medical Center Volunteer Program",
+ "org": "University of Maryland Medical Center",
+ "org_type": "hospital",
+ "host_state": "MD",
+ "program_url": "https://www.umms.org/ummc/giving/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "hospital",
+ "offerings": [
+  {
+   "oid": "ummc-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Year-round volunteer placements",
+   "ann": "announced",
+   "summary": "Volunteers aged 16 and up commit four hours a week year-round in a department at the University of Maryland Medical Center in Baltimore.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "health_medicine",
+    "community_service"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "University of Maryland Medical Center, Volunteer Services Room GS101",
+     "addr": "29 S. Greene Street",
+     "city": "Baltimore",
+     "county": "Baltimore City",
+     "state": "MD",
+     "kind": "activity_site"
+    }
+   ],
+   "age": {
+    "min": 16,
+    "basis": "application_date",
+    "raw": "You must be at least 16 years of age to volunteer at UMMC."
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_min": 4,
+    "hpw_raw": "minimum commitment of four hours a week",
+    "dur_raw": "at least 75 hours of volunteer service in one department"
+   },
+   "app": {
+    "route": "direct",
+    "url": "https://share.vomevolunteer.com/OCT3Pz59ySb",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/eligibility/grades/values",
+     "not_stated"
+    ],
+    [
+     "/costs/fee_status",
+     "not_stated"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "ummc-s1",
+   "url": "https://www.umms.org/ummc/giving/volunteer",
+   "title": "Volunteer at UMMC",
+   "publisher": "University of Maryland Medical Center",
+   "auth": "first_party",
+   "roles": [
+    "program_detail",
+    "application"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "ummc-s1",
+   "oid": "ummc-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Year-round volunteer placements",
+   "quote": "You must be at least 16 years of age to volunteer at UMMC."
+  },
+  {
+   "sid": "ummc-s1",
+   "oid": "ummc-vol-standing",
+   "fields": [
+    "/schedule/hours_per_week/min"
+   ],
+   "cycle": "Year-round volunteer placements",
+   "quote": "minimum commitment of four hours a week"
+  }
+ ]
+}

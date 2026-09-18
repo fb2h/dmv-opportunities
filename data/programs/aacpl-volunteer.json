@@ -1,0 +1,122 @@
+{
+ "schema_version": "2.3.0",
+ "taxonomy_version": "2.1.0",
+ "imported_from": {
+  "batch_id": "dmv-rebuild-2026-09-08",
+  "submitted_at": "2026-09-08T00:00:00Z",
+  "collector_id": "dmv-first-principles-sweep"
+ },
+ "pid": "aacpl-volunteer",
+ "name": "Anne Arundel County Public Library Volunteer Program",
+ "org": "Anne Arundel County Public Library",
+ "org_type": "library",
+ "host_state": "MD",
+ "program_url": "https://www.aacpl.net/about/volunteer",
+ "status": "active",
+ "recurrence": "continuous",
+ "scope": "in_scope",
+ "lane": "library",
+ "offerings": [
+  {
+   "oid": "aacpl-vol-standing",
+   "cycle_kind": "continuous",
+   "cycle_label": "Ongoing branch volunteer placements",
+   "ann": "announced",
+   "summary": "Volunteers aged 14 and up spend two to three hours a week at an Anne Arundel County library unpacking and checking in books, repairing books, filing and helping people with computers.",
+   "types": [
+    "volunteer"
+   ],
+   "subjects": [
+    "community_service",
+    "computing_technology",
+    "arts_media_humanities"
+   ],
+   "subject_raw": [
+    "book repair",
+    "filing",
+    "computer orientation"
+   ],
+   "season": "year_round",
+   "mode": "in_person",
+   "housing": "commuter",
+   "loc": [
+    {
+     "venue": "Anne Arundel County Public Library branches",
+     "county": "Anne Arundel",
+     "state": "MD",
+     "kind": "organization_reference",
+     "raw": "16 libraries throughout Anne Arundel County"
+    }
+   ],
+   "age": {
+    "min": 14,
+    "basis": "application_date",
+    "raw": "You must be at least 14 years old to apply"
+   },
+   "fee": {
+    "status": "not_mentioned"
+   },
+   "comp": {
+    "status": "none",
+    "raw": "unpaid volunteer role"
+   },
+   "sched": {
+    "hpw_raw": "one day a week, usually a morning, for 2-3 hours per week",
+    "dur_raw": "minimum commitment of 6 months preferred"
+   },
+   "app": {
+    "route": "other",
+    "window": "rolling",
+    "status": "open",
+    "selection": "host_selects",
+    "instructions": "Please contact a library location near you to find out if there are volunteer openings",
+    "deadlines": []
+   },
+   "public": true,
+   "issues": [
+    [
+     "/application/application_url",
+     "not_stated",
+     "Applications are handled branch by branch"
+    ],
+    [
+     "/locations",
+     "not_stated",
+     "Individual branch addresses are not on this page"
+    ]
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "sid": "aacpl-s1",
+   "url": "https://www.aacpl.net/about/volunteer",
+   "title": "Volunteer | Anne Arundel County Public Library",
+   "publisher": "Anne Arundel County Public Library",
+   "auth": "first_party",
+   "roles": [
+    "program_detail"
+   ]
+  }
+ ],
+ "evidence": [
+  {
+   "sid": "aacpl-s1",
+   "oid": "aacpl-vol-standing",
+   "fields": [
+    "/eligibility/age/min"
+   ],
+   "cycle": "Ongoing branch volunteer placements",
+   "quote": "You must be at least 14 years old to apply"
+  },
+  {
+   "sid": "aacpl-s1",
+   "oid": "aacpl-vol-standing",
+   "fields": [
+    "/schedule/hours_per_week/raw"
+   ],
+   "cycle": "Ongoing branch volunteer placements",
+   "quote": "one day a week, usually a morning, for 2-3 hours per week"
+  }
+ ]
+}
