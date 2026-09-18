@@ -2,7 +2,7 @@
 
 A directory of work opportunities — paid or unpaid — for high school students in DC, Maryland and Virginia: internships, volunteer positions, paid jobs, apprenticeships, research, job shadowing and counselor roles. Every published fact is quoted from the hosting organization's own page. Nothing is guessed.
 
-**Live site:** enable GitHub Pages (Settings → Pages → Source: *GitHub Actions*) and the URL appears on the Actions run.
+**Live site:** https://fb2h.github.io/dmv-opportunities/ (GitHub Pages, published by the workflow below).
 
 ## How it is organized
 
