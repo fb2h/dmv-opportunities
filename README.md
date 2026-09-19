@@ -30,6 +30,8 @@ cd site && python -m http.server 8000                       # open http://localh
 
 `build.py` publishes an offering only when the contract's gate passes: in scope, current cycle announced with evidence, cycle not ended, first-party source present. Its decisions and reasons are in `data/meta/gate_report.json`; the `disagreements_with_collector_flag` list is where a person should look first.
 
+Contract 2.4.0 (Appendix C, 18 Sep 2026) changes directory membership and approval rules. Round 1 implements that path against **isolated fixtures and a separate test catalog** only. It does not bulk-approve `data/programs/` or rewrite the live Pages catalog. See `scripts/review/README.md`.
+
 ## Rules in one paragraph
 
 Facts come only from the hosting organization's own page, PDF or notice, quoted verbatim. A recurring pattern ("applications usually open November 1") is recorded as a pattern, never as this year's date. Unknown is `null` with an issue recorded. Past cycles are never deleted — they predict the next cycle and drive the refresh schedule — but they are never displayed as if current. Splitting into offerings follows the contract; the frontend shows one card per program. Where the contract is silent, prefer showing more results; where it is explicit, the rule governs.

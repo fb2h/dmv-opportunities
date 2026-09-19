@@ -155,6 +155,9 @@ const TYPE = {internship:"Internship",research:"Research",volunteer:"Volunteer",
 const SEASON = {summer:"Summer",school_year:"School year",year_round:"Year-round",both:"Summer & school year"};
 const MODE = {in_person:"In person",virtual:"Online",hybrid:"Hybrid",unknown:"Format not stated"};
 const STATUS = {open:["Open","open"],not_yet_open:["Not yet open","soon"],closed:["Closed","closed"],unknown:["Status not stated","unk"],no_application:["No application needed","open"]};
+const LIFE = {scheduled:"Scheduled",in_progress:"In progress",completed:"Completed",unknown:"Activity dates not stated"};
+// Application status and activity status are distinct. Do not hide a listing because
+// a deadline or end date has passed — directory membership is decided in the catalog.
 
 let CATALOG=null, ZIPS=null;
 const $=s=>document.querySelector(s);
@@ -187,6 +190,7 @@ function persist(){ try{localStorage.setItem("dmv-filters",JSON.stringify({zip:s
 /* ---- matching, Section 9 of the contract ---- */
 function miles(a,b){const R=3958.8,toR=x=>x*Math.PI/180;const dLat=toR(b[0]-a[0]),dLon=toR(b[1]-a[1]);const h=Math.sin(dLat/2)**2+Math.cos(toR(a[0]))*Math.cos(toR(b[0]))*Math.sin(dLon/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
 function evalOffering(o){
+  // No hidden date filter: expired deadlines and ended activities do not exclude a listing.
   const reasons=[]; let unknown=false; let distance=null;
   const group = o.delivery_mode==="virtual" ? "online" : "physical";
   if(state.mode){ if(o.delivery_mode==="unknown"){unknown=true;reasons.push("Format not stated");} else if(o.delivery_mode!==state.mode) return {status:"no_match"}; }
@@ -274,6 +278,7 @@ function openModal(pid,oid){
   const st=STATUS[o.application_status]||STATUS.unknown; const e=o.eligibility; const a=o.application; const s=o.schedule;
   const kv=[]; const add=(k,v)=>{ if(v!==null&&v!==undefined&&v!=="") kv.push(`<dt>${k}</dt><dd>${v}</dd>`); };
   add("Applications", `<span class="pill ${st[1]}">${st[0]}</span> ` + [a.opens?`opens ${esc(a.opens)}`:"", a.window&&a.window!=="unknown"?cap(a.window)+" window":"", a.selection?`selection: ${esc(a.selection.replace(/_/g," "))}`:""].filter(Boolean).join(" · "));
+  if(o.lifecycle_status) add("Activity", LIFE[o.lifecycle_status]||esc(o.lifecycle_status));
   if(a.deadlines&&a.deadlines.length) add("Deadlines", a.deadlines.map(d=>`<b>${esc(d.label)}</b> <span class="q">(${esc(d.kind||"final")})</span>`).join("<br>"));
   if(a.timing_notes&&a.timing_notes.length) add("Timing, as worded", a.timing_notes.map(t=>`<span class="q">“${esc(t)}”</span>`).join("<br>")+`<br><span class="q">Wording only: the page gives no exact date for the current cycle.</span>`);
   add("Cycle", esc(o.cycle.label));

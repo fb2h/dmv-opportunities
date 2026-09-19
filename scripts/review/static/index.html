@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DMV review — local only</title>
+<style>
+body{margin:0;font:16px/1.5 system-ui,sans-serif;color:#17202a;background:#fff}
+main{max-width:760px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:22px;margin:0 0 6px}
+.sub{color:#6b7480;margin:0 0 22px}
+.banner{background:#fff6db;border:1px solid #e6d59a;padding:10px 12px;border-radius:8px;margin-bottom:18px;font-size:14px}
+.card{border:1px solid #e6e9ee;border-radius:10px;padding:16px 18px;margin:0 0 16px}
+label{display:block;font-size:13px;font-weight:650;margin:0 0 8px}
+button,.btn{display:inline-block;padding:8px 14px;border-radius:7px;border:1px solid #d0d5dd;background:#0f6e56;color:#fff;font-weight:650;cursor:pointer;text-decoration:none}
+button.secondary{background:#fff;color:#17202a}
+pre{background:#f6f8f9;padding:12px;border-radius:8px;overflow:auto;font-size:13px}
+.ok{color:#0f6e56}.bad{color:#9a2218}
+.status dt{color:#6b7480;font-size:13px}.status dd{margin:0 0 8px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Review workbook</h1>
+  <p class="sub">Local loopback utility. This page never receives a GitHub token. Writes stay in the isolated workspace.</p>
+  <div class="banner">Bind: 127.0.0.1 only. Edit only <b>Decision</b> (Approve / Reject / Hold) and <b>Review notes</b> in the spreadsheet. An empty Decision is not approval. Upload saves decisions; it does not publish the public site.</div>
+  <div class="card">
+    <p>Workspace: <code>{{WORKSPACE}}</code></p>
+    <dl class="status" id="status"><dd>Loading…</dd></dl>
+    <p><a class="btn" href="/download">Download review Excel</a></p>
+  </div>
+  <div class="card">
+    <form id="upload" method="post" action="/upload" enctype="multipart/form-data">
+      <input type="hidden" name="csrf" value="{{CSRF}}">
+      <label for="workbook">Upload reviewed Excel</label>
+      <input id="workbook" name="workbook" type="file" accept=".xlsx" required>
+      <p><button type="submit">Upload and apply decisions</button></p>
+    </form>
+  </div>
+  <div class="card">
+    <form id="publish" method="post" action="/publish">
+      <input type="hidden" name="csrf" value="{{CSRF}}">
+      <label>Explicit test-catalog publish (separate from decision-saved)</label>
+      <p><button type="submit" class="secondary">Publish test catalog</button></p>
+    </form>
+  </div>
+  <div class="card">
+    <h2 style="font-size:16px;margin:0 0 8px">Result summary</h2>
+    <pre id="result">No upload yet.</pre>
+  </div>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
