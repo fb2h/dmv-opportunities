@@ -1,19 +1,20 @@
 # DMV High School Opportunity Website: Data Schema Contract (English)
 
 **Status: CURRENT CANONICAL CONTRACT**  
-**Contract version: 2.3.0 · Date: 2026-09-08**
+**Contract version: 2.4.0 · Date: 2026-09-19**
 
 This contract governs collection, integration, website implementation, and automated refresh. It defines two connected data contracts: the **backend maintenance schema** and the **frontend display schema**, plus publication, transformation, and filtering rules. These logical structures do not require two separate physical databases.
 
 This document is the single contract that people and agents should follow. It supersedes “Data Schema — Locked 2026-09-07,” `DMV_Opportunity_Project_Plan_v0.1.md`, and every earlier Data Contract version wherever they conflict. Earlier files are historical drafts, not implementation instructions.
 
-Version 2.3 preserves the six-filter public design while correcting cross-variant matching, scope, and collector-template problems found during implementation review. Filter conditions must be satisfied by one specific offering; no “widest value” may combine incompatible variants. Silence about money remains recorded but is not converted into a claim of no fee or no pay. **Application materials are not filters, and programs supported only by past-cycle information are not displayed publicly.** Existing historical data must be retained, not deleted to fit this schema.
+Version 2.4 is a dated amendment of owner decisions recorded 18 September 2026 (Appendix C). It changes directory membership, approval, and catalog-rebuild rules only. Scope, subjects, fees, grades, and the six public filters are unchanged from 2.3. **SUPERSEDED (2.4.0 / Appendix C):** the 2.3 sentence that programs supported only by past-cycle information are never displayed publicly, insofar as that sentence was read as removing an approved 2026-2027 directory member after a deadline or activity end. Historical cycles that were never assigned to the current directory year remain backend-only.
 
 **Change history**
 
 | Version | Status | Main change |
 |---|---|---|
-| 2.3.0 | Current | Corrected cross-variant filter matching; clarified work-opportunity scope and incidental fees; made `not_mentioned` non-assertive; added community service; aligned the collector template and removed stale filter references. |
+| 2.4.0 | Current | Appendix C (18 Sep 2026): public directory is approved + explicit school-year membership; approved items remain after deadline/end; catalog rebuild is not a new inclusion decision; no TTL, auto-rollover, or end-date withdrawal; a change creates a candidate, not an overwrite. Marks conflicting 7.1 / D02 / D03 / auto-approval language superseded. Does not change scope, subjects, fees, grades, or filters. |
+| 2.3.0 | Superseded (filters/scope unchanged) | Corrected cross-variant filter matching; clarified work-opportunity scope and incidental fees; made `not_mentioned` non-assertive; added community service; aligned the collector template and removed stale filter references. |
 | 2.2.0 | Superseded | Scope narrowed to work opportunities; OpportunityType reduced; Subject collapsed; opportunity type and application status removed from public filters. |
 | 2.1.0 | Superseded | Rule precedence; `record_version` fixed to factual change only; splitting narrowed to cycle and dates; Cost removed from filters; silence-about-money rule; `routes[]`; conflict records; new enum values. |
 | 2.0.0 | Superseded | Minimal public filters; separate Pay and Cost; Any semantics; English canonical file. |
@@ -448,6 +449,39 @@ interface Publication {
   display_until: ISODateTime | null;
   decision_reason: string | null;
 }
+// 2.4.0 additive fields. Reuse Publication + record_version + RecordRevision.
+// Do not invent a second approval flag. display_until is retained for audit only;
+// it must not auto-remove approved directory membership (Appendix C).
+interface DirectoryMembership {
+  offering_id: ID;
+  school_year: SchoolYear;
+  assigned_at: ISODateTime;
+  assigned_by: "human";
+  assignment_revision_id: ID | null;
+}
+interface ExplicitRemoval {
+  offering_id: ID;
+  school_year: SchoolYear;
+  removed_at: ISODateTime;
+  removed_by: "human";
+  reason: string;
+  audit_id: ID;
+}
+interface FactualRevisionCandidate {
+  candidate_id: ID;
+  program_id: ID;
+  offering_id: ID;
+  proposed_record_version: number;
+  proposed_record: Offering | Program;
+  material_facts_fingerprint: string;
+  approved_baseline_fingerprint: string | null;
+  approved_baseline_record_version: number | null;
+  review_reason: "material_change" | "next_cycle" | "new_assignment" | "other";
+  official_links: string[];
+  excerpts: string[];
+  created_at: ISODateTime;
+  status: "pending" | "approved" | "rejected" | "held" | "superseded";
+}
 interface Program extends ProgramFacts { program_id: ID; audit: Audit; }
 interface Offering extends Omit<OfferingFacts, "locations"> {
   offering_id: ID;
@@ -638,18 +672,18 @@ An offering may enter public data only when all conditions hold:
 2. `cycle.announcement_state=announced`, with valid applicable evidence in `announcement_evidence_ids`. Cycle kind and label must be interpretable. A past cycle's announcement cannot announce a future cycle. Year-round rolling opportunities use `continuous` with a clear label, not a forced 2029 value.
 3. `review_status=passed` and `reviewed_record_version` equals the factual revision being published. Verify cycle authenticity and material populated facts; ordinary unknown fields may remain unknown and visible as such.
 4. `public_content_status=cleared`, with sources and content conforming to Section 5.1.
-5. The program is not paused or discontinued, the offering is not cancelled or ended, no unresolved blocking conflict remains, and `display_until` has not passed if set.
+5. The program is not paused or discontinued, and no unresolved blocking conflict remains. **SUPERSEDED (2.4.0 / Appendix C):** treating a confirmed end date, `display_until`, or “offering ended/cancelled” report as automatic directory withdrawal. Known dates update `application_status` / `lifecycle_status` only. Removal from a directory year requires an explicit auditable human `ExplicitRemoval`. A cancellation report creates a candidate or observation; it must not silently unpublish.
 6. Public output passes structural and reference checks; only then is the revision marked `published` and included in a release.
 
-`release_state=published` alone is not proof that an offering remains displayable. Reapply lifecycle and expiry rules when generating and serving public data. If a program has no publishable offerings, generate no card, program-detail content, internal-search record, or sitemap entry. Historical records must not remain accessible through old detail URLs or public APIs.
+`release_state=published` alone is not proof that an offering remains displayable. **SUPERSEDED (2.4.0 / Appendix C):** reapplying expiry / end-date withdrawal when generating public data for an offering that still has approved directory-year membership. Rebuild serializes that membership plus deterministic status; it is not a new editorial inclusion decision and must not auto-expire or drop approved items. If a program has no remaining approved memberships (or only explicit removals), generate no card. Historical records that were never assigned to the directory year stay backend-only.
 
 ### 7.2 Proposed implementation defaults
 
 | ID | Default | Rationale and boundary |
 |---|---|---|
-| D01 | Keep a current offering after applications close and label it “Applications closed.” Withdraw it when the activity ends or is cancelled. | Closing and ending are different. Application status remains visible on the card even though it is not a filter. |
-| D02 | Withdraw a version after its confirmed end date in the activity's local date. If the local zone is unknown, publication must assign an explicit `display_until` rather than inventing a precise local cutoff. | Avoid incorrect cross-year or cross-time-zone withdrawal. |
-| D03 | For an unknown end date or continuous offering, schedule review 30 days after verification and expire display on day 90 unless actually reverified. | This is configurable maintenance policy, not an official activity-expiration claim. Fetch success does not renew it. Explicit cancellation or ending may withdraw it sooner. |
+| D01 | Keep a current offering after applications close and label it “Applications closed.” **SUPERSEDED (2.4.0):** the clause that withdraws the offering when the activity ends or is cancelled. Ending updates `lifecycle_status` to `completed`; approved directory membership remains. | Closing and ending are different. Application status remains visible on the card even though it is not a filter. |
+| D02 | **SUPERSEDED (2.4.0 / Appendix C).** A confirmed end date updates `lifecycle_status`; it does not withdraw directory membership and must not invent a `display_until` cutoff that removes an approved item. | Avoid incorrect cross-year or cross-time-zone withdrawal. |
+| D03 | **SUPERSEDED (2.4.0 / Appendix C).** No 90-day display TTL, no automatic expiry of unknown-end or continuous offerings, and no nightly reapproval. Fetch success does not change approval. | This is configurable maintenance policy, not an official activity-expiration claim. Fetch success does not renew it. Explicit cancellation or ending may withdraw it sooner. |
 | D04 | Keep published offerings with unknown location or ordinary eligibility in “Conditions to confirm.” | Preserve possible opportunities without turning an unknown fact into a confirmed match. |
 | D05 | If both physical and online versions of one program match, show one card in the physical group and include its matching online versions. Put it in the online group only when only online versions match. | Reconcile one-card-per-program with separate online grouping without duplicate cards. |
 
@@ -657,10 +691,10 @@ Keep these defaults in versioned publication/filter configuration, not in offici
 
 ### 7.3 Incremental updates and consistency
 
-- New cycle: create a new offering and keep past offerings and their sources. Never add one year to all historical records.
-- Same-cycle change: create a revision and candidate change, verify the revision, then replace the public version. A still-valid prior published version may remain during ordinary review. Explicit cancellation, ending, or a material factual error requires immediate withdrawal rather than waiting in the ordinary review queue.
-- Rechecking one field updates that field's evidence, not a claim that every fact was reverified. Public `last_verified_at` is the material-fact review time supporting this publication, not the time of a successful fetch.
-- Generate a complete consistent snapshot with one `release_id`; switch public reads only after successful checks. On failure retain the previous successful release instead of publishing a partial batch. Expiry and withdrawal exclusions still apply to the previous release, so build failure does not prolong stale visibility.
+- New cycle: create a new offering and keep past offerings and their sources. Never add one year to all historical records. A genuinely announced next cycle is a separate candidate with its own evidence and review. Never overwrite the old cycle or merely replace its year. Official cycle label is not directory-year membership.
+- Same-cycle change: create a `FactualRevisionCandidate`; do not overwrite the approved factual revision. Approval promotes the exact reviewed version. Reject or hold leaves the existing approved version intact. **SUPERSEDED (2.4.0):** automatic immediate public withdrawal on a cancellation report; that report must not silently unpublish.
+- Rechecking one field updates that field's evidence, not a claim that every fact was reverified. An unchanged approved factual revision keeps its approval and directory membership; there is no nightly reapproval. Public `last_verified_at` is the material-fact review time supporting this publication, not the time of a successful fetch.
+- Generate a complete consistent snapshot with one `release_id`; switch public reads only after successful checks. On failure retain the previous successful release instead of publishing a partial batch. **SUPERSEDED (2.4.0):** “expiry and withdrawal exclusions still apply to the previous release” insofar as that would drop approved directory members. Invalid new candidates must not block an otherwise valid catalog. A fatal build must not replace a good release with partial or empty output.
 - Synchronize withdrawal across lists, details, search indexes, and sitemaps. Public APIs read published data only; do not download the backend master to a browser and then hide its history client-side.
 - Reassess deadline, end, and expiry boundaries at least daily. Read-time handling or scheduled work must apply an actual boundary when reached, without waiting for the official webpage to change. Cache validity must not cross the next status boundary without refresh.
 - Retain recoverable backend data, snapshots, revisions, and successful public releases. The publication process records state changes without rewriting old revisions.
@@ -705,7 +739,8 @@ interface PublicOffering extends Omit<OfferingFacts,
   locations: PublicLocation[];
   application: Omit<Application, "reported_status">;
   application_status: ApplicationStatus;
-  lifecycle_status: "scheduled" | "in_progress" | "unknown";
+  lifecycle_status: "scheduled" | "in_progress" | "completed" | "unknown";
+  // 2.4.0: `completed` added. Application closed ≠ activity completed. Do not hide either.
   pay_filter_value: PayFilterChoice | "unknown";
   cost_filter_value: CostFilterChoice | "unknown";
   primary_deadline_id: ID | null;
@@ -819,8 +854,8 @@ Additional constraints:
 3. **Read first-party material.** Host webpages, formal PDFs, application forms, and authorized-school notices may support facts. Third-party lists supply leads. Collect past cycles into the backend without skipping them or assigning a future year.
 4. **Submit candidates.** Submit one `CollectorProgramSubmission` per program or an assembled `CollectionBatch`. The batch assembler moves candidate facts and supporting sources, snapshots, evidence, and conflicts into the corresponding batch arrays without dropping `collection_coverage`, and validates all ID references. Collectors provide candidate facts, not `review_status=passed` or `release_state=published`. Unknown fields use null and issues; retain source text.
 5. **Integrate centrally.** Validate structures, types, and references before deduplication, stable-ID mapping, and revision creation. Replaying the same `batch_id+candidate_id` must not create duplicates. Changed facts need a traceable new revision/batch, not silent mutation of the original batch.
-6. **Verify and publish.** A rule engine may pass clear, conflict-free updates. Material conflicts, anomalous changes, and uncertain cycles go to a human queue. The owner need not manually confirm every record.
-7. **Continue monitoring.** Check known programs and update entry points on configured schedules, increasing frequency near historically likely announcement periods. Historical patterns are monitoring priorities only.
+6. **Verify and publish.** **SUPERSEDED (2.4.0 / Appendix C):** a rule engine automatically passing clear updates into the public directory, and any nightly reapproval of unchanged records. Unchanged approved content is not requeued. A change creates a candidate. Approval is a human decision about a known version. Empty review-workbook decisions are not approval.
+7. **Continue monitoring.** **Not activated in this contract amendment's implementation round.** When activated, check historical known sources for new cycles and published sources for material changes. Unchanged approved content is not requeued. Monitoring must not overwrite approved facts.
 
 Required change scenarios include overwritten webpage/PDF content at the same URL; an updated PDF with an unchanged parent page; a changed link target with unchanged visible text; new announcements, sections, and programs; scanned PDFs requiring OCR; and previously unknown hosts found by periodic broad discovery. Monitoring a fixed URL list does not replace new-source search.
 
@@ -838,8 +873,8 @@ This is a fictional workflow example, not real program information. Assume a sta
 | December 1, 2028: applications actually open with supporting evidence | Update or derive open status | Show “Applications open” and the current deadline on the card. |
 | February 2029: the host extends the deadline to March 1 | Preserve the February 15 revision, create and verify a March 1 revision, then publish | Display the currently effective March 1 deadline; February remains backend history only. |
 | March 2029: applications close | Update closed status without deleting the record | Under D01, continue showing the current offering with “Applications closed.” |
-| The 2029 activity ends | Mark ended and withdraw while retaining evidence and revisions | Remove the 2029 offering. If no other publishable offering exists, remove the whole program from public display. |
-| The 2030 cycle remains unannounced | Use 2029 history to schedule monitoring; do not fabricate an announced 2030 offering | Do not relabel the 2029 listing and continue displaying it. |
+| The 2029 activity ends | Mark `lifecycle_status=completed`; retain evidence, revisions, and approved directory membership | **SUPERSEDED (2.4.0):** remove the 2029 offering from the directory solely because it ended. Show it as completed if it remains an approved member of that directory year. |
+| The 2030 cycle remains unannounced | Use 2029 history to schedule monitoring; do not fabricate an announced 2030 offering; do not roll the 2029 record forward | Do not relabel the 2029 listing as 2030. |
 
 A program may have multiple announced, unfinished cycles or sessions at the same time. Evaluate each offering separately rather than switching the whole database on January 1.
 
@@ -874,7 +909,7 @@ These are required implementation behavior checks, not claims that a live websit
 
 | ID | Input/scenario | Required result |
 |---|---|---|
-| A01 | Only a completed 2028 cycle exists; 2029 is unannounced | Retain in backend; exclude from public lists, details, and search. |
+| A01 | Only a completed 2028 cycle exists; 2029 is unannounced | Retain in backend. Exclude from the public directory because it has no approved membership in the current directory year — not because it ended. |
 | A02 | A 2029 cycle is officially announced without dates | May publish “Dates to be announced”; do not substitute 2028 dates. |
 | A03 | A 2029 cycle is announced but applications have not opened | May display `not_yet_open` and the known opening information; application status is not a filter. |
 | A04 | A current grade 8 student filters summer opportunities; the source says “rising ninth grader” | Confirm a match when the reference is clear; grade 8 is a supported filter value. |
@@ -888,16 +923,16 @@ These are required implementation behavior checks, not claims that a live websit
 | A12 | Pay is unstated after applicable sources are checked | `compensation_status=not_mentioned`; display “Pay not stated.” It matches neither With pay nor No pay, but remains visible under Pay=Any. |
 | A13 | An otherwise in-scope workplace role has a required incidental registration fee and possible assistance | `cost_filter_value=program_fee`; show the fee clearly. Details may show assistance. Neither Cost nor assistance is a filter. |
 | A14 | Parent page is unchanged but a same-URL PDF is overwritten or its link target changes | Detect the change, create snapshots/evidence, and preserve previous content and cycles. |
-| A15 | A webpage returns 404 or login fails | Record retrieval failure, not discontinuation; apply recheck/validity policy. |
+| A15 | A webpage returns 404 or login fails | Record retrieval failure, not discontinuation. **SUPERSEDED (2.4.0):** applying a validity policy that unpublishes on failed fetch. The approved version stays. |
 | A16 | The same candidate batch is imported twice | No duplicate programs, offerings, or canonical revisions. |
 | A17 | A same-cycle deadline moves from February to March | Preserve revisions; details expose only the currently effective March deadline. |
 | A18 | Official eligibility says county resident OR district student | Preserve OR in the backend and details; do not convert to AND. No restriction filter exists. |
 | A19 | The program recurs annually but current application status is unknown | recurrence=annual, application_status=unknown; do not automatically set open. |
-| A20 | A release fails while some offerings reach their end time | No partial release. The previous successful release still excludes expired/withdrawn offerings. |
+| A20 | A release fails while some offerings reach their end time | No partial release. The previous successful release is retained. **SUPERSEDED (2.4.0):** the previous release “still excludes expired/withdrawn offerings” by end date alone. Approved directory members stay; status may show closed/completed. |
 | A21 | One mandatory activity site is outside 20 miles | An all_required offering cannot pass using only the nearest site. |
 | A22 | Physical and online versions of one program both match | Under D05 show one program card and preserve differences among matching offerings. |
 | A23 | Only February 2029 is confirmed as the deadline, without a day | Display February 2029 without fabricating February 1 or 28. No month filter exists. |
-| A24 | A program is cancelled or all public offerings have ended | Withdraw public records without deleting backend history or evidence. |
+| A24 | A program is cancelled or all public offerings have ended | **SUPERSEDED (2.4.0)** as automatic unpublish. A cancellation report or ended activity does not silently unpublish. Exceptional withdrawal is an auditable human `ExplicitRemoval` only. Backend history is never deleted. |
 | A25 | A 2029 cycle is announced in fall 2028; a cross-school-year offering remains valid | Display by offering validity, not a current-calendar-year cutoff. |
 | A26 | Pay=Any | Apply no restriction and include unknown values; never store Any on the offering. |
 | A28 | One program has in-person and online variants with materially different conditions, even though one application form is shared | Create separate offerings; evaluate each separately and aggregate matching offerings into one program card. |
@@ -910,10 +945,27 @@ Also check that all referenced IDs exist, evidence matches cycle and field, boun
 
 ## 14. Versioning and handoff
 
-- This canonical contract, collector submissions, collection batches, and public data use `schema_version=2.3.0`; the taxonomy uses `taxonomy_version=2.1.0` because `community_service` was restored as a distinct public field, and the public release policy uses `publication_policy_version=2.3.0`.
-- Changes to field meaning, enums, or filtering semantics require a contract version and changelog update. Replace this same canonical file so its identity and filename remain stable. One owner registers new canonical tags.
+- This canonical contract is version **2.4.0** (19 September 2026). Collector submissions, collection batches, and stored program files remain `schema_version=2.3.0` unless a later migration is explicitly reviewed. The taxonomy remains `taxonomy_version=2.1.0`. Public releases built under Appendix C use `publication_policy_version=2.4.0`. Existing 2.3.0 production catalogs are not rewritten by this amendment.
+- Changes to field meaning, enums, or filtering semantics require a contract version and changelog update. Replace this same canonical file so its identity and filename remain stable. One owner registers new canonical tags. This 2.4.0 amendment does not change scope, subjects, fees, grades, or filters.
 - Collectors deliver `CollectorProgramSubmission` files or an assembled `CollectionBatch`; integration delivers import decisions, master revisions, and unresolved issues; website implementation consumes `PublicCatalog` and `SearchRequest/SearchResult`; automation updates candidates through sources, links, snapshots, and coverage tasks. These responsibilities do not require simultaneously starting multiple agents.
-- Calibrate the initial migration on 10–15 representative real records, including historical-only, announced/not-open, virtual, unknown-location, approximate-campus, materially different variants, rolling, cross-school-year, incidental-fee, and complex-eligibility cases. Continue broad collection without waiting for every marginal field to be complete.
+- Calibrate the initial migration on 10–15 representative real records, including historical-only, announced/not-open, virtual, unknown-location, approximate-campus, materially different variants, rolling, cross-school-year, incidental-fee, and complex-eligibility cases. Continue broad collection without waiting for every marginal field to be complete. **Do not bulk-approve real public records or activate a new strict approval path in production without an explicitly reviewed migration plan.**
 - Report backend unique programs, historical/current offerings, published programs, unresolved records, checked sources, and coverage gaps separately. If too few current opportunities are publishable, expand discovery of announced opportunities instead of relaxing historical-display rules to meet a count.
 
-**No blocking product questions remain.** D01–D05 are explicitly identified implementation defaults. Other collectors must follow this canonical contract rather than superseded drafts, historical-display rules, or removed frontend filters.
+**No blocking product questions remain on the six public filters.** D02, D03, and the auto-withdrawal / auto-approval clauses identified above are superseded by Appendix C. Other collectors must follow this canonical file rather than superseded drafts.
+
+## Appendix C — Owner decisions, 18 September 2026
+
+These decisions supersede earlier publication and operating conflicts in this file. They do not change P01–P25 scope, subjects, fees, grades, or filters.
+
+1. Functionality before content or style. Work proceeds in small reviewable rounds.
+2. The public directory is **verified opportunities assigned to the 2026-2027 school-year collection**. It is not limited to still-open applications or unfinished activities. Approved items remain after a deadline or activity end. Known dates may set `application_status=closed` or `lifecycle_status=completed`.
+3. An unchanged approved factual revision keeps its approval and directory membership. There is no nightly reapproval.
+4. A catalog rebuild serializes approved membership plus deterministic status updates. It is not a new editorial inclusion decision and must not auto-expire or remove approved items.
+5. Keep 2025-2026 records in the backend as history and monitoring leads. A genuinely announced 2026-2027 cycle is a separate candidate with its own evidence and review. Never overwrite the old cycle or merely replace its year.
+6. Official cycle label is not directory-year membership. Membership must be explicit and reviewable. Do not invent a school-year assignment for undated or continuous items.
+7. Monitoring is the next round and is not activated live by this amendment. When built, it checks historical known sources for new cycles and published sources for material changes. Unchanged approved content is not requeued.
+8. A change creates a candidate, not an overwrite. Approval promotes the exact reviewed version. Reject or hold leaves the existing approved version intact.
+9. Exceptional withdrawal is an auditable human `ExplicitRemoval` only. A failed fetch, pending update, or cancellation report must not silently unpublish.
+10. No automatic next-year rollover, TTL, or end-date withdrawal.
+
+Implementation of these rules in Round 1 uses isolated fixtures and a separate test catalog. Production `data/programs/` records are not bulk-approved, and the live GitHub Pages catalog is not rewritten by this round.

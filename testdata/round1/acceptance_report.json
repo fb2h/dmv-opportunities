@@ -1,0 +1,294 @@
+{
+  "passed": 20,
+  "failed": 0,
+  "results": [
+    {
+      "id": "R1-01",
+      "title": "Unchanged source creates no review",
+      "ok": true,
+      "detail": "{'ok': True, 'outcome': 'unchanged', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'approved factual revision unchanged; no duplicate review'} pending=0"
+    },
+    {
+      "id": "R1-02",
+      "title": "Harmless formatting creates no review",
+      "ok": true,
+      "detail": "{'ok': True, 'outcome': 'formatting_only', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'approved factual revision unchanged; no duplicate review'} pending=0"
+    },
+    {
+      "id": "R1-03",
+      "title": "Next-cycle announcement is a separate candidate; old cycle intact",
+      "ok": true,
+      "detail": "{'ok': True, 'outcome': 'next_cycle', 'candidate_id': 'cand-fixture-harbor-2026-27-v1-4da5ddccf9', 'queued': True, 'unpublished': False, 'reason': 'candidate created; approved version left intact'} old=2025-2026 school year"
+    },
+    {
+      "id": "R1-04",
+      "title": "Material change creates a separate candidate; approved facts intact",
+      "ok": true,
+      "detail": "before=15.0 after=15.0 queued=True"
+    },
+    {
+      "id": "R1-05",
+      "title": "Download \u2192 approve \u2192 upload yields exact approved version in the test catalog",
+      "ok": true,
+      "detail": "pub=None pay={'filter_value': 'with_pay', 'label': '$18/hour'} results=[{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'approve', 'status': 'accepted', 'reason': 'approved exact stored revision', 'approved_revision_id': 'rev-fixture-river-2026-v2-approved', 'approved_fingerprint': '712fc8a732bc1c4195f0cdafd9e4af79292654b44303db639663536c0ebf1296', 'fact_cells_edited_ignored': False}]"
+    },
+    {
+      "id": "R1-06",
+      "title": "Deadline/end-date change status without membership or approval loss",
+      "ok": true,
+      "detail": "app=open/closed life=scheduled/in_progress/completed"
+    },
+    {
+      "id": "R1-07",
+      "title": "Stale-row isolation: stale rejected, independent valid row applied",
+      "ok": true,
+      "detail": [
+        {
+          "row": 2,
+          "candidate_id": "cand-fixture-harbor-2026-27-v1-4da5ddccf9",
+          "decision": "approve",
+          "status": "accepted",
+          "reason": "approved exact stored revision",
+          "approved_revision_id": "rev-fixture-harbor-2026-27-v1-approved",
+          "approved_fingerprint": "4da5ddccf90b739ab17ed12801c5a7ec793d0cee0956259be60f38f59512ce36",
+          "fact_cells_edited_ignored": false
+        },
+        {
+          "row": 3,
+          "candidate_id": "cand-fixture-river-2026-v2-712fc8a732",
+          "decision": "approve",
+          "status": "stale",
+          "reason": "candidate fingerprint does not match the current proposed revision"
+        }
+      ]
+    },
+    {
+      "id": "R1-08",
+      "title": "Idempotent re-upload of the same accepted decision",
+      "ok": true,
+      "detail": "accepted then already_applied"
+    },
+    {
+      "id": "R1-09",
+      "title": "Second independent checkout reads accepted decisions",
+      "ok": true,
+      "detail": "second_pay=18.0"
+    },
+    {
+      "id": "R1-10",
+      "title": "Production catalog untouched",
+      "ok": true,
+      "detail": "hash ac94514accac4774bf33f109d8e8a80da52f512e78284d626e6591835247f1cb refused={'ok': False, 'fatal': True, 'reason': 'refusing to write the production catalog; Round 1 uses a separate test catalog', 'wrote': False}"
+    },
+    {
+      "id": "R1-11",
+      "title": "Empty Decision is not approval",
+      "ok": true,
+      "detail": [
+        {
+          "row": 2,
+          "candidate_id": "cand-fixture-river-2026-v2-712fc8a732",
+          "decision": null,
+          "status": "no_decision",
+          "reason": "empty Decision is not approval",
+          "fact_cells_edited_ignored": false
+        }
+      ]
+    },
+    {
+      "id": "R1-12",
+      "title": "Edited fact cells are not silent corrections",
+      "ok": true,
+      "detail": [
+        {
+          "row": 2,
+          "candidate_id": "cand-fixture-river-2026-v2-712fc8a732",
+          "decision": "approve",
+          "status": "accepted",
+          "reason": "approved exact stored revision",
+          "approved_revision_id": "rev-fixture-river-2026-v2-approved",
+          "approved_fingerprint": "712fc8a732bc1c4195f0cdafd9e4af79292654b44303db639663536c0ebf1296",
+          "fact_cells_edited_ignored": true
+        }
+      ]
+    },
+    {
+      "id": "R1-13",
+      "title": "Reject and Hold leave the existing approved version intact",
+      "ok": true,
+      "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'reject', 'status': 'rejected', 'reason': 'rejected; existing approved version intact', 'fact_cells_edited_ignored': False} {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v3-712fc8a732', 'decision': 'hold', 'status': 'held', 'reason': 'held; existing approved version intact', 'fact_cells_edited_ignored': False}"
+    },
+    {
+      "id": "R1-14",
+      "title": "Failed fetch / cancellation report do not unpublish",
+      "ok": true,
+      "detail": "{'ok': True, 'outcome': 'fetch_failed', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'observation recorded; approved version left intact'} {'ok': True, 'outcome': 'cancellation_report', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'observation recorded; approved version left intact'}"
+    },
+    {
+      "id": "R1-15",
+      "title": "Invalid new candidates do not block a valid catalog",
+      "ok": true,
+      "detail": "count=1 skipped=[]"
+    },
+    {
+      "id": "R1-16",
+      "title": "Fatal build does not replace a good release with empty output",
+      "ok": true,
+      "detail": {
+        "ok": false,
+        "fatal": true,
+        "reason": "fatal build produced an empty catalog; previous good release retained",
+        "wrote": false
+      }
+    },
+    {
+      "id": "R1-17",
+      "title": "Unknown dates stay unknown; continuous items get no invented membership",
+      "ok": true,
+      "detail": "life=unknown invented_membership=False"
+    },
+    {
+      "id": "R1-18",
+      "title": "Closed/completed approved offerings remain; application \u2260 activity status",
+      "ok": true,
+      "detail": {
+        "offering_id": "fixture-river-2026",
+        "cycle": {
+          "kind": "annual",
+          "label": "Summer 2026"
+        },
+        "summary": "A paid summer lab internship for high school students along the Anacostia.",
+        "opportunity_types": [
+          "internship",
+          "research"
+        ],
+        "subjects": [
+          "science_research",
+          "environment_outdoors"
+        ],
+        "season": "summer",
+        "delivery_mode": "in_person",
+        "housing_mode": "commuter",
+        "locations": [
+          {
+            "venue": "River Lab",
+            "address": "1000 Water St",
+            "city": "Bladensburg",
+            "county": null,
+            "state": "MD",
+            "zip": "20710",
+            "address_kind": "activity_site",
+            "latitude": 38.939,
+            "longitude": -76.934,
+            "geocode_precision": "rooftop",
+            "distance_eligible": true,
+            "location_label": "River Lab \u00b7 1000 Water St \u00b7 Bladensburg, MD"
+          }
+        ],
+        "location_relation": "single",
+        "eligibility": {
+          "grades": {
+            "values": [
+              "10",
+              "11",
+              "12"
+            ],
+            "basis": "rising_fall",
+            "raw": "rising grades 10-12"
+          },
+          "age": null,
+          "residency": null,
+          "school": null,
+          "citizenship": null,
+          "work_authorization": null,
+          "gpa": null,
+          "prerequisites": null,
+          "logic": "simple",
+          "other": null
+        },
+        "requirements": [],
+        "schedule": {
+          "start": "June 15, 2026",
+          "end": "August 7, 2026",
+          "duration": null,
+          "hours_per_week": null,
+          "schedule": null,
+          "start_raw": null,
+          "end_raw": null
+        },
+        "pay": {
+          "filter_value": "with_pay",
+          "label": "$15/hour"
+        },
+        "cost": {
+          "filter_value": "no_program_fee",
+          "label": "No fee"
+        },
+        "aid": null,
+        "application": {
+          "route": "direct",
+          "window": "fixed",
+          "selection": "competitive",
+          "url": "https://example.test/river-lab/apply",
+          "instructions": null,
+          "opens": null,
+          "deadlines": [
+            {
+              "kind": "final",
+              "label": "March 15, 2026",
+              "raw": "March 15, 2026"
+            }
+          ],
+          "timing_notes": []
+        },
+        "application_status": "closed",
+        "lifecycle_status": "completed",
+        "primary_deadline": {
+          "kind": "final",
+          "label": "March 15, 2026",
+          "date": "2026-03-15",
+          "expired": true,
+          "precision": "day"
+        },
+        "directory_school_year": "2026-2027",
+        "capacity": null,
+        "public_sources": [
+          {
+            "url": "https://example.test/river-lab",
+            "title": "River Lab Summer Internship",
+            "publisher": "River Lab Alliance",
+            "role": "program_detail",
+            "verified_at": "2026-01-15T12:00:00Z"
+          }
+        ],
+        "public_evidence": [
+          {
+            "field_paths": [
+              "/costs/compensation"
+            ],
+            "cycle_label": "Summer 2026",
+            "quote": "$15/hour",
+            "source_url": "https://example.test/river-lab",
+            "locator": null
+          }
+        ],
+        "uncertainties": [],
+        "last_verified_at": "2026-01-15T12:00:00Z",
+        "published_at": "2026-09-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "R1-19",
+      "title": "Competing baseline and concurrent same-record changes are detected",
+      "ok": true,
+      "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'approve', 'status': 'error', 'reason': 'competing baseline: approved facts changed since this candidate was created'} / {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'approve', 'status': 'error', 'reason': 'concurrent same-record change detected (store_seq)'}"
+    },
+    {
+      "id": "R1-20",
+      "title": "Review notes stay out of git; decision-saved \u2260 site-published",
+      "ok": true,
+      "detail": "in_git=False in_store=False notes_on_disk=True distinct=True published=True"
+    }
+  ],
+  "production_catalog_sha256": "ac94514accac4774bf33f109d8e8a80da52f512e78284d626e6591835247f1cb"
+}

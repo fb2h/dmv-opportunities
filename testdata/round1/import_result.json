@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "row": 2,
+      "candidate_id": "cand-fixture-river-2026-v2-712fc8a732",
+      "decision": "approve",
+      "status": "accepted",
+      "reason": "approved exact stored revision",
+      "approved_revision_id": "rev-fixture-river-2026-v2-approved",
+      "approved_fingerprint": "712fc8a732bc1c4195f0cdafd9e4af79292654b44303db639663536c0ebf1296",
+      "fact_cells_edited_ignored": false
+    }
+  ]
+}

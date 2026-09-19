@@ -1,0 +1,142 @@
+{
+  "schema_version": "2.3.0",
+  "taxonomy_version": "2.1.0",
+  "publication_policy_version": "2.4.0",
+  "release_id": "test-after-closed",
+  "generated_at": "2026-09-01T00:00:00Z",
+  "reference_date": "2026-09-01",
+  "directory_school_year": "2026-2027",
+  "program_count": 1,
+  "offering_count": 1,
+  "programs": [
+    {
+      "program_id": "fixture-river-lab-internship",
+      "name": "River Lab Summer Internship",
+      "aliases": [],
+      "organization": {
+        "name": "River Lab Alliance",
+        "type": "nonprofit",
+        "host_state": "MD"
+      },
+      "program_url": "https://example.test/river-lab",
+      "recurrence": "annual",
+      "offerings": [
+        {
+          "offering_id": "fixture-river-2026",
+          "cycle": {
+            "kind": "annual",
+            "label": "Summer 2026"
+          },
+          "summary": "A paid summer lab internship for high school students along the Anacostia.",
+          "opportunity_types": [
+            "internship",
+            "research"
+          ],
+          "subjects": [
+            "science_research",
+            "environment_outdoors"
+          ],
+          "season": "summer",
+          "delivery_mode": "in_person",
+          "housing_mode": "commuter",
+          "locations": [
+            {
+              "venue": "River Lab",
+              "address": "1000 Water St",
+              "city": "Bladensburg",
+              "county": null,
+              "state": "MD",
+              "zip": "20710",
+              "address_kind": "activity_site",
+              "latitude": 38.939,
+              "longitude": -76.934,
+              "geocode_precision": "rooftop",
+              "distance_eligible": true,
+              "location_label": "River Lab \u00b7 1000 Water St \u00b7 Bladensburg, MD"
+            }
+          ],
+          "location_relation": "single",
+          "eligibility": {
+            "grades": {
+              "values": [
+                "10",
+                "11",
+                "12"
+              ],
+              "basis": "rising_fall",
+              "raw": "rising grades 10-12"
+            },
+            "age": null,
+            "residency": null,
+            "school": null,
+            "citizenship": null,
+            "work_authorization": null,
+            "gpa": null,
+            "prerequisites": null,
+            "logic": "simple",
+            "other": null
+          },
+          "requirements": [],
+          "schedule": {
+            "start": "June 15, 2026",
+            "end": "August 7, 2026",
+            "duration": null,
+            "hours_per_week": null,
+            "schedule": null,
+            "start_raw": null,
+            "end_raw": null
+          },
+          "pay": {
+            "filter_value": "with_pay",
+            "label": "$18/hour"
+          },
+          "cost": {
+            "filter_value": "no_program_fee",
+            "label": "No fee"
+          },
+          "aid": null,
+          "application": {
+            "route": "direct",
+            "window": "fixed",
+            "selection": "competitive",
+            "url": "https://example.test/river-lab/apply",
+            "instructions": null,
+            "opens": null,
+            "deadlines": [
+              {
+                "kind": "final",
+                "label": "March 15, 2026",
+                "raw": "March 15, 2026"
+              }
+            ],
+            "timing_notes": []
+          },
+          "application_status": "closed",
+          "lifecycle_status": "completed",
+          "primary_deadline": {
+            "kind": "final",
+            "label": "March 15, 2026",
+            "date": "2026-03-15",
+            "expired": true,
+            "precision": "day"
+          },
+          "directory_school_year": "2026-2027",
+          "capacity": null,
+          "public_sources": [
+            {
+              "url": "https://example.test/river-lab",
+              "title": "River Lab Summer Internship",
+              "publisher": "River Lab Alliance",
+              "role": "program_detail",
+              "verified_at": "2026-09-19T04:29:27Z"
+            }
+          ],
+          "public_evidence": [],
+          "uncertainties": [],
+          "last_verified_at": "2026-09-19T04:29:27Z",
+          "published_at": "2026-09-01T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

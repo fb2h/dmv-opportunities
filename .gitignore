@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Private reviewer notes — never commit
+**/.review-notes.local.json
+testdata/round1/runtime/
