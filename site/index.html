@@ -4,174 +4,162 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DMV Student Work Opportunities</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%231f5f8b%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2717%27 font-family=%27Arial%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3ED%3C/text%3E%3C/svg%3E">
-<meta name="description" content="Internships, volunteer positions, paid jobs, apprenticeships and shadowing for high school students in DC, Maryland and Virginia — every fact quoted from the organization's own page.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%230f6e56%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2717%27 font-family=%27Arial%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3ED%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Internships, volunteer positions, paid jobs, apprenticeships and shadowing for high school students in DC, Maryland and Virginia. Every fact quoted from the organization's own page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap">
 <style>
 :root{
-  --ink:#1c2430;--muted:#5d6b7b;--faint:#8a95a3;--line:#dde3ea;--bg:#f6f8fa;--card:#fff;
-  --accent:#1f5f8b;--accent-ink:#fff;--accent-soft:#e8f1f8;--ok:#1f7a4d;--ok-soft:#e6f4ec;
-  --warn:#8a5a00;--warn-soft:#fff4dc;--pay:#0f6b3a;--fee:#9a3412;--fee-soft:#fdeee6;
-  --r:10px;--shadow:0 1px 2px rgba(20,30,40,.06),0 4px 14px rgba(20,30,40,.05);
+  --bg:#fff;--ink:#17202a;--muted:#6b7480;--faint:#9aa3ad;--line:#e6e9ee;--line-2:#f1f3f6;--soft:#f6f8f9;
+  --accent:#0f6e56;--accent-soft:#e6f3ee;--amber:#9a6700;--amber-soft:#fff6db;--closed:#7a838d;--closed-soft:#eef0f2;
+  --max:1080px;
 }
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Source Sans 3",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
 a{color:var(--accent)}
-button{font:inherit}
-header.top{background:#fff;border-bottom:1px solid var(--line)}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-.brand{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:18px 0 14px;flex-wrap:wrap}
-.brand h1{margin:0;font-size:20px;letter-spacing:-.01em}
-.brand h1 span{color:var(--accent)}
-.brand nav a{margin-left:18px;font-size:14px;text-decoration:none;color:var(--muted)}
-.brand nav a:hover{color:var(--accent)}
-.tagline{margin:0 0 6px;color:var(--muted);font-size:14px}
-.pilot{display:inline-block;font-size:12px;background:var(--warn-soft);color:var(--warn);padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:20px}
+
+/* top */
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-block:22px 6px;flex-wrap:wrap}
+.top h1{margin:0;font-size:22px;font-weight:700;letter-spacing:-.01em}
+.top h1 small{font-weight:400;color:var(--muted);font-size:14px;margin-left:10px}
+.top nav a{font-size:15px;color:var(--muted);text-decoration:none;margin-left:20px}
+.top nav a:hover{color:var(--ink)}
+.sub{margin:0 0 20px;color:var(--muted);max-width:70ch}
 
 /* filters */
-.filters{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
-.fgrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px 14px;padding:14px 0}
-.f label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px;font-weight:600;letter-spacing:.02em;text-transform:uppercase}
-.f select,.f input{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-size:14px}
-.f .row{display:flex;gap:6px}
-.f .row input{flex:1}
-.f .row select{width:auto}
-.subjects{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding-bottom:12px}
-.subjects .lbl{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.02em;margin-right:6px}
-.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;color:var(--ink)}
-.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.bar{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr auto;gap:10px;align-items:end;padding:14px 16px;background:var(--soft);border:1px solid var(--line);border-radius:10px}
+.f label{display:block;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.f input,.f select{width:100%;height:38px;padding:0 10px;border:1px solid var(--line);border-radius:7px;background:#fff}
+.f .zip{display:flex;gap:6px}
+.f .zip input{flex:1;font-variant-numeric:tabular-nums}
+.f .zip select{width:88px}
+.more{height:38px;padding:0 12px;border:1px solid var(--line);border-radius:7px;background:#fff;cursor:pointer;white-space:nowrap;color:var(--muted)}
+.more[aria-expanded="true"]{color:var(--ink);border-color:var(--ink)}
+.bar2{display:none;grid-template-columns:1fr 3fr;gap:10px 18px;padding:12px 16px 14px;border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;margin-top:-10px;background:var(--soft)}
+.bar2.on{display:grid}
+.bar.open{border-radius:10px 10px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:4px 11px;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
 .chip.clear{border-style:dashed;color:var(--muted)}
-.fbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 0 12px;flex-wrap:wrap}
-.count{font-size:14px;color:var(--muted)}
-.count b{color:var(--ink)}
-.sort{font-size:13px;color:var(--muted)}
-.sort select{margin-left:6px;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:#fff}
-.toggle-filters{display:none}
 
-/* results */
-main{padding:22px 0 60px}
-h2.sec{font-size:15px;margin:22px 0 10px;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:10px}
-h2.sec .n{background:var(--line);color:var(--ink);border-radius:999px;padding:0 8px;font-size:12px}
-h2.sec.confirm{color:var(--warn)}
-.note{font-size:13px;color:var(--muted);margin:-4px 0 12px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;cursor:pointer;transition:border-color .12s}
-.card:hover{border-color:var(--accent)}
-.card .org{font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
-.card .org .dist{white-space:nowrap;color:var(--accent);font-weight:600}
-.card h3{margin:0;font-size:16.5px;line-height:1.3;letter-spacing:-.005em}
-.card .sum{font-size:14px;color:var(--ink);margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--bg);color:var(--muted);border:1px solid var(--line)}
-.tag.pay{background:var(--ok-soft);color:var(--pay);border-color:transparent;font-weight:600}
-.tag.fee{background:var(--fee-soft);color:var(--fee);border-color:transparent;font-weight:600}
-.tag.unk{background:var(--warn-soft);color:var(--warn);border-color:transparent}
-.tag.open{background:var(--ok-soft);color:var(--ok);border-color:transparent;font-weight:600}
-.tag.closed{background:#eee;color:#555;border-color:transparent}
-.tag.soon{background:var(--accent-soft);color:var(--accent);border-color:transparent;font-weight:600}
-.card .foot{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px;margin-top:auto}
-.card .foot .dl b{color:var(--ink)}
-.card .why{font-size:12.5px;color:var(--warn)}
-.empty{padding:40px 20px;text-align:center;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:var(--r)}
+/* summary */
+.sum{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:18px 6px;flex-wrap:wrap;color:var(--muted);font-size:15px}
+.sum b{color:var(--ink)}
+.sum select{border:0;background:none;color:var(--accent);font-weight:600;cursor:pointer;padding:0}
+.reset{border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;padding:0;margin-left:10px}
 
-/* modal */
-.modal{position:fixed;inset:0;background:rgba(15,22,30,.5);display:none;align-items:flex-start;justify-content:center;padding:30px 16px;overflow:auto;z-index:20}
+/* list */
+.grp{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:22px 0 8px;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;gap:12px}
+.grp.warn{color:var(--amber);border-bottom-color:var(--amber)}
+.grp span{font-weight:400;letter-spacing:0;text-transform:none;font-size:13px}
+.row{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(0,1.1fr) minmax(0,.9fr) minmax(0,.9fr) minmax(0,1.4fr);gap:14px;padding:13px 6px;border-bottom:1px solid var(--line);cursor:pointer;align-items:start}
+.row:hover{background:var(--soft)}
+.row .name{font-weight:600;line-height:1.3}
+.row .org{color:var(--muted);font-size:14px;margin-top:2px}
+.row .why{color:var(--amber);font-size:13px;margin-top:4px}
+.cell{font-size:15px;color:var(--ink);line-height:1.35}
+.cell small{display:block;color:var(--muted);font-size:13px}
+.cell .mi{color:var(--muted);font-variant-numeric:tabular-nums}
+.hd{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(0,1.1fr) minmax(0,.9fr) minmax(0,.9fr) minmax(0,1.4fr);gap:14px;padding:10px 6px 6px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--faint)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px;background:var(--closed)}
+.dot.open{background:var(--accent)}.dot.soon{background:var(--amber)}.dot.unk{background:var(--faint)}
+.paid{color:var(--accent);font-weight:600}
+.empty{padding:40px 0;color:var(--muted);text-align:center}
+footer{margin-top:50px;padding-block:22px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer p{margin:0 0 6px;max-width:80ch}
+
+/* details */
+.modal{position:fixed;inset:0;background:rgba(23,32,42,.45);display:none;align-items:flex-start;justify-content:center;padding:28px 16px;overflow:auto;z-index:20}
 .modal.on{display:flex}
-.sheet{background:#fff;border-radius:14px;max-width:820px;width:100%;padding:26px 28px 30px;box-shadow:0 20px 60px rgba(0,0,0,.3);position:relative}
-.sheet .x{position:absolute;top:14px;right:14px;border:0;background:var(--bg);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;color:var(--muted)}
-.sheet h2{margin:0 0 4px;font-size:22px;letter-spacing:-.01em;padding-right:40px}
-.sheet .org{color:var(--muted);margin-bottom:12px}
-.sheet .cta{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}
-.btn{display:inline-block;padding:9px 14px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid var(--line);color:var(--ink);background:#fff}
+.sheet{background:#fff;border-radius:12px;max-width:760px;width:100%;padding:28px 30px 30px;position:relative}
+.sheet .x{position:absolute;top:14px;right:14px;border:0;background:var(--soft);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;color:var(--muted)}
+.sheet h2{margin:0 0 2px;font-size:24px;letter-spacing:-.01em;padding-right:40px;text-wrap:balance}
+.sheet .org{color:var(--muted);margin-bottom:14px}
+.sheet .lead{margin:0 0 16px;font-size:17px;max-width:65ch}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.btn{display:inline-block;padding:9px 14px;border-radius:7px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--ink);background:#fff;cursor:pointer}
 .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
-.kv{display:grid;grid-template-columns:150px 1fr;gap:8px 14px;font-size:14px;margin:0}
+.kv{display:grid;grid-template-columns:140px 1fr;gap:9px 16px;margin:0;font-size:15px}
 .kv dt{color:var(--muted)}
 .kv dd{margin:0}
-.sheet h4{margin:20px 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
-.ev{border-left:3px solid var(--line);padding:8px 12px;margin:8px 0;font-size:14px;background:var(--bg);border-radius:0 8px 8px 0}
-.ev q{quotes:"“" "”"}
-.ev .src{display:block;font-size:12px;color:var(--muted);margin-top:4px}
-.unc{font-size:13.5px;color:var(--warn);background:var(--warn-soft);padding:8px 12px;border-radius:8px;margin:6px 0}
-.small{font-size:12.5px;color:var(--faint);margin-top:18px}
-.offsel{margin:8px 0 14px;font-size:13.5px}
-.offsel button{margin:0 6px 6px 0}
-footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:20px 0 40px;background:#fff}
+.kv .q{color:var(--muted);font-size:14px}
+.sheet h4{margin:24px 0 8px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ev{border-left:3px solid var(--accent);padding:8px 14px;margin:8px 0;background:var(--soft)}
+.ev q{quotes:"“" "”";font-size:15px}
+.ev a{display:block;font-size:13px;color:var(--muted);margin-top:4px;word-break:break-all}
+.unc{font-size:14px;color:var(--amber);background:var(--amber-soft);padding:8px 12px;border-radius:7px;margin:6px 0}
+.pill{display:inline-block;font-size:13px;font-weight:600;padding:2px 9px;border-radius:999px;background:var(--closed-soft);color:var(--closed)}
+.pill.open{background:var(--accent-soft);color:var(--accent)}.pill.soon{background:var(--amber-soft);color:var(--amber)}
+.offsel{margin:0 0 14px;font-size:14px;color:var(--muted)}
+.offsel .chip{margin:4px 6px 0 0}
+.fine{font-size:13px;color:var(--faint);margin-top:20px}
 
-@media (max-width:900px){.fgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:600px){
-  .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:840px){
+  .bar{grid-template-columns:1fr 1fr}
+  .bar .f:first-child{grid-column:1 / -1}
+  .more{grid-column:1 / -1}
+  .bar2{grid-template-columns:1fr}
+  .hd{display:none}
+  .row{grid-template-columns:1fr;gap:4px;padding:14px 4px}
+  .row .meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--muted);margin-top:4px}
+  .row .meta .cell{font-size:14px;color:var(--muted)}
+  .row .meta .cell small{display:inline;margin-left:6px}
   .kv{grid-template-columns:1fr}
-  .kv dt{margin-top:6px;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
-  .filters{position:static}
-  .toggle-filters{display:inline-block;margin:10px 0 0;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer}
-  .filters.collapsed .fgrid,.filters.collapsed .subjects{display:none}
-  .sheet{padding:20px 18px 26px}
+  .kv dt{margin-top:8px;font-size:12px;letter-spacing:.05em;text-transform:uppercase}
+  .sheet{padding:22px 18px 26px}
 }
+@media (min-width:841px){.row .meta{display:contents}}
 </style>
 </head>
 <body>
-<header class="top">
-  <div class="wrap">
-    <div class="brand">
-      <h1><span>DMV</span> Student Work Opportunities <span class="pilot">Pilot</span></h1>
-      <nav><a href="about.html">About &amp; data rules</a><a href="#" id="reportLink">Report a problem</a></nav>
-    </div>
-    <p class="tagline">Internships, volunteer positions, paid jobs, apprenticeships and shadowing for high school students in DC, Maryland and Virginia. Every fact is quoted from the organization's own page. Nothing here is guessed.</p>
-    <button class="toggle-filters" id="toggleFilters">Show filters</button>
-  </div>
-</header>
+<div class="wrap">
+  <header class="top">
+    <h1>DMV Student Work Opportunities <small>Pilot</small></h1>
+    <nav><a href="about.html">About</a><a href="#" id="reportLink">Report a problem</a></nav>
+  </header>
+  <p class="sub">Internships, volunteer positions, paid jobs, apprenticeships and shadowing for high school students in DC, Maryland and Virginia. Every fact is quoted from the organization's own page.</p>
 
-<section class="filters" id="filters">
-  <div class="wrap">
-    <div class="fgrid">
-      <div class="f"><label for="zip">Distance from ZIP</label>
-        <div class="row"><input id="zip" inputmode="numeric" maxlength="5" placeholder="ZIP (DC/MD/VA)">
-        <select id="radius"><option value="">Any</option><option>10</option><option>20</option><option selected>30</option><option>50</option></select></div></div>
-      <div class="f"><label for="mode">Participation</label>
-        <select id="mode"><option value="">Any</option><option value="in_person">In person</option><option value="virtual">Online</option><option value="hybrid">Hybrid</option></select></div>
-      <div class="f"><label for="grade">Current grade</label>
-        <select id="grade"><option value="">Any</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></div>
-      <div class="f"><label for="season">When offered</label>
-        <select id="season"><option value="">Any</option><option value="summer">Summer</option><option value="school_year">School year</option><option value="year_round">Year-round</option></select></div>
-      <div class="f"><label for="pay">Pay</label>
-        <select id="pay"><option value="">Any</option><option value="with_pay">With pay</option><option value="no_pay">No pay</option></select></div>
-      <div class="f"><label>&nbsp;</label><button class="chip clear" id="reset" style="width:100%;padding:8px">Reset all</button></div>
-    </div>
-    <div class="subjects" id="subjects"><span class="lbl">Field of interest</span></div>
-    <div class="fbar">
-      <div class="count" id="count">Loading…</div>
-      <div class="sort">Sort by <select id="sort"><option value="deadline">Deadline</option><option value="distance">Distance</option><option value="name">Name</option></select></div>
-    </div>
-  </div>
-</section>
+  <section class="bar" id="bar">
+    <div class="f"><label for="zip">Near ZIP</label><div class="zip"><input id="zip" inputmode="numeric" maxlength="5" placeholder="e.g. 20854"><select id="radius" aria-label="Radius"><option value="">Any</option><option>10</option><option>20</option><option selected>30</option><option>50</option></select></div></div>
+    <div class="f"><label for="grade">Current grade</label><select id="grade"><option value="">Any</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option></select></div>
+    <div class="f"><label for="season">When</label><select id="season"><option value="">Any</option><option value="summer">Summer</option><option value="school_year">School year</option><option value="year_round">Year-round</option></select></div>
+    <div class="f"><label for="pay">Pay</label><select id="pay"><option value="">Any</option><option value="with_pay">With pay</option><option value="no_pay">No pay</option></select></div>
+    <button class="more" id="more" aria-expanded="false">More filters</button>
+  </section>
+  <section class="bar2" id="bar2">
+    <div class="f"><label for="mode">Format</label><select id="mode"><option value="">Any</option><option value="in_person">In person</option><option value="virtual">Online</option><option value="hybrid">Hybrid</option></select></div>
+    <div class="f"><label>Field of interest</label><div class="chips" id="subjects"></div></div>
+  </section>
 
-<main class="wrap" id="results"></main>
+  <div class="sum"><div id="count">Loading…</div><div>Sort by <select id="sort"><option value="deadline">deadline</option><option value="distance">distance</option><option value="name">name</option></select><button class="reset" id="reset">Reset</button></div></div>
 
-<footer><div class="wrap">
-  <div>Data release <span id="release"></span>. Deadlines and dates are shown exactly as the source states them; a month without a day means the source gave only the month. Distances are straight-line miles between ZIP areas, not driving distance. Always confirm on the official page before applying.</div>
-</div></footer>
+  <main id="results"></main>
+
+  <footer>
+    <p>Data release <span id="release"></span>. Dates are shown exactly as the source states them: a month without a day means the source gave only the month. Distances are straight-line miles between ZIP areas. Confirm on the official page before applying.</p>
+    <p>A student's non-profit project. <a href="about.html">How the data works</a>.</p>
+  </footer>
+</div>
 
 <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="sheet" id="sheet"></div></div>
 
 <script>
-// ---- configuration -----------------------------------------------------------
-const REPORT_EMAIL = "";                          // e.g. "hello@example.org" — leave blank to use GitHub issues only
-const GITHUB_REPO  = "fb2h/dmv-opportunities";                          // e.g. "ryan/dmv-opportunities" — leave blank to hide the GitHub link
-const SUBJECTS = [
-  ["health_medicine","Health & medicine"],["science_research","Science & research"],["computing_technology","Computing & technology"],
-  ["engineering_trades","Engineering & trades"],["environment_outdoors","Environment & outdoors"],["business_law_government","Business, law & government"],
-  ["arts_media_humanities","Arts, media & humanities"],["education_working_with_kids","Education & working with kids"],["community_service","Community service"]
-];
+const REPORT_EMAIL = "";
+const GITHUB_REPO  = "fb2h/dmv-opportunities";
+const SUBJECTS = [["health_medicine","Health & medicine"],["science_research","Science & research"],["computing_technology","Computing & technology"],["engineering_trades","Engineering & trades"],["environment_outdoors","Environment & outdoors"],["business_law_government","Business, law & government"],["arts_media_humanities","Arts, media & humanities"],["education_working_with_kids","Education & kids"],["community_service","Community service"]];
 const SUBJ = Object.fromEntries(SUBJECTS);
 const TYPE = {internship:"Internship",research:"Research",volunteer:"Volunteer",paid_job:"Paid job",apprenticeship:"Apprenticeship",shadowing:"Job shadowing",trainee:"Trainee / counselor"};
 const SEASON = {summer:"Summer",school_year:"School year",year_round:"Year-round",both:"Summer & school year"};
 const MODE = {in_person:"In person",virtual:"Online",hybrid:"Hybrid",unknown:"Format not stated"};
-const STATUS = {open:["Applications open","open"],not_yet_open:["Not yet open","soon"],closed:["Applications closed","closed"],unknown:["Status not stated","unk"],no_application:["No application needed","open"]};
+const STATUS = {open:["Open","open"],not_yet_open:["Not yet open","soon"],closed:["Closed","closed"],unknown:["Status not stated","unk"],no_application:["No application needed","open"]};
 
 let CATALOG=null, ZIPS=null;
 const $=s=>document.querySelector(s);
 const state={zip:"",radius:"30",mode:"",grade:"",season:"",pay:"",subjects:new Set(),sort:"deadline"};
 
-// ---- data --------------------------------------------------------------------
 Promise.all([fetch("data/catalog.json").then(r=>r.json()),fetch("data/zips.json").then(r=>r.json())]).then(([c,z])=>{
   CATALOG=c; ZIPS=z; $("#release").textContent=c.release_id.replace("release-","")+" · "+c.program_count+" programs";
   buildSubjects(); bind(); restore(); render();
@@ -181,15 +169,14 @@ function buildSubjects(){
   const box=$("#subjects");
   SUBJECTS.forEach(([k,label])=>{const b=document.createElement("button");b.className="chip";b.textContent=label;b.dataset.k=k;b.setAttribute("aria-pressed","false");
     b.onclick=()=>{state.subjects.has(k)?state.subjects.delete(k):state.subjects.add(k);b.setAttribute("aria-pressed",state.subjects.has(k));render();};box.appendChild(b);});
-  const clr=document.createElement("button");clr.className="chip clear";clr.textContent="Clear all";clr.onclick=()=>{state.subjects.clear();box.querySelectorAll(".chip[data-k]").forEach(b=>b.setAttribute("aria-pressed","false"));render();};box.appendChild(clr);
+  const clr=document.createElement("button");clr.className="chip clear";clr.textContent="Clear";clr.onclick=()=>{state.subjects.clear();box.querySelectorAll(".chip[data-k]").forEach(b=>b.setAttribute("aria-pressed","false"));render();};box.appendChild(clr);
 }
 function bind(){
   ["zip","radius","mode","grade","season","pay","sort"].forEach(id=>$("#"+id).addEventListener("input",()=>{state[id]=$("#"+id).value.trim();render();}));
   $("#reset").onclick=()=>{Object.assign(state,{zip:"",radius:"30",mode:"",grade:"",season:"",pay:"",sort:"deadline"});state.subjects.clear();
     ["zip","mode","grade","season","pay"].forEach(id=>$("#"+id).value="");$("#radius").value="30";$("#sort").value="deadline";
     document.querySelectorAll(".chip[data-k]").forEach(b=>b.setAttribute("aria-pressed","false"));render();};
-  $("#toggleFilters").onclick=()=>{const f=$("#filters");f.classList.toggle("collapsed");$("#toggleFilters").textContent=f.classList.contains("collapsed")?"Show filters":"Hide filters";};
-  if(window.innerWidth<=600){$("#filters").classList.add("collapsed");}
+  $("#more").onclick=()=>{const on=$("#bar2").classList.toggle("on");$("#bar").classList.toggle("open",on);$("#more").setAttribute("aria-expanded",on);$("#more").textContent=on?"Fewer filters":"More filters";};
   $("#modal").onclick=e=>{if(e.target.id==="modal")closeModal();};
   document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
   $("#reportLink").onclick=e=>{e.preventDefault();openReport(null);};
@@ -197,180 +184,139 @@ function bind(){
 function restore(){ try{const s=JSON.parse(localStorage.getItem("dmv-filters")||"{}");if(s.zip){state.zip=s.zip;$("#zip").value=s.zip;} if(s.grade){state.grade=s.grade;$("#grade").value=s.grade;}}catch(e){} }
 function persist(){ try{localStorage.setItem("dmv-filters",JSON.stringify({zip:state.zip,grade:state.grade}));}catch(e){} }
 
-// ---- matching (Section 9 of the contract) -------------------------------------
+/* ---- matching, Section 9 of the contract ---- */
 function miles(a,b){const R=3958.8,toR=x=>x*Math.PI/180;const dLat=toR(b[0]-a[0]),dLon=toR(b[1]-a[1]);const h=Math.sin(dLat/2)**2+Math.cos(toR(a[0]))*Math.cos(toR(b[0]))*Math.sin(dLon/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
-
 function evalOffering(o){
-  // returns {status:"match"|"no_match"|"unknown", reasons:[], distance, group}
   const reasons=[]; let unknown=false; let distance=null;
   const group = o.delivery_mode==="virtual" ? "online" : "physical";
-
-  // participation format
-  if(state.mode){ if(o.delivery_mode==="unknown"){unknown=true;reasons.push("Participation format not stated");} else if(o.delivery_mode!==state.mode) return {status:"no_match"}; }
-
-  // distance
+  if(state.mode){ if(o.delivery_mode==="unknown"){unknown=true;reasons.push("Format not stated");} else if(o.delivery_mode!==state.mode) return {status:"no_match"}; }
   const userPt = state.zip.length===5 ? ZIPS[state.zip] : null;
   if(userPt && state.radius && group==="physical"){
-    const r=+state.radius; const elig=o.locations.filter(l=>l.distance_eligible);
-    const others=o.locations.filter(l=>!l.distance_eligible);
-    if(elig.length){
-      const ds=elig.map(l=>miles(userPt,[l.latitude,l.longitude]));
-      const within=ds.filter(d=>d<=r);
-      if(within.length){distance=Math.min(...within);}
-      else if(others.length){unknown=true;reasons.push("Listed site is outside your radius; another site is not published");}
-      else return {status:"no_match"};
-    } else { unknown=true; reasons.push(o.locations.some(l=>l.address_kind==="to_be_assigned")?"Work site is assigned after acceptance":"Activity location not published"); }
-  } else if(userPt && group==="physical"){
-    const elig=o.locations.filter(l=>l.distance_eligible); if(elig.length) distance=Math.min(...elig.map(l=>miles(userPt,[l.latitude,l.longitude])));
-  }
-
-  // subjects (OR)
-  if(state.subjects.size){ if(!o.subjects||!o.subjects.length){unknown=true;reasons.push("Field of interest not classified");} else if(![...state.subjects].some(s=>o.subjects.includes(s))) return {status:"no_match"}; }
-
-  // season
+    const r=+state.radius; const elig=o.locations.filter(l=>l.distance_eligible); const others=o.locations.filter(l=>!l.distance_eligible);
+    if(elig.length){ const ds=elig.map(l=>miles(userPt,[l.latitude,l.longitude])); const within=ds.filter(d=>d<=r);
+      if(within.length){distance=Math.min(...within);} else if(others.length){unknown=true;reasons.push("Listed site is outside your radius; another site is not published");} else return {status:"no_match"}; }
+    else { unknown=true; reasons.push(o.locations.some(l=>l.address_kind==="to_be_assigned")?"Work site assigned after acceptance":"Location not published"); }
+  } else if(userPt && group==="physical"){ const elig=o.locations.filter(l=>l.distance_eligible); if(elig.length) distance=Math.min(...elig.map(l=>miles(userPt,[l.latitude,l.longitude]))); }
+  if(state.subjects.size){ if(!o.subjects||!o.subjects.length){unknown=true;reasons.push("Field not classified");} else if(![...state.subjects].some(s=>o.subjects.includes(s))) return {status:"no_match"}; }
   if(state.season){ const s=o.season; const ok = state.season==="summer" ? ["summer","both","year_round"].includes(s) : state.season==="school_year" ? ["school_year","both","year_round"].includes(s) : s==="year_round";
     if(!s){unknown=true;reasons.push("Season not stated");} else if(!ok) return {status:"no_match"}; }
-
-  // pay — explicit rule: unknown/not stated never matches an affirmative choice
   if(state.pay){ if(o.pay.filter_value!==state.pay) return {status:"no_match"}; }
-
-  // grade
   if(state.grade){ const g=+state.grade; const gr=o.eligibility.grades;
     if(!gr){unknown=true;reasons.push("Grade eligibility not stated on the page");}
-    else { const v=gr.values.map(String); const cur=String(g), next=g===12?"graduated":String(g+1);
-      const summer = o.season==="summer";
-      if(gr.basis==="rising_fall"){ const t=summer?next:cur; if(v.includes(t)){} else if(v.includes(cur)||v.includes(next)){unknown=true;reasons.push("Grade rule uses 'rising' grades — confirm which applies to you");} else return {status:"no_match"}; }
+    else { const v=gr.values.map(String); const cur=String(g), next=g===12?"graduated":String(g+1); const summer=o.season==="summer";
+      if(gr.basis==="rising_fall"){ const t=summer?next:cur; if(v.includes(t)){} else if(v.includes(cur)||v.includes(next)){unknown=true;reasons.push("Grade rule uses 'rising' grades; confirm which applies");} else return {status:"no_match"}; }
       else if(["current","application_date"].includes(gr.basis)){ if(!v.includes(cur)) return {status:"no_match"}; }
-      else { if(v.includes(cur)){} else if(summer&&v.includes(next)){unknown=true;reasons.push("Grade rule may refer to next year's grade — confirm");} else return {status:"no_match"}; }
-    } }
-
-  if(o.eligibility.logic==="complex"){unknown=true;reasons.push("Eligibility has an either/or rule — read the details");}
+      else { if(v.includes(cur)){} else if(summer&&v.includes(next)){unknown=true;reasons.push("Grade rule may mean next year's grade; confirm");} else return {status:"no_match"}; } } }
+  if(o.eligibility.logic==="complex"){unknown=true;reasons.push("Eligibility has an either/or rule; read the details");}
   return {status:unknown?"unknown":"match",reasons,distance,group};
 }
-
 function evaluate(){
   const out=[];
-  for(const p of CATALOG.programs){
-    let best=null;
-    for(const o of p.offerings){ const r=evalOffering(o); if(r.status==="no_match") continue;
-      const cand={program:p,offering:o,...r};
+  for(const p of CATALOG.programs){ let best=null;
+    for(const o of p.offerings){ const r=evalOffering(o); if(r.status==="no_match") continue; const cand={program:p,offering:o,...r};
       if(!best || (best.status==="unknown"&&r.status==="match") || (best.status===r.status && (r.distance??1e9)<(best.distance??1e9))) best=cand; }
-    if(best) out.push(best);
-  }
+    if(best) out.push(best); }
   return out;
 }
 
-// ---- rendering ---------------------------------------------------------------
-function dlSortKey(o){const d=o.primary_deadline; if(d&&d.date&&!d.expired) return [0,d.date]; if(d&&d.date) return [2,d.date]; if(d) return [1,d.label]; return [3,""];}
+/* ---- render ---- */
+function dlKey(o){const d=o.primary_deadline; if(d&&d.date&&!d.expired) return [0,d.date]; if(d&&d.date) return [2,d.date]; if(d) return [1,d.label]; return [3,""];}
 function sortResults(rs){
   if(state.sort==="name") rs.sort((a,b)=>a.program.name.localeCompare(b.program.name));
   else if(state.sort==="distance") rs.sort((a,b)=>(a.distance??1e9)-(b.distance??1e9)||a.program.name.localeCompare(b.program.name));
-  else rs.sort((a,b)=>{const ka=dlSortKey(a.offering),kb=dlSortKey(b.offering);return ka[0]-kb[0]||(ka[1]<kb[1]?-1:ka[1]>kb[1]?1:0)||((a.distance??1e9)-(b.distance??1e9))||a.program.name.localeCompare(b.program.name);});
+  else rs.sort((a,b)=>{const ka=dlKey(a.offering),kb=dlKey(b.offering);return ka[0]-kb[0]||(ka[1]<kb[1]?-1:ka[1]>kb[1]?1:0)||((a.distance??1e9)-(b.distance??1e9))||a.program.name.localeCompare(b.program.name);});
 }
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
 function render(){
   if(!CATALOG) return; persist();
   const rs=evaluate(); sortResults(rs);
   const zipBad = state.zip.length===5 && !ZIPS[state.zip];
   const match=rs.filter(r=>r.status==="match"), conf=rs.filter(r=>r.status==="unknown");
-  $("#count").innerHTML = `<b>${rs.length}</b> of ${CATALOG.program_count} programs` + (zipBad?` · <span style="color:var(--fee)">ZIP ${state.zip} not found in DC/MD/VA/DE/WV</span>`:"");
   const anyFilter = state.zip.length===5||state.mode||state.grade||state.season||state.pay||state.subjects.size;
+  $("#count").innerHTML = `<b>${rs.length}</b> of ${CATALOG.program_count} programs` + (zipBad?` · <span style="color:var(--amber)">ZIP ${esc(state.zip)} not found in DC/MD/VA/DE/WV</span>`:"");
+  const head=`<div class="hd"><div>Program</div><div>Where</div><div>When</div><div>Pay</div><div>Applications</div></div>`;
+  const grp=(t,cls,list,note)=>list.length?`<div class="grp ${cls}">${t} · ${list.length}${note?`<span>${note}</span>`:""}</div>${list.map(row).join("")}`:"";
   let html="";
-  const sec=(title,cls,list,note)=>{ if(!list.length) return ""; return `<h2 class="sec ${cls}">${title}<span class="n">${list.length}</span></h2>${note?`<p class="note">${note}</p>`:""}<div class="grid">${list.map(card).join("")}</div>`; };
-  const phys=l=>l.filter(r=>r.group==="physical"), onl=l=>l.filter(r=>r.group==="online");
   if(anyFilter){
-    html+=sec("Matches your filters","",phys(match));
-    html+=sec("Online — matches your filters","",onl(match),"Online opportunities are kept regardless of distance.");
-    html+=sec("Conditions to confirm","confirm",[...phys(conf),...onl(conf)],"These pass every filter the page states, but one condition is not stated or is ambiguous. Check the official page.");
-  } else {
-    html+=sec("All programs","",rs);
-  }
-  if(!rs.length) html=`<div class="empty">No programs match. Try a wider radius or fewer filters.<br><small>Pay filters are strict: a program whose page does not state pay is excluded when you choose "With pay" or "No pay".</small></div>`;
-  $("#results").innerHTML=html;
-  document.querySelectorAll(".card").forEach(el=>el.onclick=()=>openModal(el.dataset.p,el.dataset.o));
+    const phys=match.filter(r=>r.group==="physical"), onl=match.filter(r=>r.group==="online");
+    html+=grp("Matches your filters","",phys);
+    html+=grp("Online · matches your filters","",onl,"no distance limit");
+    html+=grp("Conditions to confirm","warn",conf,"passes every stated condition; one is not stated on the page");
+  } else html+=grp("All programs","",rs);
+  $("#results").innerHTML = rs.length ? head+html : `<div class="empty">No programs match. Widen the radius or remove a filter.<br><small>"With pay" and "No pay" are strict: a page that does not state pay is excluded from both.</small></div>`;
+  document.querySelectorAll(".row").forEach(el=>el.onclick=()=>openModal(el.dataset.p,el.dataset.o));
 }
-function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
-function card(r){
-  const p=r.program,o=r.offering; const st=STATUS[o.application_status]||STATUS.unknown;
-  const dl=o.primary_deadline; const dlTxt = dl ? (dl.expired?`Last ${dl.kind==="final"?"deadline":dl.kind}: ${dl.label} (passed)`:`${dl.kind==="final"?"Deadline":cap(dl.kind)}: <b>${dl.label}</b>`) : (o.application.window==="rolling"?"Rolling applications":"No deadline published");
-  const loc=o.locations[0]; const where = o.delivery_mode==="virtual" ? "Online" : loc ? [loc.city,loc.state].filter(Boolean).join(", ") || loc.venue : "Location not published";
-  const dist = r.distance!=null ? `≈ ${Math.round(r.distance)} mi` : "";
-  const tags=[];
-  (o.opportunity_types||[]).slice(0,2).forEach(t=>tags.push(`<span class="tag">${TYPE[t]||t}</span>`));
-  tags.push(`<span class="tag">${SEASON[o.season]||"Season not stated"}</span>`);
-  if(o.pay.filter_value==="with_pay") tags.push(`<span class="tag pay">Paid</span>`); else if(o.pay.filter_value==="unknown") tags.push(`<span class="tag unk">Pay not stated</span>`);
-  if(o.cost.filter_value==="program_fee") tags.push(`<span class="tag fee">Fee</span>`);
-  tags.push(`<span class="tag ${st[1]}">${st[0]}</span>`);
-  return `<article class="card" data-p="${esc(p.program_id)}" data-o="${esc(o.offering_id)}">
-    <div class="org"><span>${esc(p.organization.name||"")}</span><span class="dist">${dist}</span></div>
-    <h3>${esc(p.name)}</h3>
-    <p class="sum">${esc(o.summary||"")}</p>
-    <div class="tags">${tags.join("")}</div>
-    ${r.reasons&&r.reasons.length?`<div class="why">⚠ ${esc(r.reasons[0])}</div>`:""}
-    <div class="foot"><span class="dl">${dlTxt}</span><span>${esc(where)}</span></div>
-  </article>`;
+function row(r){
+  const p=r.program,o=r.offering; const st=STATUS[o.application_status]||STATUS.unknown; const dl=o.primary_deadline;
+  const closed = o.application_status==="closed";
+  const dlTxt = dl ? (dl.expired?`<small>${dl.kind==="final"?"Deadline":cap(dl.kind)} ${esc(dl.label)} (passed)</small>`:`<small>${dl.kind==="final"?(closed?"Deadline":"Due"):cap(dl.kind)} ${esc(dl.label)}</small>`) : (o.application.window==="rolling"?`<small>Rolling</small>`:`<small>No deadline published</small>`);
+  const loc=o.locations[0];
+  const where = o.delivery_mode==="virtual" ? `<span class="paid">Online</span><small>remote, no commute</small>` : (loc ? esc([loc.city,loc.state].filter(Boolean).join(", ")||loc.venue||"Site not published") : "Not published") + (o.delivery_mode==="hybrid"?`<small>hybrid: part online</small>`:"");
+  const mi = r.distance!=null ? `<small class="mi">≈ ${Math.round(r.distance)} mi</small>` : "";
+  const pay = o.pay.filter_value==="with_pay" ? `<span class="paid">Paid</span>` : o.pay.filter_value==="no_pay" ? "Unpaid" : `<span style="color:var(--muted)">Not stated</span>`;
+  const fee = o.cost.filter_value==="program_fee" ? `<small style="color:var(--amber)">Has a fee</small>` : "";
+  const types=(o.opportunity_types||[]).slice(0,2).map(t=>TYPE[t]||t).join(" · ");
+  return `<div class="row" data-p="${esc(p.program_id)}" data-o="${esc(o.offering_id)}">
+    <div><div class="name">${esc(p.name)}</div><div class="org">${esc(p.organization.name||"")}${types?` · ${esc(types)}`:""}</div>${r.reasons&&r.reasons.length?`<div class="why">${esc(r.reasons[0])}</div>`:""}</div>
+    <div class="meta">
+      <div class="cell">${where}${mi}</div>
+      <div class="cell">${SEASON[o.season]||"Not stated"}</div>
+      <div class="cell">${pay}${fee}</div>
+      <div class="cell"><span class="dot ${st[1]}"></span>${st[0]}${dlTxt}</div>
+    </div></div>`;
 }
 function cap(s){return s?s[0].toUpperCase()+s.slice(1).replace(/_/g," "):"";}
 
-// ---- details -----------------------------------------------------------------
+/* ---- details ---- */
 function openModal(pid,oid){
   const p=CATALOG.programs.find(x=>x.program_id===pid); if(!p) return;
   const o=p.offerings.find(x=>x.offering_id===oid)||p.offerings[0];
-  const st=STATUS[o.application_status]||STATUS.unknown; const e=o.eligibility;
-  const kv=[];
-  const add=(k,v)=>{ if(v!==null&&v!==undefined&&v!=="") kv.push(`<dt>${k}</dt><dd>${v}</dd>`); };
+  const st=STATUS[o.application_status]||STATUS.unknown; const e=o.eligibility; const a=o.application; const s=o.schedule;
+  const kv=[]; const add=(k,v)=>{ if(v!==null&&v!==undefined&&v!=="") kv.push(`<dt>${k}</dt><dd>${v}</dd>`); };
+  add("Applications", `<span class="pill ${st[1]}">${st[0]}</span> ` + [a.opens?`opens ${esc(a.opens)}`:"", a.window&&a.window!=="unknown"?cap(a.window)+" window":"", a.selection?`selection: ${esc(a.selection.replace(/_/g," "))}`:""].filter(Boolean).join(" · "));
+  if(a.deadlines&&a.deadlines.length) add("Deadlines", a.deadlines.map(d=>`<b>${esc(d.label)}</b> <span class="q">(${esc(d.kind||"final")})</span>`).join("<br>"));
+  if(a.timing_notes&&a.timing_notes.length) add("Timing, as worded", a.timing_notes.map(t=>`<span class="q">“${esc(t)}”</span>`).join("<br>")+`<br><span class="q">Wording only: the page gives no exact date for the current cycle.</span>`);
   add("Cycle", esc(o.cycle.label));
   add("Type", (o.opportunity_types||[]).map(t=>TYPE[t]||t).join(", "));
-  add("Field", (o.subjects||[]).map(s=>SUBJ[s]||s).join(", "));
   add("When", SEASON[o.season]||"Not stated");
   add("Format", MODE[o.delivery_mode]||o.delivery_mode);
   add("Pay", esc(o.pay.label));
-  add("Fees", esc(o.cost.label) + (o.aid&&o.aid.raw?` — ${esc(o.aid.raw)}`:""));
-  add("Grades", e.grades ? esc(e.grades.values.join(", ")) + (e.grades.basis&&e.grades.basis!=="unknown"?` <span style="color:var(--muted)">(${esc(e.grades.basis.replace(/_/g," "))})</span>`:"") + (e.grades.raw?`<br><span style="color:var(--muted)">“${esc(e.grades.raw)}”</span>`:"") : "Not stated on the page");
-  add("Age", e.age ? esc([e.age.min?`${e.age.min}+`:"",e.age.max?`up to ${e.age.max}`:""].filter(Boolean).join(", ")) + (e.age.raw?`<br><span style="color:var(--muted)">“${esc(e.age.raw)}”</span>`:"") : "Not stated on the page");
-  if(e.residency&&e.residency.status&&e.residency.status!=="unrestricted") add("Residency", esc((e.residency.areas||[]).join(", ")||"") + (e.residency.raw?` <span style="color:var(--muted)">“${esc(e.residency.raw)}”</span>`:""));
-  if(e.school&&e.school.status&&e.school.status!=="unrestricted") add("School", esc((e.school.eligible_districts||e.school.eligible_schools||[]).join(", ")||cap(e.school.status)) + (e.school.raw?` <span style="color:var(--muted)">“${esc(e.school.raw)}”</span>`:""));
+  add("Fees", esc(o.cost.label)+(o.aid&&o.aid.raw?` — ${esc(o.aid.raw)}`:""));
+  add("Grades", e.grades ? esc(e.grades.values.join(", "))+(e.grades.basis&&e.grades.basis!=="unknown"?` <span class="q">(${esc(e.grades.basis.replace(/_/g," "))})</span>`:"")+(e.grades.raw?`<br><span class="q">“${esc(e.grades.raw)}”</span>`:"") : "Not stated on the page");
+  add("Age", e.age ? esc([e.age.min?`${e.age.min}+`:"",e.age.max?`up to ${e.age.max}`:""].filter(Boolean).join(", "))+(e.age.raw?`<br><span class="q">“${esc(e.age.raw)}”</span>`:"") : "Not stated on the page");
+  if(e.residency&&e.residency.status&&e.residency.status!=="unrestricted") add("Residency", esc((e.residency.areas||[]).join(", ")||"")+(e.residency.raw?` <span class="q">“${esc(e.residency.raw)}”</span>`:""));
+  if(e.school&&e.school.status&&e.school.status!=="unrestricted") add("School", esc((e.school.eligible_districts||e.school.eligible_schools||[]).join(", ")||cap(e.school.status))+(e.school.raw?` <span class="q">“${esc(e.school.raw)}”</span>`:""));
   if(e.citizenship&&e.citizenship.raw) add("Citizenship", esc(e.citizenship.raw));
   if(e.work_authorization&&e.work_authorization.raw) add("Work authorization", esc(e.work_authorization.raw));
   if(e.gpa&&(e.gpa.raw||e.gpa.min)) add("GPA", esc(e.gpa.raw||e.gpa.min));
   if(e.other) add("Other conditions", esc(typeof e.other==="string"?e.other:JSON.stringify(e.other)));
-  const s=o.schedule; const sched=[s.start||s.start_raw?`Starts ${esc(s.start||s.start_raw)}`:"",s.end||s.end_raw?`ends ${esc(s.end||s.end_raw)}`:"",s.duration?esc(s.duration):"",s.hours_per_week?esc(s.hours_per_week):"",s.schedule?esc(s.schedule):""].filter(Boolean).join(" · ");
+  const sched=[s.start||s.start_raw?`Starts ${esc(s.start||s.start_raw)}`:"",s.end||s.end_raw?`ends ${esc(s.end||s.end_raw)}`:"",s.duration?esc(s.duration):"",s.hours_per_week?esc(s.hours_per_week):"",s.schedule?esc(s.schedule):""].filter(Boolean).join(" · ");
   add("Schedule", sched);
-  if(o.locations.length) add("Where", o.locations.map(l=>esc(l.location_label)+(l.address_kind==="confirmed_campus_approximation"?" <span style='color:var(--muted)'>(campus, exact building not published)</span>":"")).join("<br>"));
-  else if(o.delivery_mode==="virtual") add("Where","Online");
-  const a=o.application;
-  add("Applications", `<span class="tag ${st[1]}" style="margin-right:6px">${st[0]}</span>` + [a.opens?`Opens ${esc(a.opens)}`:"", a.window&&a.window!=="unknown"?cap(a.window)+" window":"", a.selection?`Selection: ${esc(a.selection.replace(/_/g," "))}`:"", a.route&&!["direct","unknown"].includes(a.route)?`Route: ${esc(a.route.replace(/_/g," "))}`:""].filter(Boolean).join(" · "));
-  if(a.deadlines&&a.deadlines.length) add("Deadlines", a.deadlines.map(d=>`<b>${esc(d.label)}</b> <span style="color:var(--muted)">(${esc(d.kind||"final")})</span>`).join("<br>"));
-  if(a.timing_notes&&a.timing_notes.length) add("Timing, as the page words it", a.timing_notes.map(t=>`“${esc(t)}”`).join("<br>")+`<br><span style="color:var(--muted);font-size:12.5px">Shown as wording, not as a date: the page gives no exact date for the current cycle.</span>`);
+  if(o.locations.length) add("Where", o.locations.map(l=>esc(l.location_label)+(l.address_kind==="confirmed_campus_approximation"?` <span class="q">(campus; exact building not published)</span>`:"")).join("<br>")); else if(o.delivery_mode==="virtual") add("Where","Online");
   if(a.instructions) add("How to apply", esc(a.instructions));
   if(o.requirements&&o.requirements.length) add("Requirements", o.requirements.map(r=>esc(r.raw||r.kind)).join("<br>"));
   if(o.capacity) add("Capacity", esc(o.capacity));
-
   const unc = o.uncertainties.length ? `<h4>Not stated on the source</h4>${o.uncertainties.map(u=>`<div class="unc">${esc(u.label)}</div>`).join("")}` : "";
-  const ev = o.public_evidence.length ? `<h4>Quoted from the source</h4>${o.public_evidence.slice(0,8).map(x=>`<div class="ev"><q>${esc(x.quote)}</q><a class="src" href="${esc(x.source_url)}" target="_blank" rel="noopener">${esc(x.source_url)}</a></div>`).join("")}` : "";
+  const ev = o.public_evidence.length ? `<h4>Quoted from the source</h4>${o.public_evidence.slice(0,8).map(x=>`<div class="ev"><q>${esc(x.quote)}</q><a href="${esc(x.source_url)}" target="_blank" rel="noopener">${esc(x.source_url)}</a></div>`).join("")}` : "";
   const srcs = o.public_sources.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||x.url)}</a>${x.publisher?` — ${esc(x.publisher)}`:""}</li>`).join("");
-  const offsel = p.offerings.length>1 ? `<div class="offsel">This program has ${p.offerings.length} current listings: ${p.offerings.map(x=>`<button class="chip" aria-pressed="${x.offering_id===o.offering_id}" onclick="openModal('${esc(p.program_id)}','${esc(x.offering_id)}')">${esc(x.cycle.label)}</button>`).join("")}</div>` : "";
+  const offsel = p.offerings.length>1 ? `<div class="offsel">${p.offerings.length} current listings:${p.offerings.map(x=>`<button class="chip" aria-pressed="${x.offering_id===o.offering_id}" onclick="openModal('${esc(p.program_id)}','${esc(x.offering_id)}')">${esc(x.cycle.label)}</button>`).join("")}</div>` : "";
   const applyUrl = a.url||p.program_url||(o.public_sources[0]||{}).url;
-
   $("#sheet").innerHTML=`<button class="x" onclick="closeModal()" aria-label="Close">×</button>
     <h2>${esc(p.name)}</h2><div class="org">${esc(p.organization.name||"")}</div>
-    ${offsel}
-    <p>${esc(o.summary||"")}</p>
-    <div class="cta">${applyUrl?`<a class="btn primary" href="${esc(applyUrl)}" target="_blank" rel="noopener">Official page ↗</a>`:""}${p.program_url&&p.program_url!==applyUrl?`<a class="btn" href="${esc(p.program_url)}" target="_blank" rel="noopener">Program page ↗</a>`:""}<a class="btn" href="#" onclick="openReport('${esc(p.program_id)}');return false;">Report a problem</a></div>
-    <dl class="kv">${kv.join("")}</dl>
-    ${unc}${ev}
-    <h4>Sources</h4><ul style="margin:0;padding-left:18px;font-size:14px">${srcs}</ul>
-    <p class="small">Last verified against the source ${esc((o.last_verified_at||"").slice(0,10))}. Program ID ${esc(p.program_id)} · listing ${esc(o.offering_id)}.</p>`;
+    ${offsel}<p class="lead">${esc(o.summary||"")}</p>
+    <div class="cta">${applyUrl?`<a class="btn primary" href="${esc(applyUrl)}" target="_blank" rel="noopener">Official page ↗</a>`:""}${p.program_url&&p.program_url!==applyUrl?`<a class="btn" href="${esc(p.program_url)}" target="_blank" rel="noopener">Program page ↗</a>`:""}<button class="btn" onclick="openReport('${esc(p.program_id)}')">Report a problem</button></div>
+    <dl class="kv">${kv.join("")}</dl>${unc}${ev}
+    <h4>Sources</h4><ul style="margin:0;padding-left:18px;font-size:15px">${srcs}</ul>
+    <p class="fine">Last verified against the source ${esc((o.last_verified_at||"").slice(0,10))} · ${esc(p.program_id)} / ${esc(o.offering_id)}</p>`;
   $("#modal").classList.add("on"); document.body.style.overflow="hidden";
 }
 function closeModal(){$("#modal").classList.remove("on");document.body.style.overflow="";}
 function openReport(pid){
   const subject=encodeURIComponent(pid?`Problem with listing: ${pid}`:"Problem report");
-  const body=encodeURIComponent(`Program: ${pid||"(general)"}\nWhat is wrong:\n\nWhere you saw the correct information (link):\n`);
+  const body=encodeURIComponent(`Program: ${pid||"(general)"}\nWhat is wrong:\n\nLink to the page that shows the correct information:\n`);
   const gh = GITHUB_REPO ? `https://github.com/${GITHUB_REPO}/issues/new?title=${subject}&body=${body}` : null;
   const ml = REPORT_EMAIL ? `mailto:${REPORT_EMAIL}?subject=${subject}&body=${body}` : null;
-  const target = gh||ml;
-  if(target){ window.open(target,"_blank"); }
-  else alert("Reporting is not configured yet. Set REPORT_EMAIL or GITHUB_REPO in index.html.");
+  const target = gh||ml; if(target) window.open(target,"_blank"); else alert("Reporting is not configured yet.");
 }
 </script>
 </body>
