@@ -1,0 +1,139 @@
+{
+  "passed": 22,
+  "failed": 0,
+  "results": [
+    {
+      "id": "R2-01",
+      "title": "Unchanged source twice: successful checks, no candidate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-02",
+      "title": "Whitespace / HTML formatting change does not create a material candidate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-03",
+      "title": "Unrelated page changes do not invent a material fact",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-04",
+      "title": "Fetch failure is observation only; approved facts and membership stay",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-05",
+      "title": "404 / 410 is observation only; no inferred cancellation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-06",
+      "title": "Unchanged 2025-2026 source does not create a 2026-2027 candidate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-07",
+      "title": "Explicit 2026-2027 announcement is a separate candidate; historical offering stays",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-08",
+      "title": "New cycle does not silently copy old cycle facts",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-09",
+      "title": "Deadline change creates a material candidate; approved revision stays intact",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-10",
+      "title": "Grade change creates an evidenced candidate and does not overwrite",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-11",
+      "title": "Pay change creates an evidenced candidate and does not overwrite",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-12",
+      "title": "Evidenced first-party cancellation creates a candidate; human approval is still required",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-13",
+      "title": "Cancellation without required evidence is observation only",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-14",
+      "title": "Repeating the same material change does not create a duplicate candidate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-15",
+      "title": "Newer change preserves the old candidate and a stale approval does not apply",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-16",
+      "title": "Same-host redirect records both URLs and no unsupported fact change",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-17",
+      "title": "Unexpected redirect is reviewable and the destination is not trusted",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-18",
+      "title": "First monitor run still detects an explicit new cycle",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-19",
+      "title": "Raw hash change without a structured fact change creates no factual candidate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-20",
+      "title": "Monitor candidate exports to the Round 1 workbook and obeys fingerprint protection",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-POLICY",
+      "title": "Dry run, CLI fixture mode, retries, and robots stay non-destructive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "R2-FREEZE",
+      "title": "Catalog, programs, contract 2.4.2, and schedules are unchanged",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "catalog_sha256": "ac94514accac4774bf33f109d8e8a80da52f512e78284d626e6591835247f1cb"
+}

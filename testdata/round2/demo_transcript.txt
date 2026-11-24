@@ -1,0 +1,49 @@
+===== DEMO approved 2026-2027 offering -> deadline change -> material candidate =====
+approved offering: fixture-river-2026
+approved revision before: rev-fixture-river-2026-v1-approved version 1
+approved deadline before: 2026-03-15
+approved fingerprint before: b46e06012929bd99ebd060428bc2ac8b9ae5b43850768c0f784aeb1d6994191a
+directory membership before: 2026-2027
+classification: material_change
+snapshot: snap-river-official-ok-200-5b18207aa247
+official url: https://example.test/river-lab
+source id: river-official
+detected at: 2026-03-20T00:00:00Z
+candidate: cand-fixture-river-2026-v2-cb3552c42f status=pending queued=True
+excerpt: Applications due April 1, 2026
+field app.deadlines: prior '2026-03-15' proposed '2026-04-01'
+proposed deadline on the candidate revision: 2026-04-01
+approved revision after staging: rev-fixture-river-2026-v1-approved
+approved deadline after staging: 2026-03-15
+approved fingerprint after staging: b46e06012929bd99ebd060428bc2ac8b9ae5b43850768c0f784aeb1d6994191a
+approved revision unchanged: True
+membership unchanged: True
+
+===== DEMO historical source -> explicit new cycle -> workbook -> approval =====
+historical offering: fixture-harbor-2025-26
+historical revision before: rev-fixture-harbor-2025-26-v1-approved
+historical cycle before: 2025-2026 school year
+historical directory member before: False
+classification: next_cycle
+snapshot: snap-harbor-official-ok-200-8f21286cb656
+requested url: https://example.test/harbor
+final url: https://example.test/harbor
+candidate: cand-fixture-harbor-2025-26--2026-2027-v1-f061cb0167
+new offering id: fixture-harbor-2025-26--2026-2027
+excerpt: Announcing the 2026-2027 school year teen docent program. | Applications due August 1, 2026.
+proposed cycle: 2026-2027 school year
+proposed deadline: 2026-08-01
+proposed grades: None
+proposed pay: None
+proposed schedule: None
+workbook why_review: A new cycle was announced. The previous cycle must stay intact.
+workbook excerpts: Announcing the 2026-2027 school year teen docent program.
+Applications due August 1, 2026.
+tampered fingerprint import: stale (candidate fingerprint does not match the current proposed revision)
+real workbook approval: accepted (approved exact stored revision)
+approved fingerprint: f061cb0167affec9029ddee24bcafb34b32eb64bd2aed856fcc0d49d8229dd1e
+historical revision after approval: rev-fixture-harbor-2025-26-v1-approved
+historical cycle after approval: 2025-2026 school year
+new approved offering: fixture-harbor-2025-26--2026-2027
+new approved cycle: 2026-2027 school year
+new approved deadline: 2026-08-01

@@ -17,6 +17,7 @@ scripts/build.py            The publication gate (Section 7.1) and the transform
 site/                       The website: static HTML + JS, no build tools. Reads site/data/catalog.json and site/data/zips.json.
 .github/workflows/site.yml  TEMPORARY PRODUCTION FREEZE (Round 1.2): the legacy 2.3 autocheck does not run nightly, does not run on push to main, and has no Pages deploy job or deploy input. The live site stays as last deployed until an explicit migration/activation round. workflow_dispatch may run a non-publishing frozen autocheck only.
 .github/workflows/round1-acceptance.yml  PR check: isolated Round 1 acceptance suite only. No secrets, no Pages deploy, no live-link monitor.
+.github/workflows/round2-acceptance.yml  PR check: isolated Round 2 known-source monitor. No schedule, no secrets, no live fetches, no Pages deploy.
 ```
 
 ## Working locally
@@ -32,6 +33,8 @@ cd site && python -m http.server 8000                       # open http://localh
 `build.py` publishes an offering only when the contract's gate passes: in scope, current cycle announced with evidence, cycle not ended, first-party source present. Its decisions and reasons are in `data/meta/gate_report.json`; the `disagreements_with_collector_flag` list is where a person should look first.
 
 Contract 2.4.2 (Appendix C plus Round 1.1 / 1.2) changes directory membership and approval rules. Round 1 implements that path against **isolated fixtures and a separate test catalog** only. It does not bulk-approve `data/programs/` or rewrite the live Pages catalog. See `scripts/review/README.md`.
+
+Round 2 checks official sources already tied to known programs and stages a Round 1 candidate only when the page supports a structured change. It does not discover new programs, run on a schedule, or publish. See `scripts/monitor/README.md`. The PR check is `.github/workflows/round2-acceptance.yml`.
 
 **Production freeze.** Until an owner-reviewed migration/activation plan, merging this branch must not publish. The legacy builder in `.github/workflows/site.yml` is frozen (no schedule, no push-to-main, no Pages deploy path). The currently deployed GitHub Pages site remains untouched by that freeze. Do not run the Round 1 review tool against production records.
 
