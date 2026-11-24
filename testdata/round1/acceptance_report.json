@@ -1,5 +1,5 @@
 {
-  "passed": 22,
+  "passed": 25,
   "failed": 0,
   "results": [
     {
@@ -300,6 +300,24 @@
       "title": "Reject/Hold of a cancellation candidate leave the approved revision intact",
       "ok": true,
       "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-5bb42c4c1e', 'decision': 'reject', 'status': 'rejected', 'reason': 'rejected; existing approved version intact', 'fact_cells_edited_ignored': False} {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v3-5bb42c4c1e', 'decision': 'hold', 'status': 'held', 'reason': 'held; existing approved version intact', 'fact_cells_edited_ignored': False}"
+    },
+    {
+      "id": "R1-23",
+      "title": "First-party label + official link + excerpt creates a candidate; approved facts remain until human approval",
+      "ok": true,
+      "detail": "staged={'ok': True, 'outcome': 'first_party_cancellation', 'candidate_id': 'cand-fixture-river-2026-v2-5bb42c4c1e', 'queued': True, 'unpublished': False, 'reason': 'candidate created; approved version left intact'} pending=1 life=scheduled"
+    },
+    {
+      "id": "R1-24",
+      "title": "First-party label but missing official link (or authority alone) is observation only; no cancelled candidate",
+      "ok": true,
+      "detail": "cases=[True, True, True, True, True] authority_only={'ok': True, 'outcome': 'unchanged', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'approved factual revision unchanged; no duplicate review'}"
+    },
+    {
+      "id": "R1-25",
+      "title": "First-party label but missing excerpt is observation only; no cancelled candidate",
+      "ok": true,
+      "detail": "cases=[True, True, True, True]"
     }
   ],
   "production_catalog_sha256": "ac94514accac4774bf33f109d8e8a80da52f512e78284d626e6591835247f1cb"

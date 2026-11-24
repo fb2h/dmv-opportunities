@@ -8,8 +8,12 @@ third-party cancellation report are observations only — they must not
 unpublish and must not write an unsupported cancelled fact.
 
 A first-party official confirmation that an approved offering was
-cancelled is a material factual change: it creates a review candidate
-and leaves the approved revision intact until human review.
+cancelled is a material factual change only when the observation also
+carries at least one non-empty official first-party link and at least
+one non-empty supporting excerpt. source_authority="first_party" alone
+is not enough. Missing evidence is recorded as an unverified
+cancellation observation. Human review is still required before the
+cancellation fact becomes approved.
 """
 from __future__ import annotations
 
@@ -85,15 +89,45 @@ def _observation_only(store, observation, outcome, now, reason):
     }
 
 
-def first_party_cancellation_confirmed(observation):
-    """True only for an explicit first-party official cancellation.
+def _nonempty_text_values(values):
+    """Presence-only: empty lists and whitespace-only strings are missing."""
+    if values is None:
+        return []
+    if isinstance(values, (str, bytes)):
+        values = [values]
+    out = []
+    for item in values:
+        if item is None:
+            continue
+        text = item.decode("utf-8") if isinstance(item, bytes) else str(item)
+        text = text.strip()
+        if text:
+            out.append(text)
+    return out
 
-    Not inferred from fetch failure, a missing page, a deadline, an end
-    date, or a third-party / unsupported statement.
+
+def first_party_cancellation_evidence(observation):
+    """True when a non-empty official link and a non-empty excerpt are present.
+
+    Round 1.2 does not semantically verify the excerpt or URL.
+    """
+    links = _nonempty_text_values(observation.get("official_links"))
+    excerpts = _nonempty_text_values(observation.get("excerpts"))
+    return bool(links) and bool(excerpts)
+
+
+def first_party_cancellation_confirmed(observation):
+    """True only for an evidenced first-party official cancellation.
+
+    Requires outcome, first-party authority, at least one non-empty
+    official link, and at least one non-empty excerpt. Not inferred from
+    fetch failure, a missing page, a deadline, an end date, a third-party
+    statement, or source_authority="first_party" by itself.
     """
     return (
         observation.get("outcome") == "first_party_cancellation"
         and observation.get("source_authority") == "first_party"
+        and first_party_cancellation_evidence(observation)
     )
 
 
@@ -141,10 +175,13 @@ def stage_observation(store, observation, proposed_program=None, proposed_offeri
             "observation recorded; approved version left intact",
         )
 
-    if outcome == "first_party_cancellation" and authority != "first_party":
+    if outcome == "first_party_cancellation" and not first_party_cancellation_confirmed(observation):
+        if authority != "first_party":
+            reason = "cancellation not first-party; recorded as unverified; approved version left intact"
+        else:
+            reason = "first-party cancellation missing official link or excerpt; recorded as unverified; approved version left intact"
         return _observation_only(
-            store, observation, "cancellation_report", now,
-            "cancellation not first-party; recorded as unverified; approved version left intact",
+            store, observation, "cancellation_report", now, reason,
         )
 
     if proposed_program is None:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the 20 Round 1 acceptance scenarios with fixtures and controlled clocks."""
+"""Run the Round 1 / 1.1 / 1.2 acceptance scenarios with fixtures and controlled clocks."""
 from __future__ import annotations
 
 import hashlib
@@ -116,16 +116,53 @@ def stage(store, scenario, suffix=""):
             "extracted_text": "A forum post says the internship was cancelled.",
         }, program, offering)
     if scenario == "first_party_cancellation":
-        program, offering = proposed_river_cancelled()
-        return stage_observation(store, {
-            "observation_id": f"obs-fp-cancel{suffix}", "program_id": RIVER_PID,
-            "offering_id": RIVER_OID, "source_id": "river-s1",
-            "outcome": "first_party_cancellation", "source_authority": "first_party",
-            "extracted_text": "The Summer 2026 internship has been cancelled.",
-            "official_links": [program["program_url"]],
-            "excerpts": ["The Summer 2026 internship has been cancelled."],
-        }, program, offering)
+        return stage_fp_cancel(store, suffix=suffix)
     raise ValueError(scenario)
+
+
+def stage_fp_cancel(store, suffix="", official_links="default", excerpts="default",
+                    source_authority="first_party", outcome="first_party_cancellation"):
+    """Stage a cancellation observation. official_links/excerpts='default' uses fixture evidence.
+
+    Pass None to omit the key. Empty lists and whitespace-only strings are missing evidence.
+    """
+    program, offering = proposed_river_cancelled()
+    obs = {
+        "observation_id": f"obs-fp-cancel{suffix}", "program_id": RIVER_PID,
+        "offering_id": RIVER_OID, "source_id": "river-s1",
+        "source_authority": source_authority,
+        "extracted_text": "The Summer 2026 internship has been cancelled.",
+    }
+    if outcome is not None:
+        obs["outcome"] = outcome
+    if official_links == "default":
+        obs["official_links"] = [program["program_url"]]
+    elif official_links is not None:
+        obs["official_links"] = official_links
+    if excerpts == "default":
+        obs["excerpts"] = ["The Summer 2026 internship has been cancelled."]
+    elif excerpts is not None:
+        obs["excerpts"] = excerpts
+    return stage_observation(store, obs, program, offering)
+
+
+def cancellation_candidate_pending(store):
+    return [
+        c for c in store["candidates"].values()
+        if c.get("status") in ("pending", "held")
+        and (
+            c.get("review_reason") == "first_party_cancellation"
+            or (c.get("proposed_revision_id") and _revision_reports_cancelled(store, c["proposed_revision_id"]))
+        )
+    ]
+
+
+def _revision_reports_cancelled(store, revision_id):
+    for rev in store.get("revisions", []):
+        if rev.get("revision_id") == revision_id:
+            offering = ((rev.get("record") or {}).get("offering") or {})
+            return offering.get("reported_lifecycle") == "cancelled"
+    return False
 
 
 def offering_in_catalog(catalog, oid):
@@ -177,6 +214,9 @@ class Runner:
         self.r1_20_notes_and_publish_distinct()
         self.r1_21_first_party_cancellation()
         self.r1_22_cancel_reject_hold()
+        self.r1_23_cancellation_evidence_present()
+        self.r1_24_cancellation_missing_link()
+        self.r1_25_cancellation_missing_excerpt()
         return self.results
 
     def r1_01_unchanged(self):
@@ -561,6 +601,105 @@ class Runner:
                    and off and off["lifecycle_status"] != "cancelled"
                    and store["memberships"][RIVER_OID]["school_year"] == "2026-2027",
                    f"{rejected[0]} {held[0]}")
+
+    def r1_23_cancellation_evidence_present(self):
+        store = seed_store()
+        before_fp = store["approved"][RIVER_OID]["facts_fingerprint"]
+        staged = stage_fp_cancel(store, suffix="-evidence")
+        _p, still = approved_facts(store, RIVER_OID)
+        cat, _ = build_catalog_document(store, date(2026, 2, 1), "2026-02-01T00:00:00Z")
+        pub = offering_in_catalog(cat, RIVER_OID)
+        pending = cancellation_candidate_pending(store)
+        self.check(
+            "R1-23",
+            "First-party label + official link + excerpt creates a candidate; approved facts remain until human approval",
+            staged["queued"] and staged["outcome"] == "first_party_cancellation" and not staged["unpublished"]
+            and still.get("reported_lifecycle") != "cancelled"
+            and store["approved"][RIVER_OID]["facts_fingerprint"] == before_fp
+            and store["approved"][RIVER_OID]["review_status"] == "passed"
+            and pub and pub["lifecycle_status"] != "cancelled"
+            and len(pending) == 1
+            and RIVER_OID in store["memberships"],
+            f"staged={staged} pending={len(pending)} life={pub.get('lifecycle_status') if pub else None}",
+        )
+
+    def r1_24_cancellation_missing_link(self):
+        cases = []
+        for suffix, links in (
+            ("-omit", None),
+            ("-empty", []),
+            ("-blank", ["   "]),
+            ("-empty-str", [""]),
+        ):
+            store = seed_store()
+            before_fp = store["approved"][RIVER_OID]["facts_fingerprint"]
+            staged = stage_fp_cancel(store, suffix=suffix, official_links=links)
+            _p, off = approved_facts(store, RIVER_OID)
+            pending = cancellation_candidate_pending(store)
+            cases.append(
+                not staged["queued"] and not staged["unpublished"]
+                and staged["outcome"] == "cancellation_report"
+                and staged["candidate_id"] is None
+                and off.get("reported_lifecycle") != "cancelled"
+                and store["approved"][RIVER_OID]["facts_fingerprint"] == before_fp
+                and not pending
+            )
+        label_only = seed_store()
+        before_fp = label_only["approved"][RIVER_OID]["facts_fingerprint"]
+        program, offering = proposed_river("unchanged")
+        offering = deepcopy(offering)
+        offering["reported_lifecycle"] = "cancelled"
+        authority_only = stage_observation(label_only, {
+            "observation_id": "obs-fp-cancel-authority-only",
+            "program_id": RIVER_PID, "offering_id": RIVER_OID, "source_id": "river-s1",
+            "source_authority": "first_party",
+            "extracted_text": river_source_text("unchanged"),
+            "official_links": [program["program_url"]],
+            "excerpts": ["The host page is first-party."],
+        }, program, offering)
+        _p, still = approved_facts(label_only, RIVER_OID)
+        pending_label = cancellation_candidate_pending(label_only)
+        cases.append(
+            not authority_only["queued"]
+            and authority_only["outcome"] != "first_party_cancellation"
+            and still.get("reported_lifecycle") != "cancelled"
+            and label_only["approved"][RIVER_OID]["facts_fingerprint"] == before_fp
+            and not pending_label
+        )
+        self.check(
+            "R1-24",
+            "First-party label but missing official link (or authority alone) is observation only; no cancelled candidate",
+            all(cases),
+            f"cases={cases} authority_only={authority_only}",
+        )
+
+    def r1_25_cancellation_missing_excerpt(self):
+        cases = []
+        for suffix, excerpts in (
+            ("-omit", None),
+            ("-empty", []),
+            ("-blank", ["   "]),
+            ("-empty-str", [""]),
+        ):
+            store = seed_store()
+            before_fp = store["approved"][RIVER_OID]["facts_fingerprint"]
+            staged = stage_fp_cancel(store, suffix=suffix, excerpts=excerpts)
+            _p, off = approved_facts(store, RIVER_OID)
+            pending = cancellation_candidate_pending(store)
+            cases.append(
+                not staged["queued"] and not staged["unpublished"]
+                and staged["outcome"] == "cancellation_report"
+                and staged["candidate_id"] is None
+                and off.get("reported_lifecycle") != "cancelled"
+                and store["approved"][RIVER_OID]["facts_fingerprint"] == before_fp
+                and not pending
+            )
+        self.check(
+            "R1-25",
+            "First-party label but missing excerpt is observation only; no cancelled candidate",
+            all(cases),
+            f"cases={cases}",
+        )
 
 
 def write_catalog_artifacts():

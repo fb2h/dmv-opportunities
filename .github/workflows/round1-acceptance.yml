@@ -1,4 +1,4 @@
-# Round 1 / 1.1 PR regression. Isolated fixtures only.
+# Round 1 / 1.1 / 1.2 PR regression. Isolated fixtures only.
 # Does not use repository secrets, does not read or write live production
 # program files as a publication step, does not deploy GitHub Pages, does
 # not run the live-link monitor, and does not write to main.

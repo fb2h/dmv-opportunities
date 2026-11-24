@@ -44,7 +44,7 @@ python3 scripts/review_tool.py --workspace /tmp/dmv-r1 publish --today 2026-02-0
 
 Decision-saved (import) is not site-published (publish).
 
-`fetch_failed`, `missing_page`, and `cancellation_report` are observations only. `first_party_cancellation` requires `source_authority=first_party` and creates a review candidate; approval sets `lifecycle_status=cancelled` and does not drop 2026-2027 membership.
+`fetch_failed`, `missing_page`, and `cancellation_report` are observations only. A first-party cancellation candidate requires `outcome=first_party_cancellation`, `source_authority=first_party`, at least one non-empty official link, and at least one non-empty excerpt. `source_authority=first_party` alone is not enough. Approval still sets `lifecycle_status=cancelled` and does not drop 2026-2027 membership.
 
 ## Acceptance tests
 

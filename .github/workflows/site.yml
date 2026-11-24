@@ -1,4 +1,4 @@
-# TEMPORARY PRODUCTION FREEZE (Round 1.1 / contract 2.4.1)
+# TEMPORARY PRODUCTION FREEZE (Round 1.2 / contract 2.4.2)
 #
 # The legacy autocheck.py + build.py path does NOT implement the 2.4
 # approval/membership model. Until an explicit owner-reviewed
@@ -6,14 +6,14 @@
 #   - this workflow does NOT run on a nightly schedule
 #   - this workflow does NOT run on push to main (merging Round 1
 #     must not rebuild or deploy GitHub Pages)
+#   - there is NO Pages deployment job and NO workflow input that can
+#     deploy the frozen 2.3 builder
 #   - the currently deployed GitHub Pages site remains untouched
 #   - production publication is explicitly inactive
 #   - Round 1 review is NOT activated against production data
 #
-# Manual path: workflow_dispatch only. Defaults do nothing that
-# publishes. Optional autocheck is the frozen 2.3 checker without
-# live-link monitoring. Optional Pages deploy is a separate opt-in
-# and must stay false until the migration/activation plan.
+# Manual path: workflow_dispatch only. The only optional action is a
+# non-publishing frozen 2.3 autocheck without live-link monitoring.
 name: Legacy production (frozen)
 
 on:
@@ -23,20 +23,9 @@ on:
         description: "TEMPORARY FREEZE. Run the frozen 2.3 autocheck.py WITHOUT live-link checks. Does not publish, does not deploy, and does not use the Round 1 review path against production."
         type: boolean
         default: false
-      deploy_legacy_pages:
-        description: "Leave false. Production publication remains inactive until a later migration/activation round. Setting true would deploy Pages from the frozen 2.3 builder (not the 2.4 approval model)."
-        type: boolean
-        default: false
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-  issues: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   freeze-status:
@@ -47,9 +36,9 @@ jobs:
           echo "Production publication is explicitly inactive."
           echo "Nightly schedule: removed."
           echo "Push-to-main trigger: removed."
-          echo "Existing GitHub Pages site: not modified by this workflow unless deploy_legacy_pages is explicitly true."
+          echo "Legacy Pages deploy job: removed."
+          echo "Existing GitHub Pages site: not modified by this workflow."
           echo "run_legacy_autocheck=${{ github.event.inputs.run_legacy_autocheck }}"
-          echo "deploy_legacy_pages=${{ github.event.inputs.deploy_legacy_pages }}"
 
   legacy-autocheck:
     if: ${{ github.event.inputs.run_legacy_autocheck == 'true' }}
@@ -65,23 +54,3 @@ jobs:
         with:
           name: frozen-autocheck-report
           path: data/meta/autocheck_report.json
-
-  legacy-deploy:
-    if: ${{ github.event.inputs.deploy_legacy_pages == 'true' }}
-    needs: freeze-status
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: pip install -r requirements.txt
-      - name: Frozen 2.3 catalog build (not the 2.4 approval path)
-        run: python scripts/build.py
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: site }
-      - id: deployment
-        uses: actions/deploy-pages@v4

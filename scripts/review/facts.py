@@ -150,7 +150,8 @@ def lifecycle_status(offering, today):
 
     `reported_lifecycle=cancelled` is an official first-party fact on the
     approved revision. Do not infer cancelled from a failed fetch, a missing
-    page, a passed deadline, an activity end date, or a third-party report.
+    page, a passed deadline, an activity end date, a third-party report, or
+    a first-party label without an official link and excerpt.
     """
     if offering.get("reported_lifecycle") == "cancelled":
         return "cancelled"

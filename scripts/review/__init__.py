@@ -4,8 +4,8 @@ Isolated fixtures and a separate test catalog only. This package must not
 bulk-approve production records or rewrite site/data/catalog.json.
 """
 
-CONTRACT_VERSION = "2.4.1"
-PUBLICATION_POLICY_VERSION = "2.4.1"
+CONTRACT_VERSION = "2.4.2"
+PUBLICATION_POLICY_VERSION = "2.4.2"
 SCHEMA_VERSION = "2.3.0"
 TAXONOMY_VERSION = "2.1.0"
 DIRECTORY_SCHOOL_YEAR = "2026-2027"

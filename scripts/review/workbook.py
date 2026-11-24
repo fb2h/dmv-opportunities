@@ -79,7 +79,7 @@ def export_workbook(store, path=None):
             "material_change": "Material facts differ from the approved revision.",
             "next_cycle": "A new cycle was announced. The previous cycle must stay intact.",
             "new_assignment": "Proposed directory-year membership needs review.",
-            "first_party_cancellation": "A first-party official source confirms this offering was cancelled. Approval updates lifecycle to cancelled; directory membership remains.",
+            "first_party_cancellation": "A first-party official source, with an official link and supporting excerpt, reports this offering was cancelled. Approval updates lifecycle to cancelled; directory membership remains.",
             "other": "Review required.",
         }.get(cand.get("review_reason"), cand.get("review_reason") or "Review required.")
         if cand.get("status") == "held":
