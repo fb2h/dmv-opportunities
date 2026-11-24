@@ -1,0 +1,18 @@
+{
+  "pages": {
+    "https://example.test/river-lab": {
+      "file": "river_baseline.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "etag": "river-v1",
+      "last_modified": "Wed, 15 Jan 2026 12:00:00 GMT"
+    },
+    "https://example.test/harbor": {
+      "file": "harbor_2526.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "etag": "harbor-v1",
+      "last_modified": "Wed, 15 Jan 2026 12:00:00 GMT"
+    }
+  }
+}

@@ -46,6 +46,8 @@ Decision-saved (import) is not site-published (publish).
 
 `fetch_failed`, `missing_page`, and `cancellation_report` are observations only. A first-party cancellation candidate requires `outcome=first_party_cancellation`, `source_authority=first_party`, at least one non-empty official link, and at least one non-empty excerpt. `source_authority=first_party` alone is not enough. Approval still sets `lifecycle_status=cancelled` and does not drop 2026-2027 membership.
 
+Round 2 calls `stage_observation` in `scripts/review/stage.py` for every check. Unchanged pages and fetch failures stay observations. A supported fact change or an evidenced first-party cancellation becomes a normal candidate and then uses this same workbook. The monitor does not approve or publish. See `scripts/monitor/README.md`.
+
 ## Acceptance tests
 
 ```bash

@@ -1,0 +1,26 @@
+# Round 2 known-source monitor. Isolated fixtures only.
+# Pull requests only: no schedule, no push-to-main, no repository secrets,
+# no live fetches, no production catalog build, and no Pages deployment.
+name: Round 2 acceptance
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: round2-acceptance-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  round2-acceptance:
+    name: Round 2 acceptance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run Round 2 acceptance suite
+        run: python3 tests/round2/run_acceptance.py

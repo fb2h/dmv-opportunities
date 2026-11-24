@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "source_id": "river-official",
+      "program_id": "fixture-river-lab-internship",
+      "offering_id": "fixture-river-2026",
+      "url": "https://example.test/river-lab",
+      "allowed_hosts": ["example.test"],
+      "source_authority": "first_party",
+      "title": "River Lab official page"
+    },
+    {
+      "source_id": "harbor-official",
+      "program_id": "fixture-harbor-museum-docent",
+      "offering_id": "fixture-harbor-2025-26",
+      "url": "https://example.test/harbor",
+      "allowed_hosts": ["example.test"],
+      "source_authority": "first_party",
+      "title": "Harbor Museum official page"
+    }
+  ]
+}
