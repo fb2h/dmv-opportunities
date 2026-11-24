@@ -29,6 +29,7 @@ from review.fixtures import (
     RIVER_PID,
     proposed_harbor_next,
     proposed_river,
+    proposed_river_cancelled,
     river_source_text,
     seed_store,
 )
@@ -102,6 +103,28 @@ def stage(store, scenario, suffix=""):
         return stage_observation(store, {"observation_id": f"obs-cancel{suffix}", "program_id": RIVER_PID,
                                         "offering_id": RIVER_OID, "source_id": "river-s1",
                                         "outcome": "cancellation_report", "extracted_text": "reported cancelled"})
+    if scenario == "missing_page":
+        return stage_observation(store, {"observation_id": f"obs-missing{suffix}", "program_id": RIVER_PID,
+                                        "offering_id": RIVER_OID, "source_id": "river-s1",
+                                        "outcome": "missing_page", "extracted_text": ""})
+    if scenario == "third_party_cancellation":
+        program, offering = proposed_river_cancelled()
+        return stage_observation(store, {
+            "observation_id": f"obs-third-cancel{suffix}", "program_id": RIVER_PID,
+            "offering_id": RIVER_OID, "source_id": "forum-s1",
+            "outcome": "first_party_cancellation", "source_authority": "third_party",
+            "extracted_text": "A forum post says the internship was cancelled.",
+        }, program, offering)
+    if scenario == "first_party_cancellation":
+        program, offering = proposed_river_cancelled()
+        return stage_observation(store, {
+            "observation_id": f"obs-fp-cancel{suffix}", "program_id": RIVER_PID,
+            "offering_id": RIVER_OID, "source_id": "river-s1",
+            "outcome": "first_party_cancellation", "source_authority": "first_party",
+            "extracted_text": "The Summer 2026 internship has been cancelled.",
+            "official_links": [program["program_url"]],
+            "excerpts": ["The Summer 2026 internship has been cancelled."],
+        }, program, offering)
     raise ValueError(scenario)
 
 
@@ -152,6 +175,8 @@ class Runner:
         self.r1_18_closed_completed_remain()
         self.r1_19_competing_and_concurrent()
         self.r1_20_notes_and_publish_distinct()
+        self.r1_21_first_party_cancellation()
+        self.r1_22_cancel_reject_hold()
         return self.results
 
     def r1_01_unchanged(self):
@@ -238,6 +263,9 @@ class Runner:
         self.check("R1-06", "Deadline/end-date change status without membership or approval loss",
                    s_open == "open" and s_closed == "closed"
                    and life_sched == "scheduled" and life_prog == "in_progress" and life_done == "completed"
+                   and life_done != "cancelled"
+                   and still and still["lifecycle_status"] == "completed"
+                   and still["lifecycle_status"] != "cancelled"
                    and store["approved"][RIVER_OID] == approval
                    and store["memberships"][RIVER_OID]["school_year"] == membership["school_year"]
                    and still is not None,
@@ -351,15 +379,28 @@ class Runner:
 
     def r1_14_no_silent_unpublish(self):
         store = seed_store()
+        before_fp = store["approved"][RIVER_OID]["facts_fingerprint"]
         a = stage(store, "fetch_failed")
         b = stage(store, "cancellation")
+        c = stage(store, "missing_page")
+        d = stage(store, "third_party_cancellation")
+        _p, off = approved_facts(store, RIVER_OID)
         cat, _ = build_catalog_document(store, date(2026, 2, 1), "2026-02-01T00:00:00Z")
-        self.check("R1-14", "Failed fetch / cancellation report do not unpublish",
-                   not a["unpublished"] and not b["unpublished"]
-                   and not a["queued"] and not b["queued"]
-                   and offering_in_catalog(cat, RIVER_OID) is not None
-                   and store["approved"][RIVER_OID]["review_status"] == "passed",
-                   f"{a} {b}")
+        pub = offering_in_catalog(cat, RIVER_OID)
+        pending = [x for x in store["candidates"].values() if x["status"] in ("pending", "held")]
+        self.check("R1-14", "Fetch failure / unverified cancellation: no overwrite, no unpublish, no unsupported cancelled fact",
+                   not a["unpublished"] and not b["unpublished"] and not c["unpublished"] and not d["unpublished"]
+                   and not a["queued"] and not b["queued"] and not c["queued"] and not d["queued"]
+                   and d["outcome"] == "cancellation_report"
+                   and pub is not None
+                   and pub["lifecycle_status"] != "cancelled"
+                   and off.get("reported_lifecycle") != "cancelled"
+                   and store["approved"][RIVER_OID]["facts_fingerprint"] == before_fp
+                   and store["approved"][RIVER_OID]["review_status"] == "passed"
+                   and pay_min_from_store(store, RIVER_OID) == 15.0
+                   and not pending
+                   and RIVER_OID in store["memberships"],
+                   f"{a} {b} {c} {d} pending={len(pending)}")
 
     def r1_15_invalid_candidate(self):
         store = seed_store()
@@ -470,6 +511,56 @@ class Runner:
                    and after["publication"]["decision_saved_at"]
                    and after["publication"]["last_published_at"],
                    f"in_git={secret in log} in_store={secret in stored} notes_on_disk={notes_on_disk} distinct={distinct_before_publish} published={pub.get('published')}")
+
+    def r1_21_first_party_cancellation(self):
+        store = seed_store()
+        before_pay = pay_min_from_store(store, RIVER_OID)
+        before_fp = store["approved"][RIVER_OID]["facts_fingerprint"]
+        staged = stage(store, "first_party_cancellation")
+        _p, still = approved_facts(store, RIVER_OID)
+        mid_cat, _ = build_catalog_document(store, date(2026, 2, 1), "2026-02-01T00:00:00Z")
+        mid = offering_in_catalog(mid_cat, RIVER_OID)
+        data, _ = export_workbook(store)
+        book = set_decisions(data, {staged["candidate_id"]: {"Decision": "Approve"}})
+        store, _, results = import_workbook(store, book)
+        _p2, approved = approved_facts(store, RIVER_OID)
+        cat, _ = build_catalog_document(store, date(2026, 2, 1), "2026-02-01T00:00:00Z")
+        off = offering_in_catalog(cat, RIVER_OID)
+        self.check("R1-21", "First-party confirmed cancellation creates a candidate; approval sets cancelled; membership remains",
+                   staged["queued"] and staged["outcome"] == "first_party_cancellation" and not staged["unpublished"]
+                   and still.get("reported_lifecycle") != "cancelled"
+                   and pay_min_from_store(store, RIVER_OID) == before_pay
+                   and store["approved"][RIVER_OID]["facts_fingerprint"] != before_fp
+                   and mid and mid["lifecycle_status"] != "cancelled"
+                   and results[0]["status"] == "accepted"
+                   and approved.get("reported_lifecycle") == "cancelled"
+                   and off is not None
+                   and off["lifecycle_status"] == "cancelled"
+                   and store["memberships"][RIVER_OID]["school_year"] == "2026-2027",
+                   f"staged={staged} results={results} life={off.get('lifecycle_status') if off else None}")
+
+    def r1_22_cancel_reject_hold(self):
+        store = seed_store()
+        staged = stage(store, "first_party_cancellation")
+        data, _ = export_workbook(store)
+        book = set_decisions(data, {staged["candidate_id"]: {"Decision": "Reject"}})
+        store, _, rejected = import_workbook(store, book)
+        _p, after_reject = approved_facts(store, RIVER_OID)
+        held_stage = stage(store, "first_party_cancellation", suffix="-hold")
+        data2, _ = export_workbook(store)
+        book2 = set_decisions(data2, {held_stage["candidate_id"]: {"Decision": "Hold"}})
+        store, _, held = import_workbook(store, book2)
+        _p2, after_hold = approved_facts(store, RIVER_OID)
+        cat, _ = build_catalog_document(store, date(2026, 2, 1), "2026-02-01T00:00:00Z")
+        off = offering_in_catalog(cat, RIVER_OID)
+        self.check("R1-22", "Reject/Hold of a cancellation candidate leave the approved revision intact",
+                   rejected[0]["status"] == "rejected" and held[0]["status"] == "held"
+                   and after_reject.get("reported_lifecycle") != "cancelled"
+                   and after_hold.get("reported_lifecycle") != "cancelled"
+                   and pay_min_from_store(store, RIVER_OID) == 15.0
+                   and off and off["lifecycle_status"] != "cancelled"
+                   and store["memberships"][RIVER_OID]["school_year"] == "2026-2027",
+                   f"{rejected[0]} {held[0]}")
 
 
 def write_catalog_artifacts():

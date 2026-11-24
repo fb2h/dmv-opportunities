@@ -20,7 +20,7 @@ MATERIAL_PROGRAM_KEYS = (
 )
 MATERIAL_OFFERING_KEYS = (
     "summary", "types", "subjects", "season", "mode", "housing",
-    "cycle_kind", "cycle_label", "ann",
+    "cycle_kind", "cycle_label", "ann", "reported_lifecycle",
     "loc", "grades", "age", "residency", "school", "citizenship", "work_auth",
     "fee", "comp", "aid", "sched", "app", "reqs", "capacity", "capacity_raw",
 )
@@ -80,6 +80,7 @@ def format_material_facts(program, offering):
         f"schedule: {json.dumps(offering.get('sched'), ensure_ascii=False, sort_keys=True)}",
         f"application: {json.dumps(offering.get('app'), ensure_ascii=False, sort_keys=True)}",
         f"grades: {json.dumps(offering.get('grades'), ensure_ascii=False, sort_keys=True)}",
+        f"reported_lifecycle: {offering.get('reported_lifecycle')}",
         f"official_url: {program.get('program_url')}",
     ]
     return "\n".join(lines)
@@ -145,7 +146,14 @@ def application_status(offering, today):
 
 
 def lifecycle_status(offering, today):
-    """Activity status from explicit start/end only. Do not invent dates from labels."""
+    """Activity status from an approved official lifecycle fact, else start/end.
+
+    `reported_lifecycle=cancelled` is an official first-party fact on the
+    approved revision. Do not infer cancelled from a failed fetch, a missing
+    page, a passed deadline, an activity end date, or a third-party report.
+    """
+    if offering.get("reported_lifecycle") == "cancelled":
+        return "cancelled"
     sched = offering.get("sched") or {}
     start = parse_explicit_date(sched.get("start"))
     end = parse_explicit_date(sched.get("end"))

@@ -28,6 +28,9 @@ python3 scripts/review_tool.py --workspace /tmp/dmv-r1 init --remote /tmp/dmv-r1
 
 # Later monitor calls this deterministic staging API (fixtures only in Round 1)
 python3 scripts/review_tool.py --workspace /tmp/dmv-r1 stage material
+python3 scripts/review_tool.py --workspace /tmp/dmv-r1 stage fetch_failed
+python3 scripts/review_tool.py --workspace /tmp/dmv-r1 stage cancellation
+python3 scripts/review_tool.py --workspace /tmp/dmv-r1 stage first_party_cancellation
 
 # Reviewer loopback
 python3 scripts/review_tool.py --workspace /tmp/dmv-r1 serve --host 127.0.0.1 --port 8765
@@ -40,6 +43,8 @@ python3 scripts/review_tool.py --workspace /tmp/dmv-r1 publish --today 2026-02-0
 ```
 
 Decision-saved (import) is not site-published (publish).
+
+`fetch_failed`, `missing_page`, and `cancellation_report` are observations only. `first_party_cancellation` requires `source_authority=first_party` and creates a review candidate; approval sets `lifecycle_status=cancelled` and does not drop 2026-2027 membership.
 
 ## Acceptance tests
 

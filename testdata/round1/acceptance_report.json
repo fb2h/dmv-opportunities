@@ -1,5 +1,5 @@
 {
-  "passed": 20,
+  "passed": 22,
   "failed": 0,
   "results": [
     {
@@ -18,7 +18,7 @@
       "id": "R1-03",
       "title": "Next-cycle announcement is a separate candidate; old cycle intact",
       "ok": true,
-      "detail": "{'ok': True, 'outcome': 'next_cycle', 'candidate_id': 'cand-fixture-harbor-2026-27-v1-4da5ddccf9', 'queued': True, 'unpublished': False, 'reason': 'candidate created; approved version left intact'} old=2025-2026 school year"
+      "detail": "{'ok': True, 'outcome': 'next_cycle', 'candidate_id': 'cand-fixture-harbor-2026-27-v1-b72b1220a0', 'queued': True, 'unpublished': False, 'reason': 'candidate created; approved version left intact'} old=2025-2026 school year"
     },
     {
       "id": "R1-04",
@@ -30,7 +30,7 @@
       "id": "R1-05",
       "title": "Download \u2192 approve \u2192 upload yields exact approved version in the test catalog",
       "ok": true,
-      "detail": "pub=None pay={'filter_value': 'with_pay', 'label': '$18/hour'} results=[{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'approve', 'status': 'accepted', 'reason': 'approved exact stored revision', 'approved_revision_id': 'rev-fixture-river-2026-v2-approved', 'approved_fingerprint': '712fc8a732bc1c4195f0cdafd9e4af79292654b44303db639663536c0ebf1296', 'fact_cells_edited_ignored': False}]"
+      "detail": "pub=None pay={'filter_value': 'with_pay', 'label': '$18/hour'} results=[{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-bbe06b4b9c', 'decision': 'approve', 'status': 'accepted', 'reason': 'approved exact stored revision', 'approved_revision_id': 'rev-fixture-river-2026-v2-approved', 'approved_fingerprint': 'bbe06b4b9c2cacdfe94efa7ec913a979d7cfbe917c431e91e3e8c52119365185', 'fact_cells_edited_ignored': False}]"
     },
     {
       "id": "R1-06",
@@ -45,17 +45,17 @@
       "detail": [
         {
           "row": 2,
-          "candidate_id": "cand-fixture-harbor-2026-27-v1-4da5ddccf9",
+          "candidate_id": "cand-fixture-harbor-2026-27-v1-b72b1220a0",
           "decision": "approve",
           "status": "accepted",
           "reason": "approved exact stored revision",
           "approved_revision_id": "rev-fixture-harbor-2026-27-v1-approved",
-          "approved_fingerprint": "4da5ddccf90b739ab17ed12801c5a7ec793d0cee0956259be60f38f59512ce36",
+          "approved_fingerprint": "b72b1220a02321d6ee2ebdc3d08ec2dfec073eea0c5a80d4a0383c4ef928119a",
           "fact_cells_edited_ignored": false
         },
         {
           "row": 3,
-          "candidate_id": "cand-fixture-river-2026-v2-712fc8a732",
+          "candidate_id": "cand-fixture-river-2026-v2-bbe06b4b9c",
           "decision": "approve",
           "status": "stale",
           "reason": "candidate fingerprint does not match the current proposed revision"
@@ -87,7 +87,7 @@
       "detail": [
         {
           "row": 2,
-          "candidate_id": "cand-fixture-river-2026-v2-712fc8a732",
+          "candidate_id": "cand-fixture-river-2026-v2-bbe06b4b9c",
           "decision": null,
           "status": "no_decision",
           "reason": "empty Decision is not approval",
@@ -102,12 +102,12 @@
       "detail": [
         {
           "row": 2,
-          "candidate_id": "cand-fixture-river-2026-v2-712fc8a732",
+          "candidate_id": "cand-fixture-river-2026-v2-bbe06b4b9c",
           "decision": "approve",
           "status": "accepted",
           "reason": "approved exact stored revision",
           "approved_revision_id": "rev-fixture-river-2026-v2-approved",
-          "approved_fingerprint": "712fc8a732bc1c4195f0cdafd9e4af79292654b44303db639663536c0ebf1296",
+          "approved_fingerprint": "bbe06b4b9c2cacdfe94efa7ec913a979d7cfbe917c431e91e3e8c52119365185",
           "fact_cells_edited_ignored": true
         }
       ]
@@ -116,13 +116,13 @@
       "id": "R1-13",
       "title": "Reject and Hold leave the existing approved version intact",
       "ok": true,
-      "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'reject', 'status': 'rejected', 'reason': 'rejected; existing approved version intact', 'fact_cells_edited_ignored': False} {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v3-712fc8a732', 'decision': 'hold', 'status': 'held', 'reason': 'held; existing approved version intact', 'fact_cells_edited_ignored': False}"
+      "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-bbe06b4b9c', 'decision': 'reject', 'status': 'rejected', 'reason': 'rejected; existing approved version intact', 'fact_cells_edited_ignored': False} {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v3-bbe06b4b9c', 'decision': 'hold', 'status': 'held', 'reason': 'held; existing approved version intact', 'fact_cells_edited_ignored': False}"
     },
     {
       "id": "R1-14",
-      "title": "Failed fetch / cancellation report do not unpublish",
+      "title": "Fetch failure / unverified cancellation: no overwrite, no unpublish, no unsupported cancelled fact",
       "ok": true,
-      "detail": "{'ok': True, 'outcome': 'fetch_failed', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'observation recorded; approved version left intact'} {'ok': True, 'outcome': 'cancellation_report', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'observation recorded; approved version left intact'}"
+      "detail": "{'ok': True, 'outcome': 'fetch_failed', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'observation recorded; approved version left intact'} {'ok': True, 'outcome': 'cancellation_report', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'observation recorded; approved version left intact'} {'ok': True, 'outcome': 'missing_page', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'observation recorded; approved version left intact'} {'ok': True, 'outcome': 'cancellation_report', 'candidate_id': None, 'queued': False, 'unpublished': False, 'reason': 'cancellation not first-party; recorded as unverified; approved version left intact'} pending=0"
     },
     {
       "id": "R1-15",
@@ -281,13 +281,25 @@
       "id": "R1-19",
       "title": "Competing baseline and concurrent same-record changes are detected",
       "ok": true,
-      "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'approve', 'status': 'error', 'reason': 'competing baseline: approved facts changed since this candidate was created'} / {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-712fc8a732', 'decision': 'approve', 'status': 'error', 'reason': 'concurrent same-record change detected (store_seq)'}"
+      "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-bbe06b4b9c', 'decision': 'approve', 'status': 'error', 'reason': 'competing baseline: approved facts changed since this candidate was created'} / {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-bbe06b4b9c', 'decision': 'approve', 'status': 'error', 'reason': 'concurrent same-record change detected (store_seq)'}"
     },
     {
       "id": "R1-20",
       "title": "Review notes stay out of git; decision-saved \u2260 site-published",
       "ok": true,
       "detail": "in_git=False in_store=False notes_on_disk=True distinct=True published=True"
+    },
+    {
+      "id": "R1-21",
+      "title": "First-party confirmed cancellation creates a candidate; approval sets cancelled; membership remains",
+      "ok": true,
+      "detail": "staged={'ok': True, 'outcome': 'first_party_cancellation', 'candidate_id': 'cand-fixture-river-2026-v2-5bb42c4c1e', 'queued': True, 'unpublished': False, 'reason': 'candidate created; approved version left intact'} results=[{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-5bb42c4c1e', 'decision': 'approve', 'status': 'accepted', 'reason': 'approved exact stored revision', 'approved_revision_id': 'rev-fixture-river-2026-v2-approved', 'approved_fingerprint': '5bb42c4c1e7515db2fd6985fb9f7138fdb2254855bf3aa207ea8a07e79d84ed5', 'fact_cells_edited_ignored': False}] life=cancelled"
+    },
+    {
+      "id": "R1-22",
+      "title": "Reject/Hold of a cancellation candidate leave the approved revision intact",
+      "ok": true,
+      "detail": "{'row': 2, 'candidate_id': 'cand-fixture-river-2026-v2-5bb42c4c1e', 'decision': 'reject', 'status': 'rejected', 'reason': 'rejected; existing approved version intact', 'fact_cells_edited_ignored': False} {'row': 2, 'candidate_id': 'cand-fixture-river-2026-v3-5bb42c4c1e', 'decision': 'hold', 'status': 'held', 'reason': 'held; existing approved version intact', 'fact_cells_edited_ignored': False}"
     }
   ],
   "production_catalog_sha256": "ac94514accac4774bf33f109d8e8a80da52f512e78284d626e6591835247f1cb"

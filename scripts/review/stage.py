@@ -1,8 +1,15 @@
 """Deterministic staging interface a later monitor can call.
 
 A change creates a candidate. Unchanged / harmless formatting does not
-requeue an approved revision. Failed fetch, pending update, and cancellation
-reports are observations only — they must not unpublish.
+requeue an approved revision.
+
+Fetch failure, a missing page, a pending update, and an unverified or
+third-party cancellation report are observations only — they must not
+unpublish and must not write an unsupported cancelled fact.
+
+A first-party official confirmation that an approved offering was
+cancelled is a material factual change: it creates a review candidate
+and leaves the approved revision intact until human review.
 """
 from __future__ import annotations
 
@@ -21,6 +28,13 @@ from .store import (
     lock_seq,
     utcnow,
 )
+
+UNVERIFIED_OBSERVATIONS = frozenset({
+    "fetch_failed",
+    "missing_page",
+    "pending_update",
+    "cancellation_report",
+})
 
 
 def _next_record_version(store, oid):
@@ -42,13 +56,68 @@ def _existing_open_candidate(store, oid, fingerprint):
     return None
 
 
+def _record_observation(store, observation, outcome, now, candidate_id=None, note=None):
+    rec = {
+        "observation_id": observation["observation_id"],
+        "program_id": observation["program_id"],
+        "offering_id": observation["offering_id"],
+        "source_id": observation.get("source_id"),
+        "observed_at": observation.get("observed_at") or now,
+        "content_sha256": content_sha256(observation.get("extracted_text") or ""),
+        "outcome": outcome,
+        "candidate_id": candidate_id,
+        "source_authority": observation.get("source_authority") or "unknown",
+        "note": note,
+    }
+    store["observations"].append(rec)
+    return rec
+
+
+def _observation_only(store, observation, outcome, now, reason):
+    _record_observation(store, observation, outcome, now, note=reason)
+    return {
+        "ok": True,
+        "outcome": outcome,
+        "candidate_id": None,
+        "queued": False,
+        "unpublished": False,
+        "reason": reason,
+    }
+
+
+def first_party_cancellation_confirmed(observation):
+    """True only for an explicit first-party official cancellation.
+
+    Not inferred from fetch failure, a missing page, a deadline, an end
+    date, or a third-party / unsupported statement.
+    """
+    return (
+        observation.get("outcome") == "first_party_cancellation"
+        and observation.get("source_authority") == "first_party"
+    )
+
+
+def _without_unconfirmed_cancellation(approved_offering, proposed_offering):
+    proposed = deepcopy(proposed_offering)
+    if proposed.get("reported_lifecycle") != "cancelled":
+        return proposed
+    prior = (approved_offering or {}).get("reported_lifecycle")
+    if prior == "cancelled":
+        return proposed
+    if prior:
+        proposed["reported_lifecycle"] = prior
+    else:
+        proposed.pop("reported_lifecycle", None)
+    return proposed
+
+
 def stage_observation(store, observation, proposed_program=None, proposed_offering=None, now=None):
     """Stage one observation. Returns a result dict. Does not write files.
 
     observation keys:
       observation_id, program_id, offering_id, source_id, observed_at,
       extracted_text, official_links, excerpts, outcome (optional override),
-      proposed_offering_id (for next-cycle)
+      source_authority, proposed_offering_id (for next-cycle)
     """
     now = now or utcnow()
     oid = observation["offering_id"]
@@ -64,37 +133,36 @@ def stage_observation(store, observation, proposed_program=None, proposed_offeri
 
     approved_program, approved_offering = approved_facts(store, oid)
     outcome = observation.get("outcome")
-    if outcome in ("fetch_failed", "cancellation_report", "pending_update"):
-        rec = {
-            "observation_id": observation["observation_id"],
-            "program_id": pid,
-            "offering_id": oid,
-            "source_id": observation.get("source_id"),
-            "observed_at": observation.get("observed_at") or now,
-            "content_sha256": raw_hash,
-            "outcome": outcome,
-            "candidate_id": None,
-            "note": "recorded only; approved membership unchanged",
-        }
-        store["observations"].append(rec)
-        return {
-            "ok": True,
-            "outcome": outcome,
-            "candidate_id": None,
-            "queued": False,
-            "unpublished": False,
-            "reason": "observation recorded; approved version left intact",
-        }
+    authority = observation.get("source_authority") or "unknown"
+
+    if outcome in UNVERIFIED_OBSERVATIONS:
+        return _observation_only(
+            store, observation, outcome, now,
+            "observation recorded; approved version left intact",
+        )
+
+    if outcome == "first_party_cancellation" and authority != "first_party":
+        return _observation_only(
+            store, observation, "cancellation_report", now,
+            "cancellation not first-party; recorded as unverified; approved version left intact",
+        )
 
     if proposed_program is None:
         proposed_program = deepcopy(approved_program or store["programs"].get(pid) or {"pid": pid})
     if proposed_offering is None:
         proposed_offering = deepcopy(approved_offering or store["offerings"].get(oid) or {"oid": oid})
 
-    if not outcome:
-        outcome = classify_observation(
-            approved_program, approved_offering, proposed_program, proposed_offering, raw_changed,
-        )
+    if first_party_cancellation_confirmed(observation):
+        proposed_program = deepcopy(proposed_program)
+        proposed_offering = deepcopy(proposed_offering)
+        proposed_offering["reported_lifecycle"] = "cancelled"
+        outcome = "first_party_cancellation"
+    else:
+        proposed_offering = _without_unconfirmed_cancellation(approved_offering, proposed_offering)
+        if not outcome:
+            outcome = classify_observation(
+                approved_program, approved_offering, proposed_program, proposed_offering, raw_changed,
+            )
 
     rec = {
         "observation_id": observation["observation_id"],
@@ -105,10 +173,12 @@ def stage_observation(store, observation, proposed_program=None, proposed_offeri
         "content_sha256": raw_hash,
         "outcome": outcome,
         "candidate_id": None,
+        "source_authority": authority,
     }
     store["observations"].append(rec)
 
     if outcome in ("unchanged", "formatting_only"):
+        rec["note"] = "approved factual revision unchanged; no duplicate review"
         return {
             "ok": True,
             "outcome": outcome,
@@ -126,7 +196,6 @@ def stage_observation(store, observation, proposed_program=None, proposed_offeri
         proposed_offering = deepcopy(proposed_offering)
         proposed_offering["oid"] = target_oid
         if not looks_like_next_cycle(approved_offering or {"oid": oid, "cycle_label": ""}, {**proposed_offering, "offering_id": target_oid}):
-            # still treat as a new offering identity
             pass
 
     fingerprint = material_fingerprint(proposed_program, proposed_offering)

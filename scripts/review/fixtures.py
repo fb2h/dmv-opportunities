@@ -232,6 +232,13 @@ def proposed_river(variant="unchanged"):
     raise ValueError(variant)
 
 
+def proposed_river_cancelled():
+    program, offering = proposed_river("unchanged")
+    offering["reported_lifecycle"] = "cancelled"
+    offering["summary"] = "A paid summer lab internship that the host has officially cancelled."
+    return program, offering
+
+
 def proposed_harbor_next():
     program = _program(HARBOR_PID, "Harbor Museum Teen Docents", "Harbor Museum", "https://example.test/harbor", org_type="museum")
     return program, harbor_offering_2026()

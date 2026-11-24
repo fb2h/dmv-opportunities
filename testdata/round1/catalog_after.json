@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3.0",
   "taxonomy_version": "2.1.0",
-  "publication_policy_version": "2.4.0",
+  "publication_policy_version": "2.4.1",
   "release_id": "test-after",
   "generated_at": "2026-02-01T00:00:00Z",
   "reference_date": "2026-02-01",
@@ -128,12 +128,12 @@
               "title": "River Lab Summer Internship",
               "publisher": "River Lab Alliance",
               "role": "program_detail",
-              "verified_at": "2026-09-19T04:29:27Z"
+              "verified_at": "2026-11-24T13:11:27Z"
             }
           ],
           "public_evidence": [],
           "uncertainties": [],
-          "last_verified_at": "2026-09-19T04:29:27Z",
+          "last_verified_at": "2026-11-24T13:11:27Z",
           "published_at": "2026-02-01T00:00:00Z"
         }
       ]

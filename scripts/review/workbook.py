@@ -79,6 +79,7 @@ def export_workbook(store, path=None):
             "material_change": "Material facts differ from the approved revision.",
             "next_cycle": "A new cycle was announced. The previous cycle must stay intact.",
             "new_assignment": "Proposed directory-year membership needs review.",
+            "first_party_cancellation": "A first-party official source confirms this offering was cancelled. Approval updates lifecycle to cancelled; directory membership remains.",
             "other": "Review required.",
         }.get(cand.get("review_reason"), cand.get("review_reason") or "Review required.")
         if cand.get("status") == "held":
@@ -251,8 +252,12 @@ def _apply_row(store, rec, row_number, now, assign_directory_year):
             when=now,
         )
         set_approved(store, oid, approved_rev, when=now)
+        # Approval never auto-removes directory membership, including when the
+        # approved factual revision is a first-party confirmed cancellation.
         if oid in store.get("memberships", {}):
             assign_membership(store, oid, store["memberships"][oid]["school_year"], when=now, candidate_id=cid)
+        elif cand.get("review_reason") == "first_party_cancellation":
+            pass
         elif assign_directory_year and cand.get("review_reason") in ("next_cycle", "new_assignment"):
             # Approving a reviewed next-cycle or explicit-assignment candidate is the membership decision.
             assign_membership(store, oid, DIRECTORY_SCHOOL_YEAR, when=now, candidate_id=cid)

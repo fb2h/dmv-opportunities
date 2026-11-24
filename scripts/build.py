@@ -6,11 +6,13 @@ mapping of the Data Schema Contract (2.3.0) as a rule engine. The collector's
 own `public` flag is advisory only; every decision and its reason is written to
 data/meta/gate_report.json so a person can audit it.
 
-Round 1 (contract 2.4.0 / Appendix C) does not activate a new approval path on
+Round 1 (contract 2.4.1 / Appendix C) does not activate a new approval path on
 this production builder. The isolated approved-membership catalog lives in
 scripts/review/catalog.py and writes only to a separate test catalog.
 Do not point this script at testdata in a way that overwrites site/data/catalog.json
 as part of the unused-approval migration — that needs an explicit owner plan.
+The GitHub Actions wrapper for this script is frozen: no nightly run, no
+push-to-main deploy, until that migration/activation plan.
 
 Outputs
   site/data/catalog.json   PublicCatalog (what the website reads)

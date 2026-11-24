@@ -15,6 +15,7 @@ from .fixtures import (
     HARBOR_PID,
     proposed_harbor_next,
     proposed_river,
+    proposed_river_cancelled,
     river_source_text,
     seed_store,
 )
@@ -70,6 +71,14 @@ def cmd_stage(args):
         obs = {"observation_id": "obs-cancel", "program_id": RIVER_PID, "offering_id": RIVER_OID, "source_id": "river-s1",
                "outcome": "cancellation_report", "extracted_text": "A parent reported the session was cancelled."}
         result = stage_observation(store, obs)
+    elif args.scenario == "first_party_cancellation":
+        program, offering = proposed_river_cancelled()
+        obs = {"observation_id": "obs-fp-cancel", "program_id": RIVER_PID, "offering_id": RIVER_OID, "source_id": "river-s1",
+               "outcome": "first_party_cancellation", "source_authority": "first_party",
+               "extracted_text": "The Summer 2026 internship has been cancelled.",
+               "official_links": [program["program_url"]],
+               "excerpts": ["The Summer 2026 internship has been cancelled."]}
+        result = stage_observation(store, obs, program, offering)
     else:
         raise SystemExit(f"unknown scenario {args.scenario}")
     save_store_transaction(args.workspace, store, f"review: stage {args.scenario} observation")
@@ -135,7 +144,7 @@ def build_parser():
     s.add_argument("--remote")
     s.set_defaults(func=cmd_init)
     s = sub.add_parser("stage")
-    s.add_argument("scenario", choices=["unchanged", "formatting", "material", "next_cycle", "fetch_failed", "cancellation"])
+    s.add_argument("scenario", choices=["unchanged", "formatting", "material", "next_cycle", "fetch_failed", "cancellation", "first_party_cancellation"])
     s.set_defaults(func=cmd_stage)
     s = sub.add_parser("export")
     s.add_argument("--out", required=True)
