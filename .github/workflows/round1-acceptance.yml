@@ -1,0 +1,27 @@
+# Round 1 / 1.1 / 1.2 PR regression. Isolated fixtures only.
+# Does not use repository secrets, does not read or write live production
+# program files as a publication step, does not deploy GitHub Pages, does
+# not run the live-link monitor, and does not write to main.
+name: Round 1 acceptance
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: round1-acceptance-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  round1-acceptance:
+    name: Round 1 acceptance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run Round 1 acceptance suite
+        run: python3 tests/round1/run_acceptance.py

@@ -1,0 +1,8 @@
+short catalog diff (fixture-river-2026 only)
+- pay.label: $15/hour
++ pay.label: $18/hour
+- application_status @ 2026-02-01: open
++ application_status @ 2026-02-01: open
+membership unchanged: 2026-2027
+program_count before/after: 1/1
+after deadline/end @ 2026-09-01 application_status=closed lifecycle_status=completed still_present=yes
